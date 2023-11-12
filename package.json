@@ -1,0 +1,22 @@
+{
+  "name": "dxlliv-website",
+  "version": "1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
+  },
+  "dependencies": {
+    "@fontsource/quicksand": "^5.0.15",
+    "@mdi/font": "^7.3.67",
+    "@nuxtjs/i18n": "^8.0.0-rc.5",
+    "nuxt": "^3.8.1",
+    "sass": "^1.69.5",
+    "typescript": "^5.2.2",
+    "vue3-simple-icons": "^9.10.0",
+    "vuetify": "^3.4.0"
+  }
+}

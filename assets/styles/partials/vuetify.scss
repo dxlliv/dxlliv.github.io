@@ -1,0 +1,54 @@
+body {
+  .v {
+    &-container {
+      @media(max-width: 1279px) and (min-width: 600px) {
+        width: 560px;
+      }
+
+      @media (min-width: 1920px) {
+        max-width: 1600px !important;
+      }
+
+      @media (min-width: 2560px) {
+        max-width: 1600px !important;
+      }
+    }
+
+    &-img {
+      pointer-events: none;
+    }
+  }
+
+  .text {
+    &-h1,
+    &-h2,
+    &-h3,
+    &-h4,
+    &-h5,
+    &-h6 {
+      color: #222;
+    }
+
+    &-h3 {
+      font-family: "Quicksand", serif !important;
+      font-size: 33px !important;
+
+      @media(max-width: 599px) {
+        font-size: 25px !important;
+      }
+    }
+
+    &-h4 {
+      font-family: "Bebas Neue", serif !important;
+      font-size: 33px;
+    }
+
+    &-h6 {
+      font-family: "Quicksand", serif !important;
+      font-size: 18px !important;
+      font-weight: 600;
+      text-transform: uppercase !important;
+    }
+  }
+
+}

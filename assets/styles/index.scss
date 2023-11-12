@@ -1,0 +1,48 @@
+@import "./partials/vuetify";
+
+::selection {
+  background: #222;
+  color: #eee;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  user-select: none;
+}
+
+html {
+  color: #4a4a4a;
+}
+
+body {
+  position: relative;
+  font-family: "Quicksand", serif;
+  font-size: 18px;
+}
+
+iframe {
+  vertical-align: top;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.grid {
+  display: grid;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.no-pointer-events {
+  pointer-events: none;
+}
