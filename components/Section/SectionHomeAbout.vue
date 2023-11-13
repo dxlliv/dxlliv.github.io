@@ -19,20 +19,18 @@
             :text="$t('pages.home.about.action')"
         />
 
-        <client-only>
-          <v-tooltip content-class="bg-grey-darken-2" location="right" :open-delay="1000">
-            <span>hello@dxlliv.dev</span>
-            <template v-slot:activator="{ props }">
-              <v-btn
-                  v-bind="props"
-                  flat color="primary" rounded href="mailto:hello@dxlliv.dev"
-                  width="44px" height="44px" class="ml-3 px-0" min-width="32px"
-              >
-                <v-icon icon="mdi-at" size="20px" />
-              </v-btn>
-            </template>
-          </v-tooltip>
-        </client-only>
+        <v-tooltip content-class="bg-grey-darken-2" location="right" :open-delay="1000">
+          <span>hello@dxlliv.dev</span>
+          <template v-slot:activator="{ props }">
+            <v-btn
+                v-bind="props"
+                flat color="primary" rounded href="mailto:hello@dxlliv.dev"
+                width="44px" height="44px" class="ml-3 px-0" min-width="32px"
+            >
+              <v-icon icon="mdi-at" size="20px" />
+            </v-btn>
+          </template>
+        </v-tooltip>
 
       </template>
     </BlockLeft>
