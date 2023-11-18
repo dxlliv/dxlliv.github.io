@@ -52,24 +52,36 @@ withDefaults(defineProps<{
         height: 32vw !important;
       }
 
-      :deep(.v-icon--big) {
-        font-size: 28vw !important;
+      :deep(.v-icon) {
+        font-size: 4vw !important;
         width: inherit !important;
         height: inherit !important;
       }
 
+      :deep(.v-icon--big) {
+        font-size: 24vw !important;
+        width: inherit !important;
+        height: inherit !important;
+      }
+
+      :deep(svg) {
+        width: 4vw !important;
+        height: 4vw !important;
+      }
+
       :deep(.text-h6) {
-        font-size: 3.4vw !important;
+        font-size: 3.6vw !important;
         line-height: 4vw;
       }
 
       :deep(p) {
-        font-size: 3.2vw !important;
+        font-size: 3vw !important;
       }
 
       :deep(.v-btn) {
         font-size: 3.3vw;
-        height: 10vw !important;
+        min-width: 9vw !important;
+        height: 9vw !important;
       }
     }
   }

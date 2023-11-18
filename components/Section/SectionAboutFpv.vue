@@ -3,7 +3,7 @@ import {InstagramIcon, TiktokIcon, YoutubeIcon} from "vue3-simple-icons";
 </script>
 
 <template>
-  <Section height="100vh" class="dxlliv-section--about-fpv" style="background: #202020;">
+  <Section height="100vh" class="dxlliv-section--about-fpv" style="background: #181818;">
     <v-lazy class="no-pointer-events" transition="fade-transition">
       <video src="/media/dxvfpv.mp4" loop muted autoplay />
     </v-lazy>
@@ -24,14 +24,14 @@ import {InstagramIcon, TiktokIcon, YoutubeIcon} from "vue3-simple-icons";
           href="https://instagram.com/dxvfpv" target="_blank"
           size="large" rounded flat color="primary" min-width="44px" class="px-0 ml-3"
       >
-        <InstagramIcon width="20px" />
+        <InstagramIcon width="18px" />
       </v-btn>
 
       <v-btn
           href="https://tiktok.com/@dxvfpv" target="_blank"
           size="large" rounded flat color="primary" min-width="44px" class="px-0 ml-3"
       >
-        <TiktokIcon width="20px" />
+        <TiktokIcon width="17px" style="margin-top: -1px;" />
       </v-btn>
 
       <v-btn
@@ -60,7 +60,7 @@ import {InstagramIcon, TiktokIcon, YoutubeIcon} from "vue3-simple-icons";
     height: 100%;
     object-fit: cover;
     object-position: center;
-    opacity: 0.05;
+    opacity: 0.065;
   }
 
   .v-btn {
