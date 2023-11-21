@@ -8,7 +8,7 @@ defineProps<{
   <header :class="['dxlliv-header grid align-content-center text-md-left', {'dxlliv-header--absolute': absolute}]">
     <nuxt-link class="text-center" to="/">
       <h6 class="text-overline d-inline-block">
-        dxlliv - Your no label developer
+        dxlliv - Your No Label Developer
       </h6>
     </nuxt-link>
   </header>

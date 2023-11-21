@@ -28,7 +28,7 @@ onMounted(() => {
     <v-container>
       <div data-nosnippet class="text-overline text-grey-lighten-1">
         <div class="dxlliv-copyright">
-          <a href="https://dxlliv.dev">dxlliv</a> – Your no label developer
+          <a href="https://dxlliv.dev">dxlliv</a> – Your No Label Developer
           <span class="hidden-sm-and-down">
             – {{$t('common.vat')}}04421300981
           </span>
