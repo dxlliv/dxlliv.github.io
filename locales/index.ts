@@ -1,9 +1,6 @@
 export const messages = {
     "en": {
         "common": {
-            "action": {
-                "getQuote": "Request a quote",
-            },
             "vat": "VAT IT#",
         },
         "legal": {
@@ -42,8 +39,9 @@ export const messages = {
                     "title": "The code factory",
                     "description": {
                         "p1": "As an independent web developer and designer,<br /> I build modern websites and single-page apps.",
-                        "p2": "Whether you're seeking an initial, straightforward<br /> solution or a final one, I can handle it promptly."
-                    }
+                        "p2": "If you need help or consultancy for your project,<br /> I can make a difference. Feel free to reach me."
+                    },
+                    "action": "Get in touch"
                 }
             }
         }
