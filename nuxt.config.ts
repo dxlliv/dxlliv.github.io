@@ -2,6 +2,7 @@ export default defineNuxtConfig({
     ssr: false,
     app: {
         head: {
+            title: 'Your No Label Developer',
             meta: [
                 { name: 'viewport', content: 'width=device-width, initial-scale=1, user-scalable=no' },
                 { name: 'theme-color', content: '#fefefe' },

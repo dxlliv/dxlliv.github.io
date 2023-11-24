@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useHead({
-  title: 'Your no label developer'
+  title: 'Your No Label Developer'
 })
 </script>
 
