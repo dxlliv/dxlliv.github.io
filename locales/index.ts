@@ -15,7 +15,7 @@ export const messages = {
                     "title": "Hi, I'm dxlliv",
                     "description": {
                         "p1": "An experienced designer & developer for your projects.<br /> I create high-performance web apps from scratch.",
-                        "p2": "I like minimal design and can make your brand fly high!<br /> Tell me what you need and I'll probably make it happen."
+                        "p2": "I like minimal design and can make your brand fly high.<br /> Tell me what you need and I'll probably make it happen."
                     },
                     "action": "About me"
                 }
