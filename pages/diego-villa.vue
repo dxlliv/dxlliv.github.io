@@ -6,7 +6,7 @@ useHead({
 
 <template>
   <Section height="100vh">
-    <SectionImage height="100vh" src="https://dxlliv.github.io/planner/user/instagram/dxlliv/media/5.jpg" />
+    <SectionImage height="100vh" src="https://raw.githubusercontent.com/dxlliv/instagram/main/public/user/instagram/dxlliv/media/post-5.jpg" />
     <Header absolute />
   </Section>
 
