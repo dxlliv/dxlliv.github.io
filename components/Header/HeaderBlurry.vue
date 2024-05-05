@@ -5,7 +5,7 @@ defineProps<{
 </script>
 
 <template>
-  <header :class="['dxlliv-header grid align-content-center text-md-left', {'dxlliv-header--absolute': absolute}]">
+  <header :class="['dxlliv-header flex align-content-center text-md-left', {'dxlliv-header--absolute': absolute}]">
     <nuxt-link class="text-center" to="/">
       <h6 class="text-overline d-inline-block">
         dxlliv - Your No Label Developer
@@ -16,6 +16,8 @@ defineProps<{
 
 <style scoped lang="scss">
 .dxlliv-header {
+  max-width: 360px;
+  margin: 0 auto;
   height: 90px;
 
   &--absolute {
