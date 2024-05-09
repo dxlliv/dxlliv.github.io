@@ -11,7 +11,7 @@ defineProps<{
       v-if="icon"
       :icon="icon" size="180"
       :class="[
-        'dxlliv-block__icon v-icon--big mb-6 mb-md-0',
+        'dxlliv-block__icon v-icon--big mb-6 mb-lg-0',
         {'text-grey': dark},
         {'text-grey-lighten-2': !dark},
       ]"
