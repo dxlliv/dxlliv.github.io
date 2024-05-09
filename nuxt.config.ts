@@ -1,3 +1,5 @@
+const path = require('path');
+
 export default defineNuxtConfig({
     ssr: false,
     app: {
@@ -55,5 +57,10 @@ export default defineNuxtConfig({
         compilerOptions: {
             isCustomElement: (tag) => ['swiper-container', 'swiper-slide'].includes(tag),
         },
+    },
+    nitro: {
+        output: {
+            publicDir: path.join(__dirname, 'docs')
+        }
     },
 })
