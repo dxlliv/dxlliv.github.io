@@ -18,7 +18,13 @@ watch(() => route.name, value => {
 </template>
 
 <style scoped lang="scss">
+@import "vuetify/lib/styles/settings/_variables";
+
 swiper-container {
   height: 100%;
+
+  @media (max-width: 699px) {
+    height: 100vh;
+  }
 }
 </style>

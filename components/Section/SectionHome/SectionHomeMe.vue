@@ -17,7 +17,7 @@ import {GithubIcon, XIcon} from "vue3-simple-icons"
       <template v-slot:actions>
 
         <v-btn
-            to="/diego-villa"
+            to="/about"
             rounded flat color="primary" size="large"
             :text="$t('pages.home.me.action')"
         />

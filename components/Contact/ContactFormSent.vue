@@ -6,7 +6,7 @@
   <v-snackbar
     position="fixed"
     rounded="pill"
-    :timeout="15000"
+    :timeout="8000"
   >
     <div class="text-center">
       {{$t('form.action.sent')}}

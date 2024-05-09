@@ -21,11 +21,3 @@ onMounted(() => {
     <slot />
   </swiper-container>
 </template>
-
-<style scoped lang="scss">
-swiper-container {
-  :deep(swiper-slide) {
-    //overflow: hidden;
-  }
-}
-</style>

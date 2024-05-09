@@ -30,7 +30,7 @@ window.addEventListener("resize", () => {
 @import "vuetify/lib/styles/settings/_variables";
 
 :global(body) {
-  @media #{map-get($display-breakpoints, 'sm-and-up')} {
+  @media (min-width: 700px) {
     padding: 36px 0 0 36px;
   }
 }

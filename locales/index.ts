@@ -21,7 +21,7 @@ export const messages = {
             },
             action: {
                 send: "Send",
-                sent: "Opening your default e-mail client"
+                sent: "Opening your default e-mail client..."
             }
         },
         pages: {
@@ -29,7 +29,7 @@ export const messages = {
                 me: {
                     title: "Your No Label Developer",
                     description: {
-                        p1: "Hire an expert consultant for<br class='hidden-sm-and-up' /> your next project.<br class='hidden-xs' /> I specialize in web<br class='hidden-sm-and-up' /> development, I'm a perfectionist.",
+                        p1: "Hire an expert consultant for<br class='hidden-sm-and-up' /> your next project.<br class='hidden-xs' /> I specialize in web<br class='hidden-sm-and-up' /> development. I'm a perfectionist.",
                         p2: "I started in 2005 with graphics<br class='hidden-sm-and-up' /> and programming<br class='hidden-xs' /> practicing with<br class='hidden-sm-and-up' /> GIMP, VB6, PHPNuke & WordPress."
                     },
                     action: "About me"

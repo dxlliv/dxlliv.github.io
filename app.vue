@@ -13,7 +13,7 @@ register()
 
     <AppSplash />
 
-    <client-only v-if="$vuetify.display.smAndUp">
+    <client-only v-if="$vuetify.display.width > 700">
       <AppGuides />
     </client-only>
 
