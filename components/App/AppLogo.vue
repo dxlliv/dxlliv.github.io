@@ -57,18 +57,18 @@ withDefaults(defineProps<{
       height: 62px;
     }
 
-    @media(max-height: 479px) {
-      top: 40px;
-    }
-
-    @media(max-height: 799px) {
-      display: none;
-    }
-
     @media(max-width: 285px) {
       left: 0;
       right: 0;
       margin: 0 auto;
+    }
+
+    @media(max-height: 479px) {
+      top: 40px;
+    }
+
+    @media(max-height: 599px) {
+      display: none;
     }
 
     @media only screen and (width: 430px) and (height: 932px) and (-webkit-device-pixel-ratio: 3),
