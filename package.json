@@ -10,12 +10,21 @@
     "preview": "nuxt preview"
   },
   "dependencies": {
-    "@fontsource/quicksand": "^5.0.15",
+    "@fontsource/bebas-neue": "^5.0.18",
+    "@fontsource/quicksand": "^5.0.16",
+    "@fontsource/rock-salt": "^5.0.18",
     "@mdi/font": "^7.3.67",
     "@nuxtjs/i18n": "^8.0.0-rc.5",
+    "@pinia/nuxt": "^0.5.1",
+    "@vuelidate/core": "^2.0.3",
+    "@vuelidate/validators": "^2.0.4",
     "nuxt": "^3.8.1",
+    "nuxt-swiper": "^1.2.2",
+    "pinia": "^2.1.7",
     "sass": "^1.69.5",
     "typescript": "^5.2.2",
+    "vue3-guides": "^0.12.2",
+    "vue3-marquee": "^4.2.0",
     "vue3-simple-icons": "^9.10.0",
     "vuetify": "^3.4.0"
   }
