@@ -7,6 +7,7 @@ import { aliases, mdi } from "vuetify/iconsets/mdi";
 const dxlliv = {
     dark: false,
     colors: {
+        background: '#000000',
         onSurface: '#FFFFFF',
         primary: '#EAEAEA',
     },

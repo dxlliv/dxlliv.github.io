@@ -6,10 +6,7 @@ defineProps<{
 </script>
 
 <template>
-  <div
-      :class="['dxlliv-section', {'dxlliv-section--dark': dark}]"
-      ref="sectionElement"
-  >
+  <div :class="['dxlliv-section', {'dxlliv-section--dark': dark}]">
     <div class="dxlliv-section__inner">
       <slot />
     </div>

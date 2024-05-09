@@ -1,33 +1,39 @@
 <script setup lang="ts">
-defineProps<{
-  height: string
+withDefaults(defineProps<{
+  intersectScroll?: boolean
+  height?: string
   src: string
-}>()
+}>(), {
+  intersectScroll: true
+})
+
+const emit = defineEmits(['intersect'])
+
+function onImageInnerIntersect(isIntersecting: boolean) {
+  emit('intersect', isIntersecting)
+}
 </script>
 
 <template>
-  <Section class="dxlliv-section-image">
-    <v-parallax>
-      <v-img
-          width="100vw" :height="height" cover
-          :src="src" alt=""
+  <div class="dxlliv-section-image">
+    <v-img
+        height="100vh" :height="height" cover
+        :src="src" alt=""
+    >
+      <Block
+          v-intersect="onImageInnerIntersect"
+          :intersect-scroll="intersectScroll" class="section-image__block"
       >
-        <BlockScroll scroll class="dxlliv-section-image__block">
-          <div />
-        </BlockScroll>
-      </v-img>
-    </v-parallax>
-  </Section>
+        <div />
+      </Block>
+    </v-img>
+  </div>
 </template>
 
 <style scoped lang="scss">
 .dxlliv-section-image {
   height: v-bind('height');
   background: #202020;
-
-  .v-parallax {
-    position: static;
-  }
 
   &__block {
     position: absolute !important;

@@ -1,16 +1,51 @@
 body {
   .v {
+    &-application {
+      @media(min-width: 700px) {
+        height: calc(100dvh - 36px);
+      }
+
+      &__wrap {
+        height: inherit;
+        min-height: inherit;
+
+        @media(min-width: 700px) {
+          padding: 24px;
+        }
+      }
+    }
+
     &-container {
       @media(max-width: 1279px) and (min-width: 600px) {
         width: 560px;
       }
 
       @media (min-width: 1920px) {
-        max-width: 1600px !important;
+        max-width: 1600px;
       }
 
       @media (min-width: 2560px) {
-        max-width: 1600px !important;
+        max-width: 1600px;
+      }
+    }
+
+    &-card {
+      &--rounded {
+        border-radius: 0;
+
+        @media (min-width: 700px) {
+          border-radius: 24px !important;
+        }
+      }
+
+      &-title,
+      &-subtitle,
+      &-text {
+        padding: 20px;
+      }
+
+      &-text {
+        font-size: 16px;
       }
     }
 

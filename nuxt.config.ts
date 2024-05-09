@@ -21,11 +21,23 @@ export default defineNuxtConfig({
     css: [
         "@fontsource/quicksand",
         "@fontsource/quicksand/400.css",
+        "@fontsource/rock-salt",
+        "@fontsource/rock-salt/400.css",
+        "@fontsource/bebas-neue",
+        "@fontsource/bebas-neue/400.css",
         '@mdi/font/css/materialdesignicons.css',
         '~/assets/styles/index.scss',
     ],
+    components: [
+        {
+            path: '~/components',
+            pathPrefix: false,
+        },
+    ],
     modules: [
-        '@nuxtjs/i18n'
+        'nuxt-swiper',
+        '@nuxtjs/i18n',
+        '@pinia/nuxt',
     ],
     imports: {
         dirs: ['stores','utils']
@@ -38,5 +50,10 @@ export default defineNuxtConfig({
         detectBrowserLanguage: {
             useCookie: true
         },
-    }
+    },
+    vue: {
+        compilerOptions: {
+            isCustomElement: (tag) => ['swiper-container', 'swiper-slide'].includes(tag),
+        },
+    },
 })

@@ -1,18 +1,39 @@
 <template>
-  <main class="dxlliv-container">
-    <slot />
-  </main>
+  <SliderHorizontal>
+    <swiper-slide>
 
-  <Footer />
+      <v-card rounded flat class="fill-height">
+
+        <SliderVertical page-name="index">
+
+          <slot/>
+
+        </SliderVertical>
+
+      </v-card>
+
+    </swiper-slide>
+
+    <swiper-slide>
+
+      <v-row no-gutters class="fill-height">
+        <v-col class="fill-height">
+
+          <v-row no-gutters class="fill-height">
+            <v-col align-self="center" class="text-center">
+
+              <AppCopyright />
+
+            </v-col>
+          </v-row>
+
+        </v-col>
+        <v-col>
+
+        </v-col>
+      </v-row>
+
+    </swiper-slide>
+
+  </SliderHorizontal>
 </template>
-
-<style scoped lang="scss">
-.dxlliv-container {
-  min-height: 90vh;
-  overflow: hidden;
-
-  @media(max-height: 415px) {
-    height: inherit;
-  }
-}
-</style>

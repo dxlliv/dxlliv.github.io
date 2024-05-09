@@ -1,7 +1,21 @@
+<script setup lang="ts">
+import { register } from 'swiper/element/bundle';
+
+register()
+</script>
+
 <template>
-  <VApp>
+  <v-app>
+
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
-  </VApp>
+
+    <AppSplash />
+
+    <client-only v-if="$vuetify.display.smAndUp">
+      <AppGuides />
+    </client-only>
+
+  </v-app>
 </template>
