@@ -1,47 +1,54 @@
 export const messages = {
-    "en": {
-        "common": {
-            "vat": "VAT IT#",
+    en: {
+        intro: {
+            title1: "Your No Label Developer.",
+            title2: "Digital Pixel Perfectionist",
         },
-        "legal": {
-            "terms": "Terms & Conditions",
-            "privacy": "Privacy Policy",
-            "cookie": "Cookie Policy",
-            "vat": "VAT IT#"
+        availability: {
+            available: "Available",
+            openToWork: "Open to work"
         },
-        "pages": {
-            "home": {
-                "about": {
-                    "title": "Hi, I'm dxlliv",
-                    "description": {
-                        "p1": "An experienced designer & developer for your projects.<br /> I create high-performance web apps from scratch.",
-                        "p2": "I like minimal design and can make your brand fly high.<br /> Tell me what you need and I'll probably make it happen."
-                    },
-                    "action": "About me"
+        form: {
+            fields: {
+                name: {
+                    label: "Name",
+                    placeholder: "What's your name"
+                },
+                message: {
+                    label: "Message",
+                    placeholder: "Tell me about your project"
                 }
             },
-            "about": {
-                "me": {
-                    "title": "Your no label developer",
-                    "description": {
-                        "p1": "I started with graphics, design and programming in 2005,<br /> practicing with Visual Basic 6, PHPNuke and WordPress.",
-                        "p2": "I specialize in front-end web development and, after years,<br /> I discovered and chose Vue.js as the main framework."
+            action: {
+                send: "Send",
+                sent: "Opening your default e-mail client"
+            }
+        },
+        pages: {
+            home: {
+                me: {
+                    title: "Your No Label Developer",
+                    description: {
+                        p1: "Hire an expert consultant for<br class='hidden-sm-and-up' /> your next project.<br class='hidden-xs' /> I specialize in web<br class='hidden-sm-and-up' /> development, I'm a perfectionist.",
+                        p2: "I started in 2005 with graphics<br class='hidden-sm-and-up' /> and programming<br class='hidden-xs' /> practicing with<br class='hidden-sm-and-up' /> GIMP, VB6, PHPNuke & WordPress."
                     },
-                    "action": "LinkedIn Profile"
+                    action: "About me"
                 },
-                "fpv": {
-                    "title": "First-Person View clips",
-                    "description": {
-                        "p1": "In my free time, I fly drones in FPV and LOS.<br /> I fly for fun, but I can capture great videos too."
-                    }
-                },
-                "dev": {
-                    "title": "The code factory",
-                    "description": {
-                        "p1": "As an independent web developer and designer,<br /> I build modern websites and single-page apps.",
-                        "p2": "If you need help or consultancy for your project,<br /> I can make a difference. Feel free to reach me."
+                fpv: {
+                    title: "Stunning Aerial Footage",
+                    description: {
+                        p1: "In my free time I fly drones<br class='hidden-sm-and-up' /> in FPV and LOS.<br class='hidden-xs' /> I fly for fun, but<br class='hidden-sm-and-up' /> I can capture great videos.",
+                        p2: "I'd take short clips for your<br class='hidden-sm-and-up' /> business as well,<br class='hidden-xs' /> find me around or<br class='hidden-sm-and-up' /> let's connect and talk."
                     },
-                    "action": "Get in touch"
+                    action: "Get in touch"
+                },
+                dev: {
+                    title: "Crafting Digital Excellence",
+                    description: {
+                        p1: "As an independent developer<br class='hidden-sm-and-up' /> and web designer,<br class='hidden-xs' /> I build modern<br class='hidden-sm-and-up' /> websites and web applications.",
+                        p2: "If you need help or consultancy<br class='hidden-sm-and-up' /> for your project,<br class='hidden-xs' /> I can make a<br class='hidden-sm-and-up' /> difference. Feel free to reach me."
+                    },
+                    action: "Drop a line"
                 }
             }
         }
