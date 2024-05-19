@@ -28,7 +28,7 @@
           </v-row>
 
         </v-col>
-        <v-col>
+        <v-col class="hidden-sm-and-down">
 
         </v-col>
       </v-row>
