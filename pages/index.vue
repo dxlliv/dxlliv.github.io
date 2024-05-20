@@ -19,16 +19,16 @@ onMounted(() => {
   </swiper-slide>
 
   <swiper-slide>
+    <SectionHomeMe/>
+  </swiper-slide>
 
+  <!--
+
+  <swiper-slide>
     <SectionImage
         class="fill-height"
         :src="plannerStore.imageSrc"
     />
-
-  </swiper-slide>
-
-  <swiper-slide>
-    <SectionHomeMe/>
   </swiper-slide>
 
   <swiper-slide>
@@ -38,4 +38,5 @@ onMounted(() => {
   <swiper-slide>
     <SectionHomeDev/>
   </swiper-slide>
+  -->
 </template>
