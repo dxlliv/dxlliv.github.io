@@ -24,14 +24,14 @@ import {InstagramIcon, YoutubeIcon} from "vue3-simple-icons";
             href="https://instagram.com/dxvfpv" target="_blank"
             size="large" rounded flat color="primary" min-width="44px" class="px-0 ml-3"
         >
-          <InstagramIcon width="18px" />
+          <InstagramIcon width="16px" />
         </v-btn>
 
         <v-btn
             href="https://youtube.com/@dxvfpv" target="_blank"
             size="large" rounded flat color="primary" min-width="44px" class="px-0 ml-3"
         >
-          <YoutubeIcon width="20px" />
+          <YoutubeIcon width="18px" />
         </v-btn>
 
         <v-btn

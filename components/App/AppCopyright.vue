@@ -1,5 +1,5 @@
 <template>
-  <div class="text-white">
+  <div class="app-copyright text-white">
     <p>
       <a target="_blank" href="https://medium.com/swlh/a-programmers-work-is-never-done-7e77e0e3c82a">
         A programmer's work is never done.
@@ -16,3 +16,11 @@
     </p>
   </div>
 </template>
+
+<style scoped lang="scss">
+.app-copyright {
+  @media(max-width: 599px) {
+    font-size: 16px;
+  }
+}
+</style>

@@ -26,14 +26,14 @@ import {GithubIcon, XIcon} from "vue3-simple-icons"
             href="https://github.com/dxlliv" target="_blank"
             size="large" rounded flat color="primary" min-width="44px" class="px-0 ml-3"
         >
-          <GithubIcon width="20px" />
+          <GithubIcon width="18px" />
         </v-btn>
 
         <v-btn
             href="https://x.com/dxlliv" target="_blank"
             size="large" rounded flat color="primary" min-width="44px" class="px-0 ml-3"
         >
-          <XIcon width="20px" />
+          <XIcon width="17px" />
         </v-btn>
 
       </template>

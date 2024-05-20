@@ -11,7 +11,7 @@ function onIntroTitleIntersect(isIntersecting: boolean) {
 <template>
   <Section height="100%">
     <AppLogo name="home" size="86px" title="dxlliv" />
-    <SectionIntroAvailability/>
+    <SectionIntroSpecialization/>
     <SectionIntroTitle v-intersect="onIntroTitleIntersect"/>
   </Section>
 </template>

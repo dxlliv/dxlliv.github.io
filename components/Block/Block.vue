@@ -56,15 +56,6 @@
 
     @media(max-width: 440px) {
       font-size: 4.4vw;
-
-      :deep(svg) {
-        width: 4.5vw !important;
-        height: 4.5vw !important;
-      }
-
-      :deep(.v-icon:not(.v-icon--big)) {
-        font-size: 5.3vw !important;
-      }
     }
 
     @media(max-width: 1279px) and (max-height: 680px) {

@@ -4,21 +4,23 @@ export default defineNuxtConfig({
     ssr: false,
     app: {
         head: {
+            htmlAttrs: {
+                translate: 'no',
+                class: 'notranslate'
+            },
             title: 'Your No Label Developer',
             meta: [
                 { name: 'viewport', content: 'width=device-width, initial-scale=1, user-scalable=no' },
                 { name: 'theme-color', content: '#fefefe' },
-                {
-                    hid: 'fragment',
-                    name: 'fragment',
-                    content: '!'
-                },
+                { hid: 'fragment', name: 'fragment', content: '!' },
             ],
             link: [
-                { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+                { rel: 'icon', type: 'image/x-icon', href: 'https://dxlliv.github.io/favicon.ico' },
+                { rel: 'preload', type: 'font/woff2', href: '/fonts/minimal.woff2', as: 'font' },
             ],
         },
         buildAssetsDir: 'assets/',
+        cdnURL: 'https://dxlliv.github.io',
     },
     css: [
         "@fontsource/quicksand",

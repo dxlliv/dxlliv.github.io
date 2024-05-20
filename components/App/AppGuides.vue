@@ -30,7 +30,7 @@ window.addEventListener("resize", () => {
 @import "vuetify/lib/styles/settings/_variables";
 
 :global(body) {
-  @media (min-width: 700px) {
+  @media (min-width: 700px) and (min-height: 400px) {
     padding: 36px 0 0 36px;
   }
 }
@@ -40,6 +40,8 @@ window.addEventListener("resize", () => {
 }
 
 .dxlliv-layout-guides {
+  z-index: 1;
+
   &:before {
     background: #333333;
     position: fixed;
