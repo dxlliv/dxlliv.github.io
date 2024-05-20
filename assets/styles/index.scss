@@ -1,3 +1,4 @@
+@import "./partials/fonts";
 @import "./partials/vuetify";
 
 ::selection {
@@ -43,4 +44,27 @@ img {
 
 .no-pointer-events {
   pointer-events: none;
+}
+
+@media
+only screen and (min-device-width: 820px) and (max-device-width: 1180px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-width: 820px) and (max-device-width: 1180px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2)
+{
+  .dxlliv-section {
+    zoom: 1.25;
+  }
+}
+@media
+only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2)
+{
+  .dxlliv-section {
+    zoom: 1.20;
+  }
+}
+@media
+only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2)
+{
+  .dxlliv-section {
+    zoom: 1.15;
+  }
 }
