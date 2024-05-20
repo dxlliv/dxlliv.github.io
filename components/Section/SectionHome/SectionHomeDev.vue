@@ -27,15 +27,17 @@ import {DiscordIcon, InstagramIcon} from "vue3-simple-icons";
             href="https://instagram.com/dxlliv" target="_blank"
             size="large" rounded flat color="primary" min-width="44px" class="px-0 ml-3"
         >
-          <InstagramIcon width="18px" />
+          <InstagramIcon width="16px" />
         </v-btn>
 
+        <!--
         <v-btn
             href="https://discord.gg/3q7xUXXgzq" target="_blank"
             size="large" rounded flat color="primary" min-width="44px" class="px-0 ml-3"
         >
           <DiscordIcon width="20px" />
         </v-btn>
+        -->
 
       </template>
     </BlockHeroLeft>

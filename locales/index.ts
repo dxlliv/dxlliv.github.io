@@ -29,7 +29,7 @@ export const messages = {
                 me: {
                     title: "Your No Label Developer",
                     description: {
-                        p1: "Hire an expert consultant for<br class='hidden-sm-and-up' /> your next project.<br class='hidden-xs' /> I specialize in web<br class='hidden-sm-and-up' /> development. I'm a perfectionist.",
+                        p1: "Hire an expert <span class='hidden-sm-and-up'>web </span>consultant for<br class='hidden-sm-and-up' /> your next project.<br class='hidden-xs' /> I specialize in web<br class='hidden-sm-and-up' /> development. I'm a perfectionist.",
                         p2: "I started in 2005 with graphics<br class='hidden-sm-and-up' /> and programming<br class='hidden-xs' /> practicing with<br class='hidden-sm-and-up' /> GIMP, VB6, PHPNuke & WordPress."
                     },
                     action: "About me"
@@ -38,7 +38,7 @@ export const messages = {
                     title: "Stunning Aerial Footage",
                     description: {
                         p1: "In my free time I fly drones<br class='hidden-sm-and-up' /> in FPV and LOS.<br class='hidden-xs' /> I fly for fun, but<br class='hidden-sm-and-up' /> I can capture great videos.",
-                        p2: "I'd take short clips for your<br class='hidden-sm-and-up' /> business as well,<br class='hidden-xs' /> find me around or<br class='hidden-sm-and-up' /> let's connect and talk."
+                        p2: "I'd take short clips for your<br class='hidden-sm-and-up' /> business as well,<br class='hidden-xs' /> find me around and<br class='hidden-sm-and-up' /> let's talk for a while."
                     },
                     action: "Get in touch"
                 },

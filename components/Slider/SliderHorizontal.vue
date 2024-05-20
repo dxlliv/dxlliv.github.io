@@ -24,7 +24,7 @@ swiper-container {
   height: 100%;
 
   @media (max-width: 699px) {
-    height: 100vh;
+    height: 100dvh;
   }
 }
 </style>

@@ -35,7 +35,6 @@ setTimeout(() => {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    filter: invert(100%);
   }
 
   &::after {
@@ -48,12 +47,13 @@ setTimeout(() => {
     background-image: linear-gradient(
       90deg,
       rgba(#000, 0) 0,
-      rgba(#000, 0.2) 20%,
-      rgba(#000, 0.5) 60%,
+      rgba(#000, 0.15) 20%,
+      rgba(#000, 0.15) 60%,
       rgba(#000, 0)
     );
-    animation: shimmer 4s infinite;
+    animation: shimmer 2s infinite;
     content: '';
+    z-index: 99;
   }
 
   @keyframes shimmer {

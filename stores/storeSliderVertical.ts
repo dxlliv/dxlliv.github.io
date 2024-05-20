@@ -4,7 +4,7 @@ export const useSliderVerticalStore = defineStore('slider/vertical', () => {
     const instance = ref()
 
     const swiper = computed(() => {
-        return instance.value.swiper
+        return instance.value?.swiper
     })
 
     const swiperIsBeginning = ref(true)

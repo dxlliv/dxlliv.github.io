@@ -1,13 +1,5 @@
-<script setup lang="ts">
-const isFirefox: Ref<boolean> = ref(false)
-
-onBeforeMount(() => {
-  isFirefox.value = navigator.userAgent.indexOf("Firefox") != -1
-})
-</script>
-
 <template>
-  <div class="dxlliv-modern-availability">
+  <div class="dxlliv-availability">
 
     <svg
         viewBox="0 0 100 100"
@@ -21,7 +13,7 @@ onBeforeMount(() => {
       <text>
         <textPath
             data-nosnippet href="#circlePath"
-            :style="{fontSize: isFirefox ? '9.65px' : '10.4px', fontWeight: 'bold', animation: 'shine 2.5s infinite' }"
+            :style="{fontSize: $vuetify.display.platform.firefox ? '10.01px' : '10.4px', fontWeight: 'bold', animation: 'shine 2.5s infinite' }"
         >
           DXLLIV &middot; DXLLIV &middot; DXLLIV &middot; DXLLIV &middot; DXLLIV &middot; DXLLIV &middot;
         </textPath>
@@ -48,42 +40,17 @@ onBeforeMount(() => {
 
     </v-btn>
   </div>
-
-  <div class="dxlliv-modern-availability__mobile">
-    {{$t('availability.openToWork')}}
-  </div>
 </template>
 
 <style scoped lang="scss">
-.dxlliv-modern-availability {
+.dxlliv-availability {
   position: absolute;
   top: 74px;
   right: 64px;
+  display: none;
 
   @media (max-height: 799px) {
     display: none;
-  }
-
-  &__mobile {
-    position: absolute;
-    top: 25vh;
-    right: -32px;
-    transform: rotateZ(-90deg);
-    font-size: 28px;
-    letter-spacing: -1px;
-    word-spacing: 2px;
-    font-family: "Bebas Neue", serif !important;
-    text-transform: uppercase;
-    opacity: 0.15;
-    display: none;
-
-    @media(max-width: 1279px) and (max-height: 799px) {
-      display: block;
-    }
-
-    @media(max-width: 529px) {
-      display: block;
-    }
   }
 
   @media(max-width: 840px) {
