@@ -18,7 +18,7 @@ async function onFormSend() {
 
   setTimeout(() => {
     window.open(formStore.href)
-  }, 3000)
+  }, 2000)
 }
 </script>
 
