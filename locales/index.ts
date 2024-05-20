@@ -5,9 +5,9 @@ export const messages = {
             title2: "Digital Pixel Perfectionist",
         },
         availability: {
-            available: "Available",
-            openToWork: "Open to work"
+            available: "Available"
         },
+        specialization: "DEV",
         form: {
             fields: {
                 name: {
