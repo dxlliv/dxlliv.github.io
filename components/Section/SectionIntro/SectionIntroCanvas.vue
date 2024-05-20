@@ -79,28 +79,15 @@ onBeforeUnmount(() => background.p5.remove())
   width: 16px;
   height: 176px;
   background: #222;
-  border-top: 4px solid white;
-  box-shadow: 0 -6px 0 0 black, 0 -9px 0 0 white, 0 -15px 0 0 black;
   cursor: move;
 
   @media(max-height: 560px) {
-    height: 64px;
+    height: 78px;
     overflow: hidden;
   }
 
   canvas {
     pointer-events: none;
-  }
-
-  &:after {
-    position: absolute;
-    top: -28px;
-    right: -5px;
-    width: 10px;
-    height: 10px;
-    transform: rotateZ(-45deg);
-    background: white;
-    content: '';
   }
 }
 </style>

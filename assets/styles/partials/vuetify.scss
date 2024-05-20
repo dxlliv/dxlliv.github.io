@@ -3,10 +3,6 @@ body {
     &-application {
       height: 100dvh;
 
-      @media(min-width: 700px) and (min-height: 400px) {
-        height: calc(100dvh - 36px);
-      }
-
       &__wrap {
         height: inherit;
         min-height: inherit;

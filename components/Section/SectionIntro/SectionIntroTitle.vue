@@ -24,9 +24,9 @@ import {Vue3Marquee} from 'vue3-marquee'
 
       <a>
         <v-icon
-            icon="mdi-at" size="29px"
+            icon="mdi-at" :size="30"
             class="mx-2 cursor-pointer"
-            style="vertical-align: 1px;"
+            style="vertical-align: 0;"
         />
 
         <v-tooltip activator="parent" content-class="bg-grey-darken-3" location="right" :open-delay="1000">
@@ -44,8 +44,8 @@ import {Vue3Marquee} from 'vue3-marquee'
     <Vue3Marquee :duration="96">
       Pixel Perfect Design ▪ UI/UX Battle Tester & Enhancer ▪ Digital Pixel Perfectionist ▪ Web Developer ▪
       Web Designer ▪ Web Strategist ▪ Silent Consultant ▪ HTML5 ▪ JavaScript ▪ TypeScript ▪ Vue.js ▪ Nuxt.js ▪
-      Routing ▪ State Management ▪ Single-page Application ▪
-      Vuex ▪ Pinia ▪ Xstate ▪ Capacitor ▪ Electron ▪ Server-side Rendering ▪ Static Site Generation ▪&nbsp;
+      Routing ▪ State Management ▪ Single-page Application ▪ Vuex ▪ Pinia ▪ Xstate ▪ Capacitor ▪ Electron ▪
+      Server-side Rendering ▪ Static Site Generation ▪&nbsp;
     </Vue3Marquee>
   </div>
 </template>
@@ -53,8 +53,8 @@ import {Vue3Marquee} from 'vue3-marquee'
 <style scoped lang="scss">
 .dxlliv-section-intro-title {
   position: absolute;
-  bottom: 74px;
-  left: 64px;
+  bottom: 0;
+  left: 0;
   right: 64px;
   display: table;
   letter-spacing: -0.6px;
@@ -67,15 +67,15 @@ import {Vue3Marquee} from 'vue3-marquee'
   &-1 {
     margin-bottom: -2px;
 
-    @media(max-width: 844px) {
-      margin-bottom: 6px;
+    @media(max-width: 769px) {
+      margin-bottom: 12px;
     }
 
-    @media(max-width: 600px) {
-      margin-bottom: 8px;
+    @media(max-width: 285px), (max-height: 459px) {
+      display: none;
     }
 
-    @media(max-width: 285px),(max-height: 429px) {
+    @media(min-width: 479px) and (max-width: 769px) and (max-height: 619px) {
       display: none;
     }
   }
@@ -87,82 +87,30 @@ import {Vue3Marquee} from 'vue3-marquee'
   h1 {
     font-family: "Bebas Neue", serif;
     font-weight: 900;
-    font-size: 80px;
-    line-height: 76px;
+    font-size: 74px;
+    line-height: 70px;
     word-spacing: 4px;
-  }
+    margin-left: -2px;
 
-  @media(max-width: 1379px) {
-    h1 {
+    @media(max-width: 959px) {
+      font-size: 60px;
       line-height: 58px;
     }
-  }
 
-  @media(max-width: 1279px) {
-    bottom: 64px;
-
-    h1 {
-      font-size: 60px;
-      line-height: 60px;
-    }
-  }
-
-  @media(max-width: 959px) {
-    h1 {
-      font-size: 56px;
-      line-height: 56px;
-    }
-  }
-
-  @media(max-width: 844px) {
-    left: 48px;
-    right: 48px;
-
-    h1 {
-      font-size: 56px;
-      line-height: 48px;
-    }
-  }
-
-  @media(max-width: 600px) {
-    h1 {
+    @media(max-width: 769px) {
       max-width: 350px;
-      line-height: 52px;
+      line-height: 54px;
     }
-  }
 
-  @media(max-width: 479px) {
-    left: 36px;
-    right: 36px;
-    bottom: 48px;
-
-    h1 {
+    @media(max-width: 479px) {
       font-size: 44px;
       line-height: 40px;
     }
-  }
 
-  @media(max-width: 340px) {
-    left: 16px;
-
-    h1 {
+    @media(max-width: 340px) {
       font-size: 42px;
       line-height: 38px;
     }
-  }
-
-  @media(max-height: 479px) {
-    bottom: 40px;
-  }
-
-  @media(max-height: 589px) {
-    //bottom: 50%;
-    //transform: translateY(50%);
-  }
-
-  @media(max-width: 599px) and (min-height: 599px) {
-    //bottom: 50%;
-    //transform: translateY(50%);
   }
 
   .vue3-marquee.horizontal {
@@ -202,7 +150,7 @@ import {Vue3Marquee} from 'vue3-marquee'
       background: linear-gradient(to left, #ffffff, transparent);
     }
 
-    @media(max-width: 580px) {
+    @media(max-width: 769px) {
       display: none !important;
     }
   }

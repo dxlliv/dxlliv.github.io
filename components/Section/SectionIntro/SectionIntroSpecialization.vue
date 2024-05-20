@@ -18,27 +18,17 @@ import {NuxtdotjsIcon} from 'vue3-simple-icons'
 <style scoped lang="scss">
 .dxlliv-specialization {
   position: absolute;
-  top: 103px;
-  right: 0px;
-  width: 32px;
+  top: 14px;
+  right: 23px;
+  width: 16px;
+  border-top: 4px solid white;
+  box-shadow: 0 -6px 0 0 black, 0 -9px 0 0 white, 0 -15px 0 0 black;
   font-weight: bold;
   font-size: 21px;
   word-spacing: 2px;
   font-family: "Bebas Neue", serif !important;
   text-transform: uppercase;
   //display: none;
-
-  @media(max-width: 1279px) {
-    top: 92px;
-  }
-
-  @media(max-width: 844px) {
-    top: 89px;
-  }
-
-  @media(max-height: 799px) {
-    top: 64px;
-  }
 
   &__inner {
     width: 72px;
@@ -62,13 +52,20 @@ import {NuxtdotjsIcon} from 'vue3-simple-icons'
     fill: #00DC82;
     vertical-align: -4px;
   }
+
+  &:after {
+    position: absolute;
+    top: -28px;
+    right: -5px;
+    width: 10px;
+    height: 10px;
+    transform: rotateZ(-45deg);
+    background: white;
+    content: '';
+  }
 }
 
 body.ios .dxlliv-specialization {
-  @media(max-height: 799px) {
-    top: 69px;
-  }
-
   &__inner span {
     letter-spacing: -1.5px;
   }

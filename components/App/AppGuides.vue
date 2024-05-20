@@ -26,14 +26,20 @@ window.addEventListener("resize", () => {
   </div>
 </template>
 
-<style scoped lang="scss">
-@import "vuetify/lib/styles/settings/_variables";
-
-:global(body) {
-  @media (min-width: 700px) and (min-height: 400px) {
+<style lang="scss">
+body {
+  @media (min-width: 700px) and (min-height: 499px) {
     padding: 36px 0 0 36px;
+
+    .v-application {
+      height: calc(100dvh - 36px) !important;
+    }
   }
 }
+</style>
+
+<style scoped lang="scss">
+@import "vuetify/lib/styles/settings/_variables";
 
 :global(.scena-guides-guide) {
   background: rgba(0, 0, 0, 0.25) !important;
