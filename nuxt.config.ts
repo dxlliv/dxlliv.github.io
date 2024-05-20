@@ -19,6 +19,7 @@ export default defineNuxtConfig({
             ],
         },
         buildAssetsDir: 'assets/',
+        cdnURL: 'https://dxlliv.github.io',
     },
     css: [
         "@fontsource/quicksand",
