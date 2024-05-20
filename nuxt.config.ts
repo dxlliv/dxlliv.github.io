@@ -4,6 +4,10 @@ export default defineNuxtConfig({
     ssr: false,
     app: {
         head: {
+            htmlAttrs: {
+                translate: 'no',
+                class: 'notranslate'
+            },
             title: 'Your No Label Developer',
             meta: [
                 { name: 'viewport', content: 'width=device-width, initial-scale=1, user-scalable=no' },
