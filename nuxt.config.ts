@@ -39,7 +39,6 @@ export default defineNuxtConfig({
         },
     ],
     modules: [
-        'nuxt-swiper',
         '@nuxtjs/i18n',
         '@pinia/nuxt',
     ],
