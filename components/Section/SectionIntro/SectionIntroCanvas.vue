@@ -32,7 +32,7 @@ function backgroundSetup(p5) {
     p5.noStroke()
 
     p5.createCanvas(
-        32,
+        16,
         176,
     ).parent("dxlliv-pixels")
 
@@ -76,11 +76,11 @@ onBeforeUnmount(() => background.p5.remove())
 <style lang="scss">
 #dxlliv-pixels {
   position: relative;
-  width: 32px;
+  width: 16px;
   height: 176px;
   background: #222;
   border-top: 4px solid white;
-  box-shadow: 0 -8px 0 0 black, 0 -12px 0 0 white, 0 -20px 0 0 black;
+  box-shadow: 0 -6px 0 0 black, 0 -9px 0 0 white, 0 -15px 0 0 black;
   cursor: move;
 
   @media(max-height: 560px) {
@@ -94,7 +94,7 @@ onBeforeUnmount(() => background.p5.remove())
 
   &:after {
     position: absolute;
-    top: -31px;
+    top: -28px;
     right: -5px;
     width: 10px;
     height: 10px;
