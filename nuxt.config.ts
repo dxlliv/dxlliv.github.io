@@ -12,14 +12,11 @@ export default defineNuxtConfig({
             meta: [
                 { name: 'viewport', content: 'width=device-width, initial-scale=1, user-scalable=no' },
                 { name: 'theme-color', content: '#fefefe' },
-                {
-                    hid: 'fragment',
-                    name: 'fragment',
-                    content: '!'
-                },
+                { hid: 'fragment', name: 'fragment', content: '!' },
             ],
             link: [
-                { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+                { rel: 'icon', type: 'image/x-icon', href: 'https://dxlliv.github.io/favicon.ico' },
+                { rel: 'preload', type: 'font/woff2', href: '/fonts/minimal.woff2', as: 'font' },
             ],
         },
         buildAssetsDir: 'assets/',
