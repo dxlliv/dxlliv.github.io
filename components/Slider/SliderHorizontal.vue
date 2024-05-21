@@ -35,11 +35,12 @@ swiper-container {
   .dxlliv-slider-horizontal {
     :deep(swiper-slide:first-child) {
       transition: border-radius 0.15s ease-in-out;
+      transition-delay: 0.2s;
       overflow: hidden;
     }
 
     &--rounded :deep(swiper-slide:first-child) {
-      border-radius: 0 24px 24px 0 !important;
+      border-radius: 24px !important;
     }
   }
 }

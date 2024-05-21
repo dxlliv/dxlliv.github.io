@@ -24,7 +24,7 @@ import {Vue3Marquee} from 'vue3-marquee'
 
       <a>
         <v-icon
-            icon="mdi-at" :size="29"
+            icon="mdi-at" :size="30"
             class="mx-2 cursor-pointer"
             style="vertical-align: 1px;"
         />
