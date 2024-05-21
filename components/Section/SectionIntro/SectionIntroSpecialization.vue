@@ -8,7 +8,9 @@ import {NuxtdotjsIcon} from 'vue3-simple-icons'
     <SectionIntroCanvas class="dxlliv-specialization__canvas" />
 
     <div class="dxlliv-specialization__inner">
-      <NuxtdotjsIcon />
+      <a href="https://nuxt.com" target="_blank">
+        <NuxtdotjsIcon />
+      </a>
       <span v-text="$t('specialization')" />
     </div>
 
