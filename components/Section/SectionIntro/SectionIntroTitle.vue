@@ -24,9 +24,9 @@ import {Vue3Marquee} from 'vue3-marquee'
 
       <a>
         <v-icon
-            icon="mdi-at" :size="30"
+            icon="mdi-at" :size="29"
             class="mx-2 cursor-pointer"
-            style="vertical-align: 0;"
+            style="vertical-align: 1px;"
         />
 
         <v-tooltip activator="parent" content-class="bg-grey-darken-3" location="right" :open-delay="1000">
@@ -68,7 +68,7 @@ import {Vue3Marquee} from 'vue3-marquee'
     margin-bottom: -2px;
 
     @media(max-width: 769px) {
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
     @media(max-width: 285px), (max-height: 459px) {
@@ -99,17 +99,21 @@ import {Vue3Marquee} from 'vue3-marquee'
 
     @media(max-width: 769px) {
       max-width: 350px;
-      line-height: 54px;
+      line-height: 52px;
     }
 
     @media(max-width: 479px) {
       font-size: 44px;
-      line-height: 40px;
+      line-height: 38px;
     }
 
     @media(max-width: 340px) {
       font-size: 42px;
-      line-height: 38px;
+      line-height: 36px;
+    }
+
+    @media(max-width: 285px), (max-height: 459px) {
+      line-height: 40px;
     }
   }
 

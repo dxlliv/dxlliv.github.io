@@ -26,6 +26,11 @@ withDefaults(defineProps<{
     line-height: 80px;
   }
 
+  @media(max-width: 479px) {
+    font-size: 74px;
+    line-height: 70px;
+  }
+
   &--home {
     position: absolute;
     top: 0;

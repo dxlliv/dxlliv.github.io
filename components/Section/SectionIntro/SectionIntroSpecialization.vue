@@ -32,7 +32,7 @@ import {NuxtdotjsIcon} from 'vue3-simple-icons'
 
   &__inner {
     width: 72px;
-    margin-top: 18px;
+    margin-top: 20px;
     margin-left: -26px;
     transform: rotateZ(-90deg);
     text-align: center;
@@ -48,8 +48,9 @@ import {NuxtdotjsIcon} from 'vue3-simple-icons'
 
   svg {
     width: 32px;
-    height: 24px;
+    height: 23px;
     fill: #00DC82;
+    margin-right: 2px;
     vertical-align: -4px;
   }
 
