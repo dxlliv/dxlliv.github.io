@@ -7,7 +7,6 @@ export const useSliderHorizontalStore = defineStore('slider/horizontal', () => {
 
     const swiperIsBeginning = ref(true)
     const swiperIsEnd = ref(false)
-    const swiperMobileRounded = ref(false)
 
     function initialize() {
         instance.value = document.querySelector('.dxlliv-slider-horizontal')
@@ -30,18 +29,6 @@ export const useSliderHorizontalStore = defineStore('slider/horizontal', () => {
         instance.value.addEventListener('swiperslidechange', () => {
             swiperIsBeginning.value = instance.value.swiper.isBeginning
             swiperIsEnd.value = instance.value.swiper.isEnd
-
-            swiperMobileRounded.value = !swiperIsBeginning.value
-        });
-
-        instance.value.addEventListener('swipertouchstart', () => {
-            swiperMobileRounded.value = true
-        });
-
-        instance.value.addEventListener('swipertouchend', () => {
-            if (swiperIsBeginning.value) {
-                swiperMobileRounded.value = false
-            }
         });
 
         Object.assign(instance.value, swiperConfig);
@@ -58,7 +45,6 @@ export const useSliderHorizontalStore = defineStore('slider/horizontal', () => {
         swiper,
         swiperIsBeginning,
         swiperIsEnd,
-        swiperMobileRounded,
         initialize,
         update,
     }

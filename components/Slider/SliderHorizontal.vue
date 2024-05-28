@@ -13,7 +13,7 @@ watch(() => route.name, value => {
 
 <template>
   <swiper-container
-      :class="['dxlliv-slider-horizontal', {'dxlliv-slider-horizontal--rounded': sliderHorizontalStore.swiperMobileRounded}]"
+      class="dxlliv-slider-horizontal"
       init="false"
   >
     <slot />
@@ -28,20 +28,6 @@ swiper-container {
 
   @media (max-width: 699px) {
     height: 100dvh;
-  }
-}
-
-@media(max-width: 699px) {
-  .dxlliv-slider-horizontal {
-    :deep(swiper-slide:first-child) {
-      transition: border-radius 0.15s ease-in-out;
-      transition-delay: 0.2s;
-      overflow: hidden;
-    }
-
-    &--rounded :deep(swiper-slide:first-child) {
-      border-radius: 24px !important;
-    }
   }
 }
 </style>
