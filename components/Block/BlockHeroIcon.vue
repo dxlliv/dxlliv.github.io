@@ -11,7 +11,7 @@ defineProps<{
       v-if="icon"
       :icon="icon" size="180"
       :class="[
-        'dxlliv-block__icon v-icon--big mt-n1 mb-6 mb-lg-0',
+        'dxlliv-block__icon v-icon--big mt-n3 mt-lg-0 mb-8 mb-lg-0',
         {'text-grey': dark},
         {'text-grey-lighten-2': !dark},
       ]"
@@ -28,11 +28,11 @@ defineProps<{
     opacity: 0.25;
   }
 
-  @media(max-height: 699px) {
+  @media(max-width: 1279px) {
     font-size: 150px !important;
   }
 
-  @media(max-height: 499px) {
+  @media(max-height: 699px) and (max-width: 1279px) {
     display: none;
   }
 }

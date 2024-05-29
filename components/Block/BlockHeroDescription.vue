@@ -11,6 +11,9 @@
 
 div {
   :deep(p) {
+    @media(min-width: 600px) {
+      line-height: 28px;
+    }
 
     &:nth-child(1) {
       margin-top: 24px;

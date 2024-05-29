@@ -8,7 +8,7 @@ import {NuxtdotjsIcon} from 'vue3-simple-icons'
     <SectionIntroCanvas class="dxlliv-specialization__canvas" />
 
     <div class="dxlliv-specialization__inner">
-      <a href="https://nuxt.com" target="_blank">
+      <a href="https://nuxt.com" target="_blank" class="mr-2">
         <NuxtdotjsIcon />
       </a>
       <span v-text="$t('specialization')" />
@@ -33,9 +33,10 @@ import {NuxtdotjsIcon} from 'vue3-simple-icons'
   //display: none;
 
   &__inner {
-    width: 72px;
+    width: 90px;
+    height: 56px;
     margin-top: 19px;
-    margin-left: -26px;
+    margin-left: -24px;
     transform: rotateZ(-90deg);
     text-align: center;
   }
@@ -57,7 +58,7 @@ import {NuxtdotjsIcon} from 'vue3-simple-icons'
 
   &:after {
     position: absolute;
-    top: -28px;
+    top: -27px;
     right: -5px;
     width: 10px;
     height: 10px;
