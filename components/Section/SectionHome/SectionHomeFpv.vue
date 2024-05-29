@@ -61,7 +61,7 @@ import {InstagramIcon, YoutubeIcon} from "vue3-simple-icons";
     height: 100%;
     object-fit: cover;
     object-position: center;
-    opacity: 0.125;
+    opacity: 0.1;
   }
 
   .v-btn {
