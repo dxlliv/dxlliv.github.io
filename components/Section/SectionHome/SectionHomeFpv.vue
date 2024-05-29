@@ -3,7 +3,7 @@ import {InstagramIcon, YoutubeIcon} from "vue3-simple-icons";
 </script>
 
 <template>
-  <Section height="100%" class="dxlliv-section--home-fpv" style="background: #0e0e0e;">
+  <Section height="100%" class="dxlliv-section--home-fpv">
     <v-lazy class="no-pointer-events" transition="fade-transition">
       <video src="/media/dxvfpv.mp4" loop muted autoplay />
     </v-lazy>
@@ -49,6 +49,7 @@ import {InstagramIcon, YoutubeIcon} from "vue3-simple-icons";
 <style scoped lang="scss">
 .dxlliv-section--home-fpv {
   position: relative;
+  background: #00040e;
 
   video {
     position: absolute;
@@ -58,10 +59,9 @@ import {InstagramIcon, YoutubeIcon} from "vue3-simple-icons";
     bottom: 0;
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
     object-fit: cover;
     object-position: center;
-    opacity: 0.1;
+    opacity: 0.125;
   }
 
   .v-btn {

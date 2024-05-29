@@ -38,17 +38,17 @@ export const messages = {
                     title: "Stunning Aerial Footage",
                     description: {
                         p1: "In my free time I fly drones<br class='hidden-sm-and-up' /> in FPV and LOS.<br class='hidden-xs' /> I fly for fun, but<br class='hidden-sm-and-up' /> I can capture great videos.",
-                        p2: "I'd take short clips for your<br class='hidden-sm-and-up' /> business as well,<br class='hidden-xs' /> find me around and<br class='hidden-sm-and-up' /> let's talk for a while."
+                        p2: "I'd take short clips for your<br class='hidden-sm-and-up' /> business as well,<br class='hidden-xs' /> find me around or<br class='hidden-sm-and-up' /> let's talk for a while."
                     },
                     action: "Get in touch"
                 },
                 dev: {
                     title: "Crafting Digital Excellence",
                     description: {
-                        p1: "As an independent developer<br class='hidden-sm-and-up' /> and web designer,<br class='hidden-xs' /> I build modern<br class='hidden-sm-and-up' /> websites and web applications.",
-                        p2: "If you need help or consultancy<br class='hidden-sm-and-up' /> for your project,<br class='hidden-xs' /> I can make a<br class='hidden-sm-and-up' /> difference. Feel free to reach me."
+                        p1: "As an independent developer<br class='hidden-sm-and-up' /> and <span class='hidden-sm-and-up'>web </span>designer,<br class='hidden-xs' /> I build modern<br class='hidden-sm-and-up' /> websites and web applications.",
+                        p2: "If you need help or consultancy<br class='hidden-sm-and-up' /> for a project,<br class='hidden-xs' /> I can make a<br class='hidden-sm-and-up' /> difference. Feel free to reach me."
                     },
-                    action: "Drop a line"
+                    action: "Say hello"
                 }
             }
         }
