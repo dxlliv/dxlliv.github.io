@@ -18,7 +18,7 @@ defineProps<{
 
 <style scoped lang="scss">
 body.ios .dxlliv-block__title {
-  font-size: 22px !important;
+  font-size: 21px !important;
   letter-spacing: -1px !important;
 }
 </style>

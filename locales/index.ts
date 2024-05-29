@@ -37,8 +37,8 @@ export const messages = {
                 fpv: {
                     title: "Stunning Aerial Footage",
                     description: {
-                        p1: "In my free time I fly drones<br class='hidden-sm-and-up' /> in FPV and LOS.<br class='hidden-xs' /> I fly for fun, but<br class='hidden-sm-and-up' /> I can capture great videos.",
-                        p2: "I'd take short clips for your<br class='hidden-sm-and-up' /> business as well,<br class='hidden-xs' /> find me around or<br class='hidden-sm-and-up' /> let's talk for a while."
+                        p1: "When outside I fly freestyle drones<br class='hidden-sm-and-up' /> in <span class='hidden-sm-and-up'>first person view</span><span class='hidden-xs'>FPV</span>.<br class='hidden-xs' /> I fly for fun,<br class='hidden-sm-and-up' /> but I can capture great short clips.",
+                        p2: "I'd take short videos for your<br class='hidden-sm-and-up' /> business as well,<br class='hidden-xs' /> find me around or<br class='hidden-sm-and-up' /> let's connect & talk about it."
                     },
                     action: "Get in touch"
                 },
