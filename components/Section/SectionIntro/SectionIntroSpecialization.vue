@@ -30,11 +30,15 @@ import {NuxtdotjsIcon} from 'vue3-simple-icons'
   word-spacing: 2px;
   font-family: "Bebas Neue", serif !important;
   text-transform: uppercase;
+
+  @media(min-width: 700px) {
+    zoom: 1.2;
+  }
   //display: none;
 
   &__inner {
     width: 72px;
-    margin-top: 19px;
+    margin-top: 20px;
     margin-left: -26px;
     transform: rotateZ(-90deg);
     text-align: center;
@@ -51,14 +55,15 @@ import {NuxtdotjsIcon} from 'vue3-simple-icons'
   svg {
     width: 32px;
     height: 23px;
+    margin-right: 1px;
     fill: #00DC82;
     vertical-align: -4px;
   }
 
   &:after {
     position: absolute;
-    top: -28px;
-    right: -5px;
+    top: -25px;
+    right: -6px;
     width: 10px;
     height: 10px;
     transform: rotateZ(-45deg);
