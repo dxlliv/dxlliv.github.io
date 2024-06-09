@@ -29,16 +29,16 @@ export const messages = {
                 me: {
                     title: "Your No Label Developer",
                     description: {
-                        p1: "Hire an expert <span class='hidden-sm-and-up'>web </span>consultant for<br class='hidden-sm-and-up' /> your next project.<br class='hidden-xs' /> I specialize in web<br class='hidden-sm-and-up' /> development. I'm a perfectionist.",
-                        p2: "I started in 2005 with graphics<br class='hidden-sm-and-up' /> and programming<br class='hidden-xs' /> practicing with<br class='hidden-sm-and-up' /> GIMP, VB6, PHPNuke & WordPress."
+                        p1: "Hire an expert consultant for<br class='hidden-sm-and-up' /> your next project.<br class='hidden-xs' /> I specialize in <span class='hidden-xs'>web</span><br class='hidden-sm-and-up' /> design and web development.",
+                        p2: "I started in 2005 with graphics<br class='hidden-sm-and-up' /> & programming,<br class='hidden-xs' /> always practicing on my own.<br class='hidden-sm-and-up' /> I'm a perfectionist."
                     },
                     action: "About me"
                 },
                 fpv: {
                     title: "Stunning Aerial Footage",
                     description: {
-                        p1: "When outside I fly freestyle drones<br class='hidden-sm-and-up' /> in <span class='hidden-sm-and-up'>first person view</span><span class='hidden-xs'>FPV</span>.<br class='hidden-xs' /> I fly for fun,<br class='hidden-sm-and-up' /> but I can capture great short clips.",
-                        p2: "I'd take short videos for your<br class='hidden-sm-and-up' /> business as well,<br class='hidden-xs' /> find me around or<br class='hidden-sm-and-up' /> let's connect & talk about it."
+                        p1: "When outside, I fly freestyle drones<br class='hidden-sm-and-up' /> in FPV.<br class='hidden-xs' /> I offer unforgettable high quality video takes.",
+                        p2: "I can take short clips for your<br class='hidden-sm-and-up' /> business as well,<br class='hidden-xs' /> reach me out<br class='hidden-sm-and-up' /> and let's discuss how I can help."
                     },
                     action: "Get in touch"
                 },
