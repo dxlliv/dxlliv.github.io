@@ -49,7 +49,7 @@ import {InstagramIcon, YoutubeIcon} from "vue3-simple-icons";
 <style scoped lang="scss">
 .dxlliv-section--home-fpv {
   position: relative;
-  background: #070b11;
+  background: black;
 
   video {
     position: absolute;
@@ -61,7 +61,8 @@ import {InstagramIcon, YoutubeIcon} from "vue3-simple-icons";
     height: 100%;
     object-fit: cover;
     object-position: center;
-    opacity: 0.078;
+    opacity: 0.65;
+    filter: contrast(60%)
   }
 
   .v-btn {

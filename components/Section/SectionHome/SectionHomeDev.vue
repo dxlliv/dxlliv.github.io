@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {DiscordIcon, InstagramIcon} from "vue3-simple-icons";
+import {InstagramIcon} from "vue3-simple-icons";
 </script>
 
 <template>
@@ -30,14 +30,12 @@ import {DiscordIcon, InstagramIcon} from "vue3-simple-icons";
           <InstagramIcon width="16px" />
         </v-btn>
 
-        <!--
         <v-btn
-            href="https://discord.gg/3q7xUXXgzq" target="_blank"
+            href="mailto:hello@dxlliv.dev" target="_blank"
             size="large" rounded flat color="primary" min-width="44px" class="px-0 ml-3"
         >
-          <DiscordIcon width="20px" />
+          <v-icon icon="mdi-at" :size="20" />
         </v-btn>
-        -->
 
       </template>
     </BlockHeroLeft>

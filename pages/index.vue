@@ -13,9 +13,7 @@ onMounted(() => {
 
 <template>
   <swiper-slide>
-
     <SectionIntro />
-
   </swiper-slide>
 
   <swiper-slide>
