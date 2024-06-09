@@ -1,5 +1,11 @@
+<script setup lang="ts">
+defineProps<{
+  dark?: boolean
+}>()
+</script>
+
 <template>
-  <div class="dxlliv-block">
+  <div :class="['dxlliv-block', dark ? 'dxlliv-block--dark' : '']">
     <div class="dxlliv-block__inner">
       <slot/>
     </div>
@@ -14,6 +20,16 @@
   margin: 0 auto;
   width: 100%;
   max-height: 100%;
+
+  &--dark {
+    :deep(p) {
+      color: #ffffffaa !important;
+    }
+  }
+
+  @media(min-width: 1699px) {
+    zoom: 1.2;
+  }
 
   &__inner {
     position: relative;

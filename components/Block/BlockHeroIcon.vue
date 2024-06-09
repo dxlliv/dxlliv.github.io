@@ -25,7 +25,7 @@ defineProps<{
 <style scoped lang="scss">
 .dxlliv-block__icon {
   &.text-grey {
-    opacity: 0.25;
+    opacity: 0.5;
   }
 
   @media(max-width: 1279px) {

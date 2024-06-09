@@ -10,7 +10,7 @@ const emit = defineEmits(['iconClick'])
 </script>
 
 <template>
-  <Block>
+  <Block :dark="dark">
     <v-row no-gutters>
       <v-col :lg="4" :cols="12" align-self="center" class="text-center hidden-lg-and-up">
 
