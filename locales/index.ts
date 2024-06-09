@@ -8,6 +8,7 @@ export const messages = {
             available: "Available"
         },
         specialization: "DEV",
+        skills: "Pixel Perfect Design ▪ UI/UX Battle Tester & Enhancer ▪ Digital Pixel Perfectionist ▪ First Person View Drone Pilot ▪ Certified UAS Pilot ▪ Web Developer ▪ Web Designer ▪ Web Strategist ▪ Essential Video Maker ▪ Silent Consultant ▪ HTML5 ▪ JavaScript ▪ TypeScript ▪ Vue.js ▪ Nuxt.js ▪ Routing ▪ State Management ▪ Single-page Application ▪ Vuex ▪ Pinia ▪ Xstate ▪ Capacitor ▪ Electron ▪ Server-side Rendering ▪ Static Site Generation ▪",
         form: {
             fields: {
                 name: {

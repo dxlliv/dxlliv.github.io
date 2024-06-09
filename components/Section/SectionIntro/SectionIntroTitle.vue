@@ -35,17 +35,10 @@ import {Vue3Marquee} from 'vue3-marquee'
 
         <ContactDialog/>
       </a>
-
-      <a class="ml-n1">
-
-      </a>
     </div>
 
     <Vue3Marquee :duration="96">
-      Pixel Perfect Design ▪ UI/UX Battle Tester & Enhancer ▪ Digital Pixel Perfectionist ▪ Web Developer ▪
-      Web Designer ▪ Web Strategist ▪ Silent Consultant ▪ HTML5 ▪ JavaScript ▪ TypeScript ▪ Vue.js ▪ Nuxt.js ▪
-      Routing ▪ State Management ▪ Single-page Application ▪ Vuex ▪ Pinia ▪ Xstate ▪ Capacitor ▪ Electron ▪
-      Server-side Rendering ▪ Static Site Generation ▪&nbsp;
+      {{$t('skills')}}&nbsp;
     </Vue3Marquee>
   </div>
 </template>
