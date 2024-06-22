@@ -22,7 +22,7 @@ import {InstagramIcon, YoutubeIcon} from "vue3-simple-icons";
       <template v-slot:actions>
 
         <v-btn
-            href="https://instagram.com/dxvfpv" target="_blank"
+            href="https://instagram.com/dxlliv.mov" target="_blank"
             size="large" rounded flat color="primary" min-width="44px" class="px-0 ml-3"
         >
           <InstagramIcon width="16px" />
