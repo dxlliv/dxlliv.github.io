@@ -21,8 +21,8 @@ function onIntroTitleIntersect(isIntersecting: boolean) {
 <style scoped lang="scss">
 .dxlliv-secton-intro__inner {
   position: absolute;
-  top: 76px;
-  bottom: 76px;
+  top: 72px;
+  bottom: 72px;
   left: 66px;
   right: 0;
 

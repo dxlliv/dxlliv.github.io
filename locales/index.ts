@@ -44,7 +44,7 @@ export const messages = {
                     action: "Get in touch"
                 },
                 dev: {
-                    title: "Crafting Digital Excellence",
+                    title: "Crafting Digital X-cellence",
                     description: {
                         p1: "As an independent developer<br class='hidden-sm-and-up' /> and <span class='hidden-sm-and-up'>web </span>designer,<br class='hidden-xs' /> I build modern<br class='hidden-sm-and-up' /> websites and web applications.",
                         p2: "If you need help or consultancy<br class='hidden-sm-and-up' /> for a project,<br class='hidden-xs' /> I can make a<br class='hidden-sm-and-up' /> difference. Feel free to reach me."

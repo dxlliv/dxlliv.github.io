@@ -20,11 +20,9 @@ import {NuxtdotjsIcon} from 'vue3-simple-icons'
 <style scoped lang="scss">
 .dxlliv-specialization {
   position: absolute;
-  top: 14px;
-  right: 23px;
+  top: 0;
+  right: 32px;
   width: 16px;
-  border-top: 4px solid white;
-  box-shadow: 0 -6px 0 0 black, 0 -9px 0 0 white, 0 -15px 0 0 black;
   font-weight: bold;
   font-size: 21px;
   word-spacing: 2px;
@@ -34,7 +32,6 @@ import {NuxtdotjsIcon} from 'vue3-simple-icons'
   @media(min-width: 700px) {
     zoom: 1.2;
   }
-  //display: none;
 
   &__inner {
     width: 72px;
