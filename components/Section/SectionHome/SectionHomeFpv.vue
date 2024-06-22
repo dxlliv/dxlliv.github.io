@@ -4,6 +4,7 @@ import {InstagramIcon, YoutubeIcon} from "vue3-simple-icons";
 
 <template>
   <Section height="100%" class="dxlliv-section--home-fpv">
+
     <v-lazy class="no-pointer-events" transition="fade-transition">
       <video src="/media/dxvfpv.mp4" loop muted autoplay />
     </v-lazy>
@@ -61,8 +62,7 @@ import {InstagramIcon, YoutubeIcon} from "vue3-simple-icons";
     height: 100%;
     object-fit: cover;
     object-position: center;
-    opacity: 0.65;
-    filter: contrast(60%)
+    opacity: 0.334;
   }
 
   .v-btn {
