@@ -20,8 +20,9 @@ import {NuxtdotjsIcon} from 'vue3-simple-icons'
 <style scoped lang="scss">
 .dxlliv-specialization {
   position: absolute;
-  top: 0;
-  right: 32px;
+  top: -24px;
+  right: 20px;
+  text-transform: uppercase;
   width: 16px;
   font-weight: bold;
   font-size: 21px;
