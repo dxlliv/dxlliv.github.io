@@ -12,7 +12,7 @@ function onIntroTitleIntersect(isIntersecting: boolean) {
   <Section class="dxlliv-section-intro" height="100%">
     <div class="dxlliv-secton-intro__inner">
       <AppLogo name="home" size="86px" title="dxlliv" />
-      <SectionIntroSpecialization/>
+      <SectionIntroSpecialization v-if="$vuetify.display.width > 699"/>
       <SectionIntroTitle v-intersect="onIntroTitleIntersect"/>
     </div>
   </Section>

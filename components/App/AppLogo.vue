@@ -33,16 +33,27 @@ withDefaults(defineProps<{
 
   &--home {
     position: absolute;
-    top: 0;
+    top: 30px;
     left: 0;
     margin-left: -2px;
-    text-align: center;
-    aspect-ratio: 1.35;
+    text-align: left;
+    font-size: 140px;
     color: black;
 
-    @media only screen and (width: 430px) and (height: 932px) and (-webkit-device-pixel-ratio: 3),
-    only screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) {
-      zoom: 1.35;
+    @media (max-width: 959px) {
+      font-size: 120px;
+    }
+
+    @media (max-width: 559px) {
+      font-size: 115px;
+    }
+
+    @media (max-width: 479px) {
+      font-size: 105px;
+    }
+
+    @media (max-width: 359px) {
+      font-size: 90px;
     }
   }
 

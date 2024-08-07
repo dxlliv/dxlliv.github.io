@@ -8,11 +8,11 @@ import {Vue3Marquee} from 'vue3-marquee'
     <h1 class="font-weight text-uppercase cursor-pointer">
       <div
           class="dxlliv-section-intro-title-1"
-          v-text="$t('intro.title1')"
+          v-html="$t('intro.title1')"
       />
       <div
           class="dxlliv-section-intro-title-2"
-          v-text="$t('intro.title2')"
+          v-html="$t('intro.title2')"
       />
     </h1>
 
@@ -90,11 +90,12 @@ import {Vue3Marquee} from 'vue3-marquee'
     }
 
     @media(max-width: 769px) {
-      max-width: 350px;
+      max-width: 330px;
       line-height: 52px;
     }
 
     @media(max-width: 479px) {
+      max-width: 240px;
       font-size: 44px;
       line-height: 38px;
     }

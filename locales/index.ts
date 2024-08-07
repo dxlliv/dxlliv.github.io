@@ -1,8 +1,8 @@
 export const messages = {
     en: {
         intro: {
-            title1: "Your No Label Developer.",
-            title2: "Digital Pixel Perfectionist",
+            title1: "Digital Pixel Perfectionist.",
+            title2: "Independent Web Designer",
         },
         availability: {
             available: "Available"
