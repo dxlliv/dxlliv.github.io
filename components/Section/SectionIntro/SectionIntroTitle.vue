@@ -101,6 +101,7 @@ import {Vue3Marquee} from 'vue3-marquee'
     }
 
     @media(max-width: 340px) {
+      max-width: 230px;
       font-size: 42px;
       line-height: 36px;
     }
