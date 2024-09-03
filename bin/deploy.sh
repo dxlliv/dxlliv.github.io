@@ -2,7 +2,7 @@
 
 yarn install
 yarn generate
-rm -rf dist
+rm -rf .output
 
 # commit, then deploy on GitHub Pages
 git add .
