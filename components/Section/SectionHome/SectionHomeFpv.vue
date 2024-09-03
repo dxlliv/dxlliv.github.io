@@ -22,14 +22,14 @@ import {InstagramIcon, YoutubeIcon} from "vue3-simple-icons";
       <template v-slot:actions>
 
         <v-btn
-            href="https://instagram.com/dxlliv.mov" target="_blank"
+            href="https://instagram.com/dxshooting" target="_blank"
             size="large" rounded flat color="primary" min-width="44px" class="px-0 ml-3"
         >
           <InstagramIcon width="16px" />
         </v-btn>
 
         <v-btn
-            href="https://youtube.com/@dxvfpv" target="_blank"
+            href="https://youtube.com/@dxlliv" target="_blank"
             size="large" rounded flat color="primary" min-width="44px" class="px-0 ml-3"
         >
           <YoutubeIcon width="18px" />
@@ -37,9 +37,9 @@ import {InstagramIcon, YoutubeIcon} from "vue3-simple-icons";
 
         <v-btn
             rounded flat color="white" size="large" class="text-white ml-3"
+            href="https://dxshooting.click"
         >
           {{$t('pages.home.fpv.action')}}
-          <ContactDialog />
         </v-btn>
 
       </template>

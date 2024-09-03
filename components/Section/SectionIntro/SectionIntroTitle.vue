@@ -62,14 +62,6 @@ import {Vue3Marquee} from 'vue3-marquee'
     @media(max-width: 769px) {
       margin-bottom: 10px;
     }
-
-    @media(max-width: 285px), (max-height: 459px) {
-      display: none;
-    }
-
-    @media(min-width: 479px) and (max-width: 769px) and (max-height: 619px) {
-      display: none;
-    }
   }
 
   @media(max-width: 285px) {
@@ -104,10 +96,6 @@ import {Vue3Marquee} from 'vue3-marquee'
       max-width: 230px;
       font-size: 42px;
       line-height: 36px;
-    }
-
-    @media(max-width: 285px), (max-height: 459px) {
-      line-height: 40px;
     }
   }
 }

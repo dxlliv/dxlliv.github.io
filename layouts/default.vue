@@ -14,6 +14,7 @@
 
     </swiper-slide>
 
+    <!--
     <swiper-slide>
 
       <v-row no-gutters class="fill-height">
@@ -34,6 +35,9 @@
       </v-row>
 
     </swiper-slide>
+    -->
 
   </SliderHorizontal>
 </template>
+<script setup lang="ts">
+</script>
