@@ -1,7 +1,7 @@
 const path = require('path');
 
 export default defineNuxtConfig({
-    ssr: false,
+    ssr: true,
     app: {
         head: {
             htmlAttrs: {
