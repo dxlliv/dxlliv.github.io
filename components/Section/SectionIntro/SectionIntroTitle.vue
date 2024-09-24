@@ -1,6 +1,12 @@
 <script setup lang="ts">
 import {GithubIcon} from "vue3-simple-icons";
-import {Vue3Marquee} from 'vue3-marquee'
+import {VueWriter} from 'vue-writer'
+
+const specializationArray = [
+    'Designer',
+    'Developer',
+    'Consultant',
+]
 </script>
 
 <template>
@@ -12,8 +18,13 @@ import {Vue3Marquee} from 'vue3-marquee'
       />
       <div
           class="dxlliv-section-intro-title-2"
-          v-html="$t('intro.title2')"
-      />
+      >
+        {{$t('intro.title2')}}
+        <VueWriter
+          :array="specializationArray"
+          :eraseSpeed="0"
+        />
+      </div>
     </h1>
 
     <div class="dxlliv-links mt-4 mb-n2 mx-n2">
@@ -97,6 +108,10 @@ import {Vue3Marquee} from 'vue3-marquee'
       font-size: 42px;
       line-height: 36px;
     }
+  }
+
+  .is-typed {
+    display: inline;
   }
 }
 
