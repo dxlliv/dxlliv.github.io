@@ -30,7 +30,6 @@ export default defineNuxtConfig({
         "@fontsource/bebas-neue",
         "@fontsource/bebas-neue/400.css",
         '@mdi/font/css/materialdesignicons.css',
-        '~/assets/styles/index.scss',
     ],
     components: [
         {
