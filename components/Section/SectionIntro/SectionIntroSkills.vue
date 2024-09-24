@@ -8,11 +8,21 @@
 .dxlliv-section-intro-skills {
   position: absolute;
   bottom: -1px;
-  right: -4px;
+  left: 370px;
   max-width: 280px;
   word-spacing: 4px;
   transition: opacity 0.2s ease-in-out;
   opacity: 0.4;
+
+  @media(max-width: 959px) {
+    left: 270px;
+    max-width: 250px;
+  }
+
+  @media(max-width: 959px) {
+    left: 270px;
+    max-width: 250px;
+  }
 
   &:hover {
     opacity: 0.75;

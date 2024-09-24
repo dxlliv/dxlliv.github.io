@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {InstagramIcon} from "vue3-simple-icons";
+import {LinkedinIcon} from "vue3-simple-icons";
 </script>
 
 <template>
@@ -24,14 +24,14 @@ import {InstagramIcon} from "vue3-simple-icons";
         </v-btn>
 
         <v-btn
-            href="https://instagram.com/dxlliv" target="_blank"
+            href="https://linkedin.com/in/dxlliv" target="_blank"
             size="large" rounded flat color="primary" min-width="44px" class="px-0 ml-3"
         >
-          <InstagramIcon width="16px" />
+          <LinkedinIcon width="16px" />
         </v-btn>
 
         <v-btn
-            href="mailto:hello@dxlliv.dev" target="_blank"
+            href="mailto:hello@dxlliv.dev"
             size="large" rounded flat color="primary" min-width="44px" class="px-0 ml-3"
         >
           <v-icon icon="mdi-at" :size="20" />

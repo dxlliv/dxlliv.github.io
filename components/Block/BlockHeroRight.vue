@@ -12,7 +12,7 @@ const emit = defineEmits(['iconClick'])
 <template>
   <Block :dark="dark">
     <v-row no-gutters>
-      <v-col :lg="4" :cols="12" align-self="center" class="text-center hidden-lg-and-up">
+      <v-col :offset-lg="1" :lg="4" :cols="12" align-self="center" class="text-center hidden-lg-and-up">
 
         <BlockHeroIcon
             :avatar="avatar"
@@ -22,7 +22,7 @@ const emit = defineEmits(['iconClick'])
         />
 
       </v-col>
-      <v-col :offset="0" :lg="7" :cols="12" align-self="center" class="text-center text-lg-right">
+      <v-col :offset="0" :lg="6" :cols="12" align-self="center" class="text-center text-lg-right">
 
         <BlockHeroTitle
             :title="title"
@@ -36,7 +36,7 @@ const emit = defineEmits(['iconClick'])
         <slot name="actions"/>
 
       </v-col>
-      <v-col :lg="5" :cols="12" class="text-center align-self-center hidden-md-and-down">
+      <v-col :lg="6" :cols="12" class="text-center align-self-center hidden-md-and-down">
 
         <BlockHeroIcon
             :avatar="avatar"

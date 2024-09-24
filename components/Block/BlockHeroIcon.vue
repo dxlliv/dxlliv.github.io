@@ -9,7 +9,7 @@ defineProps<{
 <template>
   <v-icon
       v-if="icon"
-      :icon="icon" size="180"
+      :icon="icon" :size="200"
       :class="[
         'dxlliv-block__icon v-icon--big mt-n3 mt-lg-0 mb-8 mb-lg-0',
         {'text-grey': dark},
@@ -17,7 +17,7 @@ defineProps<{
       ]"
   />
 
-  <v-avatar v-else-if="avatar" size="180px" class="mb-6 no-pointer-events">
+  <v-avatar v-else-if="avatar" size="240px" class="mb-6 no-pointer-events">
     <v-img :src="avatar" alt="" />
   </v-avatar>
 </template>
@@ -28,7 +28,7 @@ defineProps<{
     opacity: 0.5;
   }
 
-  @media(max-width: 1279px) {
+  @media(max-width: 699px) {
     font-size: 150px !important;
   }
 

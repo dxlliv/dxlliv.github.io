@@ -29,7 +29,7 @@ import {InstagramIcon, YoutubeIcon} from "vue3-simple-icons";
         </v-btn>
 
         <v-btn
-            href="https://youtube.com/@dxlliv" target="_blank"
+            href="https://youtube.com/@dxshooting" target="_blank"
             size="large" rounded flat color="primary" min-width="44px" class="px-0 ml-3"
         >
           <YoutubeIcon width="18px" />
@@ -37,7 +37,7 @@ import {InstagramIcon, YoutubeIcon} from "vue3-simple-icons";
 
         <v-btn
             rounded flat color="white" size="large" class="text-white ml-3"
-            href="https://dxshooting.click"
+            href="https://instagram.com/dxshooting"
         >
           {{$t('pages.home.fpv.action')}}
         </v-btn>
@@ -51,6 +51,17 @@ import {InstagramIcon, YoutubeIcon} from "vue3-simple-icons";
 .dxlliv-section--home-fpv {
   position: relative;
   background: black;
+
+  .v-lazy:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    content: '';
+    backdrop-filter: blur(12px);
+  }
 
   video {
     position: absolute;

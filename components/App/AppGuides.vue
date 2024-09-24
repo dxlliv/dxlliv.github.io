@@ -33,6 +33,8 @@ body {
 
     .v-application {
       height: calc(100dvh - 36px) !important;
+      margin-top: 36px;
+      margin-left: 36px;
     }
   }
 }

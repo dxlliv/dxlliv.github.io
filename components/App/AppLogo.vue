@@ -18,6 +18,7 @@ withDefaults(defineProps<{
 .dxlliv-logo {
   font-family: 'minimal', serif;
   font-size: 96px;
+  font-display: block;
   line-height: 90px;
   z-index: 99;
 
