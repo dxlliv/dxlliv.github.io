@@ -25,6 +25,8 @@ const specializationArray = [
           :eraseSpeed="0"
         />
       </div>
+
+      <ContactDialog/>
     </h1>
 
     <div class="dxlliv-links mt-4 mb-n2 mx-n2">
@@ -33,18 +35,19 @@ const specializationArray = [
         <GithubIcon/>
       </a>
 
-      <a>
+      <a href="mailto:hello@dxlliv.dev">
         <v-icon
             icon="mdi-at" :size="29"
             class="mx-2 cursor-pointer"
             style="vertical-align: 1px;"
         />
 
-        <v-tooltip activator="parent" content-class="bg-grey-darken-3" location="right" :open-delay="1000">
+        <v-tooltip
+            activator="parent" content-class="bg-grey-darken-3"
+            location="right" :open-delay="1000" :offset="[0, 25]"
+        >
           hello@dxlliv.dev
         </v-tooltip>
-
-        <ContactDialog/>
       </a>
     </div>
 
