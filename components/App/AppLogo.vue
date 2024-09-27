@@ -9,13 +9,13 @@ withDefaults(defineProps<{
 </script>
 
 <template>
-  <div :class="['dxlliv-logo', `dxlliv-logo--${name}`, {'dxlliv-logo--invert': invert}]">
+  <div :class="['dx-logo', `dx-logo--${name}`, {'dx-logo--invert': invert}]">
     DX
   </div>
 </template>
 
 <style scoped lang="scss">
-.dxlliv-logo {
+.dx-logo {
   font-family: 'minimal', serif;
   font-size: 96px;
   font-display: block;

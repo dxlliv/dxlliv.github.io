@@ -8,7 +8,7 @@ defineProps<{
 <template>
   <h6
       :class="[
-          'dxlliv-block__title text-h6 mt-sm-3 mb-n2',
+          'dx-block__title text-h6 mt-sm-3 mb-n2',
           {'text-grey-lighten-2': dark},
           {'text-grey-darken-3': !dark},
       ]"
@@ -17,7 +17,7 @@ defineProps<{
 </template>
 
 <style scoped lang="scss">
-body.ios .dxlliv-block__title {
+body.ios .dx-block__title {
   font-size: 20px !important;
   letter-spacing: -1px !important;
 }

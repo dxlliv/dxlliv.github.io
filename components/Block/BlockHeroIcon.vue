@@ -11,7 +11,7 @@ defineProps<{
       v-if="icon"
       :icon="icon" :size="200"
       :class="[
-        'dxlliv-block__icon v-icon--big mt-n3 mt-lg-0 mb-8 mb-lg-0',
+        'dx-block__icon v-icon--big mt-n3 mt-lg-0 mb-8 mb-lg-0',
         {'text-grey': dark},
         {'text-grey-lighten-2': !dark},
       ]"
@@ -23,7 +23,7 @@ defineProps<{
 </template>
 
 <style scoped lang="scss">
-.dxlliv-block__icon {
+.dx-block__icon {
   &.text-grey {
     opacity: 0.5;
   }

@@ -14,7 +14,7 @@ window.addEventListener("resize", () => {
 </script>
 
 <template>
-  <div class="dxlliv-layout-guides">
+  <div class="dx-layout-guides">
     <Guides
         ref="guideX" type="horizontal"
         oncontextmenu="return false"
@@ -47,7 +47,7 @@ body {
   background: rgba(0, 0, 0, 0.25) !important;
 }
 
-.dxlliv-layout-guides {
+.dx-layout-guides {
   z-index: 1;
 
   &:before {

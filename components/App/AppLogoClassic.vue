@@ -9,7 +9,7 @@ withDefaults(defineProps<{
 </script>
 
 <template>
-  <div :class="['dxlliv-logo', `dxlliv-logo--${name}`, {'dxlliv-logo--invert': invert}]">
+  <div :class="['dx-logo', `dx-logo--${name}`, {'dx-logo--invert': invert}]">
     <v-img>
       <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="105.51 129.82 188.49 140.18">
         <path
@@ -22,7 +22,7 @@ withDefaults(defineProps<{
 </template>
 
 <style scoped lang="scss">
-.dxlliv-logo {
+.dx-logo {
   &--home {
     position: absolute;
     top: 74px;

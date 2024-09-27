@@ -24,7 +24,7 @@ async function onFormSend() {
 
 <template>
   <form
-      class="dxlliv-shop__item__contact"
+      class="dx-shop__item__contact"
       autocomplete="off"
       ref="form"
   >
@@ -55,7 +55,7 @@ async function onFormSend() {
 </template>
 
 <style scoped lang="scss">
-.dxlliv-shop__item__contact {
+.dx-shop__item__contact {
   :deep(.v-input__details) {
     min-height: 20px;
   }

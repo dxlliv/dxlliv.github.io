@@ -13,14 +13,14 @@ setTimeout(() => {
 
 <template>
   <v-fade-transition>
-    <div class="dxlliv-splash" v-if="!ready || !readyFake">
+    <div class="dx-splash" v-if="!ready || !readyFake">
       <AppLogo splash size="86px"/>
     </div>
   </v-fade-transition>
 </template>
 
 <style scoped lang="scss">
-.dxlliv-splash {
+.dx-splash {
   position: fixed;
   top: 0;
   left: 0;
@@ -30,7 +30,7 @@ setTimeout(() => {
   cursor: wait;
   z-index: 9999999;
 
-  .dxlliv-logo {
+  .dx-logo {
     position: fixed;
     top: 50%;
     left: 50%;

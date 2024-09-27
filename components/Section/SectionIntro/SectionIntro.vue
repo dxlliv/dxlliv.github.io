@@ -9,10 +9,10 @@ function onIntroTitleIntersect(isIntersecting: boolean) {
 </script>
 
 <template>
-  <Section class="dxlliv-section-intro" height="100%">
+  <Section class="dx-section-intro" height="100%">
     <AppBackground />
 
-    <div class="dxlliv-secton-intro__inner">
+    <div class="dx-secton-intro__inner">
       <AppLogo name="home" size="86px" title="dxlliv" />
       <SectionIntroTitle v-intersect="onIntroTitleIntersect"/>
     </div>
@@ -20,7 +20,7 @@ function onIntroTitleIntersect(isIntersecting: boolean) {
 </template>
 
 <style scoped lang="scss">
-.dxlliv-secton-intro__inner {
+.dx-secton-intro__inner {
   position: absolute;
   top: 72px;
   bottom: 72px;

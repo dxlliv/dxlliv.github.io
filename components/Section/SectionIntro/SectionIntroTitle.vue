@@ -10,14 +10,14 @@ const specializationArray = [
 </script>
 
 <template>
-  <div class="dxlliv-section-intro-title">
+  <div class="dx-section-intro-title">
     <h1 class="font-weight text-uppercase cursor-pointer">
       <div
-          class="dxlliv-section-intro-title-1"
+          class="dx-section-intro-title-1"
           v-html="$t('intro.title1')"
       />
       <div
-          class="dxlliv-section-intro-title-2"
+          class="dx-section-intro-title-2"
       >
         {{$t('intro.title2')}}
         <VueWriter
@@ -29,7 +29,7 @@ const specializationArray = [
       <ContactDialog/>
     </h1>
 
-    <div class="dxlliv-links mt-4 mb-n2 mx-n2">
+    <div class="dx-links mt-4 mb-n2 mx-n2">
 
       <a href="https://github.com/dxlliv" target="_blank" class="mx-2">
         <GithubIcon/>
@@ -57,7 +57,7 @@ const specializationArray = [
 </template>
 
 <style scoped lang="scss">
-.dxlliv-section-intro-title {
+.dx-section-intro-title {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -118,7 +118,7 @@ const specializationArray = [
   }
 }
 
-body.ios .dxlliv-section-intro-title h1 {
+body.ios .dx-section-intro-title h1 {
   letter-spacing: -3.5px;
 
   @media(max-width: 1379px) {
