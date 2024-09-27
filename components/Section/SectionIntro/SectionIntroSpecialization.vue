@@ -3,11 +3,11 @@ import {NuxtdotjsIcon} from 'vue3-simple-icons'
 </script>
 
 <template>
-  <div class="dxlliv-specialization">
+  <div class="dx-specialization">
 
-    <SectionIntroCanvas class="dxlliv-specialization__canvas" />
+    <SectionIntroCanvas class="dx-specialization__canvas" />
 
-    <div class="dxlliv-specialization__inner">
+    <div class="dx-specialization__inner">
       <a href="https://nuxt.com" target="_blank">
         <NuxtdotjsIcon />
       </a>
@@ -18,7 +18,7 @@ import {NuxtdotjsIcon} from 'vue3-simple-icons'
 </template>
 
 <style scoped lang="scss">
-.dxlliv-specialization {
+.dx-specialization {
   position: absolute;
   top: -24px;
   right: 20px;
@@ -70,7 +70,7 @@ import {NuxtdotjsIcon} from 'vue3-simple-icons'
   }
 }
 
-body.ios .dxlliv-specialization {
+body.ios .dx-specialization {
   &__inner span {
     letter-spacing: -1.5px;
   }

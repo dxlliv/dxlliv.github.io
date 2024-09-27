@@ -7,7 +7,7 @@ const blockElement: Ref<HTMLElement|null> = ref(null)
 
 function onWindowScrollEnd() {
   if (blockElement.value) {
-    const sectionElement: HTMLElement|null = blockElement.value.closest('.dxlliv-section')
+    const sectionElement: HTMLElement|null = blockElement.value.closest('.dx-section')
 
     if (sectionElement) {
       // scroll to the beginning of the block

@@ -13,7 +13,7 @@ watch(() => route.name, value => {
 
 <template>
   <swiper-container
-      class="dxlliv-slider-horizontal"
+      class="dx-slider-horizontal"
       init="false"
   >
     <slot />

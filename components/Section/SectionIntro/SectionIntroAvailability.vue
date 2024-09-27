@@ -1,5 +1,5 @@
 <template>
-  <div class="dxlliv-availability">
+  <div class="dx-availability">
 
     <svg
         viewBox="0 0 100 100"
@@ -43,7 +43,7 @@
 </template>
 
 <style scoped lang="scss">
-.dxlliv-availability {
+.dx-availability {
   position: absolute;
   top: 74px;
   right: 64px;

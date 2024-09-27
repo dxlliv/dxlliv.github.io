@@ -5,15 +5,15 @@ defineProps<{
 </script>
 
 <template>
-  <div :class="['dxlliv-block', dark ? 'dxlliv-block--dark' : '']">
-    <div class="dxlliv-block__inner">
+  <div :class="['dx-block', dark ? 'dx-block--dark' : '']">
+    <div class="dx-block__inner">
       <slot/>
     </div>
   </div>
 </template>
 
 <style scoped lang="scss">
-.dxlliv-block {
+.dx-block {
   position: relative;
   display: grid;
   align-content: center;

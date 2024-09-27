@@ -1,11 +1,11 @@
 <template>
-  <div class="dxlliv-section-intro-skills">
+  <div class="dx-section-intro-skills">
     <SectionIntroMarquee :text="$t('skills') + '&nbsp;'" />
   </div>
 </template>
 
 <style scoped lang="scss">
-.dxlliv-section-intro-skills {
+.dx-section-intro-skills {
   position: absolute;
   bottom: -1px;
   left: 370px;

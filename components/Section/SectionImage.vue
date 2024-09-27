@@ -15,7 +15,7 @@ function onImageInnerIntersect(isIntersecting: boolean) {
 </script>
 
 <template>
-  <div class="dxlliv-section-image bg-black">
+  <div class="dx-section-image bg-black">
     <v-img
         height="100dvh" :height="height" cover
         :src="src" alt=""
@@ -31,7 +31,7 @@ function onImageInnerIntersect(isIntersecting: boolean) {
 </template>
 
 <style scoped lang="scss">
-.dxlliv-section-image {
+.dx-section-image {
   height: v-bind('height');
 
   &__block {
@@ -48,7 +48,7 @@ function onImageInnerIntersect(isIntersecting: boolean) {
     }
   }
 
-  :deep(.dxlliv-logo) {
+  :deep(.dx-logo) {
     opacity: 0.35;
   }
 }

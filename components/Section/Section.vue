@@ -6,15 +6,15 @@ defineProps<{
 </script>
 
 <template>
-  <div :class="['dxlliv-section', {'dxlliv-section--dark': dark}]">
-    <div class="dxlliv-section__inner">
+  <div :class="['dx-section', {'dx-section--dark': dark}]">
+    <div class="dx-section__inner">
       <slot />
     </div>
   </div>
 </template>
 
 <style scoped lang="scss">
-.dxlliv-section {
+.dx-section {
   position: relative;
   display: grid;
   align-content: center;

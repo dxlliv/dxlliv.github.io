@@ -1,5 +1,5 @@
 <template>
-  <div id="dxlliv-pixels" />
+  <div id="dx-pixels" />
 </template>
 
 <script setup>
@@ -34,7 +34,7 @@ function backgroundSetup(p5) {
     p5.createCanvas(
         16,
         176,
-    ).parent("dxlliv-pixels")
+    ).parent("dx-pixels")
 
     background.mouse.position = {
       x: p5.mouseX,
@@ -74,7 +74,7 @@ onBeforeUnmount(() => background.p5.remove())
 </script>
 
 <style lang="scss">
-#dxlliv-pixels {
+#dx-pixels {
   position: relative;
   width: 16px;
   height: 176px;

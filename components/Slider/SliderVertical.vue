@@ -16,7 +16,7 @@ onMounted(() => {
 <template>
   <swiper-container
       init="false"
-      class="dxlliv-slider-vertical fill-height"
+      class="dx-slider-vertical fill-height"
   >
     <slot />
   </swiper-container>
