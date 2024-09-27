@@ -9,7 +9,7 @@ export const useSliderHorizontalStore = defineStore('slider/horizontal', () => {
     const swiperIsEnd = ref(false)
 
     function initialize() {
-        instance.value = document.querySelector('.dxlliv-slider-horizontal')
+        instance.value = document.querySelector('.dx-slider-horizontal')
 
         const swiperConfig = {
             spaceBetween: 24,

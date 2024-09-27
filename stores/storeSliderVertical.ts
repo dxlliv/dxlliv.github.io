@@ -11,7 +11,7 @@ export const useSliderVerticalStore = defineStore('slider/vertical', () => {
     const swiperIsEnd = ref(false)
 
     function initialize(page: string, initialSlide: number) {
-        instance.value = document.querySelector('.dxlliv-slider-vertical')
+        instance.value = document.querySelector('.dx-slider-vertical')
 
         const swiperConfig = {
             modules: [Mousewheel],
