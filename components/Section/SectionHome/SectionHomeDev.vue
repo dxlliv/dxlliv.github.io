@@ -24,7 +24,7 @@ import {LinkedinIcon} from "vue3-simple-icons";
         </v-btn>
 
         <v-btn
-            href="mailto:hello@dxlliv.dev"
+            href="https://instagram.com/dxlliv"
             size="large" rounded flat color="primary" min-width="44px" class="px-0 ml-3"
         >
           <v-icon icon="mdi-at" :size="20" />
