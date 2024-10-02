@@ -2,7 +2,7 @@ export const messages = {
     en: {
         intro: {
             title1: "Digital Pixel Perfectionist.",
-            title2: "Independent <br class='hidden-md-and-up' />Web",
+            title2: "Independent <br class='hidden-md-and-up' />Web ",
         },
         availability: {
             available: "Available"

@@ -19,7 +19,7 @@ const specializationArray = [
       <div
           class="dx-section-intro-title-2"
       >
-        {{$t('intro.title2')}}
+        <span v-html="$t('intro.title2')" />
         <VueWriter
           :array="specializationArray"
           :eraseSpeed="0"
