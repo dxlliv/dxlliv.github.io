@@ -32,7 +32,7 @@ defineProps<{
     font-size: 150px !important;
   }
 
-  @media(max-height: 699px) and (max-width: 1279px) {
+  @media(max-height: 599px) and (max-width: 1279px) {
     display: none;
   }
 }
