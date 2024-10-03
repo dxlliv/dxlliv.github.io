@@ -6,7 +6,7 @@ import {InstagramIcon, YoutubeIcon} from "vue3-simple-icons";
   <Section height="100%" class="dx-section--home-fpv">
 
     <v-lazy class="no-pointer-events" transition="fade-transition">
-      <video src="/media/dxvfpv.mp4" loop muted autoplay />
+      <video src="/media/dxvfpv.mp4" loop playsinline muted autoplay />
     </v-lazy>
 
     <BlockHeroRight
