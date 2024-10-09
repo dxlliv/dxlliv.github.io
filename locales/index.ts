@@ -1,8 +1,8 @@
 export const messages = {
     en: {
         intro: {
-            title1: "Digital Pixel Perfectionist.",
-            title2: "Independent <br class='hidden-sm-and-up' />Web ",
+            title1: "Digital Pixel <br />Perfectionist.",
+            title2: "Independent <br />Web ",
         },
         availability: {
             available: "Available"

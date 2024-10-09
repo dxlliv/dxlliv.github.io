@@ -70,11 +70,17 @@ const specializationArray = [
     zoom: 1.35;
   }
 
+  @media(min-width: 880px) {
+    :deep(br) {
+      display: none;
+    }
+  }
+
   &-1 {
     margin-bottom: -2px;
 
-    @media(max-width: 769px) {
-      margin-bottom: 10px;
+    @media(max-width: 879px) {
+      margin-bottom: 12px;
     }
   }
 
@@ -91,25 +97,24 @@ const specializationArray = [
     margin-left: -2px;
 
     @media(max-width: 959px) {
-      font-size: 60px;
+      font-size: 68px;
+      line-height: 62px;
+    }
+
+    @media(max-width: 879px) {
+      min-width: 300px;
       line-height: 58px;
     }
 
-    @media(max-width: 769px) {
-      min-width: 300px;
-      line-height: 52px;
-    }
-
     @media(max-width: 479px) {
-      max-width: 240px;
-      font-size: 44px;
-      line-height: 38px;
+      font-size: 50px;
+      line-height: 42px;
     }
 
     @media(max-width: 340px) {
       max-width: 230px;
-      font-size: 42px;
-      line-height: 36px;
+      font-size: 44px;
+      line-height: 40px;
     }
   }
 
