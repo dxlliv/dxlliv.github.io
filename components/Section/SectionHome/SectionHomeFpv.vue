@@ -37,7 +37,7 @@ import {InstagramIcon, YoutubeIcon} from "vue3-simple-icons";
 
         <v-btn
             rounded flat color="white" size="large" class="text-white ml-3"
-            href="https://instagram.com/dxshooting"
+            href="https://dxshooting.click"
         >
           {{$t('pages.home.fpv.action')}}
         </v-btn>
