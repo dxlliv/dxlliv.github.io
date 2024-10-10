@@ -40,9 +40,9 @@ body {
     padding: 30px 0 0 30px;
 
     .v-application {
-      height: calc(100dvh - 30px) !important;
-      margin-top: 30px;
-      margin-left: 30px;
+      height: calc(100dvh - 32px) !important;
+      margin-top: 32px;
+      margin-left: 32px;
     }
   }
 }
@@ -99,7 +99,7 @@ body {
       height: 100%;
 
       @media(max-width: 479px) {
-        top: 24px;
+        top: 22px;
         left: -4px;
       }
     }
