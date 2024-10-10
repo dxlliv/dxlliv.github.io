@@ -30,7 +30,7 @@ import {InstagramIcon, YoutubeIcon} from "vue3-simple-icons";
 
         <v-btn
             href="https://youtube.com/@dxshooting" target="_blank"
-            size="large" rounded flat color="primary" min-width="44px" class="hidden-xs px-0 ml-3"
+            size="large" rounded flat color="primary" min-width="44px" class="px-0 ml-3"
         >
           <YoutubeIcon width="18px" />
         </v-btn>

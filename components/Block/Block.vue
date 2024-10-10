@@ -64,6 +64,12 @@ defineProps<{
       :deep(p) {
         text-wrap: pretty;
       }
+
+      :deep(.v-btn) {
+        @media(max-width: 440px) {
+          zoom: 0.85;
+        }
+      }
     }
 
     @media(max-width: 560px) {
