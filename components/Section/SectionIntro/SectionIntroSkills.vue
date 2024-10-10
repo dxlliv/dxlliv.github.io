@@ -54,7 +54,7 @@
     }
   }
 
-  @media(max-width: 769px) {
+  @media(max-width: 879px) {
     display: none !important;
   }
 }

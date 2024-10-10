@@ -36,13 +36,13 @@ function onIntroTitleIntersect(isIntersecting: boolean) {
   @media(max-width: 399px), (max-height: 599px) {
     top: 48px;
     bottom: 48px;
-    left: 28px;
+    left: 32px;
   }
 
   @media(max-height: 499px) {
     top: 32px;
     bottom: 32px;
-    left: 24px;
+    left: 28px;
   }
 }
 </style>

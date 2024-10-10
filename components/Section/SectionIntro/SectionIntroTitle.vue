@@ -102,7 +102,7 @@ const specializationArray = [
     }
 
     @media(max-width: 879px) {
-      min-width: 300px;
+      min-width: 320px;
       line-height: 58px;
     }
 

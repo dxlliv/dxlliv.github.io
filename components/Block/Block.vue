@@ -39,7 +39,7 @@ defineProps<{
       padding: 0 24px;
       margin-left: 0;
       box-sizing: border-box;
-      font-size: 3.8vw;
+      font-size: 15px;
 
       :deep(.v-avatar) {
         width: 32vw !important;
@@ -76,12 +76,8 @@ defineProps<{
       padding: 0 12px;
     }
 
-    @media(max-width: 440px) {
-      font-size: 4.1vw;
-    }
-
     @media(max-width: 400px) {
-      font-size: 3.8vw;
+      font-size: 15px;
     }
 
     @media(max-width: 1279px) and (max-height: 680px) {

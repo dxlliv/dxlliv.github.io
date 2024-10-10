@@ -69,8 +69,8 @@ body {
     z-index: 99;
 
     @media(max-width: 479px) {
-      width: 28px;
-      height: 28px;
+      width: 32px;
+      height: 32px;
     }
   }
 
@@ -87,8 +87,8 @@ body {
       width: 100vw;
 
       @media(max-width: 479px) {
-        top: -6px;
-        left: 24px;
+        top: -4px;
+        left: 28px;
       }
     }
     &.scena-guides-vertical {
@@ -100,7 +100,7 @@ body {
 
       @media(max-width: 479px) {
         top: 24px;
-        left: -6px;
+        left: -4px;
       }
     }
   }
