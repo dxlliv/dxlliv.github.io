@@ -35,7 +35,7 @@ withDefaults(defineProps<{
       font-size: 120px;
       line-height: 80px;
 
-      @media(min-height: 700px) {
+      @media(min-height: 800px) {
         top: 50px;
       }
     }
@@ -49,7 +49,11 @@ withDefaults(defineProps<{
       font-size: 90px;
     }
 
-    @media(max-height: 599px) {
+    @media(max-height: 529px) and (min-width: 880px) {
+      display: none;
+    }
+
+    @media(max-height: 599px) and (max-width: 879px) {
       display: none;
     }
   }

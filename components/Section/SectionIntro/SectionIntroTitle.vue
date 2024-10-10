@@ -3,8 +3,8 @@ import {GithubIcon} from "vue3-simple-icons";
 import {VueWriter} from 'vue-writer'
 
 const specializationArray = [
-    'Designer',
-    'Developer',
+    'Web Designer',
+    'Web Developer',
     'Consultant',
 ]
 </script>
@@ -111,7 +111,7 @@ const specializationArray = [
       line-height: 42px;
     }
 
-    @media(max-width: 340px) {
+    @media(max-width: 380px) {
       max-width: 230px;
       font-size: 44px;
       line-height: 40px;

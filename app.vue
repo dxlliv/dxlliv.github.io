@@ -22,7 +22,7 @@ onMounted(() => {
 
     <AppSplash />
 
-    <client-only v-if="$vuetify.display.width > 699 && $vuetify.display.height > 499">
+    <client-only>
       <AppGuides />
     </client-only>
 

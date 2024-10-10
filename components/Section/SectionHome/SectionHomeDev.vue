@@ -18,9 +18,10 @@ import {InstagramIcon, LinkedinIcon} from "vue3-simple-icons";
 
         <v-btn
             rounded flat color="primary" size="large"
+            :href="$vuetify.display.smAndUp ? 'mailto:hello@dxlliv.dev' : null"
         >
           {{$t('pages.home.dev.action')}}
-          <ContactDialog />
+          <ContactDialog v-if="$vuetify.display.smAndUp" />
         </v-btn>
 
         <v-btn

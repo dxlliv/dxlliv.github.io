@@ -71,7 +71,11 @@ defineProps<{
     }
 
     @media(max-width: 440px) {
-      font-size: 4.4vw;
+      font-size: 4.1vw;
+    }
+
+    @media(max-width: 400px) {
+      font-size: 3.8vw;
     }
 
     @media(max-width: 1279px) and (max-height: 680px) {

@@ -28,8 +28,10 @@ defineProps<{
     opacity: 0.5;
   }
 
-  @media(max-width: 699px) {
+  @media(max-width: 699px), (max-height: 699px) {
     font-size: 150px !important;
+    height: 160px !important;
+    width: 160px !important;
   }
 
   @media(max-height: 599px) and (max-width: 1279px) {

@@ -20,5 +20,16 @@ defineProps<{
 body.ios .dx-block__title {
   font-size: 20px !important;
   letter-spacing: -1px !important;
+
+  @media(max-width: 479px) {
+    font-size: 18px !important;
+  }
+}
+
+.dx-block__title {
+  @media(max-width: 479px) {
+    font-size: 18px !important;
+    letter-spacing: -1px !important;
+  }
 }
 </style>

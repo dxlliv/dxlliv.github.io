@@ -28,13 +28,21 @@ window.addEventListener("resize", () => {
 
 <style lang="scss">
 body {
-  @media (min-width: 700px) and (min-height: 499px) {
-    padding: 36px 0 0 36px;
+  padding: 36px 0 0 36px;
+
+  .v-application {
+    height: calc(100dvh - 36px) !important;
+    margin-top: 36px;
+    margin-left: 36px;
+  }
+
+  @media(max-width: 479px) {
+    padding: 30px 0 0 30px;
 
     .v-application {
-      height: calc(100dvh - 36px) !important;
-      margin-top: 36px;
-      margin-left: 36px;
+      height: calc(100dvh - 30px) !important;
+      margin-top: 30px;
+      margin-left: 30px;
     }
   }
 }
@@ -59,6 +67,11 @@ body {
     height: 36px;
     content: '';
     z-index: 99;
+
+    @media(max-width: 479px) {
+      width: 30px;
+      height: 30px;
+    }
   }
 
   .scena-guides-manager {
@@ -72,6 +85,11 @@ body {
       left: 36px;
       height: 36px;
       width: 100vw;
+
+      @media(max-width: 479px) {
+        top: -5px;
+        left: 30px;
+      }
     }
     &.scena-guides-vertical {
       position: fixed;
@@ -79,6 +97,11 @@ body {
       left: 0;
       width: 36px;
       height: 100%;
+
+      @media(max-width: 479px) {
+        top: 30px;
+        left: -5px;
+      }
     }
   }
 }
