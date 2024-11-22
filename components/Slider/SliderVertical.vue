@@ -3,13 +3,13 @@ const storeSliderMainColumn = useSliderVerticalStore()
 
 const props = withDefaults(defineProps<{
   initialSlide?: number
-  pageName: string
+  name: string
 }>(), {
   initialSlide: 0
 })
 
 onMounted(() => {
-  storeSliderMainColumn.initialize(props.pageName, props.initialSlide)
+  storeSliderMainColumn.initialize(props.name, props.initialSlide)
 })
 </script>
 

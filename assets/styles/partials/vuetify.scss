@@ -6,10 +6,10 @@ body {
       &__wrap {
         height: inherit;
         min-height: inherit;
-        padding: 24px;
+        padding: 24px 0;
 
         @media(max-width: 479px) {
-          padding: 18px;
+          padding: 18px 0;
         }
       }
     }

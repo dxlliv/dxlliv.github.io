@@ -14,7 +14,7 @@ watch(() => route.name, value => {
 <template>
   <swiper-container
       class="dx-slider-horizontal"
-      space-between="28"
+      space-between="0"
       init="false"
   >
     <slot />

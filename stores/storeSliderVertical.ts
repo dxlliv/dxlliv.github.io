@@ -25,17 +25,11 @@ export const useSliderVerticalStore = defineStore('slider/vertical', () => {
 
         Object.assign(instance.value, swiperConfig);
 
-        /*
-        instance.value.addEventListener('slidechange', function (swiper) {
-            if (page === 'index') {
-                if (window.innerWidth > 1279 && instance.value.swiper && instance.value.swiper.previousIndex === 0 && instance.value.swiper.activeIndex === 1) {
-                    instance.value.swiper.slideTo(2, 500)
-                }
-            }
-        });
-        */
-
         instance.value.initialize()
+    }
+
+    function slideToPlannerImage() {
+        instance.value.swiper.slideTo(1)
     }
 
     return {
@@ -44,6 +38,7 @@ export const useSliderVerticalStore = defineStore('slider/vertical', () => {
         swiperIsBeginning,
         swiperIsEnd,
         initialize,
+        slideToPlannerImage,
     }
 })
 
