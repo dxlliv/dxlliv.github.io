@@ -1,7 +1,6 @@
 <script setup lang="ts">
-withDefaults(defineProps<{
+const props = withDefaults(defineProps<{
   name?: string
-  size?: string
   invert?: boolean
 }>(), {
   name: 'default'
@@ -17,19 +16,30 @@ withDefaults(defineProps<{
 <style scoped lang="scss">
 .dx-logo {
   font-family: 'minimal', serif;
-  font-size: 96px;
   font-display: block;
   line-height: 90px;
   z-index: 99;
 
+  &--splash {
+    font-size: 128px;
+
+    @media(max-width: 599px) {
+      font-size: 96px;
+    }
+  }
+
   &--home {
     position: absolute;
-    top: 30px;
+    top: 57px;
     left: 0;
     margin-left: -2px;
     text-align: left;
     font-size: 140px;
     color: black;
+
+    @media(max-width: 1279px) {
+      top: 30px;
+    }
 
     @media(max-width: 959px) {
       font-size: 120px;

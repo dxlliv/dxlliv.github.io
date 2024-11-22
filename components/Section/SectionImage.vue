@@ -1,7 +1,6 @@
 <script setup lang="ts">
 withDefaults(defineProps<{
   intersectScroll?: boolean
-  height?: string
   src: string
 }>(), {
   intersectScroll: true
@@ -15,9 +14,9 @@ function onImageInnerIntersect(isIntersecting: boolean) {
 </script>
 
 <template>
-  <div class="dx-section-image bg-black">
+  <div class="dx-section-image bg-white">
     <v-img
-        height="100dvh" :height="height" cover
+        height="100dvh" cover
         :src="src" alt=""
     >
       <Block

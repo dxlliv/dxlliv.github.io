@@ -9,5 +9,6 @@
   right: 0;
   bottom: 0;
   width: 50vw;
+  opacity: 0.4;
 }
 </style>

@@ -59,9 +59,9 @@ const specializationArray = [
 <style scoped lang="scss">
 .dx-section-intro-title {
   position: absolute;
-  bottom: 0;
   left: 0;
-  right: 64px;
+  right: 0;
+  bottom: 9px;
   display: table;
   letter-spacing: -0.6px;
 

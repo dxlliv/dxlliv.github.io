@@ -1,20 +1,20 @@
 <script setup lang="ts">
 const ready = ref(false)
-const readyFake = ref(false)
+const delay = ref(true)
 
 onMounted(() => {
   ready.value = true
 })
 
 setTimeout(() => {
-  readyFake.value = true
+  delay.value = true
 }, 1500)
 </script>
 
 <template>
   <v-fade-transition>
-    <div class="dx-splash" v-if="!ready || !readyFake">
-      <AppLogo splash size="86px"/>
+    <div class="dx-splash" v-if="!ready || !delay">
+      <AppLogo name="splash"/>
     </div>
   </v-fade-transition>
 </template>

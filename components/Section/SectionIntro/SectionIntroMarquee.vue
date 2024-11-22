@@ -7,7 +7,7 @@ defineProps<{
 </script>
 
 <template>
-  <Vue3Marquee :duration="96">
+  <Vue3Marquee :duration="40">
     <span v-html="text" />
   </Vue3Marquee>
 </template>

@@ -13,7 +13,7 @@ const emit = defineEmits(['iconClick'])
 <template>
   <Block>
     <v-row no-gutters>
-      <v-col :offset-lg="1" :lg="4" :cols="12" class="text-center align-self-center">
+      <v-col :offset-lg="1" :lg="3" :cols="12" class="text-center align-self-center">
 
         <BlockHeroIcon
             :avatar="avatar"
@@ -23,7 +23,7 @@ const emit = defineEmits(['iconClick'])
         />
 
       </v-col>
-      <v-col :offset-lg="1" :lg="6" :cols="12" class="text-center text-lg-left">
+      <v-col :offset-lg="1" :lg="7" :cols="12" class="text-center text-lg-left">
 
         <BlockHeroTitle
             :title="title"

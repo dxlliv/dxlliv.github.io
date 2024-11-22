@@ -6,8 +6,7 @@ useHead({
 })
 
 onMounted(() => {
-  plannerStore.imageSrc = 'https://raw.githubusercontent.com/dxlliv/instagram/main/public/user/instagram/dxlliv/media/post-6x1.jpg'
-  plannerStore.imageSelectorCenter = false
+  plannerStore.imageActive = '6x1'
 })
 </script>
 
@@ -17,11 +16,14 @@ onMounted(() => {
   </swiper-slide>
 
   <swiper-slide>
-    <SectionHomeMe/>
+    <SectionImage
+        class="fill-height"
+        :src="plannerMediaPath(plannerStore.imageActive)"
+    />
   </swiper-slide>
 
   <swiper-slide>
-    <SectionHomeFpv/>
+    <SectionHomeMe/>
   </swiper-slide>
 
   <swiper-slide>
@@ -30,10 +32,7 @@ onMounted(() => {
 
   <!--
   <swiper-slide>
-    <SectionImage
-        class="fill-height"
-        :src="plannerStore.imageSrc"
-    />
+    <SectionHomeFpv/>
   </swiper-slide>
   -->
 

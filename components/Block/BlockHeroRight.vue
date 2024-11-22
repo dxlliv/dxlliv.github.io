@@ -12,7 +12,7 @@ const emit = defineEmits(['iconClick'])
 <template>
   <Block :dark="dark">
     <v-row no-gutters>
-      <v-col :offset-lg="1" :lg="4" :cols="12" align-self="center" class="text-center hidden-lg-and-up">
+      <v-col :offset-lg="1" :lg="3" :cols="12" align-self="center" class="text-center hidden-lg-and-up">
 
         <BlockHeroIcon
             :avatar="avatar"
