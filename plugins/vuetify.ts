@@ -17,6 +17,7 @@ export default defineNuxtPlugin({
     async setup(nuxtApp) {
         nuxtApp.vueApp.use(
             createVuetify({
+                ssr: true,
                 components,
                 directives,
                 icons: {
