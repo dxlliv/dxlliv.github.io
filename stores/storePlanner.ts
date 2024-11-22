@@ -1,10 +1,8 @@
 export const usePlannerStore = defineStore('planner', () => {
-    const imageSelectorCenter = ref(false)
-    const imageSrc = ref('')
+    const imageActive = ref('')
 
     return {
-        imageSrc,
-        imageSelectorCenter,
+        imageActive,
     }
 })
 
