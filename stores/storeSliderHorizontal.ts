@@ -40,6 +40,10 @@ export const useSliderHorizontalStore = defineStore('slider/horizontal', () => {
         swiper.value.update()
     }
 
+    function slideToMainColumn() {
+        instance.value.swiper.slideTo(0)
+    }
+
     return {
         instance,
         swiper,
@@ -47,6 +51,7 @@ export const useSliderHorizontalStore = defineStore('slider/horizontal', () => {
         swiperIsEnd,
         initialize,
         update,
+        slideToMainColumn,
     }
 })
 

@@ -4,11 +4,19 @@ defineProps<{
 }>()
 
 const plannerStore = usePlannerStore()
+const sliderHorizontalStore = useSliderHorizontalStore()
 const sliderVerticalStore = useSliderVerticalStore()
 
 function onPlannerMediaClick(id: string) {
-  plannerStore.imageActive = id
   sliderVerticalStore.slideToPlannerImage()
+
+  setTimeout(() => {
+    sliderHorizontalStore.slideToMainColumn()
+  }, 400)
+
+  setTimeout(() => {
+    plannerStore.imageActive = id
+  }, 800)
 }
 
 const imageProp = {
