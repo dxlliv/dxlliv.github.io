@@ -49,8 +49,12 @@ defineProps<{
 
 <style scoped lang="scss">
 .dxlliv-planner__info {
+  @media(max-width: 959px) {
+    aspect-ratio: inherit !important;
+  }
+
   &--compact {
-    aspect-ratio: 2/1 !important;
+    height: 100%;
   }
 
   :deep(.v-card-title) {
@@ -89,12 +93,6 @@ defineProps<{
       left: 16px;
       right: 16px;
       bottom: 4px;
-    }
-
-    @media(max-width: 599px) {
-      left: 8px;
-      right: 8px;
-      bottom: 0;
     }
 
     @media(max-width: 350px) {

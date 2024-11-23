@@ -20,7 +20,7 @@ function onPlannerImageSelect(value: string) {
   <SliderHorizontal>
 
     <swiper-slide>
-      <SliderHorizontalSlideCard class="mx-6">
+      <SliderHorizontalSlideCard>
 
         <SliderVertical :name="$route.name">
           <slot/>
@@ -30,16 +30,15 @@ function onPlannerImageSelect(value: string) {
     </swiper-slide>
 
     <swiper-slide>
-      <SliderHorizontalSlideRow class="mx-6 mx-lg-0">
-        <v-col :cols="12" :md="6" class="d-flex align-center">
+      <SliderHorizontalSlideRow>
+        <SliderHorizontalSlideRowColumn margin :cols="12" :md="6" class="d-flex align-center">
 
           <ProjectPlanner
               :center="projectPlannerStore.imageSelectorCenter"
               @select="onPlannerImageSelect"
-              class="mr-lg-6"
           />
 
-        </v-col>
+        </SliderHorizontalSlideRowColumn>
         <v-col :cols="12" :md="6" class="text-center hidden-sm-and-down" align-self="center">
 
           <v-row class="fill-height">

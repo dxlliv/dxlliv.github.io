@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import {GithubIcon,InstagramIcon} from "vue3-simple-icons";
 import {useDisplay} from "vuetify";
 
 defineProps<{
@@ -17,56 +16,54 @@ const plannerSmart = computed(() => {
 
 <template>
   <v-card
-      :class="['dxlliv-planner mx-auto py-1']"
+      :class="['dxlliv-planner d-flex flex-column mx-auto py-1', {'fill-height': $vuetify.display.smAndDown}]"
       flat color="transparent"
-      width="100%" :max-width="500"
+      width="100%"
   >
 
-    <v-row class="dxlliv-planner__row-1 mx-n2">
-      <v-col class="pa-2">
-        <ProjectPlannerImage image="2" />
-      </v-col>
-      <v-col class="pa-2">
-        <ProjectPlannerImage image="5" />
-      </v-col>
-    </v-row>
+    <div class="flex-grow-0 mt-1">
+      <v-row class="dxlliv-planner__row-1 mx-n2">
+        <v-col class="pa-2">
+          <ProjectPlannerImage image="2" />
+        </v-col>
+        <v-col class="pa-2">
+          <ProjectPlannerImage image="5" />
+        </v-col>
+      </v-row>
 
-    <v-row
-        class="dxlliv-planner__row-1 mx-n2"
-        v-if="$vuetify.display.smAndDown && $vuetify.display.height > 880"
-    >
-      <v-col class="pa-2">
-        <ProjectPlannerImage image="6x1" />
-      </v-col>
-      <v-col class="pa-2">
-        <ProjectPlannerImage image="6x2" />
-      </v-col>
-    </v-row>
+      <v-row
+          class="dxlliv-planner__row-2 mx-n2"
+          v-if="$vuetify.display.smAndDown"
+      >
+        <v-col class="pa-2">
+          <ProjectPlannerImage image="6x1" />
+        </v-col>
+        <v-col class="pa-2">
+          <ProjectPlannerImage image="6x2" />
+        </v-col>
+      </v-row>
+    </div>
 
-    <v-row
-        class="mx-n2"
-        v-if="$vuetify.display.mdAndUp"
-    >
-      <v-col class="pa-2">
-        <ProjectPlannerImage image="6x1" />
-      </v-col>
-      <v-col class="pa-2">
+    <div class="flex-grow-1 mt-5">
+      <v-row
+          class="mx-n2"
+          v-if="$vuetify.display.mdAndUp"
+      >
+        <v-col class="pa-2">
+          <ProjectPlannerImage image="6x1" />
+        </v-col>
+        <v-col class="pa-2">
 
-        <ProjectPlannerInfo :smart="plannerSmart" />
-      </v-col>
-    </v-row>
+          <ProjectPlannerInfo :smart="plannerSmart" />
+        </v-col>
+      </v-row>
 
-    <v-row
-        class="mx-n2"
-        v-else
-    >
-      <v-col class="pa-2">
-        <ProjectPlannerInfo
-            :smart="plannerSmart"
-            :compact="$vuetify.display.smAndDown"
-        />
-      </v-col>
-    </v-row>
+      <ProjectPlannerInfo
+          v-else
+          :smart="plannerSmart"
+          :compact="$vuetify.display.smAndDown"
+      />
+    </div>
 
   </v-card>
 </template>
@@ -83,12 +80,6 @@ const plannerSmart = computed(() => {
   transition-delay: 0.5s;
   will-change: transform, bottom;
    */
-
-  &__row-1 {
-    @media (max-height: 799px) {
-      //display: none;
-    }
-  }
 
   .v-card {
     //margin: 8px;
