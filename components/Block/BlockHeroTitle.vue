@@ -8,7 +8,7 @@ defineProps<{
 <template>
   <h6
       :class="[
-          'dx-block__title text-h6 mt-sm-3 mb-n2',
+          'dx-block__title text-h6 mt-sm-3 mt-md-n1 mb-n2',
           {'text-grey-lighten-2': dark},
           {'text-grey-darken-3': !dark},
       ]"

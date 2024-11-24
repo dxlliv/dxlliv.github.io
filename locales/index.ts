@@ -8,7 +8,7 @@ export const messages = {
             available: "Available"
         },
         specialization: "DEV",
-        skills: "UI/UX Battle Tester ▪ Pixel Perfect ▪ Web Developer ▪ Web Designer ▪ HTML5 ▪ CSS ▪ JavaScript ▪ TypeScript ▪ Vue.js ▪ Nuxt.js ▪ Vuex ▪ Pinia ▪ Xstate ▪ Capacitor ▪ Electron ▪ SPA ▪ SSR ▪ SSG ▪",
+        skills: "Pixel Perfect ▪ UI/UX Battle Tester ▪ Web Developer ▪ Web Designer ▪ HTML5 ▪ CSS ▪ JavaScript ▪ TypeScript ▪ Vue.js ▪ Nuxt.js ▪ Vuex ▪ Pinia ▪ Xstate ▪ Capacitor ▪ Electron ▪ SPA ▪ SSR ▪ SSG ▪",
         form: {
             fields: {
                 name: {

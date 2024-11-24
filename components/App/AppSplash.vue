@@ -7,13 +7,13 @@ onMounted(() => {
 })
 
 setTimeout(() => {
-  delay.value = true
+  delay.value = false
 }, 1500)
 </script>
 
 <template>
   <v-fade-transition>
-    <div class="dx-splash" v-if="!ready || !delay">
+    <div class="dx-splash" v-if="!ready || delay">
       <AppLogo name="splash"/>
     </div>
   </v-fade-transition>

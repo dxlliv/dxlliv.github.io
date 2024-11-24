@@ -35,19 +35,15 @@ const specializationArray = [
         <GithubIcon/>
       </a>
 
-      <a href="mailto:hello@dxlliv.dev">
+      <a
+          class="d-inline-block"
+          href="mailto:hello@dxlliv.dev"
+      >
         <v-icon
             icon="mdi-at" :size="29"
             class="mx-2 cursor-pointer"
             style="vertical-align: 1px;"
         />
-
-        <v-tooltip
-            activator="parent" content-class="bg-grey-darken-3"
-            location="right" :open-delay="1000" :offset="[0, 25]"
-        >
-          hello@dxlliv.dev
-        </v-tooltip>
       </a>
     </div>
 

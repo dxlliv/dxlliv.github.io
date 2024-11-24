@@ -59,11 +59,11 @@ defineProps<{
 
   :deep(.v-card-title) {
     font-weight: bold !important;
-    padding: 8px;
+    padding: 8px 5px;
   }
 
   :deep(.v-card-subtitle) {
-    padding: 8px;
+    padding: 6px 5px;
     margin-top: -12px;
     line-height: 24px;
     font-size: 19px;
@@ -71,9 +71,10 @@ defineProps<{
 
   :deep(.v-card-actions) {
     position: absolute;
-    bottom: 4px;
-    left: 12px;
-    right: 12px;
+    bottom: 0px;
+    left: 15px;
+    right: 15px;
+    min-height: 48px;
 
     .v-row {
       width: 100%;
