@@ -67,6 +67,16 @@ export default defineNuxtConfig({
       },
   },
 
+  vite: {
+      css: {
+          preprocessorOptions: {
+              scss: {
+                  api: 'modern-compiler' // or "modern"
+              }
+          }
+      },
+  },
+
   nitro: {
       output: {
           publicDir: path.join(__dirname, 'docs')
