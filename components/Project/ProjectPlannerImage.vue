@@ -11,12 +11,8 @@ function onPlannerMediaClick(id: string) {
   sliderVerticalStore.slideToPlannerImage()
 
   setTimeout(() => {
-    sliderHorizontalStore.slideToMainColumn()
-  }, 400)
-
-  setTimeout(() => {
     plannerStore.imageActive = id
-  }, 800)
+  }, 400)
 }
 
 const imageProp = {

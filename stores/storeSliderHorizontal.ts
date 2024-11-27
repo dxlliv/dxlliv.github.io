@@ -1,3 +1,5 @@
+import {defineStore} from "pinia";
+
 export const useSliderHorizontalStore = defineStore('slider/horizontal', () => {
     const instance = ref()
 
@@ -44,6 +46,10 @@ export const useSliderHorizontalStore = defineStore('slider/horizontal', () => {
         instance.value.swiper.slideTo(0)
     }
 
+    function slideTo(index) {
+        instance.value.swiper.slideTo(index)
+    }
+
     return {
         instance,
         swiper,
@@ -52,6 +58,7 @@ export const useSliderHorizontalStore = defineStore('slider/horizontal', () => {
         initialize,
         update,
         slideToMainColumn,
+        slideTo,
     }
 })
 
