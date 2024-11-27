@@ -12,7 +12,9 @@ export default defineNuxtConfig({
           title: 'Your No Label Developer',
           meta: [
               { name: 'viewport', content: 'width=device-width, initial-scale=1, user-scalable=no' },
-              { name: 'theme-color', content: '#fefefe' },
+              { name: 'mobile-web-app-capable', content: 'yes' },
+              { name: 'mobile-web-app-status-bar-style', content: 'black-translucent' },
+              { name: 'theme-color', content: '#333333' },
               { hid: 'fragment', name: 'fragment', content: '!' },
           ],
           link: [
