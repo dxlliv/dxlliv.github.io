@@ -27,12 +27,6 @@ export default defineNuxtConfig({
   },
 
   css: [
-      "@fontsource/quicksand",
-      "@fontsource/quicksand/400.css",
-      "@fontsource/rock-salt",
-      "@fontsource/rock-salt/400.css",
-      "@fontsource/bebas-neue",
-      "@fontsource/bebas-neue/400.css",
       '@mdi/font/css/materialdesignicons.css',
   ],
 
