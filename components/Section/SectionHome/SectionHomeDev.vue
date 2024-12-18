@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {InstagramIcon, LinkedinIcon} from "vue3-simple-icons";
+import {InstagramIcon, LinkedInIcon} from "vue3-simple-icons";
 </script>
 
 <template>
@@ -28,7 +28,7 @@ import {InstagramIcon, LinkedinIcon} from "vue3-simple-icons";
             href="https://linkedin.com/in/dxlliv" target="_blank"
             size="large" rounded flat color="primary" min-width="44px" class="px-0 ml-3"
         >
-          <LinkedinIcon width="16px" />
+          <LinkedInIcon width="16px" />
         </v-btn>
 
         <v-btn

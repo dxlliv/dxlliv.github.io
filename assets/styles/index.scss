@@ -1,5 +1,5 @@
-@import "./partials/fonts";
-@import "./partials/vuetify";
+@use "./partials/fonts";
+@use "./partials/vuetify";
 
 ::selection {
   background: #222;

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {GithubIcon} from "vue3-simple-icons";
+import {GitHubIcon} from "vue3-simple-icons";
 import {VueWriter} from 'vue-writer'
 
 const specializationArray = [
@@ -32,7 +32,7 @@ const specializationArray = [
     <div class="dx-links mt-4 mb-n2 mx-n2">
 
       <a href="https://github.com/dxlliv" target="_blank" class="mx-2">
-        <GithubIcon/>
+        <GitHubIcon/>
       </a>
 
       <a

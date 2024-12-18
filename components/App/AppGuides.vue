@@ -49,8 +49,6 @@ body {
 </style>
 
 <style scoped lang="scss">
-@import "vuetify/lib/styles/settings/_variables";
-
 :global(.scena-guides-guide) {
   background: rgba(0, 0, 0, 0.25) !important;
 }

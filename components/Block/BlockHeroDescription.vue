@@ -7,8 +7,6 @@
 </template>
 
 <style scoped lang="scss">
-@import "vuetify/lib/styles/settings/_variables";
-
 div {
   :deep(p) {
     @media(min-width: 600px) {
@@ -22,7 +20,7 @@ div {
     &:nth-child(2) {
       margin-top: 8px;
 
-      @media #{map-get($display-breakpoints, 'xs')} {
+      @media(max-width: 599px) {
         display: none;
       }
     }

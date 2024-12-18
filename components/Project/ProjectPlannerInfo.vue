@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {GithubIcon} from "vue3-simple-icons";
+import {GitHubIcon} from "vue3-simple-icons";
 
 defineProps<{
   smart?: boolean
@@ -28,7 +28,7 @@ defineProps<{
     <template v-if="!smart" v-slot:actions>
       <v-row no-gutters>
         <v-col align-self="center">
-          <GithubIcon :width="16" />
+          <GitHubIcon :width="16" />
         </v-col>
         <v-col class="text-right">
           <div class="text-overline">Draft</div>

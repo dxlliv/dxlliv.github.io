@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {GithubIcon, XIcon} from "vue3-simple-icons"
+import {GitHubIcon, XIcon} from "vue3-simple-icons"
 </script>
 
 <template>
@@ -26,7 +26,7 @@ import {GithubIcon, XIcon} from "vue3-simple-icons"
             href="https://github.com/dxlliv" target="_blank"
             size="large" rounded flat color="primary" min-width="44px" class="px-0 ml-3"
         >
-          <GithubIcon width="19px" style="margin-top: -1px;" />
+          <GitHubIcon width="19px" style="margin-top: -1px;" />
         </v-btn>
 
         <v-btn
