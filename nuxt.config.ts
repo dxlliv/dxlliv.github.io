@@ -45,6 +45,7 @@ export default defineNuxtConfig({
 
   modules: [
       '@nuxtjs/i18n',
+      '@nuxt/fonts',
       '@pinia/nuxt',
   ],
 
