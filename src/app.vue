@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import { register } from 'swiper/element/bundle';
 
-register()
 </script>
 
 <template>
@@ -13,9 +11,11 @@ register()
 
     <AppSplash />
 
+    <!--
     <client-only>
       <AppGuides />
     </client-only>
+    -->
 
   </v-app>
 </template>
