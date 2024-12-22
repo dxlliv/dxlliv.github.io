@@ -14,8 +14,7 @@ watch(() => route.name, value => {
 <template>
   <swiper-container
       class="dx-slider-horizontal"
-      space-between="0"
-      init="false"
+      space-between="0" init="false"
   >
     <slot />
   </swiper-container>
@@ -23,6 +22,14 @@ watch(() => route.name, value => {
 
 <style scoped lang="scss">
 swiper-container {
+  width: 100vw;
   height: 100%;
+
+  :deep(swiper-slide) {
+    display: grid;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 24px;
+  }
 }
 </style>

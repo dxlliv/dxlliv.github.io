@@ -1,5 +1,3 @@
-import {defineStore} from "pinia";
-
 export const useSliderHorizontalStore = defineStore('slider/horizontal', () => {
     const instance = ref()
 
@@ -17,8 +15,17 @@ export const useSliderHorizontalStore = defineStore('slider/horizontal', () => {
             spaceBetween: 24,
             slidesPerView: 1,
             breakpoints: {
-                1280: {
+                480: {
                     slidesPerView: 1.5,
+                },
+                800: {
+                    slidesPerView: 2.5,
+                },
+                1200: {
+                    slidesPerView: 3.5,
+                },
+                1600: {
+                    slidesPerView: 4.5,
                 },
             },
             on: {
@@ -38,16 +45,24 @@ export const useSliderHorizontalStore = defineStore('slider/horizontal', () => {
         instance.value.initialize()
     }
 
+    function lock() {
+        instance.value.swiper.disable()
+    }
+
+    function unlock() {
+        instance.value.swiper.enable()
+    }
+
     function update() {
         swiper.value.update()
     }
 
-    function slideToMainColumn() {
-        instance.value.swiper.slideTo(0)
+    function slideTo(index: number) {
+        instance.value.swiper.slideTo(index)
     }
 
-    function slideTo(index) {
-        instance.value.swiper.slideTo(index)
+    function slideNext() {
+        instance.value.swiper.slideNext()
     }
 
     return {
@@ -57,8 +72,10 @@ export const useSliderHorizontalStore = defineStore('slider/horizontal', () => {
         swiperIsEnd,
         initialize,
         update,
-        slideToMainColumn,
         slideTo,
+        slideNext,
+        lock,
+        unlock,
     }
 })
 
