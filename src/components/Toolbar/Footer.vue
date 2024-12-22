@@ -37,7 +37,7 @@ import {GitHubIcon, InstagramIcon, XIcon, YouTubeIcon} from "vue3-simple-icons";
           </FooterButton>
 
           <FooterButton
-              href="https://youtube.com/dxlliv"
+              href="https://youtube.com/@dxlliv"
           >
             <YouTubeIcon :size="22"/>
           </FooterButton>

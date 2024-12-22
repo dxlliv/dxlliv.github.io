@@ -1,7 +1,5 @@
 <template>
-  <div :class="[
-      'mt-4 mb-7 text-grey-darken-1',
-    ]">
+  <div class="my-7 text-grey-darken-1">
     <slot />
   </div>
 </template>
@@ -11,18 +9,6 @@ div {
   :deep(p) {
     @media(min-width: 600px) {
       line-height: 28px;
-    }
-
-    &:nth-child(1) {
-      margin-top: 24px;
-    }
-
-    &:nth-child(2) {
-      margin-top: 8px;
-
-      @media(max-width: 599px) {
-        display: none;
-      }
     }
 
     @media(max-width: 1350px) and (min-width: 1280px) {
