@@ -6,8 +6,14 @@ onMounted(() => {
   sliderHorizontalStore.initialize()
 })
 
-watch(() => route.name, value => {
-  sliderHorizontalStore.update()
+watch(() => route.name, () => {
+  setTimeout(() => {
+    sliderHorizontalStore.update()
+
+    setTimeout(() => {
+      sliderHorizontalStore.slideReset()
+    }, 500)
+  }, 1000)
 })
 </script>
 
@@ -15,6 +21,8 @@ watch(() => route.name, value => {
   <swiper-container
       class="dx-slider-horizontal"
       space-between="0" init="false"
+      allow-touch-move mousewheel
+      :centered-slides="$vuetify.display.mdAndUp"
   >
     <slot />
   </swiper-container>
@@ -25,7 +33,7 @@ swiper-container {
   width: 100vw;
   height: 100%;
 
-  :deep(swiper-slide) {
+  > :deep(swiper-slide) {
     display: grid;
     align-items: center;
     box-sizing: border-box;

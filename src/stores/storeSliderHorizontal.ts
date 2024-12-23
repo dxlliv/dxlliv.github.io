@@ -1,4 +1,5 @@
 export const useSliderHorizontalStore = defineStore('slider/horizontal', () => {
+    const appStore = useAppStore()
     const instance = ref()
 
     const swiper = computed(() => {
@@ -32,13 +33,14 @@ export const useSliderHorizontalStore = defineStore('slider/horizontal', () => {
                 init() {
                     // ...
                 },
+                slideChange() {
+                    swiperIsBeginning.value = instance.value.swiper.isBeginning
+                    swiperIsEnd.value = instance.value.swiper.isEnd
+
+                    appStore.emitter.emit('horizontal-slide-change')
+                }
             },
         }
-
-        instance.value.addEventListener('swiperslidechange', () => {
-            swiperIsBeginning.value = instance.value.swiper.isBeginning
-            swiperIsEnd.value = instance.value.swiper.isEnd
-        });
 
         Object.assign(instance.value, swiperConfig);
 
@@ -54,7 +56,7 @@ export const useSliderHorizontalStore = defineStore('slider/horizontal', () => {
     }
 
     function update() {
-        swiper.value.update()
+        instance.value.swiper.update()
     }
 
     function slideTo(index: number) {
@@ -63,6 +65,10 @@ export const useSliderHorizontalStore = defineStore('slider/horizontal', () => {
 
     function slideNext() {
         instance.value.swiper.slideNext()
+    }
+
+    function slideReset() {
+        instance.value.swiper.slideReset()
     }
 
     return {
@@ -74,6 +80,7 @@ export const useSliderHorizontalStore = defineStore('slider/horizontal', () => {
         update,
         slideTo,
         slideNext,
+        slideReset,
         lock,
         unlock,
     }
