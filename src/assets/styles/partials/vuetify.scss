@@ -1,46 +1,5 @@
 body {
   .v {
-    &-application {
-      height: 100dvh;
-
-      &__wrap {
-        --swiper-slide-margin: 24px;
-
-        height: inherit;
-        min-height: inherit;
-        padding: var(--swiper-slide-margin) 0;
-
-        swiper-container.dx-slider-horizontal {
-          @media(min-width: 1280px) {
-            .dx-slider-horizontal__row-column--margin > div {
-              margin-right: var(--swiper-slide-margin) !important;
-            }
-          }
-
-          > swiper-slide {
-            > div:first-child {
-              margin-left: var(--swiper-slide-margin);
-
-              @media(max-width: 1279px) {
-                margin-right: var(--swiper-slide-margin);
-              }
-            }
-
-            &:not(:first-child) {
-              > div {
-                margin-left: var(--swiper-slide-margin);
-                margin-right: var(--swiper-slide-margin);
-              }
-            }
-          }
-        }
-
-        @media(max-width: 479px) {
-          --swiper-slide-margin: 16px;
-        }
-      }
-    }
-
     &-container {
       @media(max-width: 1279px) and (min-width: 600px) {
         width: 560px;
@@ -52,6 +11,15 @@ body {
 
       @media (min-width: 2560px) {
         max-width: 1600px;
+      }
+    }
+
+    &-snackbar {
+      margin-bottom: 16px;
+
+      * {
+        text-align: center;
+        font-size: 16px !important;
       }
     }
 
@@ -74,9 +42,26 @@ body {
     &-img {
       pointer-events: none;
     }
+
+    &-btn {
+      &:focus-visible::after {
+        opacity: 0;
+      }
+    }
   }
 
   .text {
+    &-subtitle-1,
+    &-subtitle-2 {
+      font-family: inherit;
+    }
+    &-subtitle-1 {
+      font-size: 17px !important;
+    }
+    &-subtitle-2 {
+      font-size: 15px !important;
+    }
+
     &-h1,
     &-h2,
     &-h3,
