@@ -7,30 +7,43 @@ useHead({
 <template>
   <swiper-slide v-if="$vuetify.display.mdAndUp">
 
-    <BlockDX/>
+    <BlockDX />
 
   </swiper-slide>
   <swiper-slide>
 
-    <BlockMe/>
-
-  </swiper-slide>
-  <swiper-slide>
-
-    <BlockMeImage
+    <BlockTemplateImage
+        image="/media/studio.jpg"
         slide-next
     />
 
   </swiper-slide>
   <swiper-slide>
 
-    <BlockPlanner/>
+    <BlockConsulting/>
 
   </swiper-slide>
   <swiper-slide>
 
-    <BlockTemplateVideo
-        video="/media/dxvfpv.mp4"
+    <BlockDevelopment/>
+
+  </swiper-slide>
+  <swiper-slide>
+
+    <BlockTemplateImage
+        image="/media/gameassist.webp"
+        slide-next
+    />
+
+  </swiper-slide>
+  <swiper-slide>
+
+    <BlockGameAssist/>
+
+  </swiper-slide>
+  <swiper-slide>
+
+    <BlockGridskyAnimation
         slide-next
     />
 
