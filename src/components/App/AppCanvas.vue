@@ -3,7 +3,6 @@
 </template>
 
 <script setup>
-import {onMounted, onBeforeUnmount} from 'vue'
 import p5 from 'p5'
 
 defineProps({
