@@ -1,4 +1,8 @@
 <script setup lang="ts">
+defineProps<{
+  fullscreen?: boolean
+}>()
+
 const dialog = ref(false)
 const contactFormSent = ref(false)
 
@@ -18,10 +22,11 @@ watch(() => dialog.value, value => {
   <v-dialog
       v-model="dialog"
       max-width="400px"
+      :fullscreen="fullscreen"
       transition="dialog-bottom-transition"
       activator="parent"
   >
-    <v-card rounded>
+    <v-card :rounded="!fullscreen">
 
       <div class="pa-6">
         <ContactForm
