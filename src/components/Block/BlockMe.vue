@@ -6,7 +6,7 @@
 
     <BlockHeroDescription>
       <p>
-        Shaping the dream. 199X<br/>
+        Shaping the dream. <span class="text-grey">199X</span><br/>
         Self-built Developer by passion<br/>
         Drone Pilot by adventure
       </p>
@@ -27,7 +27,7 @@
           Immersive Clips
         </v-list-item>
 
-        <v-list-item to="/experience">
+        <v-list-item class="mt-n2" to="/experience">
           Design & Development
         </v-list-item>
 
@@ -35,9 +35,3 @@
     </BlockHeroBottomSheet>
   </BlockHeroCard>
 </template>
-
-<style scoped lang="scss">
-a {
-  margin: 0 8px;
-}
-</style>

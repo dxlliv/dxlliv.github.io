@@ -6,7 +6,7 @@ import {GitHubIcon} from "vue3-simple-icons";
   <BlockHeroCard>
 
     <BlockHeroTitle
-        title="No-Label Development"
+        title="No-Label Devel"
     />
 
     <BlockHeroDescription>
@@ -19,12 +19,12 @@ import {GitHubIcon} from "vue3-simple-icons";
 
     <BlockHeroActions>
 
-      <BlockHeroButton to="/experience">
+      <BlockHeroButton to="/">
         About me
       </BlockHeroButton>
 
       <BlockHeroButton
-          href="https://github.com/sponsors/dxlliv" target="_blank"
+          href="https://github.com/dxlliv" target="_blank"
           size="large" rounded flat color="primary" min-width="44px" class="px-0 ml-3"
       >
         <GitHubIcon width="19px" style="margin-top: -1px;" />

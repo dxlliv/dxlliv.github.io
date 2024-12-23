@@ -1,17 +1,21 @@
 <template>
-  <BlockHeroCard>
+  <BlockHeroCard to="/">
 
-    <AppLogo/>
+    <AppLogo />
+
+    <slot />
 
   </BlockHeroCard>
 </template>
 
 <style scoped lang="scss">
 :deep(.dx-logo) {
-  font-size: 120px !important;
-  height: 120px;
-  line-height: 145px;
+  font-size: 100px !important;
+  height: 100px;
+  line-height: 120px;
   transition: transform 0.1s ease;
+  transform: scale(1);
+  will-change: transform;
 }
 
 .dx-block-hero__card:active {

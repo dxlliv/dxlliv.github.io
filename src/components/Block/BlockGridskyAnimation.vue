@@ -20,7 +20,7 @@ function onIntersect(isIntersecting: boolean) {
 
 <template>
   <BlockHeroCard
-      border class="bg-grey-darken-3"
+      border color="grey-darken-3"
       v-intersect="onIntersect"
   >
     <v-lazy v-if="!lazyReset">
@@ -45,8 +45,8 @@ function onIntersect(isIntersecting: boolean) {
   iframe {
     border: 0;
     width: 102%;
-    height: 102%;
-    margin: -1px 0 0 -1px;
+    height: 122%;
+    margin: -10% 0 0 -1px;
   }
 
   &:after {

@@ -1,9 +1,6 @@
 <script setup lang="ts">
 import Guides from "vue3-guides";
 
-// add body class for extra v-application padding
-document.body.classList.add('tool-guides--enabled')
-
 const guideX = ref()
 const guideY = ref()
 
@@ -26,50 +23,20 @@ window.addEventListener("resize", () => {
   </div>
 </template>
 
-<style lang="scss">
-body {
-  padding: 36px 0 0 36px;
-
-  .v-application {
-    height: calc(100dvh - 36px) !important;
-    margin-top: 36px;
-    margin-left: 36px;
-  }
-
-  @media(max-width: 479px) {
-    padding: 30px 0 0 30px;
-
-    .v-application {
-      height: calc(100dvh - 32px) !important;
-      margin-top: 32px;
-      margin-left: 32px;
-    }
-  }
-}
-</style>
-
 <style scoped lang="scss">
-:global(.scena-guides-guide) {
-  background: rgba(0, 0, 0, 0.25) !important;
-}
-
 .dx-layout-guides {
   z-index: 1;
 
   &:before {
     background: #333333;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 36px;
     height: 36px;
     content: '';
     z-index: 99;
-
-    @media(max-width: 479px) {
-      width: 32px;
-      height: 32px;
-    }
+    zoom: 0.5;
   }
 
   .scena-guides-manager {
@@ -78,28 +45,20 @@ body {
     }
 
     &.scena-guides-horizontal {
-      position: fixed;
+      position: absolute;
       top: 0;
       left: 36px;
       height: 36px;
-      width: 100vw;
-
-      @media(max-width: 479px) {
-        top: -4px;
-        left: 28px;
-      }
+      zoom: 0.5;
     }
+
     &.scena-guides-vertical {
-      position: fixed;
+      position: absolute;
       top: 36px;
       left: 0;
       width: 36px;
       height: 100%;
-
-      @media(max-width: 479px) {
-        top: 22px;
-        left: -4px;
-      }
+      zoom: 0.5;
     }
   }
 }
