@@ -3,6 +3,8 @@ const props = defineProps<{
   slideNext?: boolean
 }>()
 
+const emit = defineEmits(['intersect'])
+
 const sliderHorizontalStore = useSliderHorizontalStore()
 const isIntersected = ref(false)
 
@@ -21,6 +23,8 @@ function onCardClick() {
 
 function onIntersect(isIntersecting: boolean) {
   isIntersected.value = isIntersecting
+
+  emit('intersect', isIntersecting)
 }
 
 </script>
