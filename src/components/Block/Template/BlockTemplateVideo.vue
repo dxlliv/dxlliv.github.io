@@ -5,12 +5,17 @@ defineProps<{
 </script>
 
 <template>
-  <BlockHeroCard class="dx-block--drone bg-grey-darken-3">
+  <BlockHeroCard class="dx-block--drone" color="grey-darken-3">
+    <template #default="{ isIntersected }">
 
-    <v-lazy class="no-pointer-events" transition="fade-transition">
-      <video :src="video" loop playsinline muted autoplay />
-    </v-lazy>
+      <v-lazy class="no-pointer-events" transition="fade-transition">
+        <video
+            v-if="isIntersected"
+            :src="video" loop playsinline muted autoplay
+        />
+      </v-lazy>
 
+    </template>
   </BlockHeroCard>
 </template>
 
