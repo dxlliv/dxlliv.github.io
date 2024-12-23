@@ -1,7 +1,7 @@
 #!/bin/sh
 
-yarn install
-yarn generate
+npm install
+npm run generate
 rm -rf .output
 
 # disable jekyll to avoid any _problems
