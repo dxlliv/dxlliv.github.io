@@ -4,14 +4,14 @@ const {slideNextThen} = defineProps<{
 }>()
 
 const storeSliderHorizontal = useSliderHorizontalStore()
-const swiperRef = ref<HTMLSwiperElement | null>(null);
+const swiperElement = useTemplateRef<HTMLElement>('swiper');
 
 function onSlideClick() {
-  if (swiperRef.value.swiper.isEnd && slideNextThen) {
+  if (swiperElement.value.swiper.isEnd && slideNextThen) {
     onSwiperReachEnd()
   }
 
-  swiperRef.value.swiper.slideNext()
+  swiperElement.value.swiper.slideNext()
 }
 
 function onSwiperReachEnd() {
@@ -21,16 +21,21 @@ function onSwiperReachEnd() {
 
 <template>
   <BlockHeroCard>
-    <swiper-container
-        ref="swiperRef"
-        direction="vertical"
-        :slides-per-view="1"
-        :space-between="0"
-    >
+    <template #default="{ isIntersected }">
+      <swiper-container
+          ref="swiper"
+          direction="vertical"
+          :slides-per-view="1"
+          :space-between="0"
+      >
 
-      <slot :onSlideClick="onSlideClick" />
+        <slot
+            :isIntersected="isIntersected"
+            :onSlideClick="onSlideClick"
+        />
 
-    </swiper-container>
+      </swiper-container>
+    </template>
   </BlockHeroCard>
 </template>
 

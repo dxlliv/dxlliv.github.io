@@ -5,8 +5,10 @@ defineProps<{
 </script>
 
 <template>
-  <BlockHeroCard color="grey-darken-3">
-    <v-img :src="image" cover />
+  <BlockHeroCard color="grey-darken-4">
+    <BlockTemplateImageInner
+        :image="image"
+    />
 
     <slot />
   </BlockHeroCard>
