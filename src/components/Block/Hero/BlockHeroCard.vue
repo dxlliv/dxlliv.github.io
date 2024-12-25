@@ -1,15 +1,20 @@
 <script setup lang="ts">
+import {useDisplay} from "vuetify";
+
 const props = defineProps<{
   slideNext?: boolean
 }>()
 
-const emit = defineEmits(['intersect'])
-
+const display = useDisplay()
 const sliderHorizontalStore = useSliderHorizontalStore()
+
+const emit = defineEmits(['intersect'])
 const isIntersected = ref(false)
 
 function onCardClick() {
-  if (props.slideNext) {
+  // only from xs, it slides next if props is provided
+  // otherwise it will center the slide automatically
+  if (props.slideNext && display.xs.value) {
     sliderHorizontalStore.slideNext()
   }
 
@@ -39,6 +44,7 @@ function onIntersect(isIntersecting: boolean) {
 
     <slot
         :is-intersected="isIntersected"
+        :slideNext="sliderHorizontalStore.slideNext"
     />
 
   </v-card>

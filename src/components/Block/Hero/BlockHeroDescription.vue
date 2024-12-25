@@ -1,5 +1,5 @@
 <template>
-  <div class="my-7 text-grey-darken-1">
+  <div class="mt-7 text-grey-darken-1">
     <slot />
   </div>
 </template>

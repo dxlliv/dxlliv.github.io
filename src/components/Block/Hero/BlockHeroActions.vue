@@ -1,5 +1,5 @@
 <template>
-  <div class="dx-block-hero__actions px-4">
+  <div class="dx-block-hero__actions mt-7 px-4">
     <slot />
   </div>
 </template>

@@ -17,7 +17,7 @@ onMounted(() => {
       eager contained
   >
     <v-card class="text-center">
-      <slot />
+      <slot :close="() => bottomSheet = false" />
     </v-card>
   </v-bottom-sheet>
 </template>
