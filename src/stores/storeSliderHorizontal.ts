@@ -6,9 +6,6 @@ export const useSliderHorizontalStore = defineStore('slider/horizontal', () => {
         return instance.value.swiper
     })
 
-    const swiperIsBeginning = ref(true)
-    const swiperIsEnd = ref(false)
-
     function initialize() {
         instance.value = document.querySelector('.dx-slider-horizontal')
 
@@ -29,14 +26,14 @@ export const useSliderHorizontalStore = defineStore('slider/horizontal', () => {
                     slidesPerView: 4.5,
                 },
             },
+            pagination: {
+                lockClass: 'dx-slider-horizontal__lock',
+            },
             on: {
                 init() {
                     // ...
                 },
                 slideChange() {
-                    swiperIsBeginning.value = instance.value.swiper.isBeginning
-                    swiperIsEnd.value = instance.value.swiper.isEnd
-
                     appStore.emitter.emit('horizontal-slide-change')
                 }
             },
@@ -74,8 +71,6 @@ export const useSliderHorizontalStore = defineStore('slider/horizontal', () => {
     return {
         instance,
         swiper,
-        swiperIsBeginning,
-        swiperIsEnd,
         initialize,
         update,
         slideTo,

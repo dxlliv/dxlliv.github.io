@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import {useDisplay} from "vuetify";
+
+const display = useDisplay()
 const sliderHorizontalStore = useSliderHorizontalStore()
 const route = useRoute()
 
@@ -19,10 +22,11 @@ watch(() => route.name, () => {
 
 <template>
   <swiper-container
-      class="dx-slider-horizontal"
-      space-between="0" init="false"
-      allow-touch-move mousewheel
-      :centered-slides="$vuetify.display.mdAndUp"
+      class="dx-slider-horizontal" init="false"
+      :initial-slide="1" :space-between="0"
+      :slide-to-clicked-slide="$vuetify.display.smAndUp"
+      allow-touch-move mousewheel pagination
+      :centered-slides="$vuetify.display.smAndUp"
   >
     <slot />
   </swiper-container>
