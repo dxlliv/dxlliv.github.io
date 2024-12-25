@@ -1,21 +1,11 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
   <v-app>
+
+    <AppSplash />
 
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
-
-    <AppSplash />
-
-    <!--
-    <client-only>
-      <AppGuides />
-    </client-only>
-    -->
 
   </v-app>
 </template>
