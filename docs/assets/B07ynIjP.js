@@ -1,1 +1,0 @@
-const e={en:{form:{fields:{name:{label:"Name",placeholder:"What's your name"},message:{label:"Message",placeholder:"Tell me about your project"}},action:{send:"Send",sent:"Opening your e-mail client"}}}},a=()=>({legacy:!1,warnHtmlMessage:!1,locale:"en",messages:e});export{a as default};
