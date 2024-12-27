@@ -4,6 +4,7 @@ import {GitHubIcon} from "vue3-simple-icons";
 withDefaults(defineProps<{
   title: string
   author?: string
+  wip?: boolean
 }>(), {
   author: 'dxlliv'
 })
@@ -11,6 +12,8 @@ withDefaults(defineProps<{
 
 <template>
   <BlockHeroCard>
+
+    <v-chip v-if="wip" class="d-inline-block text-overline">work in progress</v-chip>
 
     <v-row no-gutters style="width: max-content;" class="flex mx-auto">
       <v-col class="flex-grow-0 text-right" align-self="center">
@@ -32,8 +35,17 @@ withDefaults(defineProps<{
       <slot/>
     </div>
 
-
     <slot name="trigger"/>
 
   </BlockHeroCard>
 </template>
+
+<style scoped lang="scss">
+.v-chip {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.25;
+}
+</style>
