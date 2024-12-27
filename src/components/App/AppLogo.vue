@@ -39,6 +39,12 @@ withDefaults(defineProps<{
     filter: invert(1);
   }
 
+  &--toolbar {
+    height: 30px;
+    line-height: 36px;
+    font-size: 24px;
+  }
+
   &--shooting {
     height: 145px;
     color: black;
@@ -48,24 +54,9 @@ withDefaults(defineProps<{
       font-size: 54px;
       margin-top: -64px;
       animation: shine 4s infinite;
-      mask-image: linear-gradient(-75deg, #fff 25%, hsla(0, 0%, 100%, .65) 50%, #fff 70%);
+      mask-image: linear-gradient(-75deg, #fff 25%, hsla(0, 0%, 100%, .5) 50%, #fff 70%);
       mask-size: 200%;
       transition: all .1s ease-in-out;
-
-      @media (max-width: 959px) {
-        font-size: 76px;
-        line-height: 76px;
-      }
-
-      @media (max-width: 559px) {
-        font-size: 73px;
-        line-height: 73px;
-      }
-
-      @media (max-width: 479px) {
-        font-size: 39px;
-        line-height: 39px;
-      }
 
       @keyframes shine {
         0% {
