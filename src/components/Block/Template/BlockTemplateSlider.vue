@@ -1,10 +1,19 @@
 <script setup lang="ts">
-const {slideNextThen} = defineProps<{
+const {slideNextThen, initialSlide} = defineProps<{
   slideNextThen?: boolean
+  initialSlide?: number
 }>()
+
+const appStore = useAppStore()
 
 const storeSliderHorizontal = useSliderHorizontalStore()
 const swiperElement = useTemplateRef<HTMLElement>('swiper');
+
+onMounted(() => {
+  appStore.emitter.on('horizontal-slide-change', () => {
+    swiperElement.value.swiper.slideTo(initialSlide)
+  })
+})
 
 function onSlideClick() {
   if (swiperElement.value.swiper.isEnd && slideNextThen) {
@@ -27,6 +36,7 @@ function onSwiperReachEnd() {
           direction="vertical"
           :slides-per-view="1"
           :space-between="0"
+          :initial-slide="initialSlide"
       >
 
         <slot
