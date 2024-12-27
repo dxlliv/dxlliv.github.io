@@ -26,13 +26,18 @@ const sliderHorizontalStore = useSliderHorizontalStore()
       </v-col>
       <v-col class="flex-grow-0 px-5 hidden-xs" align-self="center">
 
-        <a href="https://github.com/sponsors/dxlliv" target="_blank">
-          <GitHubIcon :size="21" style="margin-top: -1px;"/>
-        </a>
+        <v-breadcrumbs class="px-0">
+          <v-breadcrumbs-item href="https://github.com/sponsors/dxlliv" target="_blank">
 
-        <a href="https://instagram.com/dxlliv" target="_blank" class="ml-5">
-          <InstagramIcon :size="20"/>
-        </a>
+            <GitHubIcon :size="21" style="margin-top: -1px;"/>
+
+          </v-breadcrumbs-item>
+          <v-breadcrumbs-item href="https://instagram.com/dxlliv" target="_blank" class="ml-3">
+
+            <InstagramIcon :size="20"/>
+
+          </v-breadcrumbs-item>
+        </v-breadcrumbs>
 
       </v-col>
       <v-divider vertical/>
