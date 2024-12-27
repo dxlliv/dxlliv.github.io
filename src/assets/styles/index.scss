@@ -1,4 +1,5 @@
 @use "./partials/fonts";
+@use "./partials/swiper";
 @use "./partials/vuetify";
 
 ::selection {
@@ -21,7 +22,7 @@ html {
 body {
   position: relative;
   font-family: "Quicksand", serif;
-  font-size: 18px;
+  font-size: 17px;
   color: #4a4a4a;
 }
 
@@ -45,23 +46,4 @@ img {
 
 .no-pointer-events {
   pointer-events: none;
-}
-
-swiper-container {
-  --swiper-pagination-color: #666;
-  --swiper-pagination-bullet-border-radius: 6px;
-  --swiper-pagination-bullet-horizontal-gap: 4px;
-  --swiper-pagination-bullet-size: 6px;
-  --swiper-pagination-bullet-width: 15px;
-  --swiper-pagination-bullet-height: 5px;
-  --swiper-pagination-bullet-inactive-color: #242424;
-  --swiper-pagination-bullet-inactive-opacity: 1;
-  --swiper-pagination-top: 4px;
-  --swiper-pagination-bottom: auto;
-}
-
-html body {
-  .swiper-pagination-lock {
-    display: block !important;
-  }
 }
