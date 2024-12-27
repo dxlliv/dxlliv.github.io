@@ -47,10 +47,21 @@ img {
   pointer-events: none;
 }
 
-@media
-only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2)
-{
-  .dx-section {
-    zoom: 1.20;
+swiper-container {
+  --swiper-pagination-color: #666;
+  --swiper-pagination-bullet-border-radius: 6px;
+  --swiper-pagination-bullet-horizontal-gap: 4px;
+  --swiper-pagination-bullet-size: 6px;
+  --swiper-pagination-bullet-width: 15px;
+  --swiper-pagination-bullet-height: 5px;
+  --swiper-pagination-bullet-inactive-color: #242424;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-top: 4px;
+  --swiper-pagination-bottom: auto;
+}
+
+html body {
+  .swiper-pagination-lock {
+    display: block !important;
   }
 }
