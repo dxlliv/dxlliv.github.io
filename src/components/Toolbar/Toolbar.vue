@@ -12,9 +12,13 @@ const sliderHorizontalStore = useSliderHorizontalStore()
     <v-row no-gutters>
       <v-col class="flex-grow-0 px-5 hidden-xs" align-self="center">
 
-        <nuxt-link to="/">
-          <AppLogo name="toolbar"/>
-        </nuxt-link>
+        <v-breadcrumbs class="px-5">
+          <v-breadcrumbs-item to="/">
+
+            <AppLogo name="toolbar"/>
+
+          </v-breadcrumbs-item>
+        </v-breadcrumbs>
 
       </v-col>
       <v-col class="flex-grow-1 px-0 text-right overflow-hidden" align-self="center">
@@ -24,9 +28,9 @@ const sliderHorizontalStore = useSliderHorizontalStore()
         />
 
       </v-col>
-      <v-col class="flex-grow-0 px-5 hidden-xs" align-self="center">
+      <v-col class="flex-grow-0 hidden-xs" align-self="center">
 
-        <v-breadcrumbs class="px-0">
+        <v-breadcrumbs class="px-5">
           <v-breadcrumbs-item href="https://github.com/sponsors/dxlliv" target="_blank">
 
             <GitHubIcon :size="21" style="margin-top: -1px;"/>
@@ -41,7 +45,7 @@ const sliderHorizontalStore = useSliderHorizontalStore()
 
       </v-col>
       <v-divider vertical/>
-      <v-col class="flex-grow-0 pa-5" align-self="center">
+      <v-col class="flex-grow-0 px-5 py-4" align-self="center">
 
         <ToolbarAvailability>
           <ContactDialog v-if="$vuetify.display.smAndUp"/>
@@ -56,8 +60,8 @@ const sliderHorizontalStore = useSliderHorizontalStore()
 
 <style scoped lang="scss">
 .dx-toolbar {
-  height: 64px;
-  opacity: 0.4;
+  height: var(--dx-toolbar-height);
+  opacity: 0.5;
 }
 
 :deep(.v-badge__badge) {

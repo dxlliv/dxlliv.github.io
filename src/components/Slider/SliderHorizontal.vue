@@ -43,7 +43,7 @@ swiper-container {
   width: 100vw;
   height: 100%;
 
-  :deep(.dx-block-hero__card) {
+  :deep(swiper-slide) {
     margin-top: 5dvh;
   }
 

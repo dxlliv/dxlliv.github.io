@@ -2,6 +2,9 @@
 @use "./partials/swiper";
 @use "./partials/vuetify";
 
+:root {
+  --dx-toolbar-height: 56px;
+}
 ::selection {
   background: #222;
   color: #eee;
@@ -24,6 +27,10 @@ body {
   font-family: "Quicksand", serif;
   font-size: 17px;
   color: #4a4a4a;
+
+  @media(min-width: 600px) {
+    font-size: 18px;
+  }
 }
 
 iframe {

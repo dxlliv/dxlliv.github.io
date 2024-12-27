@@ -22,7 +22,7 @@
 
   .v-layout {
     display: grid;
-    height: calc(74dvh - 64px - 4px);
+    height: calc(74dvh - var(--dx-toolbar-height) - 4px);
     align-items: center;
   }
 }

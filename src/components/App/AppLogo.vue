@@ -9,19 +9,23 @@ withDefaults(defineProps<{
 
 <template>
   <div :class="['dx-logo', `dx-logo--${name}`, {'dx-logo--invert': invert}]">
-    DX
+    <div>DX</div>
     <div v-if="name === 'shooting'">shooting</div>
   </div>
 </template>
 
 <style scoped lang="scss">
 .dx-logo {
-  font-family: 'minimal';
-  font-display: block;
-  font-size: 100px;
-  height: 100px;
-  line-height: 120px;
-  z-index: 99;
+  > div:nth-child(1) {
+    font-family: 'minimal';
+    font-display: block;
+    font-size: 100px;
+    height: 76px;
+    line-height: 96px;
+    z-index: 99;
+    display: inline-block;
+    position: relative;
+  }
 
   &--splash {
     font-size: 128px;
@@ -33,6 +37,10 @@ withDefaults(defineProps<{
 
   &--default {
     color: black;
+
+    > div:nth-child(1) {
+      z-index: 99;
+    }
   }
 
   &--invert {
@@ -46,13 +54,12 @@ withDefaults(defineProps<{
   }
 
   &--shooting {
-    height: 145px;
     color: black;
 
-    div {
+    div:nth-child(2) {
       font-family: "Bebas Neue", serif;
       font-size: 54px;
-      margin-top: -64px;
+      margin-top: -22px;
       animation: shine 4s infinite;
       mask-image: linear-gradient(-75deg, #fff 25%, hsla(0, 0%, 100%, .5) 50%, #fff 70%);
       mask-size: 200%;

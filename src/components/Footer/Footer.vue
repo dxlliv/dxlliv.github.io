@@ -67,11 +67,11 @@ import {GitHubIcon, InstagramIcon, XIcon, YouTubeIcon} from "vue3-simple-icons";
     opacity: 0.8;
   }
 
-  @media(min-width: 1280px) {
-    font-size: 22px;
+  @media(min-width: 600px) {
+    font-size: 20px;
   }
 
-  @media(min-width: 600px) {
+  @media(min-width: 1280px) {
     font-size: 21px;
   }
 }
