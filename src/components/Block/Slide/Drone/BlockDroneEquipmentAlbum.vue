@@ -1,0 +1,10 @@
+<template>
+  <BlockTemplateAlbum
+      slide-next-then
+      :album="[
+          '/media/fpv-controller.jpg',
+          '/media/fpv-equipment.jpg',
+          '/media/fpv-drone.jpg',
+        ]"
+  />
+</template>

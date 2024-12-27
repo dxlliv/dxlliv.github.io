@@ -1,37 +1,40 @@
 <template>
-  <BlockHeroCard>
-    <BlockHeroTitle
-        title="It's Diego Villa"
-    />
+  <BlockHeroCard
+      id="me-block"
+      :slide-next="$vuetify.display.xs"
+  >
+    <template #default="{ slideNext }">
 
-    <BlockHeroDescription>
-      <p>
-        Shaping the dream. <span class="text-grey">199X</span><br/>
-        Self-built Developer by passion<br/>
-        Drone Pilot by adventure
-      </p>
-    </BlockHeroDescription>
+      <BlockHeroTitle
+          title="It's Diego Villa"
+      />
 
-    <BlockHeroActions>
-      <BlockHeroButton>
-        Explore
-      </BlockHeroButton>
-    </BlockHeroActions>
+      <BlockHeroDescription>
+        <p>
+          Shaping the dream. <span class="text-grey">199X</span><br/>
+          Self-built Developer by passion<br/>
+          Drone Pilot by adventure
+        </p>
+      </BlockHeroDescription>
 
-    <BlockHeroBottomSheet>
-      <BlockHeroBottomSheetList
-        title="What you looking for?"
+      <BlockMeMenu
+          v-if="$vuetify.display.smAndUp"
+      />
+
+      <BlockHeroActions
+          v-else
       >
+        <BlockHeroButton>
+          Hey there
 
-        <v-list-item to="/drones">
-          Immersive Clips
-        </v-list-item>
+          <BlockMeMenu
+              attach="#me-block"
+          />
+        </BlockHeroButton>
+      </BlockHeroActions>
 
-        <v-list-item class="mt-n2" to="/experience">
-          Design & Development
-        </v-list-item>
-
-      </BlockHeroBottomSheetList>
-    </BlockHeroBottomSheet>
+    </template>
   </BlockHeroCard>
 </template>
+<script setup lang="ts">
+</script>

@@ -1,24 +1,24 @@
 <template>
   <BlockHeroCard>
     <BlockHeroTitle
-        title="For every business"
+        title="Unforgettable clips"
     />
 
     <BlockHeroDescription>
       <p>
-        Have a B&B or rental space?<br />
-        Need some stunning aerial views.<br />
-        Get in touch. Got you covered
+        Short clips and immersive<br />
+        narratives crafted to amaze,<br />
+        for businesses of any kind
       </p>
     </BlockHeroDescription>
 
     <BlockHeroActions>
 
       <BlockHeroButton
-          href="mailto:hello@dxlliv.dev"
-          class="ml-3"
+          href="https://instagram.com/dxlliv"
+          target="_blank" @click.stop
       >
-        Let's connect
+        Get in touch
         <ContactDialog />
       </BlockHeroButton>
 

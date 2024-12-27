@@ -1,23 +1,28 @@
+<script setup lang="ts">
+import {GitHubIcon} from "vue3-simple-icons";
+</script>
+
 <template>
   <BlockHeroCard>
 
     <BlockHeroTitle
-        title="Attention to detail"
+        title="Digital Consulting"
     />
 
     <BlockHeroDescription>
       <p>
-        An independent developer<br />
-        for websites and mobile apps<br />
-        requiring extreme attention
+        Extreme attention to details<br />
+        for your next awesome project.<br />
+        One of those perfectionists
       </p>
     </BlockHeroDescription>
 
-    <BlockHeroActions>
+    <BlockHeroActions @click.stop>
+
       <BlockHeroButton
-          href="https://github.com/sponsors/dxlliv"
+          href="https://github.com/sponsors/dxlliv" target="_blank"
       >
-        Say hello
+        Let's start
       </BlockHeroButton>
 
       <BlockHeroButton
@@ -27,6 +32,7 @@
         <v-icon icon="mdi-at" :size="20" />
         <ContactDialog />
       </BlockHeroButton>
+
     </BlockHeroActions>
 
   </BlockHeroCard>

@@ -20,7 +20,7 @@ function onIntersect(isIntersecting: boolean) {
 
 <template>
   <BlockHeroCard
-      border color="grey-darken-3"
+      border color="grey-darken-4"
       v-intersect="onIntersect"
   >
     <v-lazy v-if="!lazyReset">
@@ -47,6 +47,7 @@ function onIntersect(isIntersecting: boolean) {
     width: 102%;
     height: 122%;
     margin: -10% 0 0 -1px;
+    opacity: 0.9;
   }
 
   &:after {
@@ -56,7 +57,7 @@ function onIntersect(isIntersecting: boolean) {
     right: 0;
     bottom: 0;
     content: "";
-    background: linear-gradient(to top, rgba(5, 5, 5, 0.50), rgba(35, 35, 35, 0.25));
+    background: linear-gradient(to top, rgba(5, 5, 5, 0.50), rgba(35, 35, 35, 0.15));
   }
 }
 </style>
