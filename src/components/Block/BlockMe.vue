@@ -25,7 +25,7 @@
           v-else
       >
         <BlockHeroButton>
-          Hey there
+          Welcome
 
           <BlockMeMenu
               attach="#me-block"

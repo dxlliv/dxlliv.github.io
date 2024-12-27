@@ -2,6 +2,7 @@
   <BlockTemplateGitHub
       author="gridsky"
       title="launcher"
+      :slide-next="false"
   >
     Bringing grid experiences<br/>
     to the Bluesky network
@@ -20,3 +21,5 @@
 
   </BlockTemplateGitHub>
 </template>
+<script setup lang="ts">
+</script>

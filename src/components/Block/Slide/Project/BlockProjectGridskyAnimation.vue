@@ -48,6 +48,7 @@ function onIntersect(isIntersecting: boolean) {
     height: 122%;
     margin: -10% 0 0 -1px;
     opacity: 0.9;
+    pointer-events: none;
   }
 
   &:after {

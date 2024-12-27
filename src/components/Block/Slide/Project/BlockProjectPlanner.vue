@@ -1,6 +1,7 @@
 <template>
   <BlockTemplateGitHub
       title="planner"
+      :slide-next="false"
   >
     Plan your profile grids<br/>
     like a pro with planner
