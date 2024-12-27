@@ -13,7 +13,7 @@ export const useSliderHorizontalStore = defineStore('slider/horizontal', () => {
             spaceBetween: 24,
             slidesPerView: 1,
             breakpoints: {
-                480: {
+                560: {
                     slidesPerView: 1.5,
                 },
                 800: {

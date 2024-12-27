@@ -7,6 +7,12 @@ const route = useRoute()
 
 onMounted(() => {
   sliderHorizontalStore.initialize()
+
+  setTimeout(() => {
+    if (display.xs.value) {
+      sliderHorizontalStore.slideTo(1)
+    }
+  }, 150)
 })
 
 watch(() => route.name, () => {
@@ -23,7 +29,7 @@ watch(() => route.name, () => {
 <template>
   <swiper-container
       class="dx-slider-horizontal" init="false"
-      :initial-slide="1" :space-between="0"
+      :space-between="0"
       :slide-to-clicked-slide="$vuetify.display.smAndUp"
       allow-touch-move mousewheel pagination
       :centered-slides="$vuetify.display.smAndUp"
