@@ -10,18 +10,16 @@ import {Vue3Marquee} from "vue3-marquee";
     />
 
     <BlockHeroDescription>
-      <p>
-        An independent developer<br />
-        for websites and mobile apps.<br />
-        <div class="mx-auto">
-          <Vue3Marquee :duration="28">
-            HTML – CSS – JavaScript – TypeScript –
-            Vue.js – Nuxt.js – Vuetify – Vite – SSG –
-            Electron – Capacitor – Ionic –
-            UI/UX – Pixel Perfect Design –&nbsp;
-          </Vue3Marquee>
-        </div>
-      </p>
+      An independent developer<br/>
+      for websites and mobile apps.<br/>
+      <div class="mx-auto">
+        <Vue3Marquee :duration="28">
+          HTML – CSS – JavaScript – TypeScript –
+          Vue.js – Nuxt.js – Vuetify – Vite – SSG –
+          Electron – Capacitor – Ionic –
+          UI/UX – Pixel Perfect Design –&nbsp;
+        </Vue3Marquee>
+      </div>
     </BlockHeroDescription>
 
     <BlockHeroActions @click.stop>
@@ -36,8 +34,8 @@ import {Vue3Marquee} from "vue3-marquee";
           href="mailto:hello@dxlliv.dev"
           class="px-0 ml-3"
       >
-        <v-icon icon="mdi-at" :size="20" />
-        <ContactDialog />
+        <v-icon icon="mdi-at" :size="20"/>
+        <ContactDialog/>
       </BlockHeroButton>
 
     </BlockHeroActions>
@@ -56,7 +54,7 @@ import {Vue3Marquee} from "vue3-marquee";
     height: 100%;
     width: 30px;
     content: '';
-    z-index:2;
+    z-index: 2;
   }
 
   &::before {
