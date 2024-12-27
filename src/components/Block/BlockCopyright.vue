@@ -1,31 +1,8 @@
-<script setup lang="ts">
-import {useDisplay} from "vuetify";
-
-const sliderHorizontalStore = useSliderHorizontalStore()
-const display = useDisplay()
-
-const preventOnFirstClickFromDesktop = ref(true)
-
-function onSlideCopyrightClick() {
-  if (display.smAndUp.value && preventOnFirstClickFromDesktop.value) {
-    preventOnFirstClickFromDesktop.value = false
-    return
-  } else {
-    preventOnFirstClickFromDesktop.value = false
-  }
-
-  if (!preventOnFirstClickFromDesktop.value) {
-    sliderHorizontalStore.slideTo(0)
-    preventOnFirstClickFromDesktop.value = true
-  }
-}
-</script>
-
 <template>
   <BlockHeroCard
-      color="transparent"
+      color="#111"
       class="text-center cursor-pointer"
-      @click="onSlideCopyrightClick"
+      slide-reset
   >
 
     <p class="text-grey">

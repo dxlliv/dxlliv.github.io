@@ -3,6 +3,7 @@ import {useDisplay} from "vuetify";
 
 const props = withDefaults(defineProps<{
   slideNext?: boolean
+  slideReset?: boolean
 }>(), {
   slideNext: true
 })
@@ -14,10 +15,12 @@ const emit = defineEmits(['intersect'])
 const isIntersected = ref(false)
 
 function onCardClick() {
-  // only from xs, it slides next if props is provided
-  // otherwise it will center the slide automatically
-  if (props.slideNext && display.xs.value) {
-    sliderHorizontalStore.slideNext()
+  if (props.slideNext) {
+    // only from xs, it slides next if props is provided
+    // otherwise it will center the slide automatically
+    if (display.xs.value) {
+      sliderHorizontalStore.slideNext()
+    }
   }
 
   // prevent swiper auto-slide bug with contained v-bottom-sheet (?)
@@ -33,7 +36,6 @@ function onIntersect(isIntersecting: boolean) {
 
   emit('intersect', isIntersecting)
 }
-
 </script>
 
 <template>

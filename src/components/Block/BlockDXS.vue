@@ -1,5 +1,7 @@
 <template>
-  <BlockHeroCard>
+  <BlockHeroCard
+    :slide-next="false"
+  >
 
     <AppLogo name="shooting"/>
 
@@ -31,5 +33,3 @@
   }
 }
 </style>
-<script setup lang="ts">
-</script>

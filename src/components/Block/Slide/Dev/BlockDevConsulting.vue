@@ -22,7 +22,7 @@ import {GitHubIcon} from "vue3-simple-icons";
       <BlockHeroButton
           href="https://github.com/sponsors/dxlliv" target="_blank"
       >
-        Let's start
+        Let's begin
       </BlockHeroButton>
 
       <BlockHeroButton
