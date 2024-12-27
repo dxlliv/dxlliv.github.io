@@ -29,9 +29,11 @@ async function onFormSend() {
       ref="form"
   >
     <v-text-field
-        name="name" autocomplete="off" spellcheck="false"
+        name="name"
         :label="$t('form.fields.name.label')" :maxlength="30"
         :placeholder="$t('form.fields.name.placeholder')"
+        autocomplete="off" spellcheck="false"
+        bg-color="grey-lighten-4" variant="solo" flat
         v-model="formStore.fieldName"
         :error="$v.fieldName.$invalid"
     />
@@ -41,6 +43,7 @@ async function onFormSend() {
         :label="$t('form.fields.message.label')"
         :placeholder="$t('form.fields.message.placeholder')"
         autocomplete="off" spellcheck="false"
+        bg-color="grey-lighten-4" variant="solo" flat
         v-model="formStore.fieldMessage"
         :error="$v.fieldMessage.$invalid"
     />
