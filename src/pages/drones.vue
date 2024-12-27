@@ -1,64 +1,72 @@
 <script setup lang="ts">
-import {routeRawVideoClip} from "~/utils/utilRaw";
-
 useHead({
   title: 'Your No Label Developer'
 })
 </script>
 
 <template>
-  <swiper-slide v-if="$vuetify.display.mdAndUp">
+  <swiper-slide>
 
     <BlockDX/>
 
   </swiper-slide>
   <swiper-slide>
 
+    <BlockDroneIntro/>
+
+  </swiper-slide>
+  <swiper-slide>
+
     <BlockTemplateVideo
         :video="routeRawVideoClip('2024/AQOqptEzQllSwV7sB2S0X_5uozJt5R2GPoJPXvboy28eo9UJ_s5opiIaIcrntY6lZ2L7LtcmPqpvfwryndfSDE-e')"
-        slide-next
     />
 
   </swiper-slide>
   <swiper-slide>
 
-    <BlockDroneIntro
-        slide-next
-    />
+    <BlockDroneVideoShooting/>
 
   </swiper-slide>
   <swiper-slide>
 
     <BlockTemplateVideo
         :video="routeRawVideoClip('2024/AQPuHRHpSYdHWJKzjUoc9NaFsf61MW7asc9OEYvwvgqq13E-XiQ2UYlDD_gODTG7A9XxxDk3MCx1LDtnSpnTjXez')"
-        slide-next
     />
 
   </swiper-slide>
   <swiper-slide>
 
-    <BlockDroneForBusiness
-        slide-next
+    <BlockDroneBusinessOutdoor/>
+
+  </swiper-slide>
+  <swiper-slide>
+
+    <BlockTemplateVideo
+        :video="routeRawVideoClip('2024/AQNX4rH46fm3qX3Ec1XhQQ8RBHEuInKGuRccVzkHALDlzWKoiK6YQ0ZfK3fAT8bkOUevRxFOd3WmBXRwQiJCzpm5')"
     />
 
   </swiper-slide>
   <swiper-slide>
 
-    <BlockTemplateAlbum
-        slide-next-then
-        :album="[
-          '/media/fpv-controller.jpg',
-          '/media/fpv-equipment.jpg',
-          '/media/fpv-drone.jpg',
-        ]"
+    <BlockDroneBusinessBNB/>
+
+  </swiper-slide>
+  <swiper-slide>
+
+    <BlockTemplateVideo
+        :video="routeRawVideoClip('2024/AQMTvapUk5NgBCRcbB1N6wTKjTlAHZpKWb_PV0_arWUHk8S_X-5NLKI5fGkSlYgJWOqNGRld2meuhrpyIBROJFPc-Tq4se4QONV0ICk')"
     />
+
+  </swiper-slide>
+  <swiper-slide>
+
+    <BlockDXS/>
 
   </swiper-slide>
   <swiper-slide>
 
     <BlockTemplateVideo
         :video="routeRawVideoClip('2024/AQN4U0Q58BWHE5EB6XYs7h7XDWHySg77WbwavaBg-I4dsl01uwaeh6faFw9bqlL4s6TVA-IW4ncvOR2RnlZo5Iki')"
-        slide-next
     />
 
   </swiper-slide>

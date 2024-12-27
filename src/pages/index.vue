@@ -5,7 +5,7 @@ useHead({
 </script>
 
 <template>
-  <swiper-slide v-if="$vuetify.display.mdAndUp">
+  <swiper-slide>
 
     <BlockDX/>
 
@@ -17,27 +17,29 @@ useHead({
   </swiper-slide>
   <swiper-slide>
 
-    <BlockMeImage
-        slide-next
-    />
+    <BlockMeImage/>
 
   </swiper-slide>
   <swiper-slide>
 
-    <BlockPlanner/>
+    <BlockClipsArchive/>
 
   </swiper-slide>
   <swiper-slide>
 
     <BlockTemplateVideo
-        video="/media/dxvfpv.mp4"
-        slide-next
+        :video="routeRawVideoClip('2024/AQPuHRHpSYdHWJKzjUoc9NaFsf61MW7asc9OEYvwvgqq13E-XiQ2UYlDD_gODTG7A9XxxDk3MCx1LDtnSpnTjXez')"
     />
 
   </swiper-slide>
   <swiper-slide>
 
-    <BlockGridsky/>
+    <BlockProjectPlanner/>
+
+  </swiper-slide>
+  <swiper-slide>
+
+    <BlockProjectGridsky/>
 
   </swiper-slide>
   <swiper-slide>

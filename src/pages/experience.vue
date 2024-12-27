@@ -5,22 +5,22 @@ useHead({
 </script>
 
 <template>
-  <swiper-slide v-if="$vuetify.display.mdAndUp">
+  <swiper-slide>
 
     <BlockDX />
 
   </swiper-slide>
   <swiper-slide>
 
-    <BlockTemplateImage
-        image="/media/studio.jpg"
-        slide-next
-    />
+    <BlockDevConsulting/>
 
   </swiper-slide>
   <swiper-slide>
 
-    <BlockConsulting/>
+    <BlockTemplateImage
+        image="/media/studio.jpg"
+        border
+    />
 
   </swiper-slide>
   <swiper-slide>
@@ -30,27 +30,29 @@ useHead({
   </swiper-slide>
   <swiper-slide>
 
+    <BlockProjectGridskyAnimation/>
+
+  </swiper-slide>
+  <swiper-slide>
+
+    <BlockProjectGridsky/>
+
+  </swiper-slide>
+  <swiper-slide>
+
     <BlockTemplateImage
         image="/media/gameassist.webp"
-        slide-next
     />
 
   </swiper-slide>
   <swiper-slide>
 
-    <BlockGameAssist/>
+    <BlockProjectGameAssist/>
 
   </swiper-slide>
   <swiper-slide>
 
-    <BlockGridskyAnimation
-        slide-next
-    />
-
-  </swiper-slide>
-  <swiper-slide>
-
-    <BlockGridsky/>
+    <BlockProjectSimPoint/>
 
   </swiper-slide>
   <swiper-slide>
