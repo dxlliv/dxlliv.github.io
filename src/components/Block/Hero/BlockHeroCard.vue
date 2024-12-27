@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import {useDisplay} from "vuetify";
 
-const props = defineProps<{
+const props = withDefaults(defineProps<{
   slideNext?: boolean
-}>()
+}>(), {
+  slideNext: true
+})
 
 const display = useDisplay()
 const sliderHorizontalStore = useSliderHorizontalStore()

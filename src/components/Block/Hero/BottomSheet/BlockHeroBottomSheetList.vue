@@ -20,3 +20,10 @@ defineProps<{
 
   </v-card-text>
 </template>
+
+<style scoped lang="scss">
+:deep(.v-list-item) {
+  font-size: 16px;
+  min-height: 36px;
+}
+</style>
