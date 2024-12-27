@@ -1,7 +1,7 @@
 <template>
-  <BlockHeroCard to="/">
+  <BlockHeroCard :slide-next="false">
 
-    <AppLogo />
+    <AppLogo name="default" />
 
     <slot />
 
@@ -10,9 +10,6 @@
 
 <style scoped lang="scss">
 :deep(.dx-logo) {
-  font-size: 100px !important;
-  height: 100px;
-  line-height: 120px;
   transition: transform 0.1s ease;
   transform: scale(1);
   will-change: transform;
