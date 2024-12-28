@@ -28,10 +28,12 @@ withDefaults(defineProps<{
   }
 
   &--splash {
-    font-size: 128px;
+    div:first-child {
+      font-size: 128px;
 
-    @media(max-width: 599px) {
-      font-size: 96px;
+      @media(max-width: 599px) {
+        font-size: 96px;
+      }
     }
   }
 
@@ -50,7 +52,7 @@ withDefaults(defineProps<{
   &--toolbar {
     div:first-child {
       height: 30px;
-      line-height: 36px;
+      line-height: 44px;
       font-size: 24px;
     }
   }
@@ -63,7 +65,7 @@ withDefaults(defineProps<{
       font-size: 54px;
       margin-top: -22px;
       animation: shine 4s infinite;
-      mask-image: linear-gradient(-75deg, #fff 25%, hsla(0, 0%, 100%, .5) 50%, #fff 70%);
+      mask-image: linear-gradient(-75deg, #fff 25%, hsla(0, 0%, 100%, .4) 50%, #fff 70%);
       mask-size: 200%;
       transition: all .1s ease-in-out;
 
