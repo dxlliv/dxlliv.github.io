@@ -46,7 +46,7 @@ function fetchLatestCommit() {
     availability
 
     <v-badge
-        class="ml-6" :offset-y="-18"
+        class="ml-6" :offset-y="-37"
         :color="!isPastAvailability ? 'green' : 'grey-darken-3'"
     />
 

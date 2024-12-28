@@ -3,11 +3,11 @@ import {Vue3Marquee} from "vue3-marquee";
 
 const separator = '<span class="mx-4">—</span>'
 const messages = [
-  "welcome on dxlliv dot dev",
   "digital pixel perfectionist",
-  "website redesign in progress",
+  "welcome to dxlliv dot dev",
   "accepting drone video commissions for 2025",
   "stay tuned for new drone clips",
+  "website redesign in progress",
   "accepting ui/ux, web design and development commissions for 2025",
 ]
 </script>
@@ -15,7 +15,7 @@ const messages = [
 <template>
   <Vue3Marquee
       :duration="messages.join(' ').length / 2.5"
-      class="text-grey py-3 overflow-hidden"
+      class="text-grey overflow-hidden"
       pause-on-hover pause-on-click
   >
     <div v-html="messages.join(separator) + separator"/>
