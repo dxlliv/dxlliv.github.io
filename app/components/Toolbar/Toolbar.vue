@@ -34,7 +34,7 @@ const sliderHorizontalStore = useSliderHorizontalStore()
           <v-breadcrumbs-item>
 
             <a href="https://github.com/sponsors/dxlliv" target="_blank">
-              <GitHubIcon :size="21" style="margin-top: -1px;"/>
+              <GitHubIcon :size="22" style="margin-top: -1px;" />
             </a>
 
           </v-breadcrumbs-item>
@@ -68,7 +68,7 @@ const sliderHorizontalStore = useSliderHorizontalStore()
 <style scoped lang="scss">
 .dx-toolbar {
   height: var(--dx-toolbar-height);
-  line-height: var(--dx-toolbar-height);
+  line-height: calc(var(--dx-toolbar-height) - 3px);
   opacity: 0.8;
   overflow: hidden;
 }
