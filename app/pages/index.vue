@@ -22,7 +22,10 @@ useHead({
   </swiper-slide>
   <swiper-slide>
 
+    <BlockSlideDroneVideoShooting/>
+    <!--
     <BlockSlideClipsArchive/>
+    -->
 
   </swiper-slide>
   <swiper-slide>
@@ -30,6 +33,11 @@ useHead({
     <BlockTemplateVideo
         :video="routeRawVideoClip('2024/AQPvg5ClEWLL9efbgAkokCXSzspsWJYRsiP7S_ojM-pG4GeABI2WAM1Dp-qhO5SHs5sBOK19c-li9h7-f0rleT_k')"
     />
+
+  </swiper-slide>
+  <swiper-slide>
+
+    <BlockDXS/>
 
   </swiper-slide>
   <swiper-slide>
