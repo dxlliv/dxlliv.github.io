@@ -52,7 +52,7 @@ withDefaults(defineProps<{
   &--toolbar {
     div:first-child {
       height: 30px;
-      line-height: 44px;
+      line-height: 47px;
       font-size: 24px;
     }
   }
@@ -63,7 +63,9 @@ withDefaults(defineProps<{
     div:nth-child(2) {
       font-family: "Bebas Neue", serif;
       font-size: 54px;
-      margin-top: -22px;
+      height: 38px;
+      line-height: 43px;
+      margin-top: -4px;
       animation: shine 4s infinite;
       mask-image: linear-gradient(-75deg, #fff 25%, hsla(0, 0%, 100%, .4) 50%, #fff 70%);
       mask-size: 200%;
