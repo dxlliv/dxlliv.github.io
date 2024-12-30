@@ -12,7 +12,7 @@ export default {
                 }
             },
             action: {
-                send: "Prepare",
+                send: "Prepare e-mail",
                 preparing: "Opening your e-mail client"
             }
         },
@@ -60,31 +60,19 @@ export default {
                 },
                 indoorShots: {
                     title: "Immersive indoor footage",
-                    description: {
-                        p1: "This tiny first-person view drone is<br class='hidden-sm-and-up' /> designed to<br class='hidden-xs' /> fly safely in small places <br class='hidden-sm-and-up' /> thanks to its low weight<span class='hidden-sm-and-up'> and size</span>,",
-                        p2: "you can expect professional <span class='hidden-xs'>video takes</span><span class='hidden-sm-and-up'>videos</span><br class='hidden-sm-and-up' /> in 4K."
-                    },
+                    description: "This tiny first-person view drone is<br class='hidden-sm-and-up' /> designed to<br class='hidden-xs' /> fly safely in small places <br class='hidden-sm-and-up' /> thanks to its low weight<span class='hidden-sm-and-up'> and size</span><span class='hidden-xs'>,<br />you can expect professional video takes in 4K</span>.",
                 },
                 actionShots: {
                     title: "For exciting showcases",
-                    description: {
-                        p1: "Suitable for longer flights,<br class='hidden-sm-and-up' /> this drone is born<br class='hidden-xs' /> for cinematics and<br class='hidden-sm-and-up' /> can take <span class='hidden-xs'>really </span>insane shots<span class='hidden-sm-and-up'> from the sky</span>",
-                        p2: "from perspectives <span class='hidden-xs'>nobody ever</span><span class='hidden-sm-and-up'>never</span> seen before."
-                    },
+                    description: "Suitable for longer <span class='hidden-sm-and-up'>& stable</span> flights,<br class='hidden-sm-and-up' /> this drone is born<br class='hidden-xs' /> for cinematics and<br class='hidden-sm-and-up' /> can take <span class='hidden-xs'>really </span>insane shots<span class='hidden-sm-and-up'> from the sky</span><span class='hidden-xs'><br class='hidden-xs' /> from perspectives <span class='hidden-xs'>nobody ever</span><span class='hidden-sm-and-up'>never</span> seen before</span>.",
                 },
                 regularShots: {
                     title: "As stealth as possible",
-                    description: {
-                        p1: "This compact <span class='hidden-xs'>and portable </span><span class='hidden-sm-and-up'>DJI </span>drone will take<br class='hidden-sm-and-up' /> photos<br class='hidden-xs' /> and steady clips with its clear<br class='hidden-sm-and-up' /><span class='hidden-sm-and-up'>high quality</span> 48MP CMOS camera,",
-                        p2: "complementary to <span class='hidden-xs'>other first-person view </span><span class='hidden-sm-and-up'>other</span> drones."
-                    },
+                    description: "This compact <span class='hidden-xs'>and portable </span><span class='hidden-sm-and-up'>DJI </span>drone will take<br class='hidden-sm-and-up' /> photos<br class='hidden-xs' /> and steady clips with its clear<br class='hidden-sm-and-up' /><span class='hidden-sm-and-up'>high quality</span> 48MP CMOS camera<span class='hidden-xs'>,<br /> complementary to other first-person view <span class='hidden-sm-and-up'>other</span> drones</span>."
                 },
                 stableShots: {
                     title: "Wind won't be a problem",
-                    description: {
-                        "p1": "Don't need to worry about weather <span class='hidden-xs'>conditions,</span><br /> as this drone is particularly stable<span class='hidden-xs'> during flights</span>,",
-                        "p2": "currently equipped with 3 different cameras."
-                    },
+                    description: "Don't need to worry about weather <span class='hidden-xs'>conditions,</span><br /> as this drone is particularly stable<span class='hidden-xs'> during flights</span>, currently equipped with 3 different cameras."
                 }
             }
         }

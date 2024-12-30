@@ -18,7 +18,7 @@ function onIntroTitleIntersect(isIntersecting: boolean) {
 
       </v-col>
 
-      <v-col class="flex-grow-1" style="margin-left: 72px;">
+      <v-col class="flex-grow-1" style="margin-left: 64px;">
 
         <div class="dx-section-intro__inner">
 

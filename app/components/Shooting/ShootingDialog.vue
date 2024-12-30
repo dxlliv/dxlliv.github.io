@@ -32,7 +32,7 @@ const dialog = ref(false)
           <ShootingSectionHomeRegularShots/>
         </swiper-slide>
 
-        <swiper-slide v-if="$vuetify.display.smAndUp">
+        <swiper-slide>
           <ShootingSectionForm/>
         </swiper-slide>
 
@@ -54,5 +54,12 @@ swiper-container {
   --swiper-pagination-bullet-height: 10px;
   --swiper-pagination-bullet-inactive-color: #ddd;
   --swiper-pagination-right: 20px;
+
+  @media(max-width: 640px) {
+    --swiper-pagination-right: 13px;
+    --swiper-pagination-bullet-border-radius: 3px;
+    --swiper-pagination-bullet-width: 8px;
+    --swiper-pagination-bullet-height: 8px;
+  }
 }
 </style>

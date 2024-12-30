@@ -5,8 +5,7 @@
     >
       <template v-slot:description>
 
-        <p v-html="$t('shooting.section.indoorShots.description.p1')"/>
-        <p v-html="$t('shooting.section.indoorShots.description.p2')"/>
+        <p v-html="$t('shooting.section.indoorShots.description')"/>
 
       </template>
     </BlockHeroContent>

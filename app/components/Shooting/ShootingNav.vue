@@ -8,12 +8,8 @@ const display = useDisplay()
 const emit = defineEmits(['close'])
 
 const width = computed(() => {
-  if (display.smAndDown.value) {
-    return 72
-  }
-
   if (display.mdAndUp.value) {
-    return 96
+    return 72
   }
 
   return 64
@@ -55,7 +51,7 @@ const width = computed(() => {
       -->
       <v-list-item class="mb-2">
         <a :href="appConfig.links.email">
-          <v-icon icon="mdi-at" :size="27" />
+          <v-icon icon="mdi-at" :size="28" />
         </a>
       </v-list-item>
     </v-list>
