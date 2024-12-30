@@ -1,6 +1,6 @@
 <template>
   <BlockHeroCard
-      color="#111"
+      color="transparent"
       class="text-center cursor-pointer"
       slide-reset
   >
@@ -29,5 +29,3 @@
 
   </BlockHeroCard>
 </template>
-<script setup lang="ts">
-</script>
