@@ -40,8 +40,9 @@ async function onFormSend() {
     />
 
     <v-btn
-        block :text="$t('form.action.send')"
-        size="x-large" color="grey-darken-2"
+        block flat :text="$t('form.action.send')"
+        class="px-0 mt-n2" size="large"
+        color="grey-lighten-2"
         @click="onFormSend"
     />
 
