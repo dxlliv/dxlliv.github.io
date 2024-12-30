@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useHead({
-  title: 'Your No Label Developer'
+  title: 'Immersive Drone Visuals'
 })
 </script>
 
@@ -60,7 +60,9 @@ useHead({
   </swiper-slide>
   <swiper-slide>
 
-    <BlockDXS/>
+    <BlockDXS>
+      <ShootingDialog />
+    </BlockDXS>
 
   </swiper-slide>
   <swiper-slide>

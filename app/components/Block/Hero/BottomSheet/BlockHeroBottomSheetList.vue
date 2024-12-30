@@ -13,7 +13,7 @@ defineProps<{
     />
 
     <v-card rounded flat class="bg-grey-lighten-4">
-      <v-list density="compact" class="bg-transparent py-0 overflow-hidden text-subtitle-1">
+      <v-list density="compact" class="bg-transparent py-2 overflow-hidden text-subtitle-1">
         <slot />
       </v-list>
     </v-card>

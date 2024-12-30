@@ -14,7 +14,7 @@
           Immersive Shots
         </v-list-item>
 
-        <v-list-item @click.stop to="/experience">
+        <v-list-item @click.stop to="/experience" class="mt-n2">
           Design & Development
         </v-list-item>
 

@@ -57,10 +57,18 @@ export const useSliderHorizontalStore = defineStore('slider/horizontal', () => {
     }
 
     function slideTo(index: number) {
+        if (!instance.value) {
+            return
+        }
+
         instance.value.swiper.slideTo(index)
     }
 
     function slideNext() {
+        if (!instance.value) {
+            return
+        }
+
         instance.value.swiper.slideNext()
     }
 

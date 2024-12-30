@@ -63,7 +63,7 @@ withDefaults(defineProps<{
     div:nth-child(2) {
       font-family: "Bebas Neue", serif;
       font-size: 54px;
-      height: 38px;
+      height: 39px;
       line-height: 43px;
       margin-top: -4px;
       animation: shine 3s infinite;

@@ -1,6 +1,6 @@
 <template>
   <BlockHeroCard
-      color="transparent"
+      color="rgba(255, 255, 255, 0.035)"
       class="text-center cursor-pointer"
       slide-reset
   >
