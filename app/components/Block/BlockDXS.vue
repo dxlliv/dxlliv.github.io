@@ -7,16 +7,6 @@
 
     <slot/>
 
-    <BlockHeroBottomSheet>
-      <BlockHeroBottomText>
-
-        <a href="https://dxshooting.click" target="_blank">
-          dxshooting.click
-        </a>
-
-      </BlockHeroBottomText>
-    </BlockHeroBottomSheet>
-
   </BlockHeroCard>
 </template>
 

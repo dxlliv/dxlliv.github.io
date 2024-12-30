@@ -37,7 +37,9 @@ useHead({
   </swiper-slide>
   <swiper-slide>
 
-    <BlockDXS/>
+    <BlockDXS>
+      <ShootingDialog />
+    </BlockDXS>
 
   </swiper-slide>
   <swiper-slide>
