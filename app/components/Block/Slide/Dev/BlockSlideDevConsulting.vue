@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {GitHubIcon} from "vue3-simple-icons";
+const appConfig = useAppConfig()
 </script>
 
 <template>
@@ -26,7 +26,7 @@ import {GitHubIcon} from "vue3-simple-icons";
       </BlockHeroButton>
 
       <BlockHeroButton
-          href="mailto:hello@dxlliv.dev"
+          :href="appConfig.links.email"
           class="px-0 ml-3"
       >
         <v-icon icon="mdi-at" :size="20" />

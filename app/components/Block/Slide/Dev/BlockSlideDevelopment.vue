@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import {Vue3Marquee} from "vue3-marquee";
+
+const appConfig = useAppConfig()
 </script>
 
 <template>
@@ -31,7 +33,7 @@ import {Vue3Marquee} from "vue3-marquee";
       </BlockHeroButton>
 
       <BlockHeroButton
-          href="mailto:hello@dxlliv.dev"
+          :href="appConfig.links.email"
           class="px-0 ml-3"
       >
         <v-icon icon="mdi-at" :size="20"/>
