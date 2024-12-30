@@ -66,7 +66,7 @@ withDefaults(defineProps<{
       height: 38px;
       line-height: 43px;
       margin-top: -4px;
-      animation: shine 4s infinite;
+      animation: shine 3s infinite;
       mask-image: linear-gradient(-75deg, #fff 25%, hsla(0, 0%, 100%, .4) 50%, #fff 70%);
       mask-size: 200%;
       transition: all .1s ease-in-out;
