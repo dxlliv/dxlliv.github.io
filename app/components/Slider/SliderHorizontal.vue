@@ -51,7 +51,7 @@ swiper-container {
     display: grid;
     align-items: center;
     box-sizing: border-box;
-    padding: 24px;
+    padding: 18px;
   }
 }
 </style>
