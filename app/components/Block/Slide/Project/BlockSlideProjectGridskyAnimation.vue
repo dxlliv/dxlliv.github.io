@@ -26,7 +26,7 @@ function onIntersect(isIntersecting: boolean) {
     <v-lazy v-if="!lazyReset">
       <iframe
           v-show="iframeLoaded"
-          src="https://gridsky.app/loading"
+          src="https://gridsky-app.github.io/launcher/loading/"
           @load="onIframeLoad"
       />
     </v-lazy>

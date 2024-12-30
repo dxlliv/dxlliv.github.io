@@ -11,7 +11,7 @@
       <BlockHeroBottomSheet>
         <BlockHeroBottomText>
 
-          <a href="https://gridsky.social" target="_blank">
+          <a href="https://gridsky-app.github.io/launcher/" target="_blank">
             Launch Gridsky
           </a>
 
@@ -21,5 +21,3 @@
 
   </BlockTemplateGitHub>
 </template>
-<script setup lang="ts">
-</script>
