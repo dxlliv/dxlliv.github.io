@@ -12,8 +12,8 @@ export default {
                 }
             },
             action: {
-                send: "Send",
-                sent: "Opening your e-mail client"
+                send: "Prepare",
+                preparing: "Opening your e-mail client"
             }
         },
         shooting: {

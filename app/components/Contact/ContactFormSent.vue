@@ -9,7 +9,7 @@
     :timeout="8000"
   >
     <div class="text-center">
-      {{$t('form.action.sent')}}
+      {{$t('form.action.prepare')}}
     </div>
   </v-snackbar>
 </template>
