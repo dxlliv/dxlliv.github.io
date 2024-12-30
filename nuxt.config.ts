@@ -51,6 +51,12 @@ export default defineNuxtConfig({
         dirs: ['composables', 'stores', 'utils']
     },
 
+    i18n: {
+        compilation: {
+            strictMessage: false,
+        },
+    },
+
     build: {
         transpile: ['vuetify'],
     },
