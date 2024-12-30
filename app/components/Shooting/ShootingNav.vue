@@ -5,6 +5,8 @@ import {InstagramIcon} from "vue3-simple-icons";
 const appConfig = useAppConfig()
 const display = useDisplay()
 
+const emit = defineEmits(['close'])
+
 const width = computed(() => {
   if (display.smAndDown.value) {
     return 72
@@ -32,6 +34,11 @@ const width = computed(() => {
     </div>
 
     <v-list nav>
+      <v-list-item class="mb-n1 hidden-md-and-up">
+        <a class="cursor-pointer" @click="emit('close')">
+          <v-icon icon="mdi-arrow-left" :size="30" color="grey-lighten-1" />
+        </a>
+      </v-list-item>
       <v-list-item class="mb-n2">
         <a :href="appConfig.links.instagram" target="_blank">
           <InstagramIcon />
@@ -48,7 +55,7 @@ const width = computed(() => {
       -->
       <v-list-item class="mb-2">
         <a :href="appConfig.links.email">
-          <v-icon icon="mdi-at" :size="29" />
+          <v-icon icon="mdi-at" :size="27" />
         </a>
       </v-list-item>
     </v-list>

@@ -14,7 +14,7 @@ function onIntroTitleIntersect(isIntersecting: boolean) {
 
       <v-col class="flex-grow-0">
 
-        <ShootingNav />
+        <ShootingNav @close="emit('close')" />
 
       </v-col>
 
