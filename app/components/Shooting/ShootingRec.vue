@@ -1,6 +1,3 @@
-<script setup lang="ts">
-</script>
-
 <template>
   <div>
     <v-badge dot color="red"/>
@@ -11,6 +8,7 @@
 <style scoped lang="scss">
 .v-badge {
   margin-top: 52px;
+  margin-left: 2px;
   animation: blink 3s infinite;
 
   :deep(.v-badge__badge) {
@@ -35,7 +33,7 @@
 strong {
   position: absolute;
   margin-top: -2px;
-  margin-left: -18px;
+  margin-left: -17px;
   transform: rotateZ(-90deg);
   font-family: "Bebas Neue", serif;
   font-weight: 600;
