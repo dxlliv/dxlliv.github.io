@@ -24,7 +24,7 @@
     <br/>
 
     <p class="text-grey-darken-1">
-      Copyright &copy; 2024 – dxlliv
+      Copyright &copy; 2025 – dxlliv
     </p>
 
   </BlockHeroCard>
