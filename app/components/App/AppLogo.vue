@@ -30,9 +30,14 @@ withDefaults(defineProps<{
   &--splash {
     div:first-child {
       font-size: 128px;
+      height: 96px;
+      line-height: 122px;
+      vertical-align: top;
 
       @media(max-width: 599px) {
         font-size: 96px;
+        height: 72px;
+        line-height: 90px;
       }
     }
   }
@@ -64,7 +69,7 @@ withDefaults(defineProps<{
       font-family: "Bebas Neue", serif;
       font-size: 54px;
       height: 39px;
-      line-height: 43px;
+      line-height: 45px;
       margin-top: -4px;
       animation: shine 3s infinite;
       mask-image: linear-gradient(-75deg, #fff 25%, hsla(0, 0%, 100%, .4) 50%, #fff 70%);

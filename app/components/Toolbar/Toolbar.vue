@@ -68,7 +68,7 @@ const sliderHorizontalStore = useSliderHorizontalStore()
 <style scoped lang="scss">
 .dx-toolbar {
   height: var(--dx-toolbar-height);
-  line-height: calc(var(--dx-toolbar-height) - 3px) !important;
+  line-height: calc(var(--dx-toolbar-height) - 2px) !important;
   opacity: 0.8;
   overflow: hidden;
 

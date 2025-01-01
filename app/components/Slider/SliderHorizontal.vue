@@ -44,7 +44,7 @@ swiper-container {
   height: 100%;
 
   :deep(swiper-slide) {
-    margin-top: 5dvh;
+    margin-top: 24px;
   }
 
   > :deep(swiper-slide) {

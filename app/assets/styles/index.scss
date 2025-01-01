@@ -25,10 +25,14 @@ html {
 body {
   position: relative;
   font-family: "Quicksand", serif;
-  font-size: 17px;
+  font-size: 16px;
   color: #4a4a4a;
 
-  @media(min-width: 600px) {
+  @media(min-width: 410px) {
+    font-size: 17px;
+  }
+
+  @media(min-width: 800px) {
     font-size: 18px;
     letter-spacing: -0.25px;
   }
