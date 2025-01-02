@@ -9,7 +9,7 @@ const dialog = ref(false)
 <template>
   <v-dialog
       activator="parent"
-      :model-value="true"
+      v-model="dialog"
       :width="600" max-width="calc(100vw - 36px)"
       :fullscreen="fullscreen"
       transition="dialog-bottom-transition"
