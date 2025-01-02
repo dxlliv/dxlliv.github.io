@@ -48,7 +48,7 @@ export default defineNuxtConfig({
     ],
 
     imports: {
-        dirs: ['composables', 'stores', 'utils']
+        dirs: ['composables', 'models', 'stores', 'utils']
     },
 
     i18n: {

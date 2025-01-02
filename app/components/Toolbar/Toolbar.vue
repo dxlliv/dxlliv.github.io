@@ -52,11 +52,7 @@ const sliderHorizontalStore = useSliderHorizontalStore()
       <v-col class="flex-grow-0 px-5" align-self="center">
 
         <ToolbarAvailability>
-          <ContactDialog/>
-          <!--
-           v-if="$vuetify.display.smAndUp"
-          <ContactBottomSheet v-else/>
-          -->
+          <AgentDialog/>
         </ToolbarAvailability>
 
       </v-col>
