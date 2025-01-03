@@ -26,17 +26,16 @@ const appConfig = useAppConfig()
 
     <BlockHeroActions @click.stop>
 
-      <BlockHeroButton
-          href="https://github.com/sponsors/dxlliv"
-      >
+      <BlockHeroButton>
         Say hello
+        <AgentDialog />
       </BlockHeroButton>
 
       <BlockHeroButton
-          :href="appConfig.links.email"
+          href="https://github.com/sponsors/dxlliv" target="_blank"
           class="px-0 ml-3"
       >
-        <v-icon icon="mdi-at" :size="20"/>
+        <GitHubIcon :size="20" />
         <ContactDialog/>
       </BlockHeroButton>
 

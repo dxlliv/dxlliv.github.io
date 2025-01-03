@@ -1,11 +1,15 @@
 <script setup lang="ts">
+const agentStore = useAgentStore()
+const appConfig = useAppConfig()
+
+const agentBaseURL = appConfig.agent.baseURL
+
 const listElement = useTemplateRef<any>('listElement')
 const waitingReply = ref(false)
 
-const appConfig = useAppConfig()
-const agentBaseURL = appConfig.agent.baseURL
-
-const chatManager = new ChatManager(listElement, agentBaseURL)
+onMounted(() => {
+  agentStore.initialize(listElement, agentBaseURL)
+})
 
 const text = ref('')
 
@@ -14,19 +18,23 @@ async function onNewMessage() {
 
   text.value = ''
 
-  chatManager.addNewMessage('me', message)
+  agentStore.agent.addNewMessage('me', message)
 
   waitingReply.value = true
 
-  await chatManager.sendMessage(message)
+  await agentStore.agent.sendMessage(message)
 
   waitingReply.value = false
 }
 </script>
 
 <template>
-  <v-list ref="listElement" class="mt-2" height="50vh" :max-height="400">
-    <v-list-item v-for="message of chatManager.chat.value" :class="['py-1']">
+  <v-list
+      v-if="agentStore.agent"
+      ref="listElement" class="mt-2"
+      height="50vh" :max-height="400"
+  >
+    <v-list-item v-for="message of agentStore.agent.chat" :class="['py-1']">
       <AgentMessage :author="message.author" :class="[{ 'float-right': message.author === 'me' }]">
         {{message.text}}
       </AgentMessage>
@@ -36,7 +44,7 @@ async function onNewMessage() {
       <AgentMessageWaiting />
     </v-list-item>
 
-    <v-list-item v-if="chatManager.chat.value.length === 0" class="fill-height text-center">
+    <v-list-item v-if="agentStore.agent.chat && agentStore.agent.chat.length === 0" class="fill-height text-center">
       Let's talk about projects!<br />
       What do you have in mind?
     </v-list-item>

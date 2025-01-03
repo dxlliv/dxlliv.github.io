@@ -1,5 +1,8 @@
 export class ChatManager {
-    chat: Ref<any[]> = ref([])
+    chat: {
+        author: string
+        text: string
+    }[] = []
     listElement: any
     agentBaseURL: string
     userId: string
@@ -22,11 +25,11 @@ export class ChatManager {
     }
 
     scrollToBottom(): void {
-        this.listElement.value.$el.scrollTop = this.listElement.value.$el.scrollHeight
+        this.listElement.$el.scrollTop = this.listElement.$el.scrollHeight
     }
 
     addNewMessage(author: string, text: string): void {
-        this.chat.value.push({
+        this.chat.push({
             author,
             text,
         })

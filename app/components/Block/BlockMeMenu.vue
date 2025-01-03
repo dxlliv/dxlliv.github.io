@@ -18,6 +18,11 @@
           Design & Development
         </v-list-item>
 
+        <v-list-item @click.stop class="mt-n1">
+          Let's get in touch
+          <AgentDialog />
+        </v-list-item>
+
       </BlockHeroBottomSheetList>
 
     </template>
