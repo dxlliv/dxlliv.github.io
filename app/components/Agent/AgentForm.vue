@@ -44,9 +44,8 @@ async function onNewMessage() {
 
   <v-text-field
       v-model="text"
-      variant="solo"
-      flat
-      hide-details
+      variant="solo" flat hide-details
+      autocomplete="off" spellcheck="false"
       :readonly="waitingReply"
       placeholder="Type a message"
       @keydown.enter="onNewMessage"
