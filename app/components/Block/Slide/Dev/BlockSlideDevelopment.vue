@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import {Vue3Marquee} from "vue3-marquee";
+import {GitHubIcon} from "vue3-simple-icons";
 
-const appConfig = useAppConfig()
+const skills = 'HTML – CSS – JavaScript – TypeScript – Vue.js – Nuxt.js – Vuetify – Vite – SSG – Electron – Capacitor – Ionic – UI/UX – Pixel Perfect Design - Web Consultant - Design Consultant - UI/UX Battle Tester –'
 </script>
 
 <template>
@@ -14,12 +15,10 @@ const appConfig = useAppConfig()
     <BlockHeroDescription>
       An independent developer<br/>
       for websites and mobile apps.<br/>
+      <div class="d-none" v-text="skills" />
       <div class="mx-auto">
-        <Vue3Marquee :duration="28">
-          HTML – CSS – JavaScript – TypeScript –
-          Vue.js – Nuxt.js – Vuetify – Vite – SSG –
-          Electron – Capacitor – Ionic –
-          UI/UX – Pixel Perfect Design –&nbsp;
+        <Vue3Marquee :duration="36">
+          {{skills}}&nbsp;
         </Vue3Marquee>
       </div>
     </BlockHeroDescription>
