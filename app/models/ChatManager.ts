@@ -69,7 +69,7 @@ export class ChatManager {
             })
             .catch(async () => {
                 return new Promise(resolve => setTimeout(() => {
-                    this.addNewMessage('bot', 'There was an error')
+                    this.addNewMessage('bot', "I'm not available right now")
                     resolve(true)
                 }, 3000))
             })
