@@ -8,7 +8,7 @@
       <p>
         Planning outdoor adventures?<br />
         I capture breathtaking aerial views<br />
-        that bring your story to life
+        that will bring your story to life
       </p>
     </BlockHeroDescription>
 

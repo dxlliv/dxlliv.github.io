@@ -10,7 +10,7 @@ const video = ref()
     <div class="dx-video">
       <video
           src="https://dxlliv.github.io/media/dxvfpv.mp4"
-          ref="video" muted playsinline autoplay
+          ref="video" muted playsinline autoplay loop
       />
     </div>
 
