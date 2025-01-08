@@ -10,7 +10,8 @@ withDefaults(defineProps<{
 <template>
   <div :class="['dx-logo', `dx-logo--${name}`, {'dx-logo--invert': invert}]">
     <div>DX</div>
-    <div v-if="name === 'shooting'">shooting</div>
+    <div v-if="name === 'archive'">Archive</div>
+    <div v-if="name === 'shooting'">Shooting</div>
   </div>
 </template>
 
@@ -59,6 +60,32 @@ withDefaults(defineProps<{
       height: 30px;
       line-height: 47px;
       font-size: 24px;
+    }
+  }
+
+  &--archive {
+    color: black;
+
+    div:nth-child(2) {
+      font-family: "Bebas Neue", serif;
+      font-size: 62px;
+      height: 44px;
+      line-height: 52px;
+      margin-top: -3px;
+      animation: shine 3s infinite;
+      mask-image: linear-gradient(-75deg, #fff 25%, hsla(0, 0%, 100%, .8) 50%, #fff 70%);
+      mask-size: 200%;
+      transition: all .1s ease-in-out;
+
+      @keyframes shine {
+        0% {
+          -webkit-mask-position: 150%
+        }
+
+        to {
+          -webkit-mask-position: -50%
+        }
+      }
     }
   }
 

@@ -1,15 +1,28 @@
 <template>
   <v-app>
 
-    <AppSplash />
+    <div class="app-flex">
 
-    <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
+      <AppSplash/>
+
+      <NuxtLayout>
+        <NuxtPage/>
+      </NuxtLayout>
+
+      <Toolbar/>
+
+    </div>
 
   </v-app>
 </template>
 
 <style lang="scss">
 @use "~/assets/styles/index.scss";
+</style>
+
+<style scoped lang="scss">
+.flex {
+  background: linear-gradient(to top, #111, #000);
+  height: 100dvh;
+}
 </style>

@@ -1,29 +1,20 @@
 <template>
-  <div class="flex">
+  <v-layout>
 
-    <v-layout>
+    <SliderHorizontal>
+      <slot/>
+    </SliderHorizontal>
 
-      <SliderHorizontal>
-        <slot />
-      </SliderHorizontal>
+  </v-layout>
 
-    </v-layout>
+  <Footer/>
 
-    <Footer/>
-    <Toolbar/>
-
-  </div>
 </template>
 
 <style scoped lang="scss">
-.flex {
-  background: linear-gradient(to top, #111, #000);
-  height: 100dvh;
-
-  .v-layout {
-    display: grid;
-    height: calc(74dvh - var(--dx-toolbar-height));
-    align-items: center;
-  }
+.v-layout {
+  display: grid;
+  height: calc(74dvh - var(--dx-toolbar-height));
+  align-items: center;
 }
 </style>

@@ -21,7 +21,28 @@ const sliderHorizontalStore = useSliderHorizontalStore()
         </v-breadcrumbs>
 
       </v-col>
-      <v-col class="flex-grow-1 px-0 text-right overflow-hidden" align-self="center">
+      <v-col class="px-3 flex-grow-0 hidden-sm-and-down" align-self="center">
+
+        <nuxt-link to="/experience" class="text-overline">
+          Design
+        </nuxt-link>
+
+      </v-col>
+      <v-col class="px-3 flex-grow-0 hidden-sm-and-down" align-self="center">
+
+        <nuxt-link to="/drones" class="text-overline">
+          Flying
+        </nuxt-link>
+
+      </v-col>
+      <v-col class="px-3 flex-grow-0 hidden-md-and-down" align-self="center">
+
+        <nuxt-link to="/archive" class="text-overline">
+          Archive
+        </nuxt-link>
+
+      </v-col>
+      <v-col class="flex-grow-1 ml-3 px-0 text-right overflow-hidden" align-self="center">
 
         <ToolbarMarquee
           @click="sliderHorizontalStore.slideTo(0)"
@@ -30,7 +51,7 @@ const sliderHorizontalStore = useSliderHorizontalStore()
       </v-col>
       <v-col class="flex-grow-0 hidden-xs" align-self="center">
 
-        <v-breadcrumbs class="px-5">
+        <v-breadcrumbs class="px-6">
           <v-breadcrumbs-item>
 
             <a href="https://github.com/sponsors/dxlliv" target="_blank">
