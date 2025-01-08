@@ -1,0 +1,1 @@
+import{ao as s}from"./DJVBFPLv.js";import{u}from"./fdTViqlO.js";function i(e,a){const{title:o,titleTemplate:r,...m}=e;return u({title:o,titleTemplate:r,_flatMeta:m},{...a,transform(t){const n=s({...t._flatMeta});return delete t._flatMeta,{...t,meta:n}}})}export{i as u};

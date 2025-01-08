@@ -1,0 +1,1 @@
+import{_ as r,o as l,c as s,x as t}from"./DJVBFPLv.js";const a={};function c(e,n){return l(),s("swiper-slide",null,[t(e.$slots,"default")])}const _=Object.assign(r(a,[["render",c]]),{__name:"ArchiveGallerySliderItem"});export{_ as default};
