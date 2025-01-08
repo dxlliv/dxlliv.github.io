@@ -17,14 +17,6 @@ useHead({
   </swiper-slide>
   <swiper-slide>
 
-    <BlockTemplateImage
-        image="/media/studio.webp"
-        border
-    />
-
-  </swiper-slide>
-  <swiper-slide>
-
     <BlockSlideDevelopment/>
 
   </swiper-slide>

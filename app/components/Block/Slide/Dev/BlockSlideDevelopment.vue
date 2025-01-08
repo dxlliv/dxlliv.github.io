@@ -17,7 +17,7 @@ const skills = 'HTML – CSS – JavaScript – TypeScript – Vue.js – Nuxt.j
       for websites and mobile apps.<br/>
       <div class="d-none" v-text="skills" />
       <div class="mx-auto">
-        <Vue3Marquee :duration="36">
+        <Vue3Marquee :duration="56">
           {{skills}}&nbsp;
         </Vue3Marquee>
       </div>
