@@ -1,1 +1,0 @@
-import{_ as s,o as r,c as a,a as c,x as t}from"./DJVBFPLv.js";const o={},n={class:"my-10"},l={"slides-per-view":2.5,"space-between":32};function i(e,_){return r(),a("div",n,[c("swiper-container",l,[t(e.$slots,"default")])])}const f=Object.assign(s(o,[["render",i]]),{__name:"ArchiveGallerySlider"});export{f as default};
