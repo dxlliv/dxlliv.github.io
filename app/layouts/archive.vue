@@ -15,12 +15,12 @@ useSeoMeta({
 
 <template>
   <v-layout>
-    <v-container :width="1100">
+    <v-container :width="1100" max-width="100vw">
       <v-row>
-        <v-col :cols="4">
+        <v-col :cols="12" :md="4">
 
           <menu>
-            <nuxt-link class="d-inline-block mt-10 mb-12" to="/archive">
+            <nuxt-link class="d-inline-block mt-8 mb-12" to="/archive">
               <AppLogo
                   name="archive"
                   invert
@@ -44,7 +44,7 @@ useSeoMeta({
           </menu>
 
         </v-col>
-        <v-col :cols="8">
+        <v-col :cols="12" :md="8">
 
           <slot/>
 

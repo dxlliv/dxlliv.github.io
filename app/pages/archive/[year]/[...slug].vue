@@ -23,25 +23,25 @@ useSeoMeta({
 
     <v-btn
         href="https://instagram.com/dxlliv" target="_blank"
-        icon variant="solo" class="my-12" size="x-large" :height="72"
+        icon color="grey-darken-4" class="my-12 mr-4" size="x-large" :width="72" :height="72"
     >
       <InstagramIcon />
     </v-btn>
     <v-btn
         href="https://threads.com/dxvfpv" target="_blank"
-        icon variant="solo" class="my-12" size="x-large" :height="72"
+        icon color="grey-darken-4" class="my-12 mr-4" size="x-large" :width="72" :height="72"
     >
       <ThreadsIcon />
     </v-btn>
     <v-btn
         href="https://bsky.app/profile/did:plc:2pkidgvfnbxx7sq3shporxij" target="_blank"
-        icon variant="solo" class="my-12" size="x-large" :height="72"
+        icon color="grey-darken-4" class="my-12 mr-4" size="x-large" :width="72" :height="72"
     >
       <BlueskyIcon :size="27" />
     </v-btn>
     <v-btn
         href="https://gridsky.app/did:plc:2pkidgvfnbxx7sq3shporxij" target="_blank"
-        icon variant="solo" class="my-12" size="x-large" :height="72"
+        icon color="grey-darken-4" class="my-12" size="x-large" :width="72" :height="72"
     >
       <v-icon icon="mdi-grid" :size="28" />
     </v-btn>
@@ -69,7 +69,7 @@ useSeoMeta({
   font-family: 'Georgia', serif;
   text-align: center;
   padding: 24px 0;
-  opacity: 0.5;
+  opacity: 0.35;
 
   p {
     font-size: 28px
