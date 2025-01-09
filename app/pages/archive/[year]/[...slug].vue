@@ -72,7 +72,7 @@ useSeoMeta({
   opacity: 0.35;
 
   p {
-    font-size: 28px
+    font-size: 26px
   }
 }
 </style>
