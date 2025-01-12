@@ -13,6 +13,7 @@
     "@mdi/font": "^7.4.47",
     "@nuxt/content": "^3.0.0-alpha.8",
     "@nuxt/fonts": "^0.10.3",
+    "@nuxt/icon": "^1.10.0",
     "@nuxtjs/i18n": "^9.1.1",
     "@pinia/nuxt": "^0.9.0",
     "@vuelidate/core": "^2.0.3",

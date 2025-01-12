@@ -41,6 +41,7 @@ export default defineNuxtConfig({
         '@nuxtjs/i18n',
         '@nuxt/content',
         '@nuxt/fonts',
+        '@nuxt/icon',
         '@pinia/nuxt',
     ],
 
