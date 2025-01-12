@@ -26,10 +26,6 @@ export default defineNuxtConfig({
         cdnURL: 'https://dxlliv.github.io',
     },
 
-    css: [
-        '@mdi/font/css/materialdesignicons.css',
-    ],
-
     components: [
         {
             path: '~/components',

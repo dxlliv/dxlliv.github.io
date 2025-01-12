@@ -10,7 +10,6 @@
     "preview": "nuxt preview"
   },
   "dependencies": {
-    "@mdi/font": "^7.4.47",
     "@nuxt/content": "^3.0.0-alpha.8",
     "@nuxt/fonts": "^0.10.3",
     "@nuxt/icon": "^1.10.0",

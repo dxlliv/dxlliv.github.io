@@ -32,7 +32,7 @@ const width = computed(() => {
     <v-list nav>
       <v-list-item class="mb-n1 hidden-md-and-up">
         <a class="cursor-pointer" @click="emit('close')">
-          <v-icon icon="mdi-arrow-left" :size="30" color="grey-lighten-1" />
+          <Icon name="mdi:arrow-left" :size="30" color="grey-lighten-1" />
         </a>
       </v-list-item>
       <v-list-item class="mb-n2">
@@ -51,7 +51,7 @@ const width = computed(() => {
       -->
       <v-list-item class="mb-2">
         <a :href="appConfig.links.email">
-          <v-icon icon="mdi-at" :size="28" />
+          <Icon name="mdi:at" :size="28" />
         </a>
       </v-list-item>
     </v-list>

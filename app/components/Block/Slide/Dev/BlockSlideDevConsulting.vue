@@ -29,7 +29,7 @@ const appConfig = useAppConfig()
           :href="appConfig.links.email"
           class="px-0 ml-3"
       >
-        <v-icon icon="mdi-at" :size="20" />
+        <Icon name="mdi:at" :size="20" />
         <ContactDialog />
       </BlockHeroButton>
 

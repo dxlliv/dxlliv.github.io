@@ -59,7 +59,10 @@ async function onNewMessage() {
       @keydown.enter="onNewMessage"
   >
     <template v-slot:prepend>
-      <v-icon icon="mdi-account-circle-outline" class="ml-5 mr-n4" />
+      <Icon
+          name="mdi:account-circle-outline" :size="24"
+          class="ml-5 mr-n4 text-grey-darken-1"
+      />
     </template>
   </v-text-field>
 </template>

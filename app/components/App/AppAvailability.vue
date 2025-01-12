@@ -22,7 +22,7 @@
 
     <v-btn icon color="black" :width="86" :height="86" flat>
 
-      <v-icon icon="mdi-arrange-bring-forward" size="30" />
+      <Icon name="mdi:arrange-bring-forward" :size="30" />
 
       <v-tooltip
           :height="36" activator="parent"

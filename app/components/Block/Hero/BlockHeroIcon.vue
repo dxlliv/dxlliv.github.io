@@ -8,9 +8,9 @@ defineProps<{
 </script>
 
 <template>
-  <v-icon
+  <Icon
       v-if="icon"
-      :icon="icon" size="180"
+      :name="icon" :size="180"
       :class="[
         'dx-block__icon v-icon--big mt-n3 mt-lg-0 mb-8 mb-lg-0',
         {'text-grey': dark},
@@ -24,7 +24,8 @@ defineProps<{
 
   <img
       v-else-if="image" :src="image"
-      max-width="80vw" width="400px" class="mx-auto mb-12 no-pointer-events"
+      max-width="80vw" width="400px"
+      class="mx-auto mb-12 no-pointer-events"
   />
 </template>
 
