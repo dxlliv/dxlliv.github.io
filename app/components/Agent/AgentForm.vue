@@ -61,7 +61,7 @@ async function onNewMessage() {
     <template v-slot:prepend>
       <Icon
           name="mdi:account-circle-outline" :size="24"
-          class="ml-5 mr-n4 text-grey-darken-1"
+          class="ml-5 mr-n4 text-grey-darken-3"
       />
     </template>
   </v-text-field>
