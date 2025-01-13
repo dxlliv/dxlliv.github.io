@@ -21,3 +21,30 @@ const messages = [
     <div v-html="messages.join(separator) + separator"/>
   </Vue3Marquee>
 </template>
+
+<style scoped lang="scss">
+.vue3-marquee {
+  position: relative;
+
+  &:before,
+  &:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 32px;
+    height: 100%;
+    z-index: 2;
+    content: '';
+  }
+
+  &:before {
+    left: 0;
+    background: linear-gradient(to left, transparent, rgb(var(--v-theme-background)));
+  }
+
+  &:after {
+    right: 0;
+    background: linear-gradient(to right, transparent, rgb(var(--v-theme-background)));
+  }
+}
+</style>
