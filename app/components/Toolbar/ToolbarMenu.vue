@@ -71,26 +71,26 @@ function onMenuClose() {
           <v-breadcrumbs-item>
             <v-btn
                 v-bind="buttonProps"
-                @click="onMenuClose"
+                to="/drones"
             >
               <Icon
                   name="lucide:image-play" :size="28"
                   class="text-center mx-2"
               />
-
-              <ShootingDialog/>
             </v-btn>
           </v-breadcrumbs-item>
           <v-breadcrumbs-item>
             <v-btn
                 v-bind="buttonProps"
-                to="/drones"
+                @click="onMenuClose"
             >
               <Icon
                   name="tabler:drone" :size="29"
                   style="margin-top: -1px;"
                   class="text-center mx-2"
               />
+
+              <ShootingDialog/>
             </v-btn>
           </v-breadcrumbs-item>
           <v-breadcrumbs-item>
