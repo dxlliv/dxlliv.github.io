@@ -12,12 +12,12 @@ const sliderHorizontalStore = useSliderHorizontalStore()
     <v-row no-gutters>
       <v-col class="flex-grow-0" align-self="center">
 
-        <v-breadcrumbs class="px-5 py-0">
+        <v-breadcrumbs class="pl-5 py-0">
           <v-breadcrumbs-item>
 
-            <AppLogo name="toolbar" class="cursor-pointer" />
+            <AppLogo name="toolbar" class="cursor-pointer"/>
 
-            <ToolbarMenu />
+            <ToolbarMenu/>
 
           </v-breadcrumbs-item>
         </v-breadcrumbs>
@@ -26,32 +26,41 @@ const sliderHorizontalStore = useSliderHorizontalStore()
       <v-col class="flex-grow-1 px-0 text-right overflow-hidden" align-self="center">
 
         <ToolbarMarquee
-          @click="sliderHorizontalStore.slideTo(0)"
+            @click="sliderHorizontalStore.slideTo(0)"
         />
 
       </v-col>
-      <v-col class="flex-grow-0 hidden-xs" align-self="center">
+      <v-col class="flex-grow-0" align-self="center">
 
-        <v-breadcrumbs class="px-6">
-          <v-breadcrumbs-item>
+        <v-breadcrumbs class="px-sm-6">
+          <v-breadcrumbs-item class="hidden-xs">
 
             <a href="https://github.com/sponsors/dxlliv" target="_blank">
-              <GitHubIcon :size="23" />
+              <GitHubIcon :size="23"  style="margin-bottom: 2px;"/>
             </a>
+
+          </v-breadcrumbs-item>
+          <v-breadcrumbs-item class="ml-3 hidden-sm-and-up">
+
+            <Icon
+                name="lucide:calendar" :size="26"
+                class="cursor-pointer"
+            />
+            <AgentDialog/>
 
           </v-breadcrumbs-item>
           <v-breadcrumbs-item class="ml-3">
 
             <a href="https://instagram.com/dxlliv" target="_blank">
-              <InstagramIcon :size="22" />
+              <InstagramIcon :size="22" style="margin-bottom: 1px;"/>
             </a>
 
           </v-breadcrumbs-item>
         </v-breadcrumbs>
 
       </v-col>
-      <v-divider vertical/>
-      <v-col class="flex-grow-0 px-5" align-self="center">
+      <v-divider vertical class="hidden-xs"/>
+      <v-col class="hidden-xs flex-grow-0 px-5" align-self="center">
 
         <ToolbarAvailability>
           <AgentDialog/>
@@ -86,6 +95,5 @@ const sliderHorizontalStore = useSliderHorizontalStore()
 
 svg {
   vertical-align: middle;
-  margin-top: -3px;
 }
 </style>
