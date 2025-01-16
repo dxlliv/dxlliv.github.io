@@ -43,7 +43,7 @@ const sliderHorizontalStore = useSliderHorizontalStore()
           <v-breadcrumbs-item class="ml-3 hidden-sm-and-up">
 
             <Icon
-                name="lucide:calendar" :size="26"
+                name="lucide:calendar" :size="25"
                 class="cursor-pointer"
             />
             <AgentDialog/>

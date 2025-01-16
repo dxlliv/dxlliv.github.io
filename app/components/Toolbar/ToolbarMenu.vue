@@ -33,7 +33,7 @@ function onMenuClose() {
                 to="/"
             >
               <Icon
-                  name="lucide:home" :size="27"
+                  name="lucide:sparkles" :size="25"
                   class="text-center mx-2"
               />
             </v-btn>
