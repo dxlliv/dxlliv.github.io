@@ -10,6 +10,7 @@ rm dist
 
 # move real dist folder to /dist
 mv .output/public/ dist
+rm -rf .output
 
 # place dist files manually in gh-pages
 # since git subtree seems unusable now
