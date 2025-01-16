@@ -1,0 +1,61 @@
+@use "./partials/fonts";
+@use "./partials/swiper";
+@use "./partials/vuetify";
+
+:root {
+  --dx-toolbar-height: 60px;
+}
+::selection {
+  background: #222;
+  color: #eee;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  background: rgb(var(--v-theme-background));
+  user-select: none;
+  color-scheme: dark;
+}
+
+html {
+  overflow: hidden !important;
+}
+
+body {
+  position: relative;
+  font-family: "Quicksand", serif;
+  font-size: 16px;
+  color: #4a4a4a;
+
+  @media(min-width: 410px) {
+    font-size: 17px;
+  }
+
+  @media(min-width: 800px) {
+    font-size: 18px;
+    letter-spacing: -0.25px;
+  }
+}
+
+iframe {
+  vertical-align: top;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.no-pointer-events {
+  pointer-events: none;
+}
