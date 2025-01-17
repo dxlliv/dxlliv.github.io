@@ -5,8 +5,8 @@ const agentStore = useAgentStore()
 
 const dateSelected = ref()
 
-const IconArrowLeft = h(Icon, {name: 'lucide:arrow-left', size: 20})
-const IconArrowRight = h(Icon, {name: 'lucide:arrow-right', size: 20})
+const IconArrowLeft = h(Icon, {name: 'lucide:arrow-left', size: 14})
+const IconArrowRight = h(Icon, {name: 'lucide:arrow-right', size: 14})
 
 const formattedDate = computed(() => {
   if (!dateSelected.value) {
