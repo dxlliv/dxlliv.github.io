@@ -11,12 +11,10 @@ onMounted(() => {
   agentStore.initialize(listElement, agentBaseURL)
 })
 
-const text = ref('')
-
 async function onNewMessage() {
-  const message = String(text.value)
+  const message = String(agentStore.text)
 
-  text.value = ''
+  agentStore.text = ''
 
   agentStore.agent.addNewMessage('me', message)
 
@@ -51,7 +49,7 @@ async function onNewMessage() {
   </v-list>
 
   <v-text-field
-      v-model="text"
+      v-model="agentStore.text"
       variant="solo" flat hide-details
       autocomplete="off" spellcheck="false"
       :readonly="waitingReply"
