@@ -12,7 +12,7 @@ const sliderHorizontalStore = useSliderHorizontalStore()
     <v-row no-gutters>
       <v-col class="flex-grow-0" align-self="center">
 
-        <v-breadcrumbs class="pl-5 py-0">
+        <v-breadcrumbs class="pl-4 pr-3 pl-sm-5 pr-sm-4 py-0">
           <v-breadcrumbs-item>
 
             <AppLogo name="toolbar" class="cursor-pointer"/>
@@ -32,7 +32,7 @@ const sliderHorizontalStore = useSliderHorizontalStore()
       </v-col>
       <v-col class="flex-grow-0" align-self="center">
 
-        <v-breadcrumbs class="px-sm-6">
+        <v-breadcrumbs class="px-sm-5">
           <v-breadcrumbs-item class="hidden-xs">
 
             <a href="https://github.com/sponsors/dxlliv" target="_blank">
@@ -40,7 +40,7 @@ const sliderHorizontalStore = useSliderHorizontalStore()
             </a>
 
           </v-breadcrumbs-item>
-          <v-breadcrumbs-item class="ml-3 hidden-sm-and-up">
+          <v-breadcrumbs-item class="hidden-sm-and-up">
 
             <Icon
                 name="lucide:calendar" :size="25"
@@ -90,7 +90,7 @@ const sliderHorizontalStore = useSliderHorizontalStore()
 }
 
 .dx-logo {
-  margin-top: -2px;
+  margin-top: -3px;
 }
 
 svg {
