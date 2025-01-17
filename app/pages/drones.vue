@@ -24,7 +24,7 @@ useHead({
   </swiper-slide>
   <swiper-slide>
 
-    <BlockSlideDroneVideoShooting/>
+    <BlockSlideDroneImmersiveVisuals/>
 
   </swiper-slide>
   <swiper-slide>
