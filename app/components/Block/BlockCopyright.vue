@@ -1,6 +1,6 @@
 <template>
   <BlockHeroCard
-      color="rgba(255, 255, 255, 0.1)"
+      color="rgba(255, 255, 255, 0.08)"
       class="text-center cursor-pointer"
       slide-reset
   >
@@ -9,7 +9,8 @@
 
     <BlockHeroDescription>
       <p class="text-grey">
-        A programmer's work is never done.
+        A programmer's work
+        is never done.
         <!--
         <a
             @click.stop target="_blank" class="mr-n8 hidden-sm-and-down"
@@ -42,6 +43,6 @@
   left: 0;
   right: 0;
   z-index: 0;
-  opacity: 0.25;
+  opacity: 0.15;
 }
 </style>
