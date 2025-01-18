@@ -5,10 +5,11 @@ const separator = '<span class="mx-4">—</span>'
 const messages = [
   "digital pixel perfectionist",
   "welcome to dxlliv dot dev",
-  "accepting video commissions for 2025",
-  "stay tuned for new drone clips",
+  "accepting drone video commissions for 2025",
+  "drone pilot",
+  "web designer",
   "website redesign in progress",
-  "accepting ui/ux, web design and development commissions for 2025",
+  "accepting ui/ux, web design and website commissions for 2025",
 ]
 </script>
 
