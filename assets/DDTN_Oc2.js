@@ -1,1 +1,0 @@
-import{_ as t,o as _,n as s,w as c,b as a,s as r,E as d}from"./DBqv-6dJ.js";import{_ as p}from"./l3plUZ7N.js";const f={};function m(o,l){const e=d,n=p;return _(),s(n,{"slide-next":!1},{default:c(()=>[a(e,{name:"shooting"}),r(o.$slots,"default",{},void 0,!0)]),_:3})}const x=Object.assign(t(f,[["render",m],["__scopeId","data-v-ef6fbd47"]]),{__name:"BlockDXS"});export{x as _};
