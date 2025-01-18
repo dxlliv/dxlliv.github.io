@@ -51,7 +51,7 @@ const width = computed(() => {
       -->
       <v-list-item class="mb-2">
         <a :href="appConfig.links.email">
-          <Icon name="mdi:at" :size="28" />
+          <Icon name="lucide:at-sign" :size="26" />
         </a>
       </v-list-item>
     </v-list>

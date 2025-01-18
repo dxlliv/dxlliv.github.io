@@ -56,7 +56,7 @@ function onMenuClose() {
                 @click="onMenuClose"
             >
               <Icon
-                  name="mdi:at" :size="26"
+                  name="lucide:at-sign" :size="25"
                   class="text-center mx-2"
               />
 
@@ -74,7 +74,7 @@ function onMenuClose() {
                 to="/drones"
             >
               <Icon
-                  name="lucide:image-play" :size="28"
+                  name="lucide:clapperboard" :size="28"
                   class="text-center mx-2"
               />
             </v-btn>
@@ -99,9 +99,8 @@ function onMenuClose() {
                 @click="onMenuClose"
             >
               <Icon
-                  name="lucide:calendar-days" :size="28"
+                  name="lucide:messages-square" :size="28"
                   class="text-center mx-2"
-                  style="margin-top: -4px;"
               />
 
               <AgentDialog/>

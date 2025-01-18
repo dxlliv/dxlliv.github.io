@@ -36,14 +36,14 @@ const sliderHorizontalStore = useSliderHorizontalStore()
           <v-breadcrumbs-item class="hidden-xs">
 
             <a href="https://github.com/sponsors/dxlliv" target="_blank">
-              <GitHubIcon :size="23"  style="margin-bottom: 2px;"/>
+              <GitHubIcon :size="23" style="margin-bottom: 2px;"/>
             </a>
 
           </v-breadcrumbs-item>
           <v-breadcrumbs-item class="hidden-sm-and-up">
 
             <Icon
-                name="lucide:calendar" :size="25"
+                name="lucide:calendar-days" :size="25"
                 class="cursor-pointer"
             />
             <AgentDialog/>
