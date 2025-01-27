@@ -1,7 +1,3 @@
-<script setup lang="ts">
-import {GitHubIcon, InstagramIcon, XIcon, YouTubeIcon} from "vue3-simple-icons";
-</script>
-
 <template>
   <div class="dx-footer">
 
