@@ -4,12 +4,10 @@ import {Vue3Marquee} from "vue3-marquee";
 const separator = '<span class="mx-4">—</span>'
 const messages = [
   "digital pixel perfectionist",
-  "welcome to dxlliv dot dev",
-  "accepting drone video commissions for 2025",
-  "drone pilot",
-  "web designer",
+  "your no-label developer",
+  "drone pilot by day",
+  "web developer by night",
   "website redesign in progress",
-  "accepting ui/ux, web design and website commissions for 2025",
 ]
 </script>
 
