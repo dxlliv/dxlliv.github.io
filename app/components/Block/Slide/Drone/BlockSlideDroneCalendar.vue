@@ -1,9 +1,6 @@
 <script setup lang="ts">
 import {Icon} from '#components'
 import {useDateFormat} from '@vueuse/core'
-import {InstagramIcon} from "vue3-simple-icons";
-
-const appConfig = useAppConfig()
 
 const dateSelected = ref()
 const bookBottomSheet = ref(false)
@@ -19,55 +16,39 @@ const formattedDate = computed(() => {
   return useDateFormat(dateSelected.value, 'D/MM/YYYY').value
 })
 
-function onBookDate() {
+watch(() => dateSelected.value, () => {
   bookBottomSheet.value = true
-}
+})
 </script>
 
 <template>
-  <BlockHeroCard :slide-next="false">
-    <v-date-picker
-        v-model="dateSelected"
-        hide-header
-        hide-weekdays
-        class="mx-auto"
-        :min="new Date().toISOString()"
-        :prev-icon="IconArrowLeft"
-        :next-icon="IconArrowRight"
-    />
+  <BlockHeroCard
+    :slide-next="false"
+  >
+    <template v-slot="{ slideNext }">
+      <v-date-picker
+          v-model="dateSelected"
+          hide-header
+          hide-weekdays
+          class="mx-auto"
+          :min="new Date().toISOString()"
+          :prev-icon="IconArrowLeft"
+          :next-icon="IconArrowRight"
+          @update:month="dateSelected = undefined"
+          @update:year="dateSelected = undefined"
+      />
 
-    <BlockHeroBottomSheet
-        v-if="dateSelected"
-    >
-      <BlockHeroBottomText>
-        <div @click="onBookDate">
-          Book for {{ formattedDate }}
-        </div>
-      </BlockHeroBottomText>
-    </BlockHeroBottomSheet>
-
-    <v-bottom-sheet close-on-content-click v-model="bookBottomSheet">
-      <v-card color="black">
-        <v-card-text class="pa-0 mt-1 text-center">
-          <v-breadcrumbs class="d-inline-block">
-            <v-breadcrumbs-item class="px-2">
-              <a :href="appConfig.links.instagram" target="_blank">
-                <InstagramIcon/>
-              </a>
-            </v-breadcrumbs-item>
-            <v-breadcrumbs-item class="px-2">
-              <a :href="appConfig.links.email" target="_blank">
-                <Icon name="lucide:at-sign" :size="26"/>
-              </a>
-            </v-breadcrumbs-item>
-            <v-breadcrumbs-item class="px-2">
-              <Icon name="lucide:messages-square" :size="28" style="margin-bottom: 4px;"/>
-              <AgentDialog />
-            </v-breadcrumbs-item>
-          </v-breadcrumbs>
-        </v-card-text>
-      </v-card>
-    </v-bottom-sheet>
+      <BlockHeroBottomSheet
+          v-if="dateSelected"
+          activator="parent"
+      >
+        <template v-slot="{ close }">
+          <BlockHeroBottomText @click="slideNext(); close();">
+            Book for {{ formattedDate }}
+          </BlockHeroBottomText>
+        </template>
+      </BlockHeroBottomSheet>
+    </template>
   </BlockHeroCard>
 </template>
 

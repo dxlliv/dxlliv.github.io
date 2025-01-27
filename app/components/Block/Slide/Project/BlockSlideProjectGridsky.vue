@@ -4,11 +4,11 @@
       title="launcher"
       :slide-next="false"
   >
-    Bringing grid experiences<br/>
+    Bringing grids and cubes<br/>
     to the Bluesky network
 
     <template #trigger>
-      <BlockHeroBottomSheet>
+      <BlockHeroBottomSheet activator="parent">
         <BlockHeroBottomText>
 
           <a href="https://gridsky-app.github.io/launcher/" target="_blank">

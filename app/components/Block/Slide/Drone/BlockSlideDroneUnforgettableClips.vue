@@ -26,6 +26,3 @@
 
   </BlockHeroCard>
 </template>
-<script setup lang="ts">
-import {InstagramIcon, YouTubeIcon} from "vue3-simple-icons";
-</script>

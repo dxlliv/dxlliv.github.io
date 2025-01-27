@@ -1,14 +1,14 @@
 <template>
   <BlockHeroCard>
     <BlockHeroTitle
-        title="Drones Equipment"
+        title="There is no limit"
     />
 
     <BlockHeroDescription>
       <p>
-        Different size of drones<br />
-        to cover each project’s needs,<br />
-        from indoor to vast views
+        Several types of drones<br />
+        to cover any project need,<br />
+        both indoor and outdoor
       </p>
     </BlockHeroDescription>
 

@@ -13,7 +13,7 @@
       </p>
     </BlockHeroDescription>
 
-    <BlockHeroBottomSheet>
+    <BlockHeroBottomSheet activator="parent">
       <BlockHeroBottomText>
 
         hello@dxlliv.dev

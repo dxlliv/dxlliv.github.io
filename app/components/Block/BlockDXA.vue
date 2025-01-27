@@ -1,7 +1,5 @@
 <template>
-  <BlockHeroCard
-    :slide-next="false"
-  >
+  <BlockHeroCard :slide-next="false">
 
     <AppLogo name="archive"/>
 

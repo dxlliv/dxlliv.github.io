@@ -1,7 +1,7 @@
 <template>
   <BlockHeroCard>
     <BlockHeroTitle
-        title="Bed & Breakfasts"
+        title="B&B and Hotels"
     />
 
     <BlockHeroDescription>

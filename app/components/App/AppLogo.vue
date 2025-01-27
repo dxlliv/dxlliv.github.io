@@ -1,15 +1,17 @@
 <script setup lang="ts">
 withDefaults(defineProps<{
   name?: string
+  text?: string
   invert?: boolean
 }>(), {
-  name: 'default'
+  name: 'default',
+  text: 'DX'
 })
 </script>
 
 <template>
   <div :class="['dx-logo', `dx-logo--${name}`, {'dx-logo--invert': invert}]">
-    <div>DX</div>
+    <div v-text="text" />
     <div v-if="name === 'archive'">Archive</div>
     <div v-if="name === 'shooting'">Shooting</div>
   </div>
@@ -40,6 +42,14 @@ withDefaults(defineProps<{
         height: 72px;
         line-height: 90px;
       }
+    }
+  }
+
+  &--home {
+    div:first-child {
+      font-size: 56px;
+      height: 46px;
+      line-height: 56px;
     }
   }
 

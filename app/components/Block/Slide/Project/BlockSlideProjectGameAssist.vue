@@ -1,14 +1,10 @@
-<script setup lang="ts">
-import {GooglePlayIcon, AppStoreIcon} from "vue3-simple-icons";
-</script>
-
 <template>
   <BlockHeroCard
       :slide-next="false"
   >
     <BlockHeroTitle
         title="GameAssist Apps"
-        badge="Demo"
+        badge="Project"
     />
 
     <BlockHeroDescription>
@@ -19,7 +15,7 @@ import {GooglePlayIcon, AppStoreIcon} from "vue3-simple-icons";
       </p>
     </BlockHeroDescription>
 
-    <BlockHeroBottomSheet>
+    <BlockHeroBottomSheet activator="parent">
       <BlockHeroBottomText>
 
         <a href="https://gta.codes" target="_blank">
@@ -30,13 +26,13 @@ import {GooglePlayIcon, AppStoreIcon} from "vue3-simple-icons";
             variant="text" class="px-0 ml-2" target="_blank"
             href="https://play.google.com/store/apps/details?id=codes.gta.app"
         >
-          <GooglePlayIcon :size="16" color="black"/>
+          <Icon name="simple-icons:googleplay" :size="16" class="text-black" />
         </BlockHeroButton>
         <BlockHeroButton
             variant="text" class="px-0 ml-n4" target="_blank"
             href="https://apps.apple.com/app/vice-cheats/id6738965421"
         >
-          <AppStoreIcon :size="16" color="black"/>
+          <Icon name="simple-icons:appstore" :size="16" class="text-black" />
         </BlockHeroButton>
 
       </BlockHeroBottomText>

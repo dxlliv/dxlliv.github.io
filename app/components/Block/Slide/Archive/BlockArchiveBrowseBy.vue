@@ -12,7 +12,7 @@
 
     </BlockHeroDescription>
 
-    <BlockHeroBottomSheet fullscreen>
+    <BlockHeroBottomSheet fullscreen activator="parent">
       <BlockArchiveBrowse2024 />
     </BlockHeroBottomSheet>
 

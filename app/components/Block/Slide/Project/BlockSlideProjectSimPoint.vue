@@ -4,7 +4,7 @@
   >
     <BlockHeroTitle
         title="Sim Racing Point"
-        badge="Demo"
+        badge="Project"
     />
 
     <BlockHeroDescription>
@@ -15,7 +15,7 @@
       </p>
     </BlockHeroDescription>
 
-    <BlockHeroBottomSheet>
+    <BlockHeroBottomSheet activator="parent">
       <BlockHeroBottomText>
 
         <a href="https://simpoint.racing" target="_blank">

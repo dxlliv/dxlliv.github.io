@@ -1,7 +1,7 @@
 <template>
   <BlockHeroCard>
     <BlockHeroTitle
-        title="Outdoor activities"
+        title="Open-air activities"
     />
 
     <BlockHeroDescription>

@@ -11,7 +11,9 @@ const swiperElement = useTemplateRef<HTMLElement>('swiper');
 
 onMounted(() => {
   appStore.emitter.on('horizontal-slide-change', () => {
-    swiperElement.value.swiper.slideTo(initialSlide)
+    setTimeout(() => {
+      swiperElement.value.swiper.slideTo(initialSlide)
+    }, 1000)
   })
 })
 
@@ -29,7 +31,7 @@ function onSwiperReachEnd() {
 </script>
 
 <template>
-  <BlockHeroCard>
+  <BlockHeroCard :slide-next="!slideNextThen">
     <template #default="{ isIntersected }">
       <swiper-container
           ref="swiper"

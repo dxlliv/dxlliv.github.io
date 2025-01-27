@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import {GitHubIcon} from "vue3-simple-icons";
-
 withDefaults(defineProps<{
   title: string
   author?: string
@@ -18,7 +16,7 @@ withDefaults(defineProps<{
     <v-row no-gutters style="width: max-content;" class="flex mx-auto">
       <v-col class="flex-grow-0 text-right" align-self="center">
 
-        <GitHubIcon :size="38" class="mr-5"/>
+        <Icon name="simple-icons:github" class="mr-5" :size="38" />
 
       </v-col>
       <v-col class="flex-grow-0 text-left" align-self="center">

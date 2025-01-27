@@ -9,6 +9,7 @@ defineProps<{
   <BlockTemplateSlider
       color="grey-darken-4"
       :slide-next-then="slideNextThen"
+      @click.prevent
   >
     <template #default="{ isIntersected, onSlideClick }">
 

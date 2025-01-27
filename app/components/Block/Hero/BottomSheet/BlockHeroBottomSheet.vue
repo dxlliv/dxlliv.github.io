@@ -12,7 +12,6 @@ onMounted(() => {
 
 <template>
   <v-bottom-sheet
-      activator="parent"
       v-model="bottomSheet"
       eager contained
   >

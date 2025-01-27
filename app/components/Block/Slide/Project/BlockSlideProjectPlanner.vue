@@ -7,7 +7,7 @@
     like a pro with planner
 
     <template #trigger>
-      <BlockHeroBottomSheet>
+      <BlockHeroBottomSheet activator="parent">
         <BlockHeroBottomText>
 
           <a href="https://dxlliv.github.io/planner/" target="_blank">
