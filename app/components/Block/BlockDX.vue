@@ -1,9 +1,11 @@
 <template>
   <BlockHeroCard :slide-next="false">
 
-    <AppLogo name="default" />
+    <AppLogo name="default"/>
 
-    <slot />
+    <slot/>
+
+    <BlockMeMenu />
 
   </BlockHeroCard>
 </template>

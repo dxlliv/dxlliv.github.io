@@ -14,6 +14,16 @@ useSeoMeta({
   </swiper-slide>
   <swiper-slide>
 
+    <BlockMe/>
+
+  </swiper-slide>
+  <swiper-slide>
+
+    <BlockMeImage/>
+
+  </swiper-slide>
+  <swiper-slide>
+
     <BlockArchiveBrowseBy />
 
   </swiper-slide>

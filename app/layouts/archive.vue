@@ -54,6 +54,7 @@ useSeoMeta({
   </v-layout>
 
   <Toolbar/>
+  <Footer/>
 </template>
 
 <style scoped lang="scss">

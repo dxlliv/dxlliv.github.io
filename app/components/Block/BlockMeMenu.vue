@@ -1,34 +1,26 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
-  <BlockHeroBottomSheet>
-    <template #default="{ close }">
+  <BlockHeroBottomSheet fullscreen activator="parent">
+    <BlockHeroCard>
+      <BlockHeroList>
 
-      <BlockHeroBottomSheetList
-          title="What you looking for"
-      >
-
-        <v-list-item @click.stop to="/drones">
+        <v-list-item to="/drones">
           Immersive Shots
         </v-list-item>
 
-        <v-list-item @click.stop to="/experience" class="mt-n1">
+        <v-list-item to="/design">
           Design & Development
         </v-list-item>
 
-        <v-list-item @click.stop class="mt-n1">
-          Let's get in touch
-          <AgentDialog />
+        <v-list-item to="/">
+          <Icon
+              name="lucide:layout-grid"
+              class="mr-1"
+              style="vertical-align: -2px;"
+          />
+          Home Screen
         </v-list-item>
 
-      </BlockHeroBottomSheetList>
-
-    </template>
+      </BlockHeroList>
+    </BlockHeroCard>
   </BlockHeroBottomSheet>
 </template>
-
-<style scoped lang="scss">
-
-</style>

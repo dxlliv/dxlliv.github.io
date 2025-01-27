@@ -8,6 +8,7 @@
   </v-layout>
 
   <Footer/>
+  <Toolbar/>
 
 </template>
 

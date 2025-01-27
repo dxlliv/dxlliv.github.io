@@ -1,28 +1,23 @@
+<script setup lang="ts">
+useHead({
+  titleTemplate: (titleChunk) => {
+    return titleChunk ? `${titleChunk} - DX` : "dxlliv's Home Screen";
+  }
+})
+</script>
+
 <template>
   <v-app>
 
-    <div class="app-flex">
+    <AppSplash/>
 
-      <AppSplash/>
-
-      <NuxtLayout>
-        <NuxtPage/>
-      </NuxtLayout>
-
-      <Toolbar/>
-
-    </div>
+    <NuxtLayout>
+      <NuxtPage/>
+    </NuxtLayout>
 
   </v-app>
 </template>
 
 <style lang="scss">
 @use "~/assets/styles/index.scss";
-</style>
-
-<style scoped lang="scss">
-.flex {
-  background: linear-gradient(to top, #111, #000);
-  height: 100dvh;
-}
 </style>

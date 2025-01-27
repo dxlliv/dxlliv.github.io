@@ -12,24 +12,7 @@ useHead({
   </swiper-slide>
   <swiper-slide>
 
-    <BlockSlideDroneIntro/>
-
-  </swiper-slide>
-  <swiper-slide>
-
-    <BlockTemplateVideo
-        :video="routeRawVideoClip('2024/AQOqptEzQllSwV7sB2S0X_5uozJt5R2GPoJPXvboy28eo9UJ_s5opiIaIcrntY6lZ2L7LtcmPqpvfwryndfSDE-e')"
-    />
-
-  </swiper-slide>
-  <swiper-slide>
-
     <BlockSlideDroneImmersiveVisuals/>
-
-  </swiper-slide>
-  <swiper-slide>
-
-    <BlockSlideDroneCalendar/>
 
   </swiper-slide>
   <swiper-slide>
@@ -41,14 +24,31 @@ useHead({
   </swiper-slide>
   <swiper-slide>
 
-    <BlockSlideDroneBusinessOutdoor/>
+    <BlockSlideDroneFlyingSince/>
+
+  </swiper-slide>
+  <swiper-slide>
+
+    <BlockSlideDroneEquipment/>
+
+  </swiper-slide>
+  <swiper-slide>
+
+    <BlockDXS>
+      <ShootingDialog />
+    </BlockDXS>
 
   </swiper-slide>
   <swiper-slide>
 
     <BlockTemplateVideo
-        :video="routeRawVideoClip('2024/AQNX4rH46fm3qX3Ec1XhQQ8RBHEuInKGuRccVzkHALDlzWKoiK6YQ0ZfK3fAT8bkOUevRxFOd3WmBXRwQiJCzpm5')"
+        :video="routeRawVideoClip('2024/AQOqptEzQllSwV7sB2S0X_5uozJt5R2GPoJPXvboy28eo9UJ_s5opiIaIcrntY6lZ2L7LtcmPqpvfwryndfSDE-e')"
     />
+
+  </swiper-slide>
+  <swiper-slide>
+
+    <BlockSlideDroneBusinessOutdoor/>
 
   </swiper-slide>
   <swiper-slide>
@@ -65,16 +65,12 @@ useHead({
   </swiper-slide>
   <swiper-slide>
 
-    <BlockDXS>
-      <ShootingDialog />
-    </BlockDXS>
+    <BlockSlideDroneCalendar/>
 
   </swiper-slide>
   <swiper-slide>
 
-    <BlockTemplateVideo
-        :video="routeRawVideoClip('2024/AQN4U0Q58BWHE5EB6XYs7h7XDWHySg77WbwavaBg-I4dsl01uwaeh6faFw9bqlL4s6TVA-IW4ncvOR2RnlZo5Iki')"
-    />
+    <BlockSlideDroneBookNow />
 
   </swiper-slide>
 </template>

@@ -1,8 +1,5 @@
 <template>
-  <BlockHeroCard
-      id="me-block"
-      :slide-next="$vuetify.display.xs"
-  >
+  <BlockHeroCard>
     <template #default="{ slideNext }">
 
       <BlockHeroTitle
@@ -17,24 +14,6 @@
         </p>
       </BlockHeroDescription>
 
-      <BlockMeMenu
-          v-if="$vuetify.display.smAndUp"
-      />
-
-      <BlockHeroActions
-          v-else
-      >
-        <BlockHeroButton>
-          Welcome
-
-          <BlockMeMenu
-              attach="#me-block"
-          />
-        </BlockHeroButton>
-      </BlockHeroActions>
-
     </template>
   </BlockHeroCard>
 </template>
-<script setup lang="ts">
-</script>
