@@ -10,7 +10,7 @@ export const useSliderHorizontalStore = defineStore('slider/horizontal', () => {
         instance.value = document.querySelector('.dx-slider-horizontal')
 
         const swiperConfig = {
-            spaceBetween: 24,
+            spaceBetween: 0,
             slidesPerView: 1,
             breakpoints: {
                 560: {
@@ -26,6 +26,7 @@ export const useSliderHorizontalStore = defineStore('slider/horizontal', () => {
                     slidesPerView: 4.5,
                 },
             },
+            mousewheel: true,
             pagination: {
                 lockClass: 'dx-slider-horizontal__lock',
             },
@@ -39,9 +40,13 @@ export const useSliderHorizontalStore = defineStore('slider/horizontal', () => {
             },
         }
 
-        Object.assign(instance.value, swiperConfig);
+        Object.assign(instance.value, swiperConfig)
 
         instance.value.initialize()
+    }
+
+    function destroy() {
+        instance.value.swiper.destroy(true, true)
     }
 
     function lock() {
@@ -64,6 +69,14 @@ export const useSliderHorizontalStore = defineStore('slider/horizontal', () => {
         instance.value.swiper.slideTo(index)
     }
 
+    function slidePrev() {
+        if (!instance.value) {
+            return
+        }
+
+        instance.value.swiper.slidePrev()
+    }
+
     function slideNext() {
         if (!instance.value) {
             return
@@ -80,8 +93,10 @@ export const useSliderHorizontalStore = defineStore('slider/horizontal', () => {
         instance,
         swiper,
         initialize,
+        destroy,
         update,
         slideTo,
+        slidePrev,
         slideNext,
         slideReset,
         lock,
