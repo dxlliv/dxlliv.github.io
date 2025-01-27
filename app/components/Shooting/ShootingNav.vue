@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import {useDisplay} from "vuetify";
-import {InstagramIcon} from "vue3-simple-icons";
 
 const appConfig = useAppConfig()
 const display = useDisplay()
@@ -37,7 +36,7 @@ const width = computed(() => {
       </v-list-item>
       <v-list-item class="mb-n2">
         <a :href="appConfig.links.instagram" target="_blank">
-          <InstagramIcon />
+          <Icon name="simple-icons:instagram" :size="22" />
         </a>
       </v-list-item>
       <!--
@@ -51,7 +50,7 @@ const width = computed(() => {
       -->
       <v-list-item class="mb-2">
         <a :href="appConfig.links.email">
-          <Icon name="lucide:at-sign" :size="26" />
+          <Icon name="mdi:at" :size="26" />
         </a>
       </v-list-item>
     </v-list>

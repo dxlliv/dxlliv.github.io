@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import {InstagramIcon} from "vue3-simple-icons";
-
 const dialog = ref(false)
 const contactFormSent = ref(false)
 
@@ -40,7 +38,7 @@ watch(() => dialog.value, value => {
                 class="px-0" size="large" target="_blank"
                 href="https://instagram.com/dxlliv"
             >
-              <InstagramIcon :size="18" />
+              <Icon name="simple-icons:instagram" :size="18" />
             </v-btn>
           </v-col>
           <v-col class="flex-grow-1 pl-4">
