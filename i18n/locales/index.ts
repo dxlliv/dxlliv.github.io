@@ -1,10 +1,29 @@
 export default {
     en: {
+        home: {
+            button: {
+                design: 'Design, Websites and Apps - Web Development - Web Consulting',
+                drones: 'Photos and Videos - Immersive or Classic Drone Clips',
+                archive: 'Archive',
+            },
+            link: {
+                contacts: 'Contacts',
+            },
+        },
         form: {
             fields: {
                 name: {
                     label: "Name",
                     placeholder: "What's your name"
+                },
+                service: {
+                    label: "Service",
+                    placeholder: "What's you looking for",
+                    options: {
+                        design: 'Web & Digital Consulting',
+                        drones: 'Drones & Video Captures',
+                        other: 'Other',
+                    }
                 },
                 message: {
                     label: "New request",
@@ -26,29 +45,10 @@ export default {
                 titleServiceVideo: "Videography",
             },
             form: {
-                fields: {
-                    name: {
-                        label: "Name",
-                        placeholder: "What is your name"
-                    },
-                    location: {
-                        label: "Location",
-                        placeholder: "What it is about"
-                    },
-                    message: {
-                        label: "Message",
-                        placeholder: "Tell me about your project"
-                    }
-                },
-                action: {
-                    send: "Send",
-                    sent: "Opening your default e-mail client..."
-                },
                 open: {
                     desktop: 'New request',
                     mobile: 'Request'
                 },
-                leaveMessage: 'Leave a message'
             },
             section: {
                 me: {
@@ -76,5 +76,65 @@ export default {
                 }
             }
         }
-    }
+    },
+    it: {
+        home: {
+            button: {
+                design: 'Design, Siti Web e Applicazioni - Sviluppo Web - Consulenza Web',
+                drones: 'Foto e Video - Riprese Immersive o Classiche con Droni',
+                archive: 'Archivio',
+            },
+            link: {
+                contacts: 'Contatti',
+            },
+        },
+    },
+    es: {
+        home: {
+            button: {
+                design: 'Diseño, Sitios Web y Apps - Desarrollo Web - Consultoría Web',
+                drones: 'Fotos y Videos - Filmaciones Inmersivas o Clásicas con Drones',
+                archive: 'Archivo',
+            },
+            link: {
+                contacts: 'Contactos',
+            },
+        },
+    },
+    fr: {
+        home: {
+            button: {
+                design: 'Design, Sites Web et Applications - Développement Web - Conseil Web',
+                drones: 'Photos et Vidéos - Prises de Vue Immersives ou Classiques avec Drones',
+                archive: 'Archive',
+            },
+            link: {
+                contacts: 'Contacts',
+            },
+        },
+    },
+    de: {
+        home: {
+            button: {
+                design: 'Design, Websites und Apps - Webentwicklung - Webberatung',
+                drones: 'Fotos und Videos - Immersive oder Klassische Drohnenaufnahmen',
+                archive: 'Archiv',
+            },
+            link: {
+                contacts: 'Kontakte',
+            },
+        },
+    },
+    pt: {
+        home: {
+            button: {
+                design: 'Design, Sites e Apps - Desenvolvimento Web - Consultoria Web',
+                drones: 'Fotos e Vídeos - Filmagens Imersivas ou Clássicas com Drones',
+                archive: 'Arquivo',
+            },
+            link: {
+                contacts: 'Contatos',
+            },
+        },
+    },
 }

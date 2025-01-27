@@ -47,8 +47,8 @@ setTimeout(() => {
     background-image: linear-gradient(
       90deg,
       rgba(#000, 0) 0,
-      rgba(#000, 0.15) 20%,
-      rgba(#000, 0.15) 60%,
+      rgba(#000, 0.25) 20%,
+      rgba(#000, 0.25) 30%,
       rgba(#000, 0)
     );
     animation: shimmer 2s infinite;
