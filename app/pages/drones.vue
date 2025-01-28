@@ -7,12 +7,14 @@ useHead({
 <template>
   <swiper-slide>
 
-    <BlockDX/>
+    <BlockDX>
+      <BlockDXMenu />
+    </BlockDX>
 
   </swiper-slide>
   <swiper-slide>
 
-    <BlockSlideDroneImmersiveVisuals/>
+    <BlockSlideDroneFlyingSince/>
 
   </swiper-slide>
   <swiper-slide>
@@ -24,7 +26,7 @@ useHead({
   </swiper-slide>
   <swiper-slide>
 
-    <BlockSlideDroneFlyingSince/>
+    <BlockSlideDroneImmersiveVisuals/>
 
   </swiper-slide>
   <swiper-slide>

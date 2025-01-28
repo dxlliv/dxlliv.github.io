@@ -1,8 +1,10 @@
 <script setup lang="ts">
-const {slideNextThen, initialSlide} = defineProps<{
+const props = withDefaults(defineProps<{
   slideNextThen?: boolean
   initialSlide?: number
-}>()
+}>(), {
+  initialSlide: 0
+})
 
 const appStore = useAppStore()
 
@@ -18,7 +20,7 @@ onMounted(() => {
 })
 
 function onSlideClick() {
-  if (swiperElement.value.swiper.isEnd && slideNextThen) {
+  if (swiperElement.value.swiper.isEnd && props.slideNextThen) {
     onSwiperReachEnd()
   }
 

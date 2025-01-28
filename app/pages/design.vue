@@ -7,7 +7,9 @@ useHead({
 <template>
   <swiper-slide>
 
-    <BlockDX/>
+    <BlockDX>
+      <BlockDXMenu />
+    </BlockDX>
 
   </swiper-slide>
   <swiper-slide>
