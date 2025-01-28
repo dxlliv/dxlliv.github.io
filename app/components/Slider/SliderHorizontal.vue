@@ -12,27 +12,34 @@ onMounted(() => {
   // slide to first slide
 
   setTimeout(() => {
-    if (display.xs.value) {
-      sliderHorizontalStore.slideTo(1)
-    }
-  }, 300)
+    sliderHorizontalStore.slideTo(sliderHorizontalStore.storedInitialSlide ?? 1)
+  }, 150)
 
   // detect swiping
 
-  const { isSwiping, direction } = useSwipe(document.body.querySelector('.v-application'))
+  const preventSwipeAction = ref(false)
 
-  watch(() => isSwiping.value, (value) => {
-    if (!value) {
-      return
-    }
+  const { isSwiping, direction } = useSwipe(document.body.querySelector('.v-application'), {
+    onSwipeStart(event) {
+      if (event.target?.closest('.disable-swipe')) {
+        return preventSwipeAction.value = true
+      }
 
-    switch (direction.value) {
-      case 'up':
-        sliderHorizontalStore.slideNext()
-        break;
-      case 'down':
-        sliderHorizontalStore.slidePrev()
-        break;
+      preventSwipeAction.value = false
+    },
+    onSwipeEnd(e: TouchEvent, direction: string) {
+      if (preventSwipeAction.value) {
+        return
+      }
+
+      switch (direction) {
+        case 'up':
+          sliderHorizontalStore.slideNext()
+          break;
+        case 'down':
+          sliderHorizontalStore.slidePrev()
+          break;
+      }
     }
   })
 })
@@ -46,7 +53,6 @@ onBeforeUnmount(() => {
   <swiper-container
       class="dx-slider-horizontal" init="false"
       :slide-to-clicked-slide="$vuetify.display.smAndUp"
-      loop
       allow-touch-move mousewheel pagination
       :centered-slides="$vuetify.display.smAndUp"
   >

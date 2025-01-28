@@ -2,6 +2,8 @@ export const useSliderHorizontalStore = defineStore('slider/horizontal', () => {
     const appStore = useAppStore()
     const instance = ref()
 
+    const storedInitialSlide = ref(undefined)
+
     const swiper = computed(() => {
         return instance.value.swiper
     })
@@ -36,6 +38,9 @@ export const useSliderHorizontalStore = defineStore('slider/horizontal', () => {
                 },
                 slideChange() {
                     appStore.emitter.emit('horizontal-slide-change')
+                },
+                slideChangeTransitionEnd() {
+                    storedInitialSlide.value = instance.value.swiper.realIndex
                 }
             },
         }
@@ -92,6 +97,7 @@ export const useSliderHorizontalStore = defineStore('slider/horizontal', () => {
     return {
         instance,
         swiper,
+        storedInitialSlide,
         initialize,
         destroy,
         update,
