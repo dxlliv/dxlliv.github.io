@@ -7,7 +7,9 @@ definePageMeta({
 <template>
   <div>
     <div>
-      <HomeTime />
+      <client-only>
+        <HomeTime />
+      </client-only>
       <AppLogo name="home" text="DXLLIV" class="mt-1" />
     </div>
   </div>
