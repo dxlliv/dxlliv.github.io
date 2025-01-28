@@ -19,7 +19,7 @@
           target="_blank" @click.stop
       >
         Get in touch
-        <ContactDialog />
+        <ContactLauncher />
       </BlockHeroButton>
 
     </BlockHeroActions>

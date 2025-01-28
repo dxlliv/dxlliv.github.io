@@ -36,7 +36,7 @@
       />
       </v-tooltip>
 
-      <ContactDialog />
+      <ContactLauncher />
 
     </v-btn>
   </div>
