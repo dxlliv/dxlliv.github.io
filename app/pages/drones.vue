@@ -70,9 +70,4 @@ useHead({
     <BlockSlideDroneCalendar/>
 
   </swiper-slide>
-  <swiper-slide>
-
-    <BlockSlideDroneBookNow />
-
-  </swiper-slide>
 </template>
