@@ -19,7 +19,6 @@ defineProps<{
 <style scoped lang="scss">
 .dx-marquee {
   position: relative;
-  max-width: 220px;
 
   &:before, &:after {
     position: absolute;

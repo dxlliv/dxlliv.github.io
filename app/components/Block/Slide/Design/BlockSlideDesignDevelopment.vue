@@ -14,7 +14,7 @@ const skills = 'HTML – CSS – JavaScript – TypeScript – Vue.js – Nuxt.j
     <BlockHeroDescription>
       An independent developer<br/>
       for websites, web apps & more.
-      <AppMarquee :text="skills" color="white"/>
+      <BlockHeroMarquee :text="skills" color="white"/>
     </BlockHeroDescription>
 
     <BlockHeroBottomSheet activator="parent">
@@ -30,7 +30,7 @@ const skills = 'HTML – CSS – JavaScript – TypeScript – Vue.js – Nuxt.j
             class="px-0 ml-3"
         >
           <Icon name="simple-icons:github" :size="20"/>
-          <ContactDialog/>
+          <ContactLauncher/>
         </BlockHeroButton>
 
       </BlockHeroBottomText>

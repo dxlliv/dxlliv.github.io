@@ -17,7 +17,7 @@ const skills = 'Web Development - Websites - Web Design - Web Applications - UI/
         Extreme attention to details<br/>
         for your next awesome project.
       </p>
-      <AppMarquee :text="skills" color="white"/>
+      <BlockHeroMarquee :text="skills" color="white"/>
     </BlockHeroDescription>
 
     <BlockHeroBottomSheet activator="parent">
