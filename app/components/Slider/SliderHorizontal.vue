@@ -1,10 +1,7 @@
 <script setup lang="ts">
-import {useDisplay} from "vuetify";
 import {useSwipe} from "@vueuse/core";
 
-const display = useDisplay()
 const sliderHorizontalStore = useSliderHorizontalStore()
-const route = useRoute()
 
 onMounted(() => {
   sliderHorizontalStore.initialize()
@@ -12,14 +9,14 @@ onMounted(() => {
   // slide to first slide
 
   setTimeout(() => {
-    sliderHorizontalStore.slideTo(sliderHorizontalStore.storedInitialSlide ?? 1)
+    sliderHorizontalStore.slideTo(1)
   }, 150)
 
   // detect swiping
 
   const preventSwipeAction = ref(false)
 
-  const { isSwiping, direction } = useSwipe(document.body.querySelector('.v-application'), {
+  useSwipe(document.body.querySelector('.v-application'), {
     onSwipeStart(event) {
       if (event.target?.closest('.disable-swipe')) {
         return preventSwipeAction.value = true
@@ -42,10 +39,6 @@ onMounted(() => {
       }
     }
   })
-})
-
-onBeforeUnmount(() => {
-  sliderHorizontalStore.destroy()
 })
 </script>
 

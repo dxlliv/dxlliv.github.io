@@ -14,6 +14,7 @@ export const useSliderHorizontalStore = defineStore('slider/horizontal', () => {
         const swiperConfig = {
             spaceBetween: 0,
             slidesPerView: 1,
+            loop: true,
             breakpoints: {
                 560: {
                     slidesPerView: 1.5,
@@ -52,13 +53,22 @@ export const useSliderHorizontalStore = defineStore('slider/horizontal', () => {
 
     function destroy() {
         instance.value.swiper.destroy(true, true)
+        instance.value.swiper = instance.value = null
     }
 
     function lock() {
+        if (!instance.value) {
+            return
+        }
+
         instance.value.swiper.disable()
     }
 
     function unlock() {
+        if (!instance.value) {
+            return
+        }
+
         instance.value.swiper.enable()
     }
 

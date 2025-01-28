@@ -1,7 +1,7 @@
 <template>
   <v-layout>
 
-    <SliderHorizontal>
+    <SliderHorizontal :key="$route.name">
       <slot/>
     </SliderHorizontal>
 
