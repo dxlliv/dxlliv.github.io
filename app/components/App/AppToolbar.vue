@@ -22,5 +22,6 @@ defineProps<{
 .v-toolbar {
   top: 0;
   border-bottom: 1px solid rgba(var(--v-border-color), var(--v-border-opacity));
+  z-index: 99;
 }
 </style>

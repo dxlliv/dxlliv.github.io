@@ -1,7 +1,7 @@
 <template>
   <BlockHeroCard>
     <BlockHeroTitle
-        title="There is no limit"
+        title="Limitless captures"
     />
 
     <BlockHeroDescription>

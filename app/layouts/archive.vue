@@ -23,9 +23,15 @@ useSeoMeta({
 <template>
   <v-layout>
 
+    <AppToolbar
+        v-if="$vuetify.display.smAndDown"
+        to="/archive"
+        title="Archive"
+    />
+
     <v-container :width="1100" max-width="100vw">
       <v-row>
-        <v-col :cols="12" :md="4" class="text-center hidden-xs">
+        <v-col :cols="12" :md="4" class="text-center hidden-sm-and-down">
 
           <menu>
             <nuxt-link class="d-inline-block mt-8 mb-12" to="/archive">
@@ -40,7 +46,7 @@ useSeoMeta({
                   :href="appConfig.links.instagram" target="_blank"
                   v-bind="btnProps"
               >
-                <Icon name="simple-icons:instagram" :size="24" />
+                <Icon name="simple-icons:instagram" :size="24"/>
               </v-btn>
             </div>
 
@@ -49,7 +55,7 @@ useSeoMeta({
                   :href="appConfig.links.threads" target="_blank"
                   v-bind="btnProps"
               >
-                <Icon name="simple-icons:threads" :size="24" />
+                <Icon name="simple-icons:threads" :size="24"/>
               </v-btn>
             </div>
 
@@ -58,7 +64,7 @@ useSeoMeta({
                   :href="appConfig.links.bluesky" target="_blank"
                   v-bind="btnProps"
               >
-                <Icon name="simple-icons:bluesky" :size="25" />
+                <Icon name="simple-icons:bluesky" :size="25"/>
               </v-btn>
             </div>
 
@@ -67,7 +73,7 @@ useSeoMeta({
                   :href="appConfig.links.gridsky" target="_blank"
                   v-bind="btnProps"
               >
-                <Icon name="mdi:grid" :size="27" />
+                <Icon name="mdi:grid" :size="27"/>
               </v-btn>
             </div>
           </menu>

@@ -75,8 +75,4 @@ watch(() => dateSelected.value, () => {
 :deep(.v-date-picker-controls__mode-btn) {
   pointer-events: none;
 }
-
-:deep(.v-date-picker-month__day--hide-adjacent) {
-  display: none;
-}
 </style>
