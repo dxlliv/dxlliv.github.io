@@ -1,9 +1,16 @@
 <script setup lang="ts">
-const route = useRoute()
-const year = route.params.year
+const appConfig = useAppConfig()
 
-const {data} = await useAsyncData('archive', () => {
-  return queryCollectionNavigation('content')
+const btnProps = computed(() => {
+  let buttonSize = 72
+
+  return {
+    icon: true,
+    color: 'transparent',
+    size: 'x-large',
+    width: buttonSize,
+    height: buttonSize,
+  }
 })
 
 useSeoMeta({
@@ -15,9 +22,10 @@ useSeoMeta({
 
 <template>
   <v-layout>
+
     <v-container :width="1100" max-width="100vw">
       <v-row>
-        <v-col :cols="12" :md="4">
+        <v-col :cols="12" :md="4" class="text-center hidden-xs">
 
           <menu>
             <nuxt-link class="d-inline-block mt-8 mb-12" to="/archive">
@@ -27,20 +35,41 @@ useSeoMeta({
               />
             </nuxt-link>
 
-            <h3 class="text-h3 mb-4 text-grey" v-text="year"/>
+            <div class="mt-8">
+              <v-btn
+                  :href="appConfig.links.instagram" target="_blank"
+                  v-bind="btnProps"
+              >
+                <Icon name="simple-icons:instagram" :size="24" />
+              </v-btn>
+            </div>
 
-            <ul>
-              <template v-for="archive of data">
-                <template v-for="yearArchive of archive.children">
-                  <li v-for="page of yearArchive.children">
-                    <nuxt-link
-                        :to="page.path"
-                        v-text="page.title"
-                    />
-                  </li>
-                </template>
-              </template>
-            </ul>
+            <div>
+              <v-btn
+                  :href="appConfig.links.threads" target="_blank"
+                  v-bind="btnProps"
+              >
+                <Icon name="simple-icons:threads" :size="24" />
+              </v-btn>
+            </div>
+
+            <div>
+              <v-btn
+                  :href="appConfig.links.bluesky" target="_blank"
+                  v-bind="btnProps"
+              >
+                <Icon name="simple-icons:bluesky" :size="25" />
+              </v-btn>
+            </div>
+
+            <div>
+              <v-btn
+                  :href="appConfig.links.gridsky" target="_blank"
+                  v-bind="btnProps"
+              >
+                <Icon name="mdi:grid" :size="27" />
+              </v-btn>
+            </div>
           </menu>
 
         </v-col>
@@ -52,9 +81,6 @@ useSeoMeta({
       </v-row>
     </v-container>
   </v-layout>
-
-  <Toolbar/>
-  <Footer/>
 </template>
 
 <style scoped lang="scss">

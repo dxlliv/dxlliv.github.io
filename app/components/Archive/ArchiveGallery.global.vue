@@ -14,7 +14,10 @@ function openGallery(index: 0) {
 
 <template>
   <div class="my-10">
-    <swiper-container :slides-per-view="2.5" :space-between="32">
+    <swiper-container
+        :slides-per-view="2.5"
+        :space-between="16"
+    >
       <swiper-slide
           v-for="(image, index) of gallery"
           @click="openGallery(index)"
@@ -36,10 +39,11 @@ function openGallery(index: 0) {
             allow-touch-move mousewheel
             pagination
         >
-          <swiper-slide v-for="image of gallery">
+          <swiper-slide
+              v-for="image of gallery"
+          >
             <v-img
                 :src="image" cover
-                @click="openGallery(image)"
             />
           </swiper-slide>
         </swiper-container>
@@ -53,5 +57,9 @@ function openGallery(index: 0) {
   max-width: 80vw;
   max-height: 80vh;
   aspect-ratio: 1;
+
+  @media(max-width: 599px) {
+    max-width: 100vw;
+  }
 }
 </style>

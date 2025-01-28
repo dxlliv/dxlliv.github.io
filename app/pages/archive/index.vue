@@ -9,12 +9,9 @@ useSeoMeta({
 <template>
   <swiper-slide>
 
-    <BlockDXA/>
-
-  </swiper-slide>
-  <swiper-slide>
-
-    <BlockMe/>
+    <BlockDXA>
+      <BlockDXMenu />
+    </BlockDXA>
 
   </swiper-slide>
   <swiper-slide>
@@ -24,7 +21,17 @@ useSeoMeta({
   </swiper-slide>
   <swiper-slide>
 
-    <BlockArchiveBrowseBy />
+    <BlockMe/>
+
+  </swiper-slide>
+  <swiper-slide>
+
+    <BlockArchiveBrowseBy :year="2024" />
+
+  </swiper-slide>
+  <swiper-slide>
+
+    <BlockSponsor />
 
   </swiper-slide>
   <swiper-slide>
@@ -32,11 +39,6 @@ useSeoMeta({
     <BlockTemplateVideo
         :video="routeRawVideoClip('2024/AQOOaniPVlAtRyatncg0x-Xo0SOc6KbjpAc__-FJgFQLO0IWXzo0GUS_FzpHTlKXNqKgxGQAEZXh6QUjKV77vsoz')"
     />
-
-  </swiper-slide>
-  <swiper-slide>
-
-    <BlockSponsor />
 
   </swiper-slide>
 </template>
