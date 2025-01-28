@@ -15,7 +15,7 @@
           <Icon
               name="lucide:layout-grid"
               class="mr-1"
-              style="vertical-align: -2px;"
+              style="vertical-align: -3px;"
           />
           Home Screen
         </v-list-item>
