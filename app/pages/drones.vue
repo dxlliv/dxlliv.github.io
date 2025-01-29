@@ -14,11 +14,6 @@ useHead({
   </swiper-slide>
   <swiper-slide>
 
-    <BlockSlideDroneFlyingSince/>
-
-  </swiper-slide>
-  <swiper-slide>
-
     <BlockTemplateVideo
         :video="routeRawVideoClip('2024/AQOqptEzQllSwV7sB2S0X_5uozJt5R2GPoJPXvboy28eo9UJ_s5opiIaIcrntY6lZ2L7LtcmPqpvfwryndfSDE-e')"
     />
@@ -31,7 +26,21 @@ useHead({
   </swiper-slide>
   <swiper-slide>
 
+    <BlockSlideDroneFlyingSince/>
+
+  </swiper-slide>
+  <!--
+  <swiper-slide>
+
     <BlockSlideDroneEquipment/>
+
+  </swiper-slide>
+  -->
+  <swiper-slide>
+
+    <BlockTemplateVideo
+        :video="routeRawVideoClip('2024/AQPuHRHpSYdHWJKzjUoc9NaFsf61MW7asc9OEYvwvgqq13E-XiQ2UYlDD_gODTG7A9XxxDk3MCx1LDtnSpnTjXez')"
+    />
 
   </swiper-slide>
   <swiper-slide>
@@ -39,13 +48,6 @@ useHead({
     <BlockDXS>
       <ShootingDialog />
     </BlockDXS>
-
-  </swiper-slide>
-  <swiper-slide>
-
-    <BlockTemplateVideo
-        :video="routeRawVideoClip('2024/AQPuHRHpSYdHWJKzjUoc9NaFsf61MW7asc9OEYvwvgqq13E-XiQ2UYlDD_gODTG7A9XxxDk3MCx1LDtnSpnTjXez')"
-    />
 
   </swiper-slide>
   <swiper-slide>
@@ -67,7 +69,7 @@ useHead({
   </swiper-slide>
   <swiper-slide>
 
-    <BlockSlideDroneCalendar/>
+    <BlockSlideDesignConsulting/>
 
   </swiper-slide>
   <swiper-slide>
