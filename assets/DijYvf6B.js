@@ -1,0 +1,1 @@
+import{_ as t,k as a,o as n,p as s,w as r,v as c}from"./f8BJbvyd.js";const _={};function l(e,d){const o=a("v-layout");return n(),s(o,null,{default:r(()=>[c(e.$slots,"default",{},void 0,!0)]),_:3})}const u=t(_,[["render",l],["__scopeId","data-v-5f649a6b"]]);export{u as default};
