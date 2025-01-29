@@ -1,5 +1,21 @@
 <script setup lang="ts">
+const images = [
+  "001",
+  "002",
+];
 
+const imageOfTheDay = getDailyImage(images);
+
+function getDailyImage(items) {
+  const today = new Date().toISOString().split('T')[0]
+
+  let hash = 0;
+  for (let i = 0; i < today.length; i++) {
+    hash = (hash * 31 + today.charCodeAt(i)) % items.length;
+  }
+
+  return items[hash];
+}
 </script>
 
 <template>
@@ -26,7 +42,7 @@
 
       <HomeButton
           :title="$t('home.button.archive')"
-          image="https://images.unsplash.com/photo-1602659408748-ecdc55ed7a50?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          :image="`/media/home/archive/${imageOfTheDay}.jpg`"
           to="archive"
       />
 
