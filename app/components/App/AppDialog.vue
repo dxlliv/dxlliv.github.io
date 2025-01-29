@@ -1,7 +1,10 @@
 <script setup lang="ts">
-defineProps<{
+withDefaults(defineProps<{
   fullscreen?: boolean
-}>()
+  dialogMaxWidth?: string|number
+}>(), {
+  dialogMaxWidth: 'calc(100vw - 36px)'
+})
 </script>
 
 <template>
@@ -16,7 +19,7 @@ defineProps<{
   <v-dialog
       v-else
       :width="600"
-      max-width="calc(100vw - 36px)"
+      :max-width="dialogMaxWidth"
       :fullscreen="fullscreen"
       transition="dialog-bottom-transition"
       activator="parent"

@@ -29,7 +29,7 @@ function onSupportMethodClick(method: any) {
 </script>
 
 <template>
-  <AppDialog :max-width="400">
+  <AppDialog :dialog-max-width="400">
     <v-card>
       <v-list>
         <v-list-item
