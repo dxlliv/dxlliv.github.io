@@ -3,7 +3,7 @@ export default {
         home: {
             button: {
                 design: 'Design, Websites and Apps - Web Development - Web Consulting',
-                drones: 'Photos and Videos - Immersive and Classic Drone Clips',
+                drones: 'Photos and Videos - Classic and Immersive Drone Clips',
                 archive: 'Archive',
             },
             link: {
@@ -81,7 +81,7 @@ export default {
         home: {
             button: {
                 design: 'Design, Siti Web e Applicazioni - Sviluppo Web - Consulenza Web',
-                drones: 'Foto e Video - Riprese Immersive o Classiche con Droni',
+                drones: 'Foto e Video - Riprese Classiche e Immersive con Droni',
                 archive: 'Archivio',
             },
             link: {
@@ -93,7 +93,7 @@ export default {
         home: {
             button: {
                 design: 'Diseño, Sitios Web y Apps - Desarrollo Web - Consultoría Web',
-                drones: 'Fotos y Videos - Filmaciones Inmersivas o Clásicas con Drones',
+                drones: 'Fotos y Videos - Filmaciones Clásicas y Inmersivas con Drones',
                 archive: 'Archivo',
             },
             link: {
@@ -117,7 +117,7 @@ export default {
         home: {
             button: {
                 design: 'Design, Websites und Apps - Webentwicklung - Webberatung',
-                drones: 'Fotos und Videos - Immersive oder Klassische Drohnenaufnahmen',
+                drones: 'Fotos und Videos - Klassische und Immersive Drohnenaufnahmen',
                 archive: 'Archiv',
             },
             link: {
@@ -129,7 +129,7 @@ export default {
         home: {
             button: {
                 design: 'Design, Sites e Apps - Desenvolvimento Web - Consultoria Web',
-                drones: 'Fotos e Vídeos - Filmagens Imersivas ou Clássicas com Drones',
+                drones: 'Fotos e Vídeos - Filmagens Clássicas e Imersivas com Drones',
                 archive: 'Arquivo',
             },
             link: {
