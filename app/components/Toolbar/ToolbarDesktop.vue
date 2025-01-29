@@ -7,9 +7,9 @@ const appConfig = useAppConfig()
     <v-col class="flex-grow-0" align-self="center">
 
       <v-breadcrumbs class="pl-4 pr-3 pl-sm-5 pr-sm-4 py-0">
-        <v-breadcrumbs-item>
+        <v-breadcrumbs-item to="/">
 
-          <AppLogo name="toolbar" class="cursor-pointer"/>
+          <AppLogo name="toolbar" class="cursor-pointer" style="margin-bottom: 2px;"/>
 
         </v-breadcrumbs-item>
       </v-breadcrumbs>
@@ -26,14 +26,14 @@ const appConfig = useAppConfig()
         <v-breadcrumbs-item>
 
           <a :href="appConfig.links.instagram" target="_blank">
-            <Icon name="simple-icons:instagram" :size="22"/>
+            <Icon name="simple-icons:instagram" :size="21"/>
           </a>
 
         </v-breadcrumbs-item>
-        <v-breadcrumbs-item class="ml-3">
+        <v-breadcrumbs-item class="ml-2">
 
           <a :href="appConfig.links.email">
-            <Icon name="mdi:at" :size="27" style="margin-bottom: 1px;"/>
+            <Icon name="mdi:at" :size="25"/>
           </a>
 
         </v-breadcrumbs-item>
@@ -52,12 +52,6 @@ const appConfig = useAppConfig()
 </template>
 
 <style scoped lang="scss">
-.v-row {
-  height: 59px;
-  line-height: 59px;
-  overflow: hidden;
-}
-
 .v-breadcrumbs-item {
   :deep(a) {
     display: flex;
