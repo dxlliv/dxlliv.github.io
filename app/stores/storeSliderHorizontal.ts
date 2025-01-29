@@ -14,7 +14,6 @@ export const useSliderHorizontalStore = defineStore('slider/horizontal', () => {
         const swiperConfig = {
             spaceBetween: 0,
             slidesPerView: 1,
-            loop: true,
             breakpoints: {
                 560: {
                     slidesPerView: 1.5,

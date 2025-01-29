@@ -3,7 +3,7 @@ export default {
         home: {
             button: {
                 design: 'Design, Websites and Apps - Web Development - Web Consulting',
-                drones: 'Photos and Videos - Immersive or Classic Drone Clips',
+                drones: 'Photos and Videos - Immersive and Classic Drone Clips',
                 archive: 'Archive',
             },
             link: {

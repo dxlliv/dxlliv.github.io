@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useHead({
-  title: 'Immersive Drone Visuals'
+  title: 'Immersive Captures'
 })
 </script>
 
@@ -68,6 +68,13 @@ useHead({
   <swiper-slide>
 
     <BlockSlideDroneCalendar/>
+
+  </swiper-slide>
+  <swiper-slide>
+
+    <BlockDX>
+      <BlockDXMenu />
+    </BlockDX>
 
   </swiper-slide>
 </template>

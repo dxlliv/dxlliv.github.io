@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useHead({
-  title: 'Digital X-cellence'
+  title: 'Design & Development'
 })
 </script>
 
@@ -60,6 +60,13 @@ useHead({
   <swiper-slide>
 
     <BlockSlideProjectPlanner/>
+
+  </swiper-slide>
+  <swiper-slide>
+
+    <BlockDX>
+      <BlockDXMenu />
+    </BlockDX>
 
   </swiper-slide>
   <!--
