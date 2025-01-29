@@ -1,0 +1,1 @@
+import{u as s,au as l}from"./B86s7DYb.js";function f(e,a){const{title:r,titleTemplate:u,...n}=e;return s({title:r,titleTemplate:u,_flatMeta:n},{...a,transform(t){const o=l({...t._flatMeta});return delete t._flatMeta,{...t,meta:o}}})}export{f as u};
