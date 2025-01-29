@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {useSwipe} from "@vueuse/core";
+import {useSwipe, useEventListener} from "@vueuse/core";
 
 const sliderHorizontalStore = useSliderHorizontalStore()
 
@@ -12,7 +12,29 @@ onMounted(() => {
     sliderHorizontalStore.slideTo(1)
   }, 150)
 
-  // detect swiping
+  // handle scrolling on page
+
+  const preventScrollAction = ref(false)
+
+  useEventListener(window, 'wheel', (event) => {
+    if (preventScrollAction.value) {
+      return
+    }
+
+    preventScrollAction.value = true
+
+    if (event.deltaY > 0) {
+      sliderHorizontalStore.slideNext()
+    } else {
+      sliderHorizontalStore.slidePrev()
+    }
+
+    setTimeout(() => {
+      preventScrollAction.value = false
+    }, 500)
+  })
+
+  // handle swiping on page
 
   const preventSwipeAction = ref(false)
 
@@ -46,7 +68,7 @@ onMounted(() => {
   <swiper-container
       class="dx-slider-horizontal" init="false"
       :slide-to-clicked-slide="$vuetify.display.smAndUp"
-      allow-touch-move mousewheel pagination
+      allow-touch-move pagination
       :centered-slides="$vuetify.display.smAndUp"
   >
     <slot />
