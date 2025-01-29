@@ -28,9 +28,9 @@ export const useSliderHorizontalStore = defineStore('slider/horizontal', () => {
                     slidesPerView: 4.5,
                 },
             },
-            mousewheel: true,
             pagination: {
                 lockClass: 'dx-slider-horizontal__lock',
+                clickable: true,
             },
             on: {
                 init() {
