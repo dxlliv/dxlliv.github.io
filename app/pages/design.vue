@@ -14,6 +14,13 @@ useHead({
   </swiper-slide>
   <swiper-slide>
 
+    <BlockTemplateImage
+        image="/media/design.webp"
+    />
+
+  </swiper-slide>
+  <swiper-slide>
+
     <BlockSlideDesignConsulting/>
 
   </swiper-slide>
@@ -38,13 +45,6 @@ useHead({
   <swiper-slide>
 
     <BlockSlideDroneImmersiveVisuals/>
-
-  </swiper-slide>
-  <swiper-slide>
-
-    <BlockDXS>
-      <ShootingDialog />
-    </BlockDXS>
 
   </swiper-slide>
   <swiper-slide>
