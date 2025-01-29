@@ -41,6 +41,13 @@ useSeoMeta({
     />
 
   </swiper-slide>
+  <swiper-slide>
+
+    <BlockDXA>
+      <BlockDXMenu />
+    </BlockDXA>
+
+  </swiper-slide>
 </template>
 
 <style scoped lang="scss">
