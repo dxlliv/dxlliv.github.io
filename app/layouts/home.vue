@@ -13,7 +13,7 @@
   display: grid;
   grid-template-rows: 40vh 60vh;
   text-align: center;
-  background: linear-gradient(to bottom, black, #111);
+  background: linear-gradient(to bottom, black, #080808);
 
   > :deep(div) {
     display: grid;
