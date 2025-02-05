@@ -1,10 +1,14 @@
 <script setup lang="ts">
 const images = [
-  "001",
+  //"001",
   "002",
 ];
 
-const imageOfTheDay = getDailyImage(images);
+const imageOfTheDay = ref()
+
+onMounted(() => {
+  imageOfTheDay.value = getDailyImage(images)
+})
 
 function getDailyImage(items) {
   const today = new Date().toISOString().split('T')[0]

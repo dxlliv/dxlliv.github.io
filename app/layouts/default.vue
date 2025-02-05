@@ -7,7 +7,7 @@
 
   </v-layout>
 
-  <Footer/>
+  <Footer v-if="$vuetify.display.height > 660"/>
   <Toolbar/>
 
 </template>
