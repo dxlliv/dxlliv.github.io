@@ -11,7 +11,7 @@
       <BlockHeroBottomSheet activator="parent">
         <BlockHeroBottomText>
 
-          <a href="https://gridsky-app.github.io/launcher/" target="_blank">
+          <a href="https://gridsky.app/dxlliv" target="_blank">
             Launch Gridsky
           </a>
 
