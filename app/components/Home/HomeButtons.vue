@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const localeRoute = useLocaleRoute();
+
 const images = [
   //"001",
   "002",
@@ -29,7 +31,7 @@ function getDailyImage(items) {
       <HomeButton
           :title="$t('home.button.design')" marquee
           image="/media/home/design.jpg"
-          to="/design"
+          :to="localeRoute('/design')"
       />
 
     </li>
@@ -38,7 +40,7 @@ function getDailyImage(items) {
       <HomeButton
           :title="$t('home.button.drones')" marquee
           :video="routeRawVideoClip('2024/AQNX4rH46fm3qX3Ec1XhQQ8RBHEuInKGuRccVzkHALDlzWKoiK6YQ0ZfK3fAT8bkOUevRxFOd3WmBXRwQiJCzpm5')"
-          to="drones"
+          :to="localeRoute('/drones')"
       />
 
     </li>
@@ -47,7 +49,7 @@ function getDailyImage(items) {
       <HomeButton
           :title="$t('home.button.archive')"
           :image="`/media/home/archive/${imageOfTheDay}.jpg`"
-          to="archive"
+          :to="localeRoute('/archive')"
       />
 
     </li>

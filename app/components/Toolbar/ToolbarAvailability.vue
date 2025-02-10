@@ -43,7 +43,7 @@ function fetchLatestCommit() {
 
 <template>
   <div class="dx-toolbar__availability">
-    availability
+    {{$t('toolbar.availability')}}
 
     <v-badge
         class="ml-6" :offset-y="-34"

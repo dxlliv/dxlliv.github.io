@@ -1,13 +1,15 @@
 <script setup lang="ts">
 import {Vue3Marquee} from "vue3-marquee";
 
+const {t} = useI18n()
+
 const separator = '<span class="mx-4">—</span>'
 const messages = [
-  "digital pixel perfectionist",
-  "your no-label developer",
-  "drone pilot by day",
-  "web developer by night",
-  "website redesign in progress",
+  t('toolbar.marquee.perfectionist'),
+  t('toolbar.marquee.noLabel'),
+  t('toolbar.marquee.dronePilot'),
+  t('toolbar.marquee.webDeveloper'),
+  t('toolbar.marquee.wip'),
 ]
 </script>
 

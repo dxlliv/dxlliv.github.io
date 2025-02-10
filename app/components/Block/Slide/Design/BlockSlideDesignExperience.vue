@@ -8,20 +8,20 @@ const appConfig = useAppConfig()
   >
 
     <BlockHeroTitle
-        title="Commissions open"
+        :title="$t('block.designExperience.title')"
     />
 
     <BlockHeroDescription>
-      What are you looking for?<br/>
-      Playing the game since 2008<br/>
-      so feel free to reach out
+      {{$t('block.designExperience.description.line1')}}<br/>
+      {{$t('block.designExperience.description.line2')}}<br/>
+      {{$t('block.designExperience.description.line3')}}
     </BlockHeroDescription>
 
     <BlockHeroBottomSheet activator="parent">
       <BlockHeroBottomText>
 
         <BlockHeroButton>
-          Let's chat
+          {{$t('block.designExperience.action')}}
           <AgentLauncher/>
         </BlockHeroButton>
 

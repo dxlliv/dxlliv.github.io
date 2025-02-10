@@ -3,15 +3,17 @@
       title="planner"
       :slide-next="false"
   >
-    Plan your profile grids<br/>
-    like a pro with planner
+    <p>
+      {{$t('block.projectPlanner.description.line1')}}<br/>
+      {{$t('block.projectPlanner.description.line2')}}
+    </p>
 
     <template #trigger>
       <BlockHeroBottomSheet activator="parent">
         <BlockHeroBottomText>
 
           <a href="https://dxlliv.github.io/planner/" target="_blank">
-            Try it online
+            {{$t('block.projectPlanner.action')}}
           </a>
 
         </BlockHeroBottomText>

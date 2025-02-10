@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const {t} = useI18n()
+
 const skills = 'HTML – CSS – JavaScript – TypeScript – Vue.js – Nuxt.js – Vuetify – Vite – SSR - SSG – Electron – Capacitor – Ionic -'
 </script>
 
@@ -8,12 +10,12 @@ const skills = 'HTML – CSS – JavaScript – TypeScript – Vue.js – Nuxt.j
   >
 
     <BlockHeroTitle
-        title="Your No-Label Dev"
+        :title="$t('block.designDevelopment.title')"
     />
 
     <BlockHeroDescription>
-      An independent developer<br/>
-      for websites, web apps & more.
+      {{$t('block.designDevelopment.description.line1')}}<br/>
+      {{$t('block.designDevelopment.description.line2')}}
       <BlockHeroMarquee :text="skills" color="white"/>
     </BlockHeroDescription>
 
@@ -21,7 +23,7 @@ const skills = 'HTML – CSS – JavaScript – TypeScript – Vue.js – Nuxt.j
       <BlockHeroBottomText>
 
         <BlockHeroButton>
-          Say hello
+          {{$t('block.designDevelopment.action')}}
           <AgentLauncher/>
         </BlockHeroButton>
 

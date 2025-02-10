@@ -7,13 +7,16 @@ export class ChatManager {
     agentBaseURL: string
     userId: string
     roomId: string
+    textNotAvailable: string = ''
 
-    constructor(listElement: any, agentBaseURL: string) {
+    constructor(listElement: any, agentBaseURL: string, textNotAvailable: string) {
         this.listElement = listElement
         this.agentBaseURL = agentBaseURL
 
         this.userId = ChatManager.generateID('xxxxxxx')
         this.roomId = `room-${ChatManager.generateID('xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx')}`
+
+        this.textNotAvailable = textNotAvailable
     }
 
     static generateID(template: string): string {
@@ -69,7 +72,7 @@ export class ChatManager {
             })
             .catch(async () => {
                 return new Promise(resolve => setTimeout(() => {
-                    this.addNewMessage('bot', "I'm not available right now")
+                    this.addNewMessage('bot', this.textNotAvailable)
                     resolve(true)
                 }, 3000))
             })

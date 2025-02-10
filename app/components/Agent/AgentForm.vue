@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const agentStore = useAgentStore()
 const appConfig = useAppConfig()
+const {t} = useI18n()
 
 const agentBaseURL = appConfig.agent.baseURL
 
@@ -8,7 +9,7 @@ const listElement = useTemplateRef<any>('listElement')
 const waitingReply = ref(false)
 
 onMounted(() => {
-  agentStore.initialize(listElement, agentBaseURL)
+  agentStore.initialize(listElement, agentBaseURL, t('agent.reply.notAvailable'))
 })
 
 async function onNewMessage() {
@@ -43,8 +44,8 @@ async function onNewMessage() {
     </v-list-item>
 
     <v-list-item v-if="agentStore.agent.chat && agentStore.agent.chat.length === 0" class="fill-height text-center">
-      Let's talk about projects!<br />
-      What do you have in mind?
+      {{$t('agent.intro.line1')}}<br />
+      {{$t('agent.intro.line2')}}
     </v-list-item>
   </v-list>
 
@@ -53,7 +54,7 @@ async function onNewMessage() {
       variant="solo" flat hide-details
       autocomplete="off" spellcheck="false"
       :readonly="waitingReply"
-      placeholder="Type a message"
+      :placeholder="$t('agent.field')"
       @keydown.enter="onNewMessage"
   >
     <template v-slot:prepend>

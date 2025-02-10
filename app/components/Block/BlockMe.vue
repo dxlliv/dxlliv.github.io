@@ -9,8 +9,8 @@
       <BlockHeroDescription>
         <p>
           Shaping the dream. <span class="text-grey">199X</span><br/>
-          Self-built Developer by passion<br/>
-          Drone Pilot by adventure
+          {{$t('block.me.description.line2')}}<br/>
+          {{$t('block.me.description.line3')}}
         </p>
       </BlockHeroDescription>
 

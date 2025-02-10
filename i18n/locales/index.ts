@@ -10,6 +10,116 @@ export default {
                 contacts: 'Contacts',
             },
         },
+        agent: {
+            intro: {
+                line1: "Let's talk about projects!",
+                line2: "What do you have in mind?",
+            },
+            field: "Type a message",
+            reply: {
+                notAvailable: "I'm not available right now, send me an e-mail at hello&#64;dxlliv.dev"
+            }
+        },
+        toolbar: {
+            availability: "availability",
+            marquee: {
+                perfectionist: "digital pixel perfectionist",
+                noLabel: "your no-label developer",
+                dronePilot: "drone pilot by day",
+                webDeveloper: "web developer by night",
+                wip: "website redesign in progress",
+            }
+        },
+        block: {
+            menu: {
+                drones: "Immersive Shots",
+                design: "Design & Development",
+            },
+            me: {
+                description: {
+                    line1: "Shaping the dream.",
+                    line2: "Self-built Developer by passion",
+                    line3: "Drone Pilot by adventure"
+                },
+            },
+            designConsulting: {
+                title: "Digital Consulting",
+                description: {
+                    line1: "Extreme attention to details",
+                    line2: "for your next awesome project.",
+                    line3: "Web Development - Websites - Web Design - Web Applications - UI/UX - Pixel Perfect -"
+                },
+                action: "Let's begin"
+            },
+            designDevelopment: {
+                title: "Your No-Label Dev",
+                description: {
+                    line1: "An independent developer",
+                    line2: "for websites, web apps & more.",
+                },
+                action: "Say hello"
+            },
+            designExperience: {
+                title: "Commissions open",
+                description: {
+                    line1: "What are you looking for?",
+                    line2: "Playing the game since 2008",
+                    line3: "so feel free to reach out",
+                },
+                action: "Let's chat"
+            },
+            dronesImmersiveVisuals: {
+                title: "Immersive visuals",
+                description: {
+                    line1: "Short clips and immersive",
+                    line2: "narratives crafted to amaze,",
+                    line3: "for businesses and brands",
+                },
+                action: "Let's begin"
+            },
+            dronesFlyingSince: {
+                title: "Flying since 2018",
+                description: {
+                    line1: "I build & fly quadcopters",
+                    line2: "made for racing, known as",
+                    line3: "first-person view drones",
+                },
+            },
+            droneBusinessOutdoor: {
+                title: "Open-air activities",
+                description: {
+                    line1: "Planning outdoor adventures?",
+                    line2: "I capture breathtaking aerial views",
+                    line3: "that will bring your story to life",
+                },
+            },
+            droneBusinessBNB: {
+                title: "B&B and Hotels",
+                description: {
+                    line1: "Have a B&B or rental space?",
+                    line2: "Need some stunning aerial views!",
+                    line3: "Get in touch. Got you covered",
+                },
+            },
+            projects: {
+                title: "Projects",
+                subtitle: "Personal Portfolio",
+            },
+            projectGridsky: {
+                description: {
+                    line1: "Basically, like Instagram",
+                    line2: "on the Bluesky network",
+                },
+                action: "Lancia Gridsky"
+            },
+            projectPlanner: {
+                description: {
+                    line1: "Plan your profile grids",
+                    line2: "like a pro with planner",
+                },
+                action: "Try it online"
+            },
+        },
         form: {
             fields: {
                 name: {
@@ -86,6 +196,115 @@ export default {
             },
             link: {
                 contacts: 'Contatti',
+            },
+        },
+        agent: {
+            intro: {
+                line1: "Parliamo del tuo progetto!",
+                line2: "Che cosa hai in mente?",
+            },
+            field: "Scrivi un messaggio",
+            reply: {
+                notAvailable: "Non sono disponibile in questo momento, scrivimi a hello&#64;dxlliv.dev"
+            }
+        },
+        toolbar: {
+            availability: "disponibilità",
+            marquee: {
+                perfectionist: "perfezionista del web",
+                noLabel: "sviluppatore no-label indipendente",
+                dronePilot: "pilota di droni di giorno",
+                webDeveloper: "sviluppatore web di notte",
+                wip: "rivisitazione del sito web in corso",
+            }
+        },
+        block: {
+            menu: {
+                drones: "Riprese Immersive",
+                design: "Design & Sviluppo Web",
+            },
+            me: {
+                description: {
+                    line2: "Programmatore per passione",
+                    line3: "Drone Pilot per avventura"
+                },
+            },
+            designConsulting: {
+                title: "Consulenza Digitale",
+                description: {
+                    line1: "Estrema attenzione ai dettagli",
+                    line2: "per il tuo meraviglioso progetto.",
+                    line3: "Programmazione - Sviluppo Web - Design e Realizzazione di Siti Web - Applicazioni Web - Interfacce e Esperienza Utente - Cura di ogni minimo dettaglio -"
+                },
+                action: "Iniziamo"
+            },
+            designDevelopment: {
+                title: "Sviluppo No-label",
+                description: {
+                    line1: "Sviluppatore indipendente",
+                    line2: "per siti web, web apps o altro.",
+                },
+                action: "Contattami"
+            },
+            designExperience: {
+                title: "Commissioni aperte",
+                description: {
+                    line1: "Che cosa stavi cercando?",
+                    line2: "Mi occupo di web dal 2010,",
+                    line3: "sentiti libero di scrivere",
+                },
+                action: "Parliamone"
+            },
+            dronesImmersiveVisuals: {
+                title: "Riprese Immersive",
+                description: {
+                    line1: "Video d'azione immersivi",
+                    line2: "catturati per affascinare,",
+                    line3: "per aziende e brands",
+                },
+                action: "Cominciamo"
+            },
+            dronesFlyingSince: {
+                title: "Volando dal 2018",
+                description: {
+                    line1: "Costruisco e piloto droni",
+                    line2: "da corsa, chiamati droni con",
+                    line3: "visuale in prima persona",
+                },
+            },
+            droneBusinessOutdoor: {
+                title: "Attività all'aperto",
+                description: {
+                    line1: "Un'avventura outdoor?",
+                    line2: "Catturiamola per sempre con",
+                    line3: "una ripresa indimenticabile",
+                },
+            },
+            droneBusinessBNB: {
+                title: "B&B e Hotel",
+                description: {
+                    line1: "Hai una struttura turistica,",
+                    line2: "uno spazio che affitti per eventi",
+                    line3: "o qualcos'altro da presentare?",
+                },
+            },
+            projects: {
+                title: "Progetti",
+                subtitle: "Porfolio Personale",
+            },
+            projectGridsky: {
+                description: {
+                    line1: "Praticamente Instagram",
+                    line2: "ma sul social Bluesky",
+                },
+                action: "Lancia Gridsky"
+            },
+            projectPlanner: {
+                description: {
+                    line1: "Pianifica il tuo Instagram",
+                    line2: "come un professionista",
+                },
+                action: "Provalo online"
             },
         },
     },

@@ -29,11 +29,13 @@ useSeoMeta({
     <BlockArchiveBrowseBy :year="2024" />
 
   </swiper-slide>
+  <!--
   <swiper-slide>
 
     <BlockSponsor />
 
   </swiper-slide>
+  -->
   <swiper-slide>
 
     <BlockTemplateVideo
@@ -43,9 +45,9 @@ useSeoMeta({
   </swiper-slide>
   <swiper-slide>
 
-    <BlockDXA>
+    <BlockDX>
       <BlockDXMenu />
-    </BlockDXA>
+    </BlockDX>
 
   </swiper-slide>
 </template>

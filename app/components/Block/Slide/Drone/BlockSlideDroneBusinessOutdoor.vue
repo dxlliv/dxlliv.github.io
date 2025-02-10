@@ -1,14 +1,14 @@
 <template>
   <BlockHeroCard>
     <BlockHeroTitle
-        title="Open-air activities"
+        :title="$t('block.droneBusinessOutdoor.title')"
     />
 
     <BlockHeroDescription>
       <p>
-        Planning outdoor adventures?<br />
-        I capture breathtaking aerial views<br />
-        that will bring your story to life
+        {{$t('block.droneBusinessOutdoor.description.line1')}}<br/>
+        {{$t('block.droneBusinessOutdoor.description.line2')}}<br/>
+        {{$t('block.droneBusinessOutdoor.description.line3')}}
       </p>
     </BlockHeroDescription>
 

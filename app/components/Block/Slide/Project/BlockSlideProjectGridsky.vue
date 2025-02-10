@@ -4,15 +4,15 @@
       title="launcher"
       :slide-next="false"
   >
-    Bringing grids and cubes<br/>
-    to the Bluesky network
+    {{$t('block.projectGridsky.description.line1')}}<br/>
+    {{$t('block.projectGridsky.description.line2')}}
 
     <template #trigger>
       <BlockHeroBottomSheet activator="parent">
         <BlockHeroBottomText>
 
-          <a href="https://gridsky.app/dxlliv" target="_blank">
-            Launch Gridsky
+          <a href="https://gridsky.social" target="_blank">
+            {{$t('block.projectGridsky.action')}}
           </a>
 
         </BlockHeroBottomText>

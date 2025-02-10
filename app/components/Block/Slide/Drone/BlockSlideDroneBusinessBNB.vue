@@ -1,14 +1,14 @@
 <template>
   <BlockHeroCard>
     <BlockHeroTitle
-        title="B&B and Hotels"
+        :title="$t('block.droneBusinessBNB.title')"
     />
 
     <BlockHeroDescription>
       <p>
-        Have a B&B or rental space?<br />
-        Need some stunning aerial views!<br />
-        Get in touch. Got you covered
+        {{$t('block.droneBusinessBNB.description.line1')}}<br/>
+        {{$t('block.droneBusinessBNB.description.line2')}}<br/>
+        {{$t('block.droneBusinessBNB.description.line3')}}
       </p>
     </BlockHeroDescription>
 

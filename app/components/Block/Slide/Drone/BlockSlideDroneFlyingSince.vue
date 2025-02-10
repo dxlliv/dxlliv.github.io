@@ -1,14 +1,14 @@
 <template>
   <BlockHeroCard>
     <BlockHeroTitle
-        title="Flying since 2018"
+        :title="$t('block.dronesFlyingSince.title')"
     />
 
     <BlockHeroDescription>
       <p>
-        I build & fly quadcopters<br />
-        made for racing, known as<br />
-        first-person view drones
+        {{$t('block.dronesFlyingSince.description.line1')}}<br/>
+        {{$t('block.dronesFlyingSince.description.line2')}}<br/>
+        {{$t('block.dronesFlyingSince.description.line3')}}
       </p>
     </BlockHeroDescription>
   </BlockHeroCard>
