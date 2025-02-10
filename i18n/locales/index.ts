@@ -180,10 +180,6 @@ export default {
                     title: "As stealth as possible",
                     description: "This compact <span class='hidden-xs'>and portable </span><span class='hidden-sm-and-up'>DJI </span>drone will take<br class='hidden-sm-and-up' /> photos<br class='hidden-xs' /> and steady clips with its clear<br class='hidden-sm-and-up' /><span class='hidden-sm-and-up'>high quality</span> 48MP CMOS camera<span class='hidden-xs'>,<br /> complementary to other first-person view <span class='hidden-sm-and-up'>other</span> drones</span>."
                 },
-                stableShots: {
-                    title: "Wind won't be a problem",
-                    description: "Don't need to worry about weather <span class='hidden-xs'>conditions,</span><br /> as this drone is particularly stable<span class='hidden-xs'> during flights</span>, currently equipped with 3 different cameras."
-                }
             }
         }
     },
@@ -307,6 +303,68 @@ export default {
                 action: "Provalo online"
             },
         },
+        form: {
+            fields: {
+                name: {
+                    label: "Nomme",
+                    placeholder: "Come ti chiami?"
+                },
+                service: {
+                    label: "Servizi",
+                    placeholder: "Cosa stai cercando?",
+                    options: {
+                        design: 'Web & Consulenza Digitale',
+                        drones: 'Droni & Catture Video',
+                        other: 'Altro',
+                    }
+                },
+                message: {
+                    label: "Nuova richiesta",
+                    placeholder: "Introduci pure il tuo progetto"
+                }
+            },
+            action: {
+                send: "Prepara e-mail",
+                preparing: "Sto aprendo il tuo e-mail client"
+            }
+        },
+        shooting: {
+            intro: {
+                title1: "Riprese Aeree",
+                title1Mobile: "Riprese Aeree",
+                title2: "Professionali",
+                title2Mobile: "Professionali",
+                titleServicePhoto: "ed Immersive",
+                titleServiceVideo: "ed Immersive",
+            },
+            form: {
+                open: {
+                    desktop: 'Nuova richiesta',
+                    mobile: 'Scrivimi'
+                },
+            },
+            section: {
+                me: {
+                    description: {
+                        p1: "Mi specializzo in cinematiche immersive <br class='hidden-sm-and-up' />impiegando<br class='hidden-xs' /> <span class='hidden-xs'>più tipi di drone</span> <span class='hidden-sm-and-up'>diversi tipi di drone</span> da corsa,<br class='hidden-sm-and-up' /> con visuali in prima persona.",
+                        p2: "Registro all'aperto o in spazi al coperto <br class='hidden-sm-and-up' />come interni di<br class='hidden-xs' /> <span class='hidden-xs'>ristoranti, hotel, piscine</span><span class='hidden-sm-and-up'> hotel</span><span class='hidden-sm-and-up'> e piste da kart</span><span class='hidden-xs'>, piste da go-kart o altro ancora</span>.",
+                        p3: "Catturo anche fotografie e riprese aeree classiche."
+                    },
+                },
+                indoorShots: {
+                    title: "Per volare anche al chiuso",
+                    description: "Piccolo e progettato per volare in sicurezza <br />in spazi ristretti grazie al suo peso contenuto,<br /> registra fino a 4K stupendi filmati immersivi."
+                },
+                actionShots: {
+                    title: "Cinematiche che emozionano",
+                    description: "Ideale per riprese e voli più a lungo raggio,<br /> può catturare spettacolari riprese dall'alto per<br /> prospettive indimenticabili mai viste prima."
+                },
+                regularShots: {
+                    title: "Il più stealth possibile",
+                    description: "Un drone compatto, portatile e silenzioso<br /> così da avere foto e riprese stabili più classiche.<br /> Complementare ai droni in prima persona."
+                },
+            }
+        }
     },
     es: {
         home: {
