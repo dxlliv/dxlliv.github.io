@@ -21,7 +21,7 @@ const appConfig = useAppConfig()
     <v-breadcrumbs-item>
 
       <a class="cursor-pointer">
-        <Icon name="lucide:messages-square" :size="25" style="vertical-align: -3px;"/>
+        <Icon name="lucide:messages-square" :size="24" style="vertical-align: -3px;"/>
         <AgentLauncher />
       </a>
 

@@ -258,7 +258,7 @@ export default {
                     line2: "catturati per affascinare,",
                     line3: "per aziende e brands",
                 },
-                action: "Cominciamo"
+                action: "Contattami"
             },
             dronesFlyingSince: {
                 title: "Volando dal 2018",
@@ -277,11 +277,11 @@ export default {
                 },
             },
             droneBusinessBNB: {
-                title: "B&B e Hotel",
+                title: "B&B e Hotels",
                 description: {
                     line1: "Hai una struttura turistica,",
                     line2: "uno spazio che affitti per eventi",
-                    line3: "o qualcos'altro da presentare?",
+                    line3: "o qualcosa da presentare?",
                 },
             },
             projects: {

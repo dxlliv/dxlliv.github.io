@@ -3,7 +3,9 @@ const appConfig = useAppConfig()
 </script>
 
 <template>
-  <BlockHeroCard>
+  <BlockHeroCard
+      :slide-next="false"
+  >
 
     <BlockHeroTitle
         :title="$t('block.dronesImmersiveVisuals.title')"

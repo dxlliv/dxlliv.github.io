@@ -8,7 +8,7 @@ defineProps<{
 <template>
   <BlockHeroCard>
 
-    <h3 class="text-h4 font-weight-bold" v-text="title" />
+    <h3 class="text-h4" v-text="title" />
     <p v-text="subtitle" />
 
   </BlockHeroCard>
