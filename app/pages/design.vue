@@ -54,11 +54,6 @@ useHead({
   </swiper-slide>
   <swiper-slide>
 
-    <BlockSlideProjects/>
-
-  </swiper-slide>
-  <swiper-slide>
-
     <BlockSlideProjectGridsky/>
 
   </swiper-slide>
