@@ -9,7 +9,7 @@ const appConfig = useAppConfig()
           :href="appConfig.links.instagram"
           target="_blank"
       >
-        <Icon name="simple-icons:instagram" />
+        <Icon name="simple-icons:instagram" :size="12" />
       </v-chip>
     </li>
     <li>

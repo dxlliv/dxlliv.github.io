@@ -4,6 +4,7 @@ defineProps<{
   marquee?: boolean
   image?: string
   video?: string
+  poster?: string
   to?: string
 }>()
 </script>
@@ -28,6 +29,7 @@ defineProps<{
           v-if="video"
           width="100%" height="100%"
           :src="video"
+          :poster="poster"
           loop playsinline muted autoplay
           preload="metadata"
       />

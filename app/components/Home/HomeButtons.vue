@@ -30,7 +30,7 @@ function getDailyImage(items) {
 
       <HomeButton
           :title="$t('home.button.design')" marquee
-          image="/media/home/design.jpg"
+          image="/media/home/design.webp"
           :to="localeRoute('/design')"
       />
 
@@ -40,6 +40,7 @@ function getDailyImage(items) {
       <HomeButton
           :title="$t('home.button.drones')" marquee
           :video="routeRawVideoClip('2024/AQNX4rH46fm3qX3Ec1XhQQ8RBHEuInKGuRccVzkHALDlzWKoiK6YQ0ZfK3fAT8bkOUevRxFOd3WmBXRwQiJCzpm5')"
+          poster="/media/home/drones.webp"
           :to="localeRoute('/drones')"
       />
 
