@@ -1,20 +1,24 @@
 <script setup lang="ts">
-const ready = ref(false)
-const delay = ref(true)
+const showSplash = ref(true)
+const showLogo = ref(false)
 
-onMounted(() => {
-  ready.value = true
+onBeforeMount(() => {
+  setTimeout(() => {
+    showLogo.value = true
+
+    setTimeout(() => {
+      showSplash.value = false
+    }, 2500)
+  }, 500)
 })
-
-setTimeout(() => {
-  delay.value = false
-}, 1500)
 </script>
 
 <template>
   <v-fade-transition>
-    <div class="dx-splash" v-if="!ready || delay">
-      <AppLogo name="splash"/>
+    <div class="dx-splash" v-show="showSplash">
+      <v-fade-transition>
+        <AppLogo v-if="showLogo" name="splash"/>
+      </v-fade-transition>
     </div>
   </v-fade-transition>
 </template>
@@ -29,6 +33,10 @@ setTimeout(() => {
   background: black;
   cursor: wait;
   z-index: 9999999;
+
+  &__preload-font {
+    opacity: 0;
+  }
 
   .dx-logo {
     position: fixed;
@@ -45,11 +53,11 @@ setTimeout(() => {
     left: 0;
     transform: translateX(-100%);
     background-image: linear-gradient(
-      90deg,
-      rgba(#000, 0) 0,
-      rgba(#000, 0.25) 20%,
-      rgba(#000, 0.25) 30%,
-      rgba(#000, 0)
+            90deg,
+            rgba(#000, 0) 0,
+            rgba(#000, 0.25) 20%,
+            rgba(#000, 0.25) 30%,
+            rgba(#000, 0)
     );
     animation: shimmer 2s infinite;
     content: '';
