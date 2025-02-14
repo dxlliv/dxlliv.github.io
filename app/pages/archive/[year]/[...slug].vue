@@ -9,14 +9,6 @@ const { data: article } = await useAsyncData(route.path, () => {
   return queryCollection('archive').path(route.path).first()
 })
 
-definePageMeta({
-  layout: 'archive',
-})
-
-useSeoMeta({
-  title: article.value?.title,
-})
-
 const btnProps = computed(() => {
   let buttonSize = 72
 
@@ -32,6 +24,18 @@ const btnProps = computed(() => {
     width: buttonSize,
     height: buttonSize,
   }
+})
+
+definePageMeta({
+  layout: 'archive',
+})
+
+defineI18nRoute({
+  locales: ['en']
+})
+
+useSeoMeta({
+  title: article.value?.title,
 })
 </script>
 

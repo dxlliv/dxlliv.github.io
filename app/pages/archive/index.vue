@@ -4,6 +4,10 @@ useSeoMeta({
     return 'DX Archive';
   },
 })
+
+defineI18nRoute({
+  locales: ['en']
+})
 </script>
 
 <template>

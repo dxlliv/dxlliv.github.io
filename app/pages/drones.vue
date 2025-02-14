@@ -2,6 +2,10 @@
 useHead({
   title: 'Immersive Captures'
 })
+
+defineI18nRoute({
+  locales: ['en', 'it']
+})
 </script>
 
 <template>

@@ -110,7 +110,7 @@ export default {
                     line1: "Basically, like Instagram",
                     line2: "on the Bluesky network",
                 },
-                action: "Lancia Gridsky"
+                action: "Launch Gridsky"
             },
             projectPlanner: {
                 description: {

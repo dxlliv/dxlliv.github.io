@@ -2,6 +2,10 @@
 useHead({
   title: 'Design & Development'
 })
+
+defineI18nRoute({
+  locales: ['en', 'it']
+})
 </script>
 
 <template>
