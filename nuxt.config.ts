@@ -17,12 +17,12 @@ export default defineNuxtConfig({
                 {hid: 'fragment', name: 'fragment', content: '!'},
             ],
             link: [
-                {rel: 'icon', type: 'image/x-icon', href: 'https://dxlliv.github.io/favicon.ico'},
+                {rel: 'icon', type: 'image/x-icon', href: import.meta.env.NUXT_PUBLIC_CDN + '/favicon.ico'},
                 {rel: 'preload', type: 'font/woff2', href: '/fonts/minimal.woff2', as: 'font'},
             ],
         },
         buildAssetsDir: 'assets/',
-        cdnURL: 'https://dxlliv.github.io',
+        cdnURL: import.meta.env.NUXT_PUBLIC_CDN,
     },
 
     components: [
