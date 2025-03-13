@@ -107,8 +107,8 @@ export default {
             },
             projectGridsky: {
                 description: {
-                    line1: "Basically, like Instagram",
-                    line2: "on the Bluesky network",
+                    line1: "Like an Instagram client",
+                    line2: "for the Bluesky network",
                 },
                 action: "Launch Gridsky"
             },
@@ -229,7 +229,7 @@ export default {
                 title: "Consulenza Digitale",
                 description: {
                     line1: "Estrema attenzione ai dettagli",
-                    line2: "per il tuo meraviglioso progetto.",
+                    line2: "per il tuo sorprendente progetto.",
                     line3: "Programmazione - Sviluppo Web - Design e Realizzazione di Siti Web - Applicazioni Web - Interfacce e Esperienza Utente - Cura di ogni minimo dettaglio -"
                 },
                 action: "Iniziamo"
@@ -245,18 +245,18 @@ export default {
             designExperience: {
                 title: "Commissioni aperte",
                 description: {
-                    line1: "Che cosa stavi cercando?",
+                    line1: "Che cosa stai cercando?",
                     line2: "Mi occupo di web dal 2010,",
-                    line3: "sentiti libero di scrivere",
+                    line3: "scrivimi senza esitazione",
                 },
                 action: "Parliamone"
             },
             dronesImmersiveVisuals: {
-                title: "Riprese Immersive",
+                title: "Droni e riprese",
                 description: {
-                    line1: "Video d'azione immersivi",
-                    line2: "catturati per affascinare,",
-                    line3: "per aziende e brands",
+                    line1: "Video in prima persona",
+                    line2: "che catturano l'attenzione,",
+                    line3: "per aziende e brand",
                 },
                 action: "Contattami"
             },
@@ -290,8 +290,8 @@ export default {
             },
             projectGridsky: {
                 description: {
-                    line1: "Praticamente Instagram",
-                    line2: "ma sul social Bluesky",
+                    line1: "Il social network Bluesky",
+                    line2: "da una nuova prospettiva",
                 },
                 action: "Lancia Gridsky"
             },
