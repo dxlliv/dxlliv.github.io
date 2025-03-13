@@ -46,6 +46,7 @@ function onIntersect(isIntersecting: boolean) {
     border: 0;
     width: 102%;
     height: 122%;
+    aspect-ratio: 1;
     margin: -10% 0 0 -1px;
     opacity: 0.9;
     pointer-events: none;

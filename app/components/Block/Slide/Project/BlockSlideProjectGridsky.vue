@@ -11,7 +11,7 @@
       <BlockHeroBottomSheet activator="parent">
         <BlockHeroBottomText>
 
-          <a href="https://gridsky.social" target="_blank">
+          <a href="https://gridsky-app.github.io/launcher/" target="_blank">
             {{$t('block.projectGridsky.action')}}
           </a>
 
