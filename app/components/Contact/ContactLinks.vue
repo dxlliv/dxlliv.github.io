@@ -31,7 +31,7 @@ const appConfig = useAppConfig()
 
 <style scoped lang="scss">
 .v-breadcrumbs-item {
-  margin-left: 4px;
-  margin-right: 4px;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 </style>

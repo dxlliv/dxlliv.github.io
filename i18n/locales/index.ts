@@ -49,7 +49,7 @@ export default {
                     line2: "for your next awesome project.",
                     line3: "Web Development - Websites - Web Design - Web Applications - UI/UX - Pixel Perfect -"
                 },
-                action: "Let's begin"
+                action: "Let's start"
             },
             designDevelopment: {
                 title: "Your No-Label Dev",
@@ -62,7 +62,7 @@ export default {
             designExperience: {
                 title: "Commissions open",
                 description: {
-                    line1: "What are you looking for?",
+                    line1: "What you looking for?",
                     line2: "Playing the game since 2008",
                     line3: "so feel free to reach out",
                 },

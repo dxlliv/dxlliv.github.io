@@ -64,11 +64,11 @@
   }
 
   @media(min-width: 600px) {
-    font-size: 20px;
+    font-size: 19px;
   }
 
   @media(min-width: 1280px) {
-    font-size: 21px;
+    font-size: 20px;
   }
 }
 </style>
