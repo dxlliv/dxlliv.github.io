@@ -220,9 +220,9 @@ export default {
             }
         },
         footer: {
-            line1: "Trasformando visione in realtà.",
-            line2: "Alimentato e ispirato dal web moderno.",
-            line3: "dxlliv, o anche Diego Villa"
+            line1: "Turning visions into reality.",
+            line2: "Powered by the modern web.",
+            line3: "dxlliv, oppure Diego Villa"
         },
         block: {
             menu: {
