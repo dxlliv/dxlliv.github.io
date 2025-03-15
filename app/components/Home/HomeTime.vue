@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const date: Ref<Date> = ref(new Date())
+const {locale} = useI18n()
 
 let minuteTimeout: number = 0
 
@@ -26,10 +27,20 @@ const time = computed(() => {
 
   let hours = date.value.getHours()
   let minutes = date.value.getMinutes()
+  let period = 'AM'
+
+  if (locale.value !== 'it') {
+    if (hours >= 12) {
+      period = 'PM'
+      if (hours > 12) hours -= 12
+    } else if (hours === 0) {
+      hours = 12
+    }
+  }
 
   if (minutes.toString().length === 1) minutes = `0${minutes}`
 
-  return `${hours}:${minutes}`
+  return locale.value === 'it' ? `${hours}:${minutes}` : `${hours}:${minutes} ${period}`
 })
 </script>
 
