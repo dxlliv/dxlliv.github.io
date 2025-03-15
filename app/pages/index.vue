@@ -13,6 +13,7 @@ definePageMeta({
       <AppLogo name="home" text="DXLLIV" class="mt-1" />
     </div>
   </div>
+  <div />
   <div>
     <HomeButtons />
     <HomeLinks />

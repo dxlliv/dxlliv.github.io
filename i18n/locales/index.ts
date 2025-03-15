@@ -30,6 +30,11 @@ export default {
                 wip: "website redesign in progress",
             }
         },
+        footer: {
+            line1: "Turning visions into reality.",
+            line2: "Powered by the modern web.",
+            line3: "dxlliv, formerly Diego Villa"
+        },
         block: {
             menu: {
                 drones: "Immersive Shots",
@@ -49,7 +54,7 @@ export default {
                     line2: "for your next awesome project.",
                     line3: "Web Development - Websites - Web Design - Web Applications - UI/UX - Pixel Perfect -"
                 },
-                action: "Let's start"
+                action: "Let's talk"
             },
             designDevelopment: {
                 title: "Your No-Label Dev",
@@ -62,9 +67,9 @@ export default {
             designExperience: {
                 title: "Commissions open",
                 description: {
-                    line1: "What you looking for?",
-                    line2: "Playing the game since 2008",
-                    line3: "so feel free to reach out",
+                    line1: "I work with select clients",
+                    line2: "occasionally but am always",
+                    line3: "available when needed",
                 },
                 action: "Let's chat"
             },
@@ -107,7 +112,7 @@ export default {
             },
             projectGridsky: {
                 description: {
-                    line1: "Like an Instagram client",
+                    line1: "Like an Instagram client,",
                     line2: "for the Bluesky network",
                 },
                 action: "Launch Gridsky"
@@ -213,6 +218,11 @@ export default {
                 webDeveloper: "sviluppatore web di notte",
                 wip: "rivisitazione del sito web in corso",
             }
+        },
+        footer: {
+            line1: "Trasformando visione in realtà.",
+            line2: "Alimentato e ispirato dal web moderno.",
+            line3: "dxlliv, o anche Diego Villa"
         },
         block: {
             menu: {

@@ -19,7 +19,7 @@ defineI18nRoute({
   <swiper-slide>
 
     <BlockTemplateImage
-        image="/media/design.webp"
+        image="/media/studio-mobile.webp"
     />
 
   </swiper-slide>

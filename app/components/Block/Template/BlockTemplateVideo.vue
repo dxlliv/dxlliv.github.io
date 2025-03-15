@@ -18,5 +18,7 @@ defineProps<{
 </template>
 
 <style scoped lang="scss">
-
+:deep(.v-card__overlay) {
+  display: none;
+}
 </style>

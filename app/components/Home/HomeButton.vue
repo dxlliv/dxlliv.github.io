@@ -5,7 +5,7 @@ defineProps<{
   image?: string
   video?: string
   poster?: string
-  to?: string
+  to?: RouteRecord
 }>()
 </script>
 

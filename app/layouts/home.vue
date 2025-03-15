@@ -11,7 +11,7 @@
 <style scoped lang="scss">
 .v-layout {
   display: grid;
-  grid-template-rows: 40vh 60vh;
+  grid-template-rows: 33vh 14vh 53vh;
   text-align: center;
   background: linear-gradient(to bottom, black, #080808);
 

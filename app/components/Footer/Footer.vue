@@ -21,9 +21,12 @@
       </v-col>
       <v-col :md="6">
 
-        Turning visions into reality.<br/>
-        Powered by the modern web.
-        <div class="text-grey-lighten-1 font-weight-thin">dxlliv, formerly Diego Villa</div>
+        {{ $t('footer.line1') }}<br/>
+        {{ $t('footer.line2') }}
+        <div
+            class="text-grey-lighten-1 font-weight-thin"
+            v-text="$t('footer.line3')"
+        />
 
       </v-col>
       <v-col :md="3" class="hidden-sm-and-down" align-self="center">

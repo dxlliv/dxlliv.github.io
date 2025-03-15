@@ -8,7 +8,7 @@ export default defineAppConfig({
         instagram: "https://instagram.com/dxlliv",
         threads: "https://threads.com/dxvfpv",
         bluesky: "https://bsky.app/profile/did:plc:2pkidgvfnbxx7sq3shporxij",
-        gridsky: "https://gridsky.app/did:plc:2pkidgvfnbxx7sq3shporxij",
+        gridsky: "https://gridsky.app/dxlliv",
         email: "mailto:hello@dxlliv.dev",
     }
 })

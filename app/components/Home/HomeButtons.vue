@@ -39,7 +39,7 @@ function getDailyImage(items) {
 
       <HomeButton
           :title="$t('home.button.drones')" marquee
-          :video="routeRawVideoClip('2024/AQNX4rH46fm3qX3Ec1XhQQ8RBHEuInKGuRccVzkHALDlzWKoiK6YQ0ZfK3fAT8bkOUevRxFOd3WmBXRwQiJCzpm5')"
+          :video="routeRawVideoClip('2024/AQOqptEzQllSwV7sB2S0X_5uozJt5R2GPoJPXvboy28eo9UJ_s5opiIaIcrntY6lZ2L7LtcmPqpvfwryndfSDE-e')"
           poster="/media/home/drones.webp"
           :to="localeRoute('/drones')"
       />

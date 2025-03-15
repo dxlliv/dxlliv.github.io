@@ -1,7 +1,7 @@
 <template>
   <div class="dx-toolbar">
 
-    <v-divider/>
+    <v-divider v-if="$vuetify.display.smAndUp"/>
 
     <ToolbarDesktop v-if="$vuetify.display.smAndUp" />
     <ToolbarMobile v-else />

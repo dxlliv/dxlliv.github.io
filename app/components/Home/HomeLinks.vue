@@ -13,7 +13,15 @@ const appConfig = useAppConfig()
       </v-chip>
     </li>
     <li>
-      <v-chip href="javascript:void('dxlliv:support')">
+      <v-chip
+          :href="appConfig.links.gridsky"
+          target="_blank"
+      >
+        <Icon name="lucide:grid-3x3" :size="12.8" />
+      </v-chip>
+    </li>
+    <li>
+      <v-chip @click.prevent>
         <Icon name="lucide:coins" />
         <SupportLauncher />
       </v-chip>
