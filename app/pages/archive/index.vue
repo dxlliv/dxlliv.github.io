@@ -20,12 +20,12 @@ defineI18nRoute({
   </swiper-slide>
   <swiper-slide>
 
-    <BlockMeImage/>
+    <BlockMe/>
 
   </swiper-slide>
   <swiper-slide>
 
-    <BlockMe/>
+    <BlockMeImage/>
 
   </swiper-slide>
   <swiper-slide>

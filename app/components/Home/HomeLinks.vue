@@ -17,7 +17,7 @@ const appConfig = useAppConfig()
           :href="appConfig.links.gridsky"
           target="_blank"
       >
-        <Icon name="lucide:grid-3x3" :size="12.8" />
+        <Icon name="lucide:grid-3x3" :size="13" />
       </v-chip>
     </li>
     <li>

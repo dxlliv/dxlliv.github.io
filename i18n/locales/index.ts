@@ -80,7 +80,7 @@ export default {
                     line2: "narratives crafted to amaze,",
                     line3: "for businesses and brands",
                 },
-                action: "Let's begin"
+                action: "Book now"
             },
             dronesFlyingSince: {
                 title: "Flying since 2018",
@@ -238,7 +238,7 @@ export default {
             designConsulting: {
                 title: "Consulenza Digitale",
                 description: {
-                    line1: "Estrema attenzione ai dettagli",
+                    line1: "Massima attenzione ai dettagli",
                     line2: "per il tuo sorprendente progetto.",
                     line3: "Programmazione - Sviluppo Web - Design e Realizzazione di Siti Web - Applicazioni Web - Interfacce e Esperienza Utente - Cura di ogni minimo dettaglio -"
                 },
