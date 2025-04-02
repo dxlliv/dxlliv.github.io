@@ -33,7 +33,11 @@ defineI18nRoute({
     <BlockSlideDesignDevelopment/>
 
   </swiper-slide>
+  <swiper-slide>
 
+    <BlockSlideProjectGridskyAnimation/>
+
+  </swiper-slide>
   <swiper-slide>
 
     <BlockSlideDesignExperience />
@@ -53,48 +57,9 @@ defineI18nRoute({
   </swiper-slide>
   <swiper-slide>
 
-    <BlockSlideProjectGridskyAnimation/>
-
-  </swiper-slide>
-  <swiper-slide>
-
-    <BlockSlideProjectGridsky/>
-
-  </swiper-slide>
-  <swiper-slide>
-
-    <BlockSlideProjectPlanner/>
-
-  </swiper-slide>
-  <swiper-slide>
-
     <BlockDX>
       <BlockDXMenu />
     </BlockDX>
 
   </swiper-slide>
-  <!--
-  <swiper-slide>
-
-    <BlockHeroCard color="#181818">
-      <div class="text-h4 text-white">Projects</div>
-    </BlockHeroCard>
-
-  </swiper-slide>
-  <swiper-slide>
-
-    <BlockSlideProjectGameAssist/>
-
-  </swiper-slide>
-  <swiper-slide>
-
-    <BlockSlideProjectSimPoint/>
-
-  </swiper-slide>
-  <swiper-slide>
-
-    <BlockCopyright/>
-
-  </swiper-slide>
-  -->
 </template>

@@ -63,19 +63,9 @@ defineI18nRoute({
   </swiper-slide>
   <swiper-slide>
 
-    <BlockSlideDroneBusinessBNB/>
-
-  </swiper-slide>
-  <swiper-slide>
-
     <BlockTemplateVideo
         :video="routeRawVideoClip('2024/AQMTvapUk5NgBCRcbB1N6wTKjTlAHZpKWb_PV0_arWUHk8S_X-5NLKI5fGkSlYgJWOqNGRld2meuhrpyIBROJFPc-Tq4se4QONV0ICk')"
     />
-
-  </swiper-slide>
-  <swiper-slide>
-
-    <BlockSlideDesignConsulting/>
 
   </swiper-slide>
   <swiper-slide>

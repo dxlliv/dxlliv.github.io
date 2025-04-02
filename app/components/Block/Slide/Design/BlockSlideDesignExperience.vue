@@ -20,9 +20,18 @@ const appConfig = useAppConfig()
     <BlockHeroBottomSheet activator="parent">
       <BlockHeroBottomText>
 
-        <BlockHeroButton>
-          {{$t('block.designExperience.action')}}
-          <AgentLauncher/>
+        <BlockHeroButton
+            :href="appConfig.links.discord"
+            class="px-0 ml-3"
+        >
+          <Icon name="simple-icons:discord" :size="20"/>
+        </BlockHeroButton>
+
+        <BlockHeroButton
+            :href="appConfig.links.instagram"
+            class="px-0 ml-3"
+        >
+          <Icon name="simple-icons:instagram" :size="16"/>
         </BlockHeroButton>
 
         <BlockHeroButton

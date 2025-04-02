@@ -212,17 +212,17 @@ export default {
         toolbar: {
             availability: "disponibilità",
             marquee: {
-                perfectionist: "perfezionista del web",
+                perfectionist: "perfezionista digitale",
                 noLabel: "sviluppatore no-label indipendente",
-                dronePilot: "pilota di droni di giorno",
-                webDeveloper: "sviluppatore web di notte",
-                wip: "rivisitazione del sito web in corso",
+                dronePilot: "pilota di droni in prima persona",
+                webDeveloper: "sviluppatore web",
+                wip: "sito in costante evoluzione",
             }
         },
         footer: {
             line1: "Turning visions into reality.",
             line2: "Powered by the modern web.",
-            line3: "dxlliv, oppure Diego Villa"
+            line3: "dxlliv, nonché Diego Villa"
         },
         block: {
             menu: {
@@ -236,33 +236,32 @@ export default {
                 },
             },
             designConsulting: {
-                title: "Consulenza Digitale",
+                title: "Perfezione Digitale",
                 description: {
-                    line1: "Massima attenzione ai dettagli",
-                    line2: "per il tuo sorprendente progetto.",
-                    line3: "Programmazione - Sviluppo Web - Design e Realizzazione di Siti Web - Applicazioni Web - Interfacce e Esperienza Utente - Cura di ogni minimo dettaglio -"
+                    line1: "Massima cura per i dettagli",
+                    line2: "e benessere per il tuo progetto.",
+                    line3: "Programmazione - Sviluppo Web - Design e Realizzazione di Siti Web - Applicazioni Web - Interfacce e Esperienza Utente - Pixel Perfect Design -"
                 },
-                action: "Iniziamo"
+                action: "Let's do it"
             },
             designDevelopment: {
                 title: "Sviluppo No-label",
                 description: {
                     line1: "Sviluppatore indipendente",
-                    line2: "per siti web, web apps o altro.",
+                    line2: "on-demand per ogni esigenza.",
                 },
-                action: "Contattami"
+                action: "Scrivimi"
             },
             designExperience: {
                 title: "Commissioni aperte",
                 description: {
-                    line1: "Che cosa stai cercando?",
-                    line2: "Mi occupo di web dal 2010,",
-                    line3: "scrivimi senza esitazione",
-                },
-                action: "Parliamone"
+                    line1: "Di cosa hai bisogno oggi?",
+                    line2: "Scrivimi pure via mail o chat,",
+                    line3: "mi trovi un po' ovunque",
+                }
             },
             dronesImmersiveVisuals: {
-                title: "Droni e riprese",
+                title: "Riprese in FPV",
                 description: {
                     line1: "Video in prima persona",
                     line2: "che catturano l'attenzione,",
@@ -271,7 +270,7 @@ export default {
                 action: "Contattami"
             },
             dronesFlyingSince: {
-                title: "Volando dal 2018",
+                title: "In volo dal 2018",
                 description: {
                     line1: "Costruisco e piloto droni",
                     line2: "da corsa, chiamati droni con",
@@ -279,11 +278,11 @@ export default {
                 },
             },
             droneBusinessOutdoor: {
-                title: "Attività all'aperto",
+                title: "Per ogni contesto",
                 description: {
-                    line1: "Un'avventura outdoor?",
-                    line2: "Catturiamola per sempre con",
-                    line3: "una ripresa indimenticabile",
+                    line1: "Riprese indimenticabili per",
+                    line2: "hotel, bed & breakfast, ristoranti,",
+                    line3: "eventi, gite, attività outdoor",
                 },
             },
             droneBusinessBNB: {
