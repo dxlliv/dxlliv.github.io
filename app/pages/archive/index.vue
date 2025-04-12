@@ -5,6 +5,12 @@ useSeoMeta({
   },
 })
 
+const {data: articles} = await useAsyncData('archive', () => {
+  return queryCollection('archive')
+      .where('year', '=', 2024)
+      .all()
+})
+
 defineI18nRoute({
   locales: ['en']
 })
@@ -33,6 +39,12 @@ defineI18nRoute({
     <BlockArchiveBrowseBy :year="2024" />
 
   </swiper-slide>
+  <swiper-slide v-for="article of articles">
+    <BlockArchiveArticle
+        :article="article"
+        :slide-next="false"
+    />
+  </swiper-slide>
   <!--
   <swiper-slide>
 
@@ -40,13 +52,6 @@ defineI18nRoute({
 
   </swiper-slide>
   -->
-  <swiper-slide>
-
-    <BlockTemplateVideo
-        :video="routeRawVideoClip('2024/AQOOaniPVlAtRyatncg0x-Xo0SOc6KbjpAc__-FJgFQLO0IWXzo0GUS_FzpHTlKXNqKgxGQAEZXh6QUjKV77vsoz')"
-    />
-
-  </swiper-slide>
   <swiper-slide>
 
     <BlockDX>

@@ -1,14 +1,28 @@
 <script setup lang="ts">
-defineProps<{
+import {useDisplay} from "vuetify";
+
+const props = defineProps<{
   article: any
 }>()
+
+const dialog = ref(false)
+
+const display = useDisplay()
+
+function onArticleClick() {
+  if (display.smAndDown.value) {
+    return navigateTo(props.article.path)
+  }
+
+  dialog.value = true
+}
 </script>
 
 <template>
   <BlockHeroCard
-      :rounded="false"
       :image="article.cover"
-      :to="article.path"
+      :href="article.path"
+      @click.prevent="onArticleClick"
   >
 
     <div class="dx-block-archive__nav">
@@ -17,11 +31,26 @@ defineProps<{
       />
 
       <div class="text-white text-overline font-weight-bold">
-        <ArchiveArticleEpisode :article="article" />
+        <ArchiveArticleEpisode :article="article"/>
         &middot;
-        <ArchiveArticleDate :article="article" />
+        <ArchiveArticleDate :article="article"/>
       </div>
     </div>
+
+    <v-dialog
+        v-model="dialog"
+        :width="800"
+        :height="600"
+        :fullscreen="$vuetify.display.xs"
+    >
+      <v-card rounded="xl" class="scrollbar-invisible bg-grey-darken-4">
+        <v-card-text>
+          <ArchiveArticle
+              :article="article"
+          />
+        </v-card-text>
+      </v-card>
+    </v-dialog>
 
   </BlockHeroCard>
 </template>
@@ -40,7 +69,7 @@ defineProps<{
   backdrop-filter: blur(16px);
 }
 
-.v-card {
+.dx-block-hero__card {
   position: relative;
 
   &:after {

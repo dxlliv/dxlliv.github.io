@@ -15,8 +15,10 @@ function openGallery(index: 0) {
 <template>
   <div class="my-10">
     <swiper-container
+        centered-slides
         :slides-per-view="2.5"
         :space-between="16"
+        mousewheel-force-to-axis
     >
       <swiper-slide
           v-for="(image, index) of gallery"

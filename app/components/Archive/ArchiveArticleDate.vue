@@ -5,7 +5,7 @@ const props = withDefaults(defineProps<{
   article: any
   format?: string
 }>(), {
-  format: 'DD MMM'
+  format: 'DD MMM YYYY'
 })
 
 const formattedDate = computed(() => {

@@ -3,14 +3,20 @@ const {year} = defineProps<{
   year: number
 }>()
 
+/*
 const {data: articles} = await useAsyncData('archive', () => {
   return queryCollection('archive')
       .where('year', '=', year)
       .all()
 })
+ */
 </script>
 
 <template>
+  <BlockHeroCard :slide-next="false">
+    <div class="text-h4" v-text="year"/>
+  </BlockHeroCard>
+  <!--
   <BlockTemplateSlider slide-next-then class="disable-swipe">
     <template #default="{ onSlideClick }">
       <swiper-slide @click="onSlideClick">
@@ -30,6 +36,7 @@ const {data: articles} = await useAsyncData('archive', () => {
       </swiper-slide>
     </template>
   </BlockTemplateSlider>
+  -->
 </template>
 
 <style scoped lang="scss">
