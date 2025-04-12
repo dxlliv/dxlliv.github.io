@@ -23,13 +23,6 @@ const appConfig = useAppConfig()
     <v-col class="flex-grow-0" align-self="center">
 
       <v-breadcrumbs class="px-sm-5 py-0">
-        <v-breadcrumbs-item>
-
-          <a :href="appConfig.links.instagram" target="_blank">
-            <Icon name="simple-icons:instagram" :size="21"/>
-          </a>
-
-        </v-breadcrumbs-item>
         <v-breadcrumbs-item class="ml-2">
 
           <a :href="appConfig.links.email">

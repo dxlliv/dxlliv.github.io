@@ -1,27 +1,5 @@
 <script setup lang="ts">
 const localeRoute = useLocaleRoute();
-
-const images = [
-  //"001",
-  "002",
-];
-
-const imageOfTheDay = ref()
-
-onMounted(() => {
-  imageOfTheDay.value = getDailyImage(images)
-})
-
-function getDailyImage(items) {
-  const today = new Date().toISOString().split('T')[0]
-
-  let hash = 0;
-  for (let i = 0; i < today.length; i++) {
-    hash = (hash * 31 + today.charCodeAt(i)) % items.length;
-  }
-
-  return items[hash];
-}
 </script>
 
 <template>
@@ -49,8 +27,17 @@ function getDailyImage(items) {
 
       <HomeButton
           :title="$t('home.button.archive')"
-          :image="`/media/home/archive/${imageOfTheDay}.jpg`"
+          image="/media/home/archive.webp"
           :to="localeRoute('/archive')"
+      />
+
+    </li>
+    <li>
+
+      <HomeButton
+          :title="$t('home.button.projects')"
+          image="/media/home/projects.webp"
+          :to="localeRoute('/projects')"
       />
 
     </li>

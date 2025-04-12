@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const appStore = useAppStore()
+
 definePageMeta({
   layout: 'home',
 })
@@ -16,6 +18,6 @@ definePageMeta({
   <div />
   <div>
     <HomeButtons />
-    <HomeLinks />
+    <HomeLinks v-show="!appStore.splash"/>
   </div>
 </template>

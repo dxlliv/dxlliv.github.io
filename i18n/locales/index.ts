@@ -5,9 +5,17 @@ export default {
                 design: 'Design, Websites and Apps - Web Development - Web Consulting',
                 drones: 'Photos and Videos - Classic and Immersive Drone Clips',
                 archive: 'Archive',
+                projects: 'Projects',
             },
             link: {
-                contacts: 'Contacts',
+                contact: {
+                    title: 'Contacts',
+                    tooltip: 'Get in touch',
+                },
+                support: {
+                    tooltip: 'Support',
+                    via: 'Support via',
+                }
             },
         },
         agent: {
@@ -17,7 +25,7 @@ export default {
             },
             field: "Type a message",
             reply: {
-                notAvailable: "I'm not available right now, send me an e-mail at hello&#64;dxlliv.dev"
+                notAvailable: "I'm not available right now,<br />send an e-mail at hello&#64;dxlliv.dev"
             }
         },
         toolbar: {
@@ -65,11 +73,11 @@ export default {
                 action: "Say hello"
             },
             designExperience: {
-                title: "Commissions open",
+                title: "On-demand collabs",
                 description: {
-                    line1: "I work with select clients",
-                    line2: "occasionally but am always",
-                    line3: "available when needed",
+                    line1: "I work with selected clients",
+                    line2: "but I'm always available to talk",
+                    line3: "if you need help or advice",
                 },
                 action: "Let's chat"
             },
@@ -93,9 +101,9 @@ export default {
             droneBusinessOutdoor: {
                 title: "Open-air activities",
                 description: {
-                    line1: "Planning outdoor adventures?",
-                    line2: "I capture breathtaking aerial views",
-                    line3: "that will bring your story to life",
+                    line1: "Planning a new adventure?",
+                    line2: "I capture breathtaking views",
+                    line3: "that brings your story to life",
                 },
             },
             droneBusinessBNB: {
@@ -121,6 +129,13 @@ export default {
                 description: {
                     line1: "Plan your profile grids",
                     line2: "like a pro with planner",
+                },
+                action: "Try it online"
+            },
+            projectGamepad: {
+                description: {
+                    line1: "Collection of CSS buttons",
+                    line2: "of all the gaming consoles",
                 },
                 action: "Try it online"
             },
@@ -194,9 +209,17 @@ export default {
                 design: 'Design, Siti Web e Applicazioni - Sviluppo Web - Consulenza Web',
                 drones: 'Foto e Video - Riprese Classiche e Immersive con Droni',
                 archive: 'Archivio',
+                projects: 'Progetti',
             },
             link: {
-                contacts: 'Contatti',
+                contact: {
+                    title: 'Contatti',
+                    tooltip: 'Scrivi un messaggio',
+                },
+                support: {
+                    tooltip: 'Supporta',
+                    via: 'Supporta via',
+                }
             },
         },
         agent: {
@@ -206,7 +229,7 @@ export default {
             },
             field: "Scrivi un messaggio",
             reply: {
-                notAvailable: "Non sono disponibile in questo momento, scrivimi a hello&#64;dxlliv.dev"
+                notAvailable: "Non sono disponibile in questo momento,<br />scrivimi a hello&#64;dxlliv.dev"
             }
         },
         toolbar: {
@@ -280,9 +303,9 @@ export default {
             droneBusinessOutdoor: {
                 title: "Per ogni contesto",
                 description: {
-                    line1: "Riprese indimenticabili per",
-                    line2: "hotel, bed & breakfast, ristoranti,",
-                    line3: "eventi, gite, attività outdoor",
+                    line1: "Riprese indimenticabili",
+                    line2: "per hotel, b&b, ristoranti,",
+                    line3: "eventi, attività outdoor",
                 },
             },
             droneBusinessBNB: {
@@ -309,7 +332,14 @@ export default {
                     line1: "Pianifica il tuo Instagram",
                     line2: "come un professionista",
                 },
-                action: "Provalo online"
+                action: "Vedi su GitHub"
+            },
+            projectGamepad: {
+                description: {
+                    line1: "Una collezione di pulsanti",
+                    line2: "in CSS di tutti i gamepad",
+                },
+                action: "Vedi su GitHub"
             },
         },
         form: {
@@ -378,12 +408,20 @@ export default {
     es: {
         home: {
             button: {
-                design: 'Diseño, Sitios Web y Apps - Desarrollo Web - Consultoría Web',
-                drones: 'Fotos y Videos - Filmaciones Clásicas y Inmersivas con Drones',
+                design: 'Diseño, Sitios Web y Aplicaciones - Desarrollo Web - Consultoría Web',
+                drones: 'Fotos y Videos - Filmaciones Clásicas e Inmersivas con Drones',
                 archive: 'Archivo',
+                projects: 'Proyectos',
             },
             link: {
-                contacts: 'Contactos',
+                contact: {
+                    title: 'Contactos',
+                    tooltip: 'Ponerse en contacto',
+                },
+                support: {
+                    tooltip: 'Soporte',
+                    support: 'Apoya con'
+                },
             },
         },
     },
@@ -393,9 +431,17 @@ export default {
                 design: 'Design, Sites Web et Applications - Développement Web - Conseil Web',
                 drones: 'Photos et Vidéos - Prises de Vue Immersives ou Classiques avec Drones',
                 archive: 'Archive',
+                projects: 'Projets',
             },
             link: {
-                contacts: 'Contacts',
+                contact: {
+                    title: 'Contacts',
+                    tooltip: 'Prendre contact',
+                },
+                support: {
+                    tooltip: 'Support',
+                    via: 'Soutiens avec',
+                },
             },
         },
     },
@@ -405,9 +451,17 @@ export default {
                 design: 'Design, Websites und Apps - Webentwicklung - Webberatung',
                 drones: 'Fotos und Videos - Klassische und Immersive Drohnenaufnahmen',
                 archive: 'Archiv',
+                projects: 'Projekte',
             },
             link: {
-                contacts: 'Kontakte',
+                contact: {
+                    title: 'Kontakte',
+                    tooltip: 'Kontakt aufnehmen',
+                },
+                support: {
+                    tooltip: 'Support',
+                    via: 'Unterstütze mit'
+                },
             },
         },
     },
@@ -417,9 +471,17 @@ export default {
                 design: 'Design, Sites e Apps - Desenvolvimento Web - Consultoria Web',
                 drones: 'Fotos e Vídeos - Filmagens Clássicas e Imersivas com Drones',
                 archive: 'Arquivo',
+                projects: 'Projetos',
             },
             link: {
-                contacts: 'Contatos',
+                contact: {
+                    title: 'Contatos',
+                    tooltip: 'Entrar em contato',
+                },
+                support: {
+                    tooltip: 'Suporte',
+                    via: 'Apoia com',
+                },
             },
         },
     },

@@ -17,7 +17,6 @@ const messages = [
   <Vue3Marquee
       :duration="messages.join(' ').length / 2.5"
       class="text-grey overflow-hidden"
-      pause-on-hover pause-on-click
   >
     <div v-html="messages.join(separator) + separator"/>
   </Vue3Marquee>

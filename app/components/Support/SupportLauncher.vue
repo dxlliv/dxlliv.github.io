@@ -1,14 +1,14 @@
 <script setup lang="ts">
 const supportList = [
   {
-    icon: "simple-icons:github",
-    title: "Support via GitHub",
-    href: "https://github.com/sponsors/dxlliv",
-  },
-  {
     icon: "simple-icons:paypal",
     title: "Support via PayPal",
     href: "https://paypal.me/dxlliv",
+  },
+  {
+    icon: "simple-icons:github",
+    title: "Support via GitHub",
+    href: "https://github.com/sponsors/dxlliv",
   },
   {
     icon: "simple-icons:bitcoin",

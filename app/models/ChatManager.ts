@@ -1,3 +1,5 @@
+import type {VueI18nTranslation} from "vue-i18n";
+
 export class ChatManager {
     chat: {
         author: string
@@ -7,16 +9,14 @@ export class ChatManager {
     agentBaseURL: string
     userId: string
     roomId: string
-    textNotAvailable: string = ''
+    textNotAvailable: string = 'agent.reply.notAvailable'
 
-    constructor(listElement: any, agentBaseURL: string, textNotAvailable: string) {
+    constructor(listElement: any, agentBaseURL: string) {
         this.listElement = listElement
         this.agentBaseURL = agentBaseURL
 
         this.userId = ChatManager.generateID('xxxxxxx')
         this.roomId = `room-${ChatManager.generateID('xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx')}`
-
-        this.textNotAvailable = textNotAvailable
     }
 
     static generateID(template: string): string {
@@ -42,7 +42,12 @@ export class ChatManager {
         }, 25)
     }
 
-    async sendMessage(text: string): Promise<void> {
+    async sendMessage(text: string, t: VueI18nTranslation): Promise<void> {
+        const controller = new AbortController()
+        const timeout = setTimeout(() => {
+            controller.abort()
+        }, 5000)
+
         const data = {
             text,
             userId: this.userId,
@@ -57,8 +62,11 @@ export class ChatManager {
                 'Content-Type': 'application/json; charset=utf-8',
             },
             body: JSON.stringify(data),
+            signal: controller.signal,
         })
             .then((response) => {
+                clearTimeout(timeout)
+
                 if (!response.ok) {
                     throw new Error(`Request failed with status: ${response.status}`)
                 }
@@ -72,7 +80,7 @@ export class ChatManager {
             })
             .catch(async () => {
                 return new Promise(resolve => setTimeout(() => {
-                    this.addNewMessage('bot', this.textNotAvailable)
+                    this.addNewMessage('bot', t(this.textNotAvailable))
                     resolve(true)
                 }, 3000))
             })

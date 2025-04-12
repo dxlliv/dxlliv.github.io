@@ -21,7 +21,7 @@ async function onNewMessage() {
 
   waitingReply.value = true
 
-  await agentStore.agent.sendMessage(message)
+  await agentStore.agent.sendMessage(message, t)
 
   waitingReply.value = false
 }
@@ -35,7 +35,7 @@ async function onNewMessage() {
   >
     <v-list-item v-for="message of agentStore.agent.chat" :class="['py-1']">
       <AgentMessage :author="message.author" :class="[{ 'float-right': message.author === 'me' }]">
-        {{message.text}}
+        <span v-html="message.text" />
       </AgentMessage>
     </v-list-item>
 

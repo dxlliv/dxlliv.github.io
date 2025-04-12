@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const showSplash = ref(true)
+const appStore = useAppStore()
 const showLogo = ref(false)
 
 onBeforeMount(() => {
@@ -7,7 +7,7 @@ onBeforeMount(() => {
     showLogo.value = true
 
     setTimeout(() => {
-      showSplash.value = false
+      appStore.splash = false
     }, 2500)
   }, 500)
 })
@@ -15,7 +15,7 @@ onBeforeMount(() => {
 
 <template>
   <v-fade-transition>
-    <div class="dx-splash" v-show="showSplash">
+    <div class="dx-splash" v-show="appStore.splash">
       <v-fade-transition>
         <AppLogo v-if="showLogo" name="splash"/>
       </v-fade-transition>
