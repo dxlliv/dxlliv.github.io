@@ -10,8 +10,3 @@ swiper-container {
   --swiper-pagination-top: 8px;
   --swiper-pagination-bottom: auto;
 }
-
-swiper-container::part(container) {
-  padding: 0 8px;
-  max-width: calc(100vw - 14px);
-}

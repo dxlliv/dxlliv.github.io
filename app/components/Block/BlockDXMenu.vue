@@ -3,8 +3,11 @@ const localeRoute = useLocaleRoute();
 </script>
 
 <template>
-  <BlockHeroBottomSheet fullscreen activator="parent">
-    <BlockHeroCard>
+  <BlockHeroBottomSheet
+      activator="parent"
+      fullscreen :close-on-content-click="false"
+  >
+    <BlockHeroCard :slide-next="false">
       <BlockHeroList>
 
         <v-list-item

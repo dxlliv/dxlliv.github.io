@@ -26,7 +26,7 @@ const appConfig = useAppConfig()
         <v-breadcrumbs-item class="ml-2">
 
           <a :href="appConfig.links.email">
-            <Icon name="mdi:at" :size="25"/>
+            <Icon name="mdi:at" :size="23"/>
           </a>
 
         </v-breadcrumbs-item>

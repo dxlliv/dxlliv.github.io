@@ -114,6 +114,11 @@ swiper-container {
   max-width: 100vw;
   height: 100%;
 
+  &::part(container) {
+    padding: 0 8px;
+    max-width: calc(100vw - 14px);
+  }
+
   > :deep(swiper-slide) {
     display: grid;
     align-items: center;
