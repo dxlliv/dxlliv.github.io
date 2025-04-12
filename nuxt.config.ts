@@ -19,6 +19,7 @@ export default defineNuxtConfig({
             link: [
                 {rel: 'icon', type: 'image/x-icon', href: import.meta.env.NUXT_PUBLIC_CDN + '/favicon.ico'},
                 {rel: 'preload', type: 'font/woff2', href: '/fonts/minimal.woff2', as: 'font'},
+                { rel: 'canonical', href: 'https://dxlliv.dev'}
             ],
         },
         buildAssetsDir: 'assets/',
