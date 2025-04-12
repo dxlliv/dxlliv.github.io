@@ -23,7 +23,9 @@ definePageMeta({
   </div>
   <div />
   <div>
-    <HomeButtons />
+    <client-only>
+      <HomeButtons />
+    </client-only>
     <HomeLinks v-show="!appStore.splash"/>
   </div>
 </template>
