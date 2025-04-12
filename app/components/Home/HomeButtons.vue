@@ -55,7 +55,9 @@ const localeRoute = useLocaleRoute();
 
 <style scoped lang="scss">
 .dx-home__buttons {
- width: 100vw;
+  width: 440px;
+  max-width: 100vw;
+  margin: 0 auto;
 
   .v-btn {
     display: inline-block;
