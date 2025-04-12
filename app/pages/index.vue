@@ -1,6 +1,12 @@
 <script setup lang="ts">
 const appStore = useAppStore()
 
+useSeoMeta({
+  description: 'Discover what I can do for you',
+  ogImage: '/logo.webp',
+  twitterCard: 'summary',
+})
+
 definePageMeta({
   layout: 'home',
 })

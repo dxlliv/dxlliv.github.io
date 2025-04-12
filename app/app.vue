@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useHead({
   titleTemplate: (titleChunk) => {
-    return titleChunk ? `${titleChunk} - DX` : "Home Screen";
+    return titleChunk ? `${titleChunk} - DX` : "Your No Label Developer";
   }
 })
 </script>
