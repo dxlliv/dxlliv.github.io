@@ -11,14 +11,6 @@ const appStore = useAppStore()
 const storeSliderHorizontal = useSliderHorizontalStore()
 const swiperElement = useTemplateRef<HTMLElement>('swiper');
 
-onMounted(() => {
-  appStore.emitter.on('horizontal-slide-change', () => {
-    setTimeout(() => {
-      swiperElement.value.swiper.slideTo(initialSlide)
-    }, 1000)
-  })
-})
-
 function onSlideClick() {
   if (swiperElement.value.swiper.isEnd && props.slideNextThen) {
     onSwiperReachEnd()

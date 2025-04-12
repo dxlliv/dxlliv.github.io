@@ -23,7 +23,7 @@ const localeRoute = useLocaleRoute();
             :to="localeRoute('/')"
         >
           <Icon
-              name="lucide:layout-grid"
+              name="line-md:grid-3-filled"
               class="mr-1"
               style="vertical-align: -3px;"
           />

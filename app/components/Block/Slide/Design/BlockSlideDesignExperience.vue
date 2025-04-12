@@ -24,21 +24,21 @@ const appConfig = useAppConfig()
             :href="appConfig.links.discord"
             class="px-0 ml-3"
         >
-          <Icon name="simple-icons:discord" :size="20"/>
+          <Icon name="line-md:discord" :size="23"/>
         </BlockHeroButton>
 
         <BlockHeroButton
             :href="appConfig.links.instagram"
             class="px-0 ml-3"
         >
-          <Icon name="simple-icons:instagram" :size="16"/>
+          <Icon name="line-md:instagram" :size="20"/>
         </BlockHeroButton>
 
         <BlockHeroButton
             :href="appConfig.links.email"
             class="px-0 ml-3"
         >
-          <Icon name="mdi:at" :size="20"/>
+          <Icon name="line-md:at" :size="20"/>
         </BlockHeroButton>
 
       </BlockHeroBottomText>

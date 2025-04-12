@@ -1,23 +1,29 @@
 <template>
-  <BlockTemplateGitHub
-      author="gridsky"
-      title="launcher"
+  <BlockHeroCard
       :slide-next="false"
   >
-    {{$t('block.projectGridsky.description.line1')}}<br/>
-    {{$t('block.projectGridsky.description.line2')}}
+    <BlockHeroTitle
+        title="Gridsky Social"
+        badge="Project"
+    />
 
-    <template #trigger>
-      <BlockHeroBottomSheet activator="parent">
-        <BlockHeroBottomText>
+    <BlockHeroDescription>
+      <p>
+        AT Protocol social client<br/>
+        for Bluesky and other pillars<br/>
+        of the great atmosphere
+      </p>
+    </BlockHeroDescription>
 
-          <a href="https://gridsky-app.github.io/launcher/" target="_blank">
-            {{$t('block.projectGridsky.action')}}
-          </a>
+    <BlockHeroBottomSheet activator="parent">
+      <BlockHeroBottomText>
 
-        </BlockHeroBottomText>
-      </BlockHeroBottomSheet>
-    </template>
+        <a href="https://minimal.gridsky-social.pages.dev" target="_blank">
+          Visit gridsky.social
+        </a>
 
-  </BlockTemplateGitHub>
+      </BlockHeroBottomText>
+    </BlockHeroBottomSheet>
+
+  </BlockHeroCard>
 </template>

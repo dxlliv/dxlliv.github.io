@@ -3,3 +3,9 @@
     <slot />
   </v-btn>
 </template>
+
+<style scoped>
+.v-btn {
+  margin-top: -2px;
+}
+</style>

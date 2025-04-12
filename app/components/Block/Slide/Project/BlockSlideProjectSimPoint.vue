@@ -5,6 +5,7 @@
     <BlockHeroTitle
         title="Sim Racing Point"
         badge="Project"
+        color="grey-darken-2"
     />
 
     <BlockHeroDescription>

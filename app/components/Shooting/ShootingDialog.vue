@@ -25,11 +25,11 @@ const dialog = ref(false)
         </swiper-slide>
 
         <swiper-slide>
-          <ShootingSectionHomeActionShots/>
+          <ShootingSectionHomeRegularShots/>
         </swiper-slide>
 
         <swiper-slide>
-          <ShootingSectionHomeRegularShots/>
+          <ShootingSectionHomeActionShots/>
         </swiper-slide>
 
         <swiper-slide>

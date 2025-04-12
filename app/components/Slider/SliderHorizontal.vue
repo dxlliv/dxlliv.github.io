@@ -17,16 +17,30 @@ onMounted(() => {
   const preventScrollAction = ref(false)
 
   useEventListener(window, 'wheel', (event) => {
+    const targetElement = event.target as HTMLElement;
+
     if (preventScrollAction.value) {
+      return
+    }
+
+    if (targetElement.closest('.v-dialog')) {
       return
     }
 
     preventScrollAction.value = true
 
-    if (event.deltaY > 0) {
-      sliderHorizontalStore.slideNext()
+    if (Math.abs(event.deltaX) > Math.abs(event.deltaY)) {
+      if (event.deltaX > 0) {
+        sliderHorizontalStore.slideNext()
+      } else {
+        sliderHorizontalStore.slidePrev()
+      }
     } else {
-      sliderHorizontalStore.slidePrev()
+      if (event.deltaY > 0) {
+        sliderHorizontalStore.slideNext()
+      } else {
+        sliderHorizontalStore.slidePrev()
+      }
     }
 
     setTimeout(() => {
@@ -40,24 +54,44 @@ onMounted(() => {
 
   useSwipe(document.body.querySelector('.v-application'), {
     onSwipeStart(event) {
-      if (event.target?.closest('.disable-swipe')) {
+      const targetElement = event.target as HTMLElement;
+
+      if (targetElement?.closest('.disable-swipe')) {
         return preventSwipeAction.value = true
       }
 
       preventSwipeAction.value = false
     },
-    onSwipeEnd(e: TouchEvent, direction: string) {
+    onSwipeEnd(event: Event, direction: string) {
       if (preventSwipeAction.value) {
+        return
+      }
+
+      const targetElement = event.target as HTMLElement;
+
+      if (targetElement.closest('.v-dialog')) {
         return
       }
 
       switch (direction) {
         case 'up':
           sliderHorizontalStore.slideNext()
-          break;
+          break
+        case 'left':
+          if (targetElement.closest('.dx-slider-horizontal')) {
+            return
+          }
+          sliderHorizontalStore.slideNext()
+          break
         case 'down':
           sliderHorizontalStore.slidePrev()
-          break;
+          break
+        case 'right':
+          if (targetElement.closest('.dx-slider-horizontal')) {
+            return
+          }
+          sliderHorizontalStore.slidePrev()
+          break
       }
     }
   })

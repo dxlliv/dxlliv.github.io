@@ -1,0 +1,16 @@
+<template>
+  <BlockTemplateAlbum
+      slide-next-then
+      :album="[
+          '/media/simpoint/1.webp',
+          '/media/simpoint/2.webp',
+          '/media/simpoint/3.webp',
+          '/media/simpoint/4.webp',
+          '/media/simpoint/5.webp',
+          '/media/simpoint/6.webp',
+          '/media/simpoint/7.webp',
+          '/media/simpoint/8.webp',
+          '/media/simpoint/9.webp',
+        ]"
+  />
+</template>
