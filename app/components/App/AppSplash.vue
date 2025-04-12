@@ -8,7 +8,7 @@ onBeforeMount(() => {
 
     setTimeout(() => {
       appStore.splash = false
-    }, 2500)
+    }, 2300)
   }, 500)
 })
 </script>
@@ -43,31 +43,6 @@ onBeforeMount(() => {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-
-  &::after {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transform: translateX(-100%);
-    background-image: linear-gradient(
-            90deg,
-            rgba(#000, 0) 0,
-            rgba(#000, 0.25) 20%,
-            rgba(#000, 0.25) 30%,
-            rgba(#000, 0)
-    );
-    animation: shimmer 2s infinite;
-    content: '';
-    z-index: 99;
-  }
-
-  @keyframes shimmer {
-    100% {
-      transform: translateX(100%);
-    }
   }
 }
 </style>
