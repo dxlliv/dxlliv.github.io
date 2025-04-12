@@ -45,7 +45,7 @@ const appConfig = useAppConfig()
     </li>
     <li>
 
-      <v-chip @click.prevent variant="text" color="grey-darken-2">
+      <v-chip @click.prevent class="ml-n2" variant="text" color="grey-darken-2">
         <Icon name="line-md:coffee-half-empty-twotone-loop" :size="16" style="margin-top: -2px;" />
 
         <SupportLauncher />

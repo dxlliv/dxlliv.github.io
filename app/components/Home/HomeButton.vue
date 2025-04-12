@@ -14,9 +14,9 @@ defineProps<{
 
     <v-btn
         rounded
-        :min-width="88"
-        :min-height="88"
-        class="mb-3"
+        :width="88"
+        :height="88"
+        class="mb-3 pa-0"
         :title="title"
     >
       <img

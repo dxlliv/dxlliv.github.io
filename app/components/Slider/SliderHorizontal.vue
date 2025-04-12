@@ -10,7 +10,7 @@ onMounted(() => {
 
   setTimeout(() => {
     sliderHorizontalStore.slideTo(1)
-  }, 150)
+  }, 1000)
 
   // handle scrolling on page
 

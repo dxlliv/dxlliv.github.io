@@ -3,8 +3,17 @@ const localeRoute = useLocaleRoute();
 </script>
 
 <template>
-  <ul class="dx-home__buttons">
-    <li>
+  <swiper-container
+      class="dx-home__buttons"
+      :slides-per-view="3.5"
+      :breakpoints="{
+        480: {
+          slidesPerView: 4,
+        },
+      }"
+  >
+
+    <swiper-slide>
 
       <HomeButton
           :title="$t('home.button.design')" marquee
@@ -12,8 +21,8 @@ const localeRoute = useLocaleRoute();
           :to="localeRoute('/design')"
       />
 
-    </li>
-    <li>
+    </swiper-slide>
+    <swiper-slide>
 
       <HomeButton
           :title="$t('home.button.drones')" marquee
@@ -22,8 +31,8 @@ const localeRoute = useLocaleRoute();
           :to="localeRoute('/drones')"
       />
 
-    </li>
-    <li>
+    </swiper-slide>
+    <swiper-slide>
 
       <HomeButton
           :title="$t('home.button.archive')"
@@ -31,8 +40,8 @@ const localeRoute = useLocaleRoute();
           :to="localeRoute('/archive')"
       />
 
-    </li>
-    <li>
+    </swiper-slide>
+    <swiper-slide>
 
       <HomeButton
           :title="$t('home.button.projects')"
@@ -40,13 +49,15 @@ const localeRoute = useLocaleRoute();
           :to="localeRoute('/projects')"
       />
 
-    </li>
-  </ul>
+    </swiper-slide>
+  </swiper-container>
 </template>
 
 <style scoped lang="scss">
-ul.dx-home__buttons {
-  li {
+.dx-home__buttons {
+ width: 100vw;
+
+  .v-btn {
     display: inline-block;
     margin: 0 16px;
 

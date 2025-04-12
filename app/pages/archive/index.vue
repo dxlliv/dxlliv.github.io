@@ -36,7 +36,9 @@ defineI18nRoute({
   </swiper-slide>
   <swiper-slide>
 
-    <BlockArchiveBrowseBy :year="2024" />
+    <BlockArchiveBrowseBy
+        :year="2024"
+    />
 
   </swiper-slide>
   <swiper-slide v-for="article of articles">

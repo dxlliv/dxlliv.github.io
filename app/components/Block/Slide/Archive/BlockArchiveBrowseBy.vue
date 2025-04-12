@@ -13,7 +13,7 @@ const {data: articles} = await useAsyncData('archive', () => {
 </script>
 
 <template>
-  <BlockHeroCard :slide-next="false">
+  <BlockHeroCard>
     <div class="text-h4" v-text="year"/>
   </BlockHeroCard>
   <!--
