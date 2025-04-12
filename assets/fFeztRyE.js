@@ -1,1 +1,0 @@
-import{_ as t,m as n,o as a,i as s,w as r,r as c}from"./CjMIA95g.js";const _={};function l(e,d){const o=n("v-layout");return a(),s(o,null,{default:r(()=>[c(e.$slots,"default",{},void 0,!0)]),_:3})}const f=t(_,[["render",l],["__scopeId","data-v-2e500837"]]);export{f as default};
