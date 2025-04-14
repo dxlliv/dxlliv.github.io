@@ -118,12 +118,29 @@ export default {
                 title: "Projects",
                 subtitle: "Personal Portfolio",
             },
+            projectMineHub: {
+                description: {
+                    line1: "One of the most active",
+                    line2: "Italian gaming community",
+                    line3: "about Minecraft ~ 2011",
+                },
+                action: "Website"
+            },
             projectGridsky: {
                 description: {
-                    line1: "Like an Instagram client,",
-                    line2: "for the Bluesky network",
+                    line1: "AT Protocol social client",
+                    line2: "for Bluesky and other realities",
+                    line3: "of the great atmosphere",
                 },
-                action: "Launch Gridsky"
+                action: "Launch gridsky.social"
+            },
+            projectSimPoint: {
+                description: {
+                    line1: "Discover the network of",
+                    line2: "driving simulation centers",
+                    line3: "on Sim Racing Point",
+                },
+                action: "Launch simpoint.racing"
             },
             projectPlanner: {
                 description: {
@@ -320,12 +337,29 @@ export default {
                 title: "Progetti",
                 subtitle: "Porfolio Personale",
             },
+            projectSimPoint: {
+                description: {
+                    line1: "Scopri la mappa dei",
+                    line2: "centri di guida sportiva",
+                    line3: "su Sim Racing Point",
+                },
+                action: "Visita simpoint.racing"
+            },
+            projectMineHub: {
+                description: {
+                    line1: "Una delle più grandi",
+                    line2: "comunità di gioco italiane",
+                    line3: "per Minecraft ~ 2011",
+                },
+                action: "Sito web"
+            },
             projectGridsky: {
                 description: {
-                    line1: "Il social network Bluesky",
-                    line2: "da una nuova prospettiva",
+                    line1: "AT Protocol social client",
+                    line2: "per Bluesky e altre realtà",
+                    line3: "dell'universo ATProto",
                 },
-                action: "Lancia Gridsky"
+                action: "Visita gridsky.social"
             },
             projectPlanner: {
                 description: {

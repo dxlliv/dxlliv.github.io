@@ -11,9 +11,9 @@
 
     <BlockHeroDescription>
       <p>
-        One of the most active<br/>
-        Italian gaming community<br/>
-        about Minecraft ~ 2011
+        {{$t('block.projectMineHub.description.line1')}}<br/>
+        {{$t('block.projectMineHub.description.line2')}}<br/>
+        {{$t('block.projectMineHub.description.line3')}}
       </p>
     </BlockHeroDescription>
 
@@ -21,7 +21,7 @@
       <BlockHeroBottomText>
 
         <a href="https://minecraft-italia.it" target="_blank">
-          Website
+          {{$t('block.projectMineHub.action')}}
         </a>
 
         <BlockHeroButton

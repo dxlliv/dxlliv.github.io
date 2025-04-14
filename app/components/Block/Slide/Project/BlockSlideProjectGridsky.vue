@@ -9,9 +9,9 @@
 
     <BlockHeroDescription>
       <p>
-        AT Protocol social client<br/>
-        for Bluesky and other pillars<br/>
-        of the great atmosphere
+        {{$t('block.projectGridsky.description.line1')}}<br/>
+        {{$t('block.projectGridsky.description.line2')}}<br/>
+        {{$t('block.projectGridsky.description.line3')}}
       </p>
     </BlockHeroDescription>
 
@@ -19,7 +19,7 @@
       <BlockHeroBottomText>
 
         <a href="https://minimal.gridsky-social.pages.dev" target="_blank">
-          Visit gridsky.social
+          {{$t('block.projectGridsky.action')}}
         </a>
 
       </BlockHeroBottomText>

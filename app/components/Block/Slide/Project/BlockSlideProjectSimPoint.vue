@@ -10,9 +10,9 @@
 
     <BlockHeroDescription>
       <p>
-        Discover the network of<br/>
-        driving simulation centers<br/>
-        on Sim Racing Point
+        {{$t('block.projectSimPoint.description.line1')}}<br/>
+        {{$t('block.projectSimPoint.description.line2')}}<br/>
+        {{$t('block.projectSimPoint.description.line3')}}
       </p>
     </BlockHeroDescription>
 
@@ -20,7 +20,7 @@
       <BlockHeroBottomText>
 
         <a href="https://simpoint.racing" target="_blank">
-          Visit simpoint.racing
+          {{$t('block.projectSimPoint.action')}}
         </a>
 
       </BlockHeroBottomText>
