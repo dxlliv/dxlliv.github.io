@@ -65,13 +65,5 @@
   i {
     opacity: 0.8;
   }
-
-  @media(min-width: 600px) {
-    font-size: 19px;
-  }
-
-  @media(min-width: 1280px) {
-    font-size: 20px;
-  }
 }
 </style>

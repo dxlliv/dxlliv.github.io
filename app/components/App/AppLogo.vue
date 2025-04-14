@@ -20,27 +20,21 @@ withDefaults(defineProps<{
 <style scoped lang="scss">
 .dx-logo {
   > div:nth-child(1) {
+    position: relative;
+    display: inline-block;
     font-family: 'minimal';
     font-display: block;
-    font-size: 100px;
-    height: 76px;
-    line-height: 96px;
+    font-size: 7rem;
     z-index: 99;
-    display: inline-block;
-    position: relative;
   }
 
   &--splash {
     div:first-child {
-      font-size: 128px;
-      height: 96px;
-      line-height: 122px;
+      font-size: 8rem;
       vertical-align: top;
 
       @media(max-width: 599px) {
-        font-size: 96px;
-        height: 72px;
-        line-height: 90px;
+        font-size: 6rem;
       }
     }
   }

@@ -13,11 +13,5 @@ defineProps<{
 <style scoped lang="scss">
 div {
   position: relative;
-
-  :deep(p) {
-    @media(min-width: 600px) {
-      line-height: 28px;
-    }
-  }
 }
 </style>

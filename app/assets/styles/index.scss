@@ -3,8 +3,9 @@
 @use "./partials/vuetify";
 
 :root {
-  --dx-toolbar-height: 60px;
+  --dx-toolbar-height: 4.5rem;
 }
+
 ::selection {
   background: #222;
   color: #eee;
@@ -25,16 +26,11 @@ html {
 body {
   position: relative;
   font-family: "Quicksand", serif;
-  font-size: 16px;
+  font-size: 1.2rem;
   color: #4a4a4a;
 
-  @media(min-width: 410px) {
-    font-size: 17px;
-  }
-
-  @media(min-width: 800px) {
-    font-size: 18px;
-    letter-spacing: -0.4px;
+  @media(max-width: 767px) {
+    font-size: 1.15rem;
   }
 }
 
