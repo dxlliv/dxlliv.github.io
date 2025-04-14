@@ -25,6 +25,8 @@ withDefaults(defineProps<{
     font-family: 'minimal';
     font-display: block;
     font-size: 7rem;
+    height: 6rem;
+    line-height: 5.8rem;
     z-index: 99;
   }
 
@@ -72,10 +74,10 @@ withDefaults(defineProps<{
 
     div:nth-child(2) {
       font-family: "Bebas Neue", serif;
-      font-size: 63px;
-      height: 45px;
-      line-height: 52px;
-      margin-top: -3px;
+      font-size: 4.3rem;
+      height: 3.2rem;
+      line-height: 3.5rem;
+      margin-top: -4px;
       animation: shine 3s infinite;
       mask-image: linear-gradient(-75deg, #fff 25%, hsla(0, 0%, 100%, .8) 50%, #fff 70%);
       mask-size: 200%;
@@ -98,9 +100,9 @@ withDefaults(defineProps<{
 
     div:nth-child(2) {
       font-family: "Bebas Neue", serif;
-      font-size: 54px;
-      height: 39px;
-      line-height: 45px;
+      font-size: 3.75rem;
+      height: 2.7rem;
+      line-height: 3.1rem;
       margin-top: -4px;
       animation: shine 3s infinite;
       mask-image: linear-gradient(-75deg, #fff 25%, hsla(0, 0%, 100%, .4) 50%, #fff 70%);

@@ -45,7 +45,7 @@ onMounted(() => {
 
     setTimeout(() => {
       preventScrollAction.value = false
-    }, 500)
+    }, 1300)
   })
 
   // handle swiping on page
