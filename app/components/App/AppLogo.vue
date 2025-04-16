@@ -26,7 +26,7 @@ withDefaults(defineProps<{
     font-display: block;
     font-size: 7rem;
     height: 6rem;
-    line-height: 5.8rem;
+    line-height: 7.8rem;
     z-index: 99;
   }
 
