@@ -67,9 +67,9 @@ function fetchLatestCommit() {
     width: 4px;
     height: 3px;
 
-    &__badge {
-      min-width: 16px;
-      height: 16px;
+    :deep(.v-badge__badge) {
+      min-width: 15px;
+      height: 15px;
     }
   }
 }

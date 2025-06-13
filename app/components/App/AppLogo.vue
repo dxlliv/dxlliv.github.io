@@ -83,7 +83,7 @@ withDefaults(defineProps<{
       font-size: 4.3rem;
       height: 3.2rem;
       line-height: 3.5rem;
-      margin-top: -4px;
+      margin-top: -6px;
       animation: shine 3s infinite;
       mask-image: linear-gradient(-75deg, #fff 25%, hsla(0, 0%, 100%, .8) 50%, #fff 70%);
       mask-size: 200%;
@@ -115,11 +115,17 @@ withDefaults(defineProps<{
       font-size: 3.75rem;
       height: 2.7rem;
       line-height: 3.1rem;
-      margin-top: -4px;
+      margin-top: -6px;
       animation: shine 3s infinite;
       mask-image: linear-gradient(-75deg, #fff 25%, hsla(0, 0%, 100%, .4) 50%, #fff 70%);
       mask-size: 200%;
       transition: all .1s ease-in-out;
+
+      @media(max-width: 479px) {
+        font-size: 3.2rem;
+        height: 2.3rem;
+        line-height: 2.6rem;
+      }
 
       @keyframes shine {
         0% {
