@@ -46,7 +46,7 @@ function fetchLatestCommit() {
     {{$t('toolbar.availability')}}
 
     <v-badge
-        class="ml-6" :offset-y="-34"
+        class="ml-6"
         :color="!isPastAvailability ? 'green' : 'grey-darken-3'"
     />
 
@@ -56,14 +56,20 @@ function fetchLatestCommit() {
 
 <style scoped lang="scss">
 .dx-toolbar__availability {
+  position: relative;
   cursor: pointer;
+  padding-right: 28px;
 
   .v-badge {
-    display: inline;
+    position: absolute;
+    bottom: 50%;
+    right: 0;
+    width: 4px;
+    height: 3px;
 
-    :deep(.v-badge__badge) {
-      min-width: 13px !important;
-      height: 13px !important;
+    &__badge {
+      min-width: 16px;
+      height: 16px;
     }
   }
 }
