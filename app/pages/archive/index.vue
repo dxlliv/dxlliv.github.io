@@ -31,11 +31,6 @@ defineI18nRoute({
   </swiper-slide>
   <swiper-slide>
 
-    <BlockMeImage/>
-
-  </swiper-slide>
-  <swiper-slide>
-
     <BlockArchiveBrowseBy
         :year="2024"
     />
@@ -46,6 +41,13 @@ defineI18nRoute({
         :article="article"
         :slide-next="false"
     />
+  </swiper-slide>
+  <swiper-slide>
+
+    <BlockTemplateImage
+        image="/media/studio-mobile.webp"
+    />
+
   </swiper-slide>
   <!--
   <swiper-slide>

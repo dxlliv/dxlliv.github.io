@@ -28,6 +28,12 @@ withDefaults(defineProps<{
     height: 6rem;
     line-height: 7.8rem;
     z-index: 99;
+
+    @media(max-width: 479px) {
+      font-size: 6rem;
+      height: 6rem;
+      line-height: 7.2rem;
+    }
   }
 
   &--splash {
@@ -82,6 +88,12 @@ withDefaults(defineProps<{
       mask-image: linear-gradient(-75deg, #fff 25%, hsla(0, 0%, 100%, .8) 50%, #fff 70%);
       mask-size: 200%;
       transition: all .1s ease-in-out;
+
+      @media(max-width: 479px) {
+        font-size: 3.7rem;
+        height: 2.6rem;
+        line-height: 2.9rem;
+      }
 
       @keyframes shine {
         0% {

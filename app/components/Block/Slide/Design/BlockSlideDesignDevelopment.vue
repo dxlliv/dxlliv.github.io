@@ -1,4 +1,5 @@
 <script setup lang="ts">
+const appConfig = useAppConfig()
 const {t} = useI18n()
 
 const skills = 'HTML – CSS – JavaScript – TypeScript – Vue.js – Nuxt.js – Vuetify – Vite – SSR - SSG – Electron – Capacitor – Ionic -'
@@ -28,7 +29,7 @@ const skills = 'HTML – CSS – JavaScript – TypeScript – Vue.js – Nuxt.j
         </BlockHeroButton>
 
         <BlockHeroButton
-            href="https://github.com/sponsors/dxlliv" target="_blank"
+            :href="appConfig.links.githubSponsors" target="_blank"
             class="px-0 ml-3"
         >
           <Icon name="simple-icons:github" :size="20"/>

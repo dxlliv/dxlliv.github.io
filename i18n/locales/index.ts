@@ -2,8 +2,8 @@ export default {
     en: {
         home: {
             button: {
-                design: 'Design, Websites and Apps - Web Development - Web Consulting',
-                drones: 'Photos and Videos - Classic and Immersive Drone Clips',
+                design: 'Web Consulting - Web Design - Web Development',
+                drones: 'Drone Clips',
                 archive: 'Archive',
                 projects: 'Projects',
             },
@@ -34,7 +34,7 @@ export default {
                 perfectionist: "digital pixel perfectionist",
                 noLabel: "your no-label developer",
                 dronePilot: "drone pilot by day",
-                webDeveloper: "web developer by night",
+                webDeveloper: "developer by night",
                 wip: "website redesign in progress",
             }
         },
@@ -67,19 +67,19 @@ export default {
             designDevelopment: {
                 title: "Your No-Label Dev",
                 description: {
-                    line1: "An independent developer",
-                    line2: "for websites, web apps & more.",
+                    line1: "Minimalist Web Developer",
+                    line2: "with +10 years of experience.",
                 },
                 action: "Say hello"
             },
             designExperience: {
-                title: "On-demand collabs",
+                title: "Let's get in touch",
                 description: {
-                    line1: "I work with selected clients",
-                    line2: "but I'm always available to talk",
-                    line3: "if you need help or advice",
+                    line1: "Focusing on what matters",
+                    line2: "is easier when you delegate",
+                    line3: "to someone you can trust",
                 },
-                action: "Let's chat"
+                action: "Send an e-mail"
             },
             dronesImmersiveVisuals: {
                 title: "Immersive visuals",
@@ -101,9 +101,9 @@ export default {
             droneBusinessOutdoor: {
                 title: "Open-air activities",
                 description: {
-                    line1: "Planning a new adventure?",
-                    line2: "I capture breathtaking views",
-                    line3: "that brings your story to life",
+                    line1: "Planning new adventures?",
+                    line2: "I'll capture breathtaking views",
+                    line3: "that bring your story to life",
                 },
             },
             droneBusinessBNB: {
@@ -223,8 +223,8 @@ export default {
     it: {
         home: {
             button: {
-                design: 'Design, Siti Web e Applicazioni - Sviluppo Web - Consulenza Web',
-                drones: 'Foto e Video - Riprese Classiche e Immersive con Droni',
+                design: 'Web Consulting - Web Design - Web Development',
+                drones: 'Riprese Immersive',
                 archive: 'Archivio',
                 projects: 'Progetti',
             },
@@ -252,11 +252,11 @@ export default {
         toolbar: {
             availability: "disponibilità",
             marquee: {
-                perfectionist: "perfezionista digitale",
+                perfectionist: "perfezionista del digitale",
                 noLabel: "sviluppatore no-label indipendente",
                 dronePilot: "pilota di droni in prima persona",
-                webDeveloper: "sviluppatore web",
-                wip: "sito in costante evoluzione",
+                webDeveloper: "web designer, content creator e consulente digitale",
+                wip: "sito web in costante evoluzione",
             }
         },
         footer: {
@@ -285,10 +285,10 @@ export default {
                 action: "Let's do it"
             },
             designDevelopment: {
-                title: "Sviluppo No-label",
+                title: "Your No-Label Dev",
                 description: {
-                    line1: "Sviluppatore indipendente",
-                    line2: "on-demand per ogni esigenza.",
+                    line1: "Sviluppatore Indipendente",
+                    line2: "con oltre 10 anni di esperienza",
                 },
                 action: "Scrivimi"
             },

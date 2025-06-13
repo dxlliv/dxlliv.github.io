@@ -56,7 +56,6 @@
   display: grid;
   align-items: center;
   text-align: center;
-  height: 26dvh;
 
   .v-btn {
     opacity: 0.25;

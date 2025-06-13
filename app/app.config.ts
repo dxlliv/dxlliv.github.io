@@ -4,6 +4,7 @@ export default defineAppConfig({
     },
     links: {
         github: "https://github.com/dxlliv",
+        githubSponsors: "https://github.com/sponsors/dxlliv",
         whatsapp: "https://wa.me/393335300898",
         discord: "https://discord.com/users/1068609613508907028",
         instagram: "https://instagram.com/dxlliv",

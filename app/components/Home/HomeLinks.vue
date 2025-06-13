@@ -17,6 +17,7 @@ const appConfig = useAppConfig()
       </v-chip>
 
     </li>
+    <!--
     <li>
 
       <v-chip
@@ -30,6 +31,7 @@ const appConfig = useAppConfig()
       </v-chip>
 
     </li>
+    -->
     <li>
 
       <v-chip class="text-overline" @click.stop>

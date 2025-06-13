@@ -1,31 +1,17 @@
 <script setup lang="ts">
-const lazyReset = ref(false)
 const iframeLoaded = ref(false)
 
 function onIframeLoad() {
   iframeLoaded.value = true
-}
-
-function onIntersect(isIntersecting: boolean) {
-  if (!isIntersecting) {
-    lazyReset.value = true
-    iframeLoaded.value = false
-
-    setTimeout(() => {
-      lazyReset.value = false
-    }, 50)
-  }
 }
 </script>
 
 <template>
   <BlockHeroCard
       border color="grey-darken-4"
-      v-intersect="onIntersect"
   >
-    <v-lazy v-if="!lazyReset">
+    <v-lazy>
       <iframe
-          v-show="iframeLoaded"
           src="/gsky/loading/"
           @load="onIframeLoad"
       />
