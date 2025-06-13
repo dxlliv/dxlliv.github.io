@@ -61,7 +61,6 @@ function onIntersect(isIntersecting: boolean) {
   align-content: center;
   text-align: center;
   aspect-ratio: 1;
-  height: 100%;
   outline: none;
 }
 </style>

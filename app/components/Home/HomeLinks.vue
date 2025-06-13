@@ -17,6 +17,19 @@ const appConfig = useAppConfig()
       </v-chip>
 
     </li>
+    <li>
+
+      <v-chip
+          :href="appConfig.links.bluesky"
+          target="_blank"
+      >
+        <Icon name="simple-icons:bluesky" :size="12" />
+        <v-tooltip activator="parent" location="bottom" content-class="text-overline">
+          Bluesky
+        </v-tooltip>
+      </v-chip>
+
+    </li>
     <!--
     <li>
 
@@ -39,9 +52,11 @@ const appConfig = useAppConfig()
 
         <AgentLauncher />
 
+        <!--
         <v-tooltip activator="parent" location="bottom" content-class="text-overline">
           {{$t('home.link.contact.tooltip')}}
         </v-tooltip>
+        -->
       </v-chip>
 
     </li>
@@ -52,9 +67,11 @@ const appConfig = useAppConfig()
 
         <SupportLauncher />
 
+        <!--
         <v-tooltip activator="parent" location="bottom" content-class="text-overline">
           {{$t('home.link.support.tooltip')}}
         </v-tooltip>
+        -->
       </v-chip>
 
     </li>

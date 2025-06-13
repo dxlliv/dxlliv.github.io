@@ -1,11 +1,6 @@
 <script setup lang="ts">
 const supportList = [
   {
-    icon: "simple-icons:bitcoin",
-    title: "Support via Bitcoin",
-    prompt: "bc1pfg9u4dawenprmexr5hd67085kypr3xml0apujvrehy94e9klaqvqxxg2kj"
-  },
-  {
     icon: "simple-icons:github",
     title: "Support via GitHub",
     href: "https://github.com/sponsors/dxlliv",
@@ -14,6 +9,11 @@ const supportList = [
     icon: "simple-icons:paypal",
     title: "Support via PayPal",
     href: "https://paypal.me/dxlliv",
+  },
+  {
+    icon: "simple-icons:bitcoin",
+    title: "Support via Bitcoin",
+    prompt: "bc1pfg9u4dawenprmexr5hd67085kypr3xml0apujvrehy94e9klaqvqxxg2kj"
   },
 ]
 

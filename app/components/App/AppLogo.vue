@@ -83,7 +83,7 @@ withDefaults(defineProps<{
       font-size: 4.3rem;
       height: 3.2rem;
       line-height: 3.5rem;
-      margin-top: -6px;
+      margin-top: -4px;
       animation: shine 3s infinite;
       mask-image: linear-gradient(-75deg, #fff 25%, hsla(0, 0%, 100%, .8) 50%, #fff 70%);
       mask-size: 200%;
@@ -93,6 +93,7 @@ withDefaults(defineProps<{
         font-size: 3.7rem;
         height: 2.6rem;
         line-height: 2.9rem;
+        margin-top: -4px;
       }
 
       @keyframes shine {

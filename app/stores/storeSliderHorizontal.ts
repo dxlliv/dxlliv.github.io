@@ -12,8 +12,8 @@ export const useSliderHorizontalStore = defineStore('slider/horizontal', () => {
         instance.value = document.querySelector('.dx-slider-horizontal')
 
         const swiperConfig = {
-            spaceBetween: 0,
-            slidesPerView: 1,
+            slidesPerView: 'auto',
+            /*
             breakpoints: {
                 560: {
                     slidesPerView: 1.5,
@@ -32,6 +32,7 @@ export const useSliderHorizontalStore = defineStore('slider/horizontal', () => {
                 lockClass: 'dx-slider-horizontal__lock',
                 clickable: true,
             },
+             */
             on: {
                 init() {
                     // ...

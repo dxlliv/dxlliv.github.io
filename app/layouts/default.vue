@@ -18,7 +18,7 @@
   display: grid;
   grid-template-rows: calc(74dvh - var(--dx-toolbar-height)) 26vh var(--dx-toolbar-height);
 
-  @media(max-height: 600px) {
+  @media(max-height: 660px) {
     grid-template-rows: calc(100dvh - var(--dx-toolbar-height)) var(--dx-toolbar-height);
   }
 }

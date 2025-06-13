@@ -101,9 +101,8 @@ onMounted(() => {
 <template>
   <swiper-container
       class="dx-slider-horizontal" init="false"
-      slides-per-view="auto" centered-slides
       :slide-to-clicked-slide="$vuetify.display.smAndUp"
-      allow-touch-move pagination
+      allow-touch-move
       :centered-slides="$vuetify.display.smAndUp"
   >
     <slot />
@@ -123,14 +122,23 @@ swiper-container {
     display: grid;
     align-items: center;
     box-sizing: border-box;
-    padding: 96px 16px 24px 16px;
-    max-width: calc(100vw - 16px);
-    width: 440px;
-    max-height: 560px;
-    height: 100%;
+    width: auto !important;
+    height: auto !important;
+    margin: 0 12px;
 
-    @media(max-height: 600px) {
-      padding-top: 56px;
+    .dx-block-hero__card {
+      max-height: 400px;
+      height: 50dvh;
+
+      @media(max-height: 660px) {
+        height: 60dvh;
+      }
+
+      @media(max-width: 440px) {
+        max-height: auto;
+        height: auto;
+        width: calc(100vw - 40px) !important;
+      }
     }
   }
 }
