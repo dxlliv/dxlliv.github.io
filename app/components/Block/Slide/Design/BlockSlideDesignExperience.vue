@@ -31,7 +31,7 @@ const appConfig = useAppConfig()
             :href="appConfig.links.githubSponsors" target="_blank"
             class="px-0 ml-3"
         >
-          <Icon name="simple-icons:github" :size="20"/>
+          <Icon name="simple-icons:github" :size="19"/>
           <ContactLauncher/>
         </BlockHeroButton>
 
