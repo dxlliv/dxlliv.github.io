@@ -1,0 +1,1 @@
+import{_ as s,l as _,o as c,w as e,b as l,J as r,k as o}from"./T0JfaOLC.js";const d={};function u(t,f){const n=o("v-main"),a=o("v-layout");return c(),_(a,null,{default:e(()=>[l(n,null,{default:e(()=>[r(t.$slots,"default",{},void 0,!0)]),_:3})]),_:3})}const p=s(d,[["render",u],["__scopeId","data-v-40ead2f4"]]);export{p as default};
