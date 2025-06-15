@@ -30,6 +30,19 @@ const appConfig = useAppConfig()
       </v-chip>
 
     </li>
+    <li>
+
+      <v-chip
+          :href="appConfig.links.github"
+          target="_blank"
+      >
+        <Icon name="simple-icons:github" :size="13" style="margin-top: -1px;" />
+        <v-tooltip activator="parent" location="bottom" content-class="text-overline">
+          GitHub
+        </v-tooltip>
+      </v-chip>
+
+    </li>
     <!--
     <li>
 

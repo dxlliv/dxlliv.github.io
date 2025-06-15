@@ -78,6 +78,11 @@ withDefaults(defineProps<{
   &--archive {
     color: black;
 
+    div:nth-child(1) {
+      height: 6rem;
+      line-height: 6.8rem;
+    }
+
     div:nth-child(2) {
       font-family: "Bebas Neue", serif;
       font-size: 4.3rem;
@@ -110,6 +115,11 @@ withDefaults(defineProps<{
 
   &--shooting {
     color: black;
+
+    div:nth-child(1) {
+      height: 6rem;
+      line-height: 6.8rem;
+    }
 
     div:nth-child(2) {
       font-family: "Bebas Neue", serif;

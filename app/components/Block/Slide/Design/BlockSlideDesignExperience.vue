@@ -39,7 +39,7 @@ const appConfig = useAppConfig()
             :href="appConfig.links.discord"
             class="px-0 ml-3"
         >
-          <Icon name="simple-icons:discord" :size="23"/>
+          <Icon name="simple-icons:discord" :size="20"/>
         </BlockHeroButton>
 
       </BlockHeroBottomText>

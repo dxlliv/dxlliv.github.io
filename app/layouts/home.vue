@@ -13,7 +13,7 @@
 
   .v-main {
     display: grid;
-    grid-template-rows: 35% 10% 55%;
+    grid-template-rows: 38% 10% 52%;
     position: fixed;
     top: 50%;
     left: 50%;
