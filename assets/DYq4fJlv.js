@@ -1,0 +1,1 @@
+import{e as n,k as s,c as a,o as c,b as _,_ as t}from"./DcXvu6Hp.js";const r={class:"bg-grey-darken-4"},m=n({__name:"BlockTemplateImageInner",props:{image:{}},setup(p){return(e,l)=>{const o=s("v-img");return c(),a("div",r,[_(o,{src:e.image,cover:""},null,8,["src"])])}}}),g=Object.assign(t(m,[["__scopeId","data-v-592bcd67"]]),{__name:"BlockTemplateImageInner"});export{g as _};

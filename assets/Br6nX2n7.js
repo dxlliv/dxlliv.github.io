@@ -1,0 +1,1 @@
+import{_ as t,l as n,o as a,w as s,I as r,k as c}from"./DcXvu6Hp.js";const _={};function l(e,d){const o=c("v-layout");return a(),n(o,null,{default:s(()=>[r(e.$slots,"default",{},void 0,!0)]),_:3})}const f=t(_,[["render",l],["__scopeId","data-v-8ed25658"]]);export{f as default};
