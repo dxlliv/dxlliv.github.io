@@ -33,7 +33,7 @@ definePageMeta({
     width: 100%;
     height: 100dvh;
     aspect-ratio: 1280 / 768;
-    max-height: 960px;
+    max-height: 768px;
     zoom: 0.80;
   }
 
