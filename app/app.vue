@@ -1,8 +1,13 @@
 <script setup lang="ts">
 useHead({
   titleTemplate: (titleChunk) => {
-    return titleChunk ? `${titleChunk} - DX` : "Your No Label Developer";
+    return titleChunk ? `${titleChunk} - dxlliv.dev` : "DXLLIV";
   }
+})
+
+useSeoMeta({
+  ogImage: '/logo.webp',
+  twitterCard: 'summary',
 })
 </script>
 
