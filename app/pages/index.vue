@@ -17,13 +17,12 @@ definePageMeta({
       <div>
         <nuxt-link to="/desktop">
           <v-snackbar
-              :model-value="snackbarDesktop && $vuetify.display.width > 960"
+              :model-value="snackbarDesktop && $vuetify.display.width >= 960 && $vuetify.display.height >= 920"
               timeout="-1"
               location="bottom" color="#0f0f0f"
               contained rounded="xl"
-          >
-            Switch to Desktop
-          </v-snackbar>
+              text="Switch to Desktop"
+          />
         </nuxt-link>
         <client-only>
           <HomeTime/>

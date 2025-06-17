@@ -6,6 +6,7 @@ export default {
                 drones: 'Drone Clips',
                 archive: 'Archive',
                 projects: 'Projects',
+                switchToDesktop: 'Switch to Desktop',
             },
             link: {
                 contact: {
@@ -227,6 +228,7 @@ export default {
                 drones: 'Riprese Immersive',
                 archive: 'Archivio',
                 projects: 'Progetti',
+                switchToDesktop: 'Passa al Desktop',
             },
             link: {
                 contact: {
@@ -446,6 +448,7 @@ export default {
                 drones: 'Fotos y Videos - Filmaciones Clásicas e Inmersivas con Drones',
                 archive: 'Archivo',
                 projects: 'Proyectos',
+                switchToDesktop: 'Cambiar a escritorio',
             },
             link: {
                 contact: {
@@ -466,6 +469,7 @@ export default {
                 drones: 'Photos et Vidéos - Prises de Vue Immersives ou Classiques avec Drones',
                 archive: 'Archive',
                 projects: 'Projets',
+                switchToDesktop: 'Passer en mode bureau',
             },
             link: {
                 contact: {
@@ -486,6 +490,7 @@ export default {
                 drones: 'Fotos und Videos - Klassische und Immersive Drohnenaufnahmen',
                 archive: 'Archiv',
                 projects: 'Projekte',
+                switchToDesktop: 'Zur Desktop-Ansicht wechseln',
             },
             link: {
                 contact: {
@@ -506,6 +511,7 @@ export default {
                 drones: 'Fotos e Vídeos - Filmagens Clássicas e Imersivas com Drones',
                 archive: 'Arquivo',
                 projects: 'Projetos',
+                switchToDesktop: 'Przełącz na tryb pulpitu',
             },
             link: {
                 contact: {
