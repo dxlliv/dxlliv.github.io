@@ -43,7 +43,7 @@ defineProps<{
 
     <AppMarquee
         v-else
-        class="text-caption" color="#060606"
+        class="text-caption"
         :text="title + ' -'"
     />
 

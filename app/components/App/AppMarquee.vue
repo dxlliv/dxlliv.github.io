@@ -3,7 +3,6 @@ import {Vue3Marquee} from "vue3-marquee";
 
 defineProps<{
   text: string
-  color: string
 }>()
 </script>
 
@@ -31,12 +30,12 @@ defineProps<{
 
   &::before {
     left: 0;
-    background: linear-gradient(to right, v-bind(color), transparent);
+    background: linear-gradient(to right, black, transparent);
   }
 
   &::after {
     right: 0;
-    background: linear-gradient(to left, v-bind(color), transparent);
+    background: linear-gradient(to left, black, transparent);
   }
 }
 </style>
