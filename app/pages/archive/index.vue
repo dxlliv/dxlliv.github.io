@@ -5,11 +5,27 @@ useSeoMeta({
   },
 })
 
-const {data: articles} = await useAsyncData('archive', () => {
-  return queryCollection('archive')
-      .where('year', '=', 2024)
+const currentYear = new Date().getFullYear()
+
+const { data: articlesGroup } = await useAsyncData('archive', async () => {
+  const allArticles = await queryCollection('archive')
+      .where('published', '=',true)
+      .order('year', 'DESC')
+      .order('created_at', 'DESC')
       .all()
+
+  const filtered = allArticles.filter(a => a.year <= currentYear && a.year >= 2024)
+
+  const grouped = filtered.reduce((acc, article) => {
+    (acc[article.year] ||= []).push(article)
+    return acc
+  }, {} as Record<number, typeof allArticles>)
+
+  return Object.entries(grouped)
+      .map(([year, items]) => ({ year: Number(year), items }))
+      .sort((a, b) => b.year - a.year)
 })
+
 
 defineI18nRoute({
   locales: ['en']
@@ -29,19 +45,23 @@ defineI18nRoute({
     <BlockMe/>
 
   </swiper-slide>
-  <swiper-slide>
+  <template v-for="group of articlesGroup">
 
-    <BlockArchiveBrowseBy
-        :year="2024"
-    />
+    <swiper-slide>
+      <BlockArchiveBrowseBy
+          :year="group.year"
+      />
+    </swiper-slide>
 
-  </swiper-slide>
-  <swiper-slide v-for="article of articles">
-    <BlockArchiveArticle
-        :article="article"
-        :slide-next="false"
-    />
-  </swiper-slide>
+    <swiper-slide v-for="article of group.items">
+      <BlockArchiveArticle
+          :article="article"
+          :slide-next="false"
+      />
+    </swiper-slide>
+
+  </template>
+  <!--
   <swiper-slide>
 
     <BlockTemplateImage
@@ -49,7 +69,6 @@ defineI18nRoute({
     />
 
   </swiper-slide>
-  <!--
   <swiper-slide>
 
     <BlockSponsor />

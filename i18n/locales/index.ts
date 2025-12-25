@@ -1,16 +1,21 @@
 export default {
     en: {
+        pages: {
+            drones: {
+                title: "DX Shooting, Video dall'alto e fotografia aerea",
+            }
+        },
         home: {
             button: {
-                design: 'Web Consulting - Web Design - Web Development',
-                drones: 'Drone Clips',
+                design: 'DX Detailing',
+                drones: 'DX Shooting',
                 archive: 'Archive',
                 projects: 'Projects',
                 switchToDesktop: 'Switch to Desktop',
             },
             link: {
                 contact: {
-                    title: 'Contacts',
+                    title: 'Contact',
                     tooltip: 'Get in touch',
                 },
                 support: {
@@ -26,10 +31,11 @@ export default {
             },
             field: "Type a message",
             reply: {
-                notAvailable: "I'm not available right now,<br />send an e-mail at hello&#64;dxlliv.dev"
+                notAvailable: "I'm not available right now,<br />reach me at <a href='mailto:hello&#64;dxlliv.dev'>hello&#64;dxlliv.dev</a><br /><br />or via <a href='https://wa.me/393335300898'>+39 333 5300898</a>"
             }
         },
         toolbar: {
+            status: "is working on DX Shooting",
             availability: "availability",
             marquee: {
                 perfectionist: "digital pixel perfectionist",
@@ -40,14 +46,14 @@ export default {
             }
         },
         footer: {
-            line1: "Turning visions into reality.",
-            line2: "Powered by the modern web.",
-            line3: "dxlliv, formerly Diego Villa"
+            line1: "Turning Visions into Reality.",
+            line2: "Powered by the Modern Web.",
+            line3: "@dxlliv, formerly Diego Villa"
         },
         block: {
             menu: {
-                drones: "Immersive Shots",
-                design: "Design & Development",
+                drones: "DX Shooting",
+                design: "DX Detailing",
             },
             me: {
                 description: {
@@ -57,24 +63,24 @@ export default {
                 },
             },
             designConsulting: {
-                title: "Digital Consulting",
+                title: "DX Detailing",
                 description: {
                     line1: "Extreme attention to details",
-                    line2: "for your next awesome project.",
-                    line3: "Web Development - Websites - Web Design - Web Applications - UI/UX - Pixel Perfect -"
+                    line2: "for your current or next project",
+                    line3: "Web Development - Web Design - Web Applications - Websites - UI/UX - Pixel Perfect Design -"
                 },
-                action: "Let's talk"
+                action: "WhatsApp"
             },
             designDevelopment: {
-                title: "Your No-Label Dev",
+                title: "DX Solutions",
                 description: {
-                    line1: "Minimalist Web Developer",
-                    line2: "with +10 years of experience.",
+                    line1: "Over 10 Years of Experience in",
+                    line2: "Web Development and Design",
                 },
                 action: "Say hello"
             },
             designExperience: {
-                title: "Let's get in touch",
+                title: "Open a ticket",
                 description: {
                     line1: "Focusing on what matters",
                     line2: "is easier when you delegate",
@@ -89,7 +95,7 @@ export default {
                     line2: "narratives crafted to amaze,",
                     line3: "for businesses and brands",
                 },
-                action: "Book now"
+                action: "Portfolio"
             },
             dronesFlyingSince: {
                 title: "Flying since 2018",
@@ -106,6 +112,7 @@ export default {
                     line2: "I'll capture breathtaking views",
                     line3: "that bring your story to life",
                 },
+                action: "Portfolio"
             },
             droneBusinessBNB: {
                 title: "B&B and Hotels",
@@ -174,12 +181,12 @@ export default {
                     }
                 },
                 message: {
-                    label: "New request",
+                    label: "Say hello",
                     placeholder: "Please introduce your project"
                 }
             },
             action: {
-                send: "Prepare e-mail",
+                send: "Send e-mail",
                 preparing: "Opening your e-mail client"
             }
         },
@@ -192,12 +199,7 @@ export default {
                 titleServicePhoto: "Photography",
                 titleServiceVideo: "Videography",
             },
-            form: {
-                open: {
-                    desktop: 'New request',
-                    mobile: 'Request'
-                },
-            },
+            portfolio: 'Portfolio',
             section: {
                 me: {
                     description: {
@@ -224,8 +226,8 @@ export default {
     it: {
         home: {
             button: {
-                design: 'Web Consulting - Web Design - Web Development',
-                drones: 'Riprese Immersive',
+                design: 'DX Detailing',
+                drones: 'DX Shooting',
                 archive: 'Archivio',
                 projects: 'Progetti',
                 switchToDesktop: 'Passa al Desktop',
@@ -248,10 +250,11 @@ export default {
             },
             field: "Scrivi un messaggio",
             reply: {
-                notAvailable: "Non sono disponibile in questo momento,<br />scrivimi a hello&#64;dxlliv.dev"
+                notAvailable: "Non sono disponibile in questo momento,<br />scrivimi a <a href='mailto:hello&#64;dxlliv.dev'>hello&#64;dxlliv.dev</a><br /><br />or via <a href='https://wa.me/393335300898'>+39 333 5300898</a>"
             }
         },
         toolbar: {
+            status: "sta lavorando a DX Shooting",
             availability: "disponibilità",
             marquee: {
                 perfectionist: "perfezionista del digitale",
@@ -262,44 +265,44 @@ export default {
             }
         },
         footer: {
-            line1: "Turning visions into reality.",
-            line2: "Powered by the modern web.",
-            line3: "dxlliv, nonché Diego Villa"
+            line1: "Turning Visions into Reality.",
+            line2: "Powered by the Modern Web.",
+            line3: "@dxlliv, ovvero Diego Villa"
         },
         block: {
             menu: {
-                drones: "Riprese Immersive",
-                design: "Design & Sviluppo Web",
+                drones: "DX Shooting",
+                design: "DX Detailing",
             },
             me: {
                 description: {
-                    line2: "Programmatore per passione",
-                    line3: "Drone Pilot per avventura"
+                    line1: "Programmatore per passione",
+                    line2: "Drone Pilot per avventura"
                 },
             },
             designConsulting: {
-                title: "Perfezione Digitale",
+                title: "DX Detailing",
                 description: {
                     line1: "Massima cura per i dettagli",
-                    line2: "e benessere per il tuo progetto.",
-                    line3: "Programmazione - Sviluppo Web - Design e Realizzazione di Siti Web - Applicazioni Web - Interfacce e Esperienza Utente - Pixel Perfect Design -"
+                    line2: "del tuo Sito Web e dei Social",
+                    line3: "Applicazioni Web - Detailing dl Siti Web - Realizzazione di Siti Web - Applicazioni Web - Applicazioni Mobile - Esperienze e Interfacce Utente - Gestione dei Social -"
                 },
-                action: "Let's do it"
+                action: "Preventivo"
             },
             designDevelopment: {
-                title: "Your No-Label Dev",
+                title: "DX Solutions",
                 description: {
-                    line1: "Sviluppatore Indipendente",
-                    line2: "con oltre 10 anni di esperienza",
+                    line1: "Oltre 10 Anni di Esperienza in",
+                    line2: "Web Design e Programmazione",
                 },
-                action: "Scrivimi"
+                action: "Preventivo"
             },
             designExperience: {
-                title: "Commissioni aperte",
+                title: "Apri un ticket",
                 description: {
-                    line1: "Di cosa hai bisogno oggi?",
-                    line2: "Scrivimi pure via mail o chat,",
-                    line3: "mi trovi un po' ovunque",
+                    line1: "Concentrarsi su ciò che conta",
+                    line2: "è più facile se deleghi certe cose",
+                    line3: "a qualcuno che lo fa di lavoro",
                 }
             },
             dronesImmersiveVisuals: {
@@ -309,7 +312,7 @@ export default {
                     line2: "che catturano l'attenzione,",
                     line3: "per aziende e brand",
                 },
-                action: "Contattami"
+                action: "Portfolio"
             },
             dronesFlyingSince: {
                 title: "In volo dal 2018",
@@ -322,10 +325,11 @@ export default {
             droneBusinessOutdoor: {
                 title: "Per ogni contesto",
                 description: {
-                    line1: "Riprese indimenticabili",
-                    line2: "per hotel, b&b, ristoranti,",
-                    line3: "eventi, attività outdoor",
+                    line1: "Riprese con Droni e Clip",
+                    line2: "per Hotel, B&B, Ristoranti,",
+                    line3: "Eventi, Attività Outdoor",
                 },
+                action: "Portfolio"
             },
             droneBusinessBNB: {
                 title: "B&B e Hotels",
@@ -381,7 +385,7 @@ export default {
         form: {
             fields: {
                 name: {
-                    label: "Nomme",
+                    label: "Nome",
                     placeholder: "Come ti chiami?"
                 },
                 service: {
@@ -395,11 +399,11 @@ export default {
                 },
                 message: {
                     label: "Nuova richiesta",
-                    placeholder: "Introduci pure il tuo progetto"
+                    placeholder: "Introduci brevemente il tuo progetto"
                 }
             },
             action: {
-                send: "Prepara e-mail",
+                send: "Invia e-mail",
                 preparing: "Sto aprendo il tuo e-mail client"
             }
         },
@@ -412,12 +416,7 @@ export default {
                 titleServicePhoto: "ed Immersive",
                 titleServiceVideo: "ed Immersive",
             },
-            form: {
-                open: {
-                    desktop: 'Nuova richiesta',
-                    mobile: 'Scrivimi'
-                },
-            },
+            portfolio: 'Portfolio',
             section: {
                 me: {
                     description: {
@@ -473,7 +472,7 @@ export default {
             },
             link: {
                 contact: {
-                    title: 'Contacts',
+                    title: 'Contact',
                     tooltip: 'Prendre contact',
                 },
                 support: {

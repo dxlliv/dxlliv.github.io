@@ -30,11 +30,13 @@ onMounted(() => {
     preventScrollAction.value = true
 
     if (Math.abs(event.deltaX) > Math.abs(event.deltaY)) {
+      /*
       if (event.deltaX > 0) {
         sliderHorizontalStore.slideNext()
       } else {
         sliderHorizontalStore.slidePrev()
       }
+       */
     } else {
       if (event.deltaY > 0) {
         sliderHorizontalStore.slideNext()
@@ -102,7 +104,6 @@ onMounted(() => {
   <swiper-container
       class="dx-slider-horizontal" init="false"
       :slide-to-clicked-slide="$vuetify.display.smAndUp"
-      allow-touch-move
       :centered-slides="$vuetify.display.smAndUp"
   >
     <slot />
@@ -131,7 +132,7 @@ swiper-container {
       height: 50dvh;
 
       @media(max-height: 660px) {
-        height: 60dvh;
+        height: 300px;
       }
 
       @media(max-width: 440px) {

@@ -35,8 +35,8 @@ watch(() => dialog.value, value => {
           <v-col :cols="3">
             <v-btn
                 block flat color="grey-lighten-4"
-                class="px-0" size="large" target="_blank"
-                href="https://instagram.com/dxlliv"
+                class="px-0" size="large"
+                to="/storycase/riprese-video-drone-per-airbnb"
             >
               <Icon name="simple-icons:instagram" :size="18" />
             </v-btn>
@@ -44,8 +44,8 @@ watch(() => dialog.value, value => {
           <v-col class="flex-grow-1 pl-4">
             <v-btn
                 block flat color="grey-lighten-4"
-                class="px-0" size="large" target="_blank"
-                href="https://instagram.com/dxshooting"
+                class="px-0" size="large"
+                to="/storycase/riprese-video-drone-per-airbnb"
             >
               @dxshooting
             </v-btn>

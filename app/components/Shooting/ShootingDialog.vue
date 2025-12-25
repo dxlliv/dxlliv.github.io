@@ -11,7 +11,7 @@ const dialog = ref(false)
       :fullscreen="$vuetify.display.xs"
   >
 
-    <v-card :rounded="$vuetify.display.smAndUp">
+    <v-card color="white" :rounded="$vuetify.display.smAndUp">
       <ShootingSlider page-name="index">
 
         <swiper-slide>
@@ -24,9 +24,11 @@ const dialog = ref(false)
           <ShootingSectionHomeIndoorShots/>
         </swiper-slide>
 
+        <!--
         <swiper-slide>
           <ShootingSectionHomeRegularShots/>
         </swiper-slide>
+        -->
 
         <swiper-slide>
           <ShootingSectionHomeActionShots/>

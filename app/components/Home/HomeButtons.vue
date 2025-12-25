@@ -7,7 +7,7 @@ const localeRoute = useLocaleRoute();
     <li>
 
       <HomeButton
-          :title="$t('home.button.design')" marquee
+          :title="$t('home.button.design')"
           image="/media/home/design.webp"
           :to="localeRoute('/design')"
       />
@@ -16,8 +16,8 @@ const localeRoute = useLocaleRoute();
     <li>
 
       <HomeButton
-          :title="$t('home.button.drones')" marquee
-          :video="routeRawVideoClip('2024/AQOqptEzQllSwV7sB2S0X_5uozJt5R2GPoJPXvboy28eo9UJ_s5opiIaIcrntY6lZ2L7LtcmPqpvfwryndfSDE-e')"
+          :title="$t('home.button.drones')"
+          :video="routeRawMedia('clips/storycase/2025-summer-natur-air-suite/large/fpv-optimized.mp4')"
           poster="/media/home/drones.webp"
           :to="localeRoute('/drones')"
       />

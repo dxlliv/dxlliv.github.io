@@ -26,13 +26,13 @@ withDefaults(defineProps<{
     font-display: block;
     font-size: 7rem;
     height: 6rem;
-    line-height: 7.8rem;
+    line-height: 6.8rem;
     z-index: 99;
 
     @media(max-width: 479px) {
       font-size: 6rem;
       height: 6rem;
-      line-height: 7.2rem;
+      line-height: 6.4rem;
     }
   }
 
@@ -71,7 +71,15 @@ withDefaults(defineProps<{
     div:first-child {
       height: 30px;
       line-height: 47px;
-      font-size: 24px;
+      font-size: 28px;
+    }
+  }
+
+  &--storycase-toolbar {
+    div:first-child {
+      height: 30px;
+      line-height: 40px;
+      font-size: 36px;
     }
   }
 
@@ -80,15 +88,19 @@ withDefaults(defineProps<{
 
     div:nth-child(1) {
       height: 6rem;
-      line-height: 6.8rem;
+      line-height: 5.7rem;
+
+      @media(max-width: 479px) {
+        line-height: 5.2rem;
+      }
     }
 
     div:nth-child(2) {
       font-family: "Bebas Neue", serif;
       font-size: 4.3rem;
-      height: 3.2rem;
+      height: 3rem;
       line-height: 3.5rem;
-      margin-top: -4px;
+      margin-top: -6px;
       animation: shine 3s infinite;
       mask-image: linear-gradient(-75deg, #fff 25%, hsla(0, 0%, 100%, .8) 50%, #fff 70%);
       mask-size: 200%;
@@ -97,8 +109,8 @@ withDefaults(defineProps<{
       @media(max-width: 479px) {
         font-size: 3.7rem;
         height: 2.6rem;
-        line-height: 2.9rem;
-        margin-top: -4px;
+        line-height: 3rem;
+        margin-top: -16px;
       }
 
       @keyframes shine {
@@ -118,7 +130,11 @@ withDefaults(defineProps<{
 
     div:nth-child(1) {
       height: 6rem;
-      line-height: 6.8rem;
+      line-height: 5.8rem;
+
+      @media(max-width: 479px) {
+        line-height: 5.2rem;
+      }
     }
 
     div:nth-child(2) {
@@ -133,9 +149,10 @@ withDefaults(defineProps<{
       transition: all .1s ease-in-out;
 
       @media(max-width: 479px) {
-        font-size: 3.2rem;
+        font-size: 3.25rem;
         height: 2.3rem;
-        line-height: 2.6rem;
+        line-height: 2.7rem;
+        margin-top: -15px;
       }
 
       @keyframes shine {

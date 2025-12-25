@@ -82,7 +82,7 @@ export class ChatManager {
                 return new Promise(resolve => setTimeout(() => {
                     this.addNewMessage('bot', t(this.textNotAvailable))
                     resolve(true)
-                }, 3000))
+                }, 2000))
             })
     }
 }

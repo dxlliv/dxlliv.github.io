@@ -15,7 +15,7 @@ const btnProps = computed(() => {
 
 useSeoMeta({
   titleTemplate: (titleChunk) => {
-    return titleChunk ? `${titleChunk} — DX Archive` : 'DX Archive';
+    return titleChunk ? `${titleChunk} — DX Archive` : 'DX Shooting';
   },
 })
 </script>
@@ -23,7 +23,7 @@ useSeoMeta({
 <template>
   <v-layout>
 
-    <AppToolbar
+    <SocialToolbar
         v-if="$vuetify.display.smAndDown"
         to="/archive"
         title="Archive"

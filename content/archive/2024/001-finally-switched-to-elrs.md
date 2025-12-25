@@ -6,7 +6,6 @@ created_at: "2024-05-13"
 published: true
 cover: https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:2pkidgvfnbxx7sq3shporxij/bafkreifqmk6rudt3okdqwrcj7dtawro4kewa5p5cvt6m4cqvuggyyhowpm@jpeg
 ---
-
 Flying has become my passion in recent years. I built my first drone in 2018, but I always found little time to go out flying since I was often stuck working or nerding at the desktop.
 
 Unfortunately, I wasn't living in a place with large meadows or open spaces, which made flying even more challenging. Despite this, every session always felt like a special occasion. Being surrounded by nothing but the sky gave me an incredible sense of freedom.

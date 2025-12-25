@@ -21,10 +21,10 @@ const appConfig = useAppConfig()
       <BlockHeroBottomText>
 
         <BlockHeroButton
-            :href="appConfig.links.email"
             class="px-0"
         >
           <Icon name="mdi:at" :size="20"/>
+          <ContactLauncher/>
         </BlockHeroButton>
 
         <BlockHeroButton
@@ -32,14 +32,13 @@ const appConfig = useAppConfig()
             class="px-0 ml-3"
         >
           <Icon name="simple-icons:github" :size="19"/>
-          <ContactLauncher/>
         </BlockHeroButton>
 
         <BlockHeroButton
-            :href="appConfig.links.discord"
+            :href="appConfig.links.whatsapp"
             class="px-0 ml-3"
         >
-          <Icon name="simple-icons:discord" :size="20"/>
+          <Icon name="simple-icons:whatsapp" :size="18"/>
         </BlockHeroButton>
 
       </BlockHeroBottomText>

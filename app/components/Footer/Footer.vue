@@ -24,7 +24,7 @@
         {{ $t('footer.line1') }}<br/>
         {{ $t('footer.line2') }}
         <div
-            class="text-grey-lighten-1 font-weight-thin"
+            class="text-grey-lighten-3 font-weight-thin"
             v-text="$t('footer.line3')"
         />
 

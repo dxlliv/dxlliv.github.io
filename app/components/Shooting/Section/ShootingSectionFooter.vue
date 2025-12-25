@@ -37,7 +37,7 @@ const video = ref()
     top: 0;
     left: 0;
     right: 0;
-    height: 30vh;
+    height: 30dvh;
     background: linear-gradient(to bottom, white, transparent);
     content: '';
   }

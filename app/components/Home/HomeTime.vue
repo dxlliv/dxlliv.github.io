@@ -53,5 +53,7 @@ time {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 800;
   font-size: 24px !important;
+  height: 17px;
+  line-height: 14px;
 }
 </style>

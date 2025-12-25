@@ -5,7 +5,7 @@ import * as directives from "vuetify/directives";
 import { aliases, mdi } from "vuetify/iconsets/mdi";
 
 const dxlliv = {
-    dark: false,
+    dark: true,
     colors: {
         background: '#000000',
         onSurface: '#FFFFFF',

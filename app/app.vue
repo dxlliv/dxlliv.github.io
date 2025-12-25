@@ -16,9 +16,11 @@ useSeoMeta({
 
     <AppSplash/>
 
+    <!--
     <NuxtLayout>
       <NuxtPage/>
     </NuxtLayout>
+    -->
 
   </v-app>
 </template>

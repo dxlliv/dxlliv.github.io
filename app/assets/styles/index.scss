@@ -11,16 +11,18 @@
   color: #eee;
 }
 
+html {
+  &.dx-no-overflow {
+    overflow: hidden;
+  }
+}
+
 html, body {
   padding: 0;
   margin: 0;
   background: rgb(var(--v-theme-background));
   user-select: none;
   color-scheme: dark;
-}
-
-html {
-  overflow: hidden !important;
 }
 
 body {
@@ -46,6 +48,10 @@ a {
 
 img {
   max-width: 100%;
+  vertical-align: middle;
+}
+
+video {
   vertical-align: middle;
 }
 

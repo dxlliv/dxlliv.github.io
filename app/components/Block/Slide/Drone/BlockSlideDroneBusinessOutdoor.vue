@@ -1,3 +1,7 @@
+<script setup lang="ts">
+const appConfig = useAppConfig()
+</script>
+
 <template>
   <BlockHeroCard>
     <BlockHeroTitle
@@ -11,6 +15,23 @@
         {{$t('block.droneBusinessOutdoor.description.line3')}}
       </p>
     </BlockHeroDescription>
+
+    <BlockHeroBottomSheet activator="parent">
+      <BlockHeroBottomText>
+
+        <BlockHeroButton :href="appConfig.links.portfolio">
+          {{$t('block.droneBusinessOutdoor.action')}}
+        </BlockHeroButton>
+
+        <BlockHeroButton
+            :href="appConfig.links.email"
+            class="px-0 ml-3"
+        >
+          <Icon name="mdi:at" :size="20"/>
+        </BlockHeroButton>
+
+      </BlockHeroBottomText>
+    </BlockHeroBottomSheet>
 
   </BlockHeroCard>
 </template>

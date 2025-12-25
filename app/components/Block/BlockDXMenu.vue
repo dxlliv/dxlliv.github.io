@@ -11,26 +11,27 @@ const localeRoute = useLocaleRoute();
       <BlockHeroList>
 
         <v-list-item
-            :to="localeRoute('/drones')"
-        >
-          {{$t('block.menu.drones')}}
-        </v-list-item>
-
-        <v-list-item
             :to="localeRoute('/design')"
         >
           {{$t('block.menu.design')}}
         </v-list-item>
 
         <v-list-item
+            href="https://dxshooting.click"
+        >
+          {{$t('block.menu.drones')}}
+        </v-list-item>
+
+       <v-list-item
             :to="localeRoute('/')"
         >
           <Icon
-              name="line-md:grid-3-filled"
+              name="ri:home-line"
               class="mr-1"
               style="vertical-align: -3px;"
+              :size="18"
           />
-          Home Screen
+          Home
         </v-list-item>
 
       </BlockHeroList>

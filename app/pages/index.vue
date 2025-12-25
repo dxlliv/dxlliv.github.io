@@ -1,67 +1,64 @@
 <script setup lang="ts">
 const appStore = useAppStore()
 
-const snackbarDesktop = ref(false)
-
 definePageMeta({
-  layout: 'home',
+  layout: 'phone',
 })
 </script>
 
 <template>
-  <v-main
+  <main>
+    <!--
     @mouseenter="snackbarDesktop = true"
     @mouseleave="snackbarDesktop = false"
-  >
-    <div>
-      <div>
-        <nuxt-link to="/desktop">
-          <v-snackbar
-              :model-value="snackbarDesktop && $vuetify.display.width >= 960 && $vuetify.display.height >= 920"
-              timeout="-1"
-              location="bottom" color="#0f0f0f"
-              contained rounded="xl"
-              text="Switch to Desktop"
-          />
-        </nuxt-link>
-        <client-only>
-          <HomeTime/>
-        </client-only>
-        <AppLogo name="home" text="DXLLIV" class="mt-1"/>
-      </div>
-    </div>
-    <div/>
-    <div>
-      <client-only>
-        <HomeButtons/>
-      </client-only>
-      <HomeLinks v-show="!appStore.splash"/>
-    </div>
-  </v-main>
+    -->
+
+    <template v-if="$vuetify.display.height < 480">
+      <v-container class="pa-0 fill-height" min-height="100dvh">
+        <v-row no-gutters>
+
+          <v-col :md="12" :cols="12" align-self="center">
+            
+            <HomeFooter />
+
+          </v-col>
+        </v-row>
+      </v-container>
+    </template>
+
+    <template v-else>
+      <HomeHeader />
+      <div/>
+      <HomeFooter />
+    </template>
+
+  </main>
 </template>
 
 <style scoped lang="scss">
-.v-main {
+main {
   display: grid;
-  grid-template-rows: 38% 10% 52%;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 32px;
-  width: 100%;
-  height: 100dvh;
-  max-height: 800px;
+  grid-template-rows: 34% 10% 56%;
+  height: 100%;
 
-  @media(min-height: 920px) {
-    width: auto;
-    aspect-ratio: 9 / 16;
-    border: 1px solid #181818;
+  > :deep(*) {
+    display: grid;
   }
 
-  > :deep(div) {
-    display: grid;
-    align-content: center;
+  > header {
+    align-content: start;
+    margin-top: 9vh;
+
+    :deep(.dx-logo div) {
+      height: 96px !important;
+      line-height: 105px !important;
+      font-size: 110px !important;
+    }
+  }
+
+  > footer {
+    align-content: end;
+    margin-bottom: 11vh;
   }
 
   .v-snackbar {

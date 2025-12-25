@@ -10,7 +10,7 @@ export default defineNuxtConfig({
     app: {
         head: {
             meta: [
-                { name: 'viewport', content: 'viewport-fit=cover, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' },
+                {name: 'viewport', content: 'viewport-fit=cover, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, orientation=portrait'},
                 {name: 'mobile-web-app-capable', content: 'yes'},
                 {name: 'mobile-web-app-status-bar-style', content: 'black-translucent'},
                 {name: 'theme-color', content: '#000'},
@@ -19,8 +19,11 @@ export default defineNuxtConfig({
             link: [
                 {rel: 'icon', type: 'image/x-icon', href: import.meta.env.NUXT_PUBLIC_CDN + '/favicon.ico'},
                 {rel: 'preload', type: 'font/woff2', href: '/fonts/minimal.woff2', as: 'font'},
-                { rel: 'canonical', href: 'https://dxlliv.dev'}
+                {rel: 'canonical', href: 'https://dxlliv.dev'}
             ],
+            htmlAttrs: {
+                class: 'dx-no-overflow'
+            },
         },
         buildAssetsDir: 'assets/',
         cdnURL: import.meta.env.NUXT_PUBLIC_CDN,
@@ -33,20 +36,18 @@ export default defineNuxtConfig({
         },
     ],
 
-    modules: [
-        '@nuxtjs/i18n',
-        '@nuxt/content',
-        '@nuxt/fonts',
-        '@nuxt/icon',
-        '@pinia/nuxt',
+    extends: [
+        './layers/dxui',
     ],
+
+    modules: ['@nuxtjs/i18n', '@nuxt/content', '@nuxt/fonts', '@nuxt/icon', '@pinia/nuxt', 'nuxt-schema-org'],
 
     imports: {
         dirs: ['composables', 'models', 'stores', 'utils']
     },
 
     i18n: {
-        locales: ['en', 'it'],
+        locales: ['en'],
         defaultLocale: 'en',
         detectBrowserLanguage: {
             useCookie: true,

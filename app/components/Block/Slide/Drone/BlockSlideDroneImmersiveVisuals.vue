@@ -22,7 +22,7 @@ const appConfig = useAppConfig()
     <BlockHeroBottomSheet activator="parent">
       <BlockHeroBottomText>
 
-        <BlockHeroButton>
+        <BlockHeroButton :href="appConfig.links.portfolio">
           {{$t('block.dronesImmersiveVisuals.action')}}
           <AgentLauncher/>
         </BlockHeroButton>

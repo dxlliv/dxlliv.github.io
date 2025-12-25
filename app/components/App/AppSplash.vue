@@ -7,7 +7,7 @@ onBeforeMount(() => {
     showLogo.value = true
 
     setTimeout(() => {
-      appStore.splash = false
+      //appStore.splash = false
     }, 2300)
   }, 500)
 })

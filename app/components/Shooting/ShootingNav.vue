@@ -22,9 +22,10 @@ const width = computed(() => {
       :width="width"
       :rail-width="width"
       class="text-center"
+      color="white"
   >
 
-    <div class="dx-nav__top">
+    <div class="dx-nav__top" v-if="$vuetify.display.height > 600">
       <ShootingRec />
     </div>
 
@@ -48,9 +49,14 @@ const width = computed(() => {
         </a>
       </v-list-item>
       -->
-      <v-list-item class="mb-2">
+      <v-list-item class="mb-n2">
         <a :href="appConfig.links.email">
           <Icon name="mdi:at" :size="26" />
+        </a>
+      </v-list-item>
+      <v-list-item class="mb-1">
+        <a :href="appConfig.links.whatsapp">
+          <Icon name="mdi:whatsapp" :size="26" />
         </a>
       </v-list-item>
     </v-list>
@@ -59,7 +65,7 @@ const width = computed(() => {
 
 <style scoped lang="scss">
 .dx-nav__top {
-  margin-top: 72px;
+  margin-top: 64px;
 
   @media(max-width: 599px) {
     margin-top: 72px;
@@ -85,6 +91,8 @@ const width = computed(() => {
 }
 
 .v-navigation-drawer {
+  border-right: 1px solid #ddd;
+
   :deep(.v-navigation-drawer__content) {
     display: flex;
     flex-direction: column !important;

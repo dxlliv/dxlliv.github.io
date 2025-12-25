@@ -12,7 +12,11 @@ export const useSliderHorizontalStore = defineStore('slider/horizontal', () => {
         instance.value = document.querySelector('.dx-slider-horizontal')
 
         const swiperConfig = {
+            allowTouchMove: true,
             slidesPerView: 'auto',
+            keyboard: {
+                enabled: true,
+            },
             /*
             breakpoints: {
                 560: {

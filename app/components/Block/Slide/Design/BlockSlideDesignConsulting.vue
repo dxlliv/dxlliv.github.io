@@ -25,17 +25,17 @@ const skills = t('block.designConsulting.description.line3')
     <BlockHeroBottomSheet activator="parent">
       <BlockHeroBottomText>
 
-        <BlockHeroButton>
+        <BlockHeroButton :href="appConfig.links.whatsapp" target="_blank">
           {{$t('block.designConsulting.action')}}
-          <AgentLauncher/>
         </BlockHeroButton>
 
         <BlockHeroButton
-            :href="appConfig.links.email"
+            :href="appConfig.links.email" target="_blank"
             class="px-0 ml-3"
         >
-          <Icon name="mdi:at" :size="20"/>
+          <Icon name="lucide:at-sign" :size="17"/>
         </BlockHeroButton>
+
 
       </BlockHeroBottomText>
     </BlockHeroBottomSheet>

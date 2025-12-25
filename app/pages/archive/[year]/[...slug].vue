@@ -2,7 +2,9 @@
 const route = useRoute()
 
 const { data: article } = await useAsyncData(route.path, () => {
-  return queryCollection('archive').path(route.path).first()
+  return queryCollection('archive')
+      .order('created_at', 'DESC')
+      .path(route.path).first()
 })
 
 definePageMeta({

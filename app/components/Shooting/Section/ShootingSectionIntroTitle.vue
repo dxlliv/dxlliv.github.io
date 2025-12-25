@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const appStore = useAppStore()
+const appConfig = useAppConfig()
 const sliderShootingStore = useSliderShootingStore()
 
 const emit = defineEmits(['close'])
@@ -25,12 +26,16 @@ const emit = defineEmits(['close'])
 
     <div class="dx-links mt-6">
 
-      <v-btn
-          flat rounded size="large" color="black"
+      <nuxt-link :to="appConfig.links.portfolio">
+        <v-btn
+            flat rounded size="large" color="black"
+        >
+          {{ $t('shooting.portfolio') }}
+          <!--
           @click="sliderShootingStore.slideTo(4)"
-      >
-        {{ $t($vuetify.display.mdAndUp ? 'shooting.form.open.desktop' : 'shooting.form.open.mobile') }}
-      </v-btn>
+          -->
+        </v-btn>
+      </nuxt-link>
 
     </div>
 

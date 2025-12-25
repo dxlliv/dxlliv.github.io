@@ -58,12 +58,12 @@ function fetchLatestCommit() {
 .dx-toolbar__availability {
   position: relative;
   cursor: pointer;
-  padding-right: 28px;
+  padding-right: 32px;
 
   .v-badge {
     position: absolute;
     bottom: 50%;
-    right: 0;
+    right: 2px;
     width: 4px;
     height: 3px;
 

@@ -30,12 +30,12 @@ defineProps<{
   }
 
   &::before {
-    left: 0;
+    left: -1px;
     background: linear-gradient(to right, v-bind(color), transparent);
   }
 
   &::after {
-    right: 0;
+    right: -1px;
     background: linear-gradient(to left, v-bind(color), transparent);
   }
 }

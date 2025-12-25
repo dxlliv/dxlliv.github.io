@@ -8,18 +8,24 @@
     </div>
 
     <Footer v-if="$vuetify.display.height > 660"/>
-    <Toolbar/>
+    <Toolbar v-if="$vuetify.display.height > 660"/>
 
   </v-layout>
 </template>
 
 <style scoped lang="scss">
 .v-layout {
+  $toolbarMobileSafeMarginBottom: 3vh;
+
   display: grid;
   grid-template-rows: calc(74dvh - var(--dx-toolbar-height)) 26vh var(--dx-toolbar-height);
 
+  @media(max-width: 600px) {
+    grid-template-rows: calc(74dvh - $toolbarMobileSafeMarginBottom - var(--dx-toolbar-height)) 26vh var(--dx-toolbar-height);
+  }
+
   @media(max-height: 660px) {
-    grid-template-rows: calc(100dvh - var(--dx-toolbar-height)) var(--dx-toolbar-height);
+    grid-template-rows: 100dvh;
   }
 }
 
